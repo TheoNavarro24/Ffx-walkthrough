@@ -1,0 +1,479 @@
+{   
+    "monster_arena": {
+        "title": "Monster Arena",
+        "first_col_title": "Condition",
+        "data": [
+            {
+                "condition": "Capture every monster in Besaid.",
+                "description": "Monster Arena: Capture every monster in Besaid (Stratoavis).",
+                "reward": ["stamina tonic", 99]
+            },
+            {
+                "condition": "Capture every monster in Kilika.",
+                "description": "Monster Arena: Capture every monster in Kilika (Malboro Menace).",
+                "reward": ["poison fang", 99]
+            },
+            {
+                "condition": "Capture every monster on Mi'ihen Highroad.",
+                "description": "Monster Arena: Capture every monster on Mi'ihen Highroad (Kottos).",
+                "reward": ["soul spring", 99]
+            },
+            {
+                "condition": "Capture every monster on Mushroom Rock Road.",
+                "description": "Monster Arena: Capture every monster on Mushroom Rock Road (Coeurlregina).",
+                "reward": ["candle of life", 99]
+            },
+            {
+                "condition": "Capture every monster on Djose Highroad.",
+                "description": "Monster Arena: Capture every monster on Djose Highroad (Jormungand).",
+                "reward": ["petrify grenade", 99]
+            },
+            {
+                "condition": "Capture every monster in the Thunder Plains.",
+                "description": "Monster Arena: Capture every monster in the Thunder Plains (Cactuar King).",
+                "reward": ["chocobo wing", 99]
+            },
+            {
+                "condition": "Capture every monster in Macalania.",
+                "description": "Monster Arena: Capture every monster in Macalania (Espada).",
+                "reward": ["shining gem", 60]
+            },
+            {
+                "condition": "Capture every monster on Bikanel.",
+                "description": "Monster Arena: Capture every monster on Bikanel (Abyss Worm).",
+                "reward": ["shadow gem", 99]
+            },
+            {
+                "condition": "Capture every monster in the Calm Lands.",
+                "description": "Monster Arena: Capture every monster in the Calm Lands (Chimerageist).",
+                "reward": ["farplane wind", 60]
+            },
+            {
+                "condition": "Capture every monster in the Cavern of the Stolen Fayth.",
+                "description": "Monster Arena: Capture every monster in the Cavern of the Stolen Fayth (Don Tonberry).",
+                "reward": ["silver hourglass", 40]
+            },
+            {
+                "condition": "Capture every monster at Mount Gagazet.",
+                "description": "Monster Arena: Capture every monster at Mount Gagazet (Catoblepas).",
+                "reward": ["blossom crown", 1]
+            },
+            {
+                "condition": "Capture every monster inside Sin.",
+                "description": "Monster Arena: Capture every monster inside Sin (Abaddon).",
+                "reward": ["lunar curtain", 99]
+            },
+            {
+                "condition": "Capture every monster in the Omega Ruins.",
+                "description": "Monster Arena: Capture every monster in the Omega Ruins (Vorban).",
+                "reward": ["designer wallet", 60]
+            },
+            {
+                "condition": "Capture 3 of every wolf.",
+                "description": "Monster Arena: Capture 3 of every wolf (Fenrir).",
+                "reward": ["chocobo feather", 99]
+            },
+            {
+                "condition": "Capture 3 of every reptile.",
+                "description": "Monster Arena: Capture 3 of every reptile (Ornitholestes).",
+                "reward": ["stamina spring", 99]
+            },
+            {
+                "condition": "Capture 4 of every bird.",
+                "description": "Monster Arena: Capture 4 of every bird (Pteryx).",
+                "reward": ["mega phoenix", 99]
+            },
+            {
+                "condition": "Capture 4 of every wasp.",
+                "description": "Monster Arena: Capture 4 of every wasp (Hornet).",
+                "reward": ["mana tonic", 60]
+            },
+            {
+                "condition": "Capture 4 of every imp.",
+                "description": "Monster Arena: Capture 4 of every imp (Vidatu).",
+                "reward": ["mana spring", 99]
+            },
+            {
+                "condition": "Capture 4 of every evil eye.",
+                "description": "Monster Arena: Capture 4 of every evil eye (One-Eye).",
+                "reward": ["mega phoenix", 99]
+            },
+            {
+                "condition": "Capture 3 of every flan.",
+                "description": "Monster Arena: Capture 3 of every flan (Jumbo Flan).",
+                "reward": ["twin stars", 60]
+            },
+            {
+                "condition": "Capture 3 of every elemental.",
+                "description": "Monster Arena: Capture 3 of every elemental (Nega Elemental).",
+                "reward": ["star curtain", 60]
+            },
+            {
+                "condition": "Capture 3 of every helm.",
+                "description": "Monster Arena: Capture 3 of every helm (Tanket).",
+                "reward": ["golden hourglass", 99]
+            },
+            {
+                "condition": "Capture 4 of every drake.",
+                "description": "Monster Arena: Capture 4 of every drake (Fafnir).",
+                "reward": ["purifying salt", 99]
+            },
+            {
+                "condition": "Capture 5 of every fungus.",
+                "description": "Monster Arena: Capture 5 of every fungus (Sleep Sprout).",
+                "reward": ["healing spring", 99]
+            },
+            {
+                "condition": "Capture 5 of every bomb.",
+                "description": "Monster Arena: Capture 5 of every bomb (Bomb King).",
+                "reward": ["turbo ether", 60]
+            },
+            {
+                "condition": "Capture 5 of every ruminant.",
+                "description": "Monster Arena: Capture 5 of every ruminant (Juggernaut).",
+                "reward": ["light curtain", 99]
+            },
+            {
+                "condition": "Capture 10 of every iron giant.",
+                "description": "Monster Arena: Capture 10 of every iron giant (Ironclad).",
+                "reward": ["mana tablet", 60]
+            },
+            {
+                "condition": "Bread 2 fiends in Area Conquest.",
+                "description": "Monster Arena: Bread 2 fiends in Area Conquest (Earth Eater).",
+                "reward": ["three stars", 60]
+            },
+            {
+                "condition": "Bread 2 fiends in Species Conquest.",
+                "description": "Monster Arena: Bread 2 fiends in Species Conquest (Greater Sphere).",
+                "reward": ["supreme gem", 60]
+            },
+            {
+                "condition": "Bread 6 fiends in Area Conquest.",
+                "description": "Monster Arena: Bread 6 fiends in Area Conquest (Catastrophe).",
+                "reward": ["door to tomorrow", 99]
+            },
+            {
+                "condition": "Bread 6 fiends in Species Conquest.",
+                "description": "Monster Arena: Bread 6 fiends in Species Conquest (Th'uban).",
+                "reward": ["gamblers spirit", 99]
+            },
+            {
+                "condition": "Capture every monster once.",
+                "description": "Monster Arena: Capture every monster once (Neslug).",
+                "reward": ["winning formula", 99]
+            },
+            {
+                "condition": "Capture every monster 5 times.",
+                "description": "Monster Arena: Capture every monster 5 times (Ultima Buster).",
+                "reward": ["dark matter", 99]
+            },
+            {
+                "condition": "Capture 2 of every underwater fiend at Mount Gagazet (Splashers count as one).",
+                "description": "Monster Arena: Capture 2 of every underwater fiend at Mount Gagazet (Shinryu).",
+                "reward": ["megalixir", 30]
+            },
+            {
+                "condition": "Capture every monster 10 times and defeat every other Monster Arena Creation.",
+                "description": "Monster Arena: Capture every monster 10 times and defeat every other Monster Arena Creation (Nemesis).",
+                "reward": ["master sphere", 10]
+            }
+        ]
+    },
+
+
+    "remiem_temple": {
+        "title": "Remiem Temple",
+        "first_col_title": "Aeon",
+        "data": [
+            {
+                "condition": "Valefor (First Win)",
+                "description": "Remiem Temple: Valefor (first win)",
+                "reward": ["lightning gem", 4]
+            },
+            {
+                "condition": "Valefor (Additional Win)",
+                "description": "Remiem Temple: Valefor (additional win)",
+                "reward": ["power sphere", 4]
+            },
+            {
+                "condition": "Ifrit (First Win)",
+                "description": "Remiem Temple: Ifrit (first win)",
+                "reward": ["x-potion", 30]
+            },
+            {
+                "condition": "Ifrit (Additional Win)",
+                "description": "Remiem Temple: Ifrit (additional win)",
+                "reward": ["mana sphere", 6]
+            },
+            {
+                "condition": "Ixion (First Win)",
+                "description": "Remiem Temple: Ixion (first win)",
+                "reward": ["chocobo feather", 10]
+            },
+            {
+                "condition": "Ixion (Additional Win)",
+                "description": "Remiem Temple: Ixion (additional win)",
+                "reward": ["power sphere", 8]
+            },
+            {
+                "condition": "Shiva (First Win)",
+                "description": "Remiem Temple: Shiva (first win)",
+                "reward": ["mega-potion", 60]
+            },
+            {
+                "condition": "Shiva (Additional Win)",
+                "description": "Remiem Temple: Shiva (additional win)",
+                "reward": ["star curtain", 6]
+            },
+            {
+                "condition": "Bahamut (First Win)",
+                "description": "Remiem Temple: Bahamut (first win)",
+                "reward": ["flower sceptre", 1]
+            },
+            {
+                "condition": "Bahamut (Additional Win)",
+                "description": "Remiem Temple: Bahamut (additional win)",
+                "reward": ["mana sphere", 8]
+            },
+            {
+                "condition": "Yojimbo (First Win)",
+                "description": "Remiem Temple: Yojimbo (first win)",
+                "reward": ["shadow gem", 8]
+            },
+            {
+                "condition": "Yojimbo (Additional Win)",
+                "description": "Remiem Temple: Yojimbo (additional win)",
+                "reward": ["power sphere", 10]
+            },
+            {
+                "condition": "Anima (First Win)",
+                "description": "Remiem Temple: Anima (first win)",
+                "reward": ["stamina spring", 60]
+            },
+            {
+                "condition": "Anima (Additional Win)",
+                "description": "Remiem Temple: Anima (additional win)",
+                "reward": ["mana sphere", 10]
+            },
+            {
+                "condition": "Magus Sisters (First Win)",
+                "description": "Remiem Temple: Magus Sisters (first win)",
+                "reward": ["shining gem", 40]
+            },
+            {
+                "condition": "Magus Sisters (Additional Win)",
+                "description": "Remiem Temple: Magus Sisters (additional win)",
+                "reward": ["power sphere", 12]
+            }
+        ]
+    },
+
+
+    "chocobo_races": {
+        "title": "Remiem Temple - Chocobo Races",
+        "first_col_title": "Chests Amount",
+        "data": [
+            {
+                "condition": "0 chests opened",
+                "description": "Remiem Temple - Chocobo Races: Win with 0 chests opened.",
+                "reward": ["cloudy mirror", 1]
+            },
+            {
+                "condition": "1 chests opened",
+                "description": "Remiem Temple - Chocobo Races: Win with 1 chests opened.",
+                "reward": ["elixir", 1]
+            },
+            {
+                "condition": "2 chests opened",
+                "description": "Remiem Temple - Chocobo Races: Win with 2 chests opened.",
+                "reward": ["megalixir", 1]
+            },
+            {
+                "condition": "3 chests opened",
+                "description": "Remiem Temple - Chocobo Races: Win with 3 chests opened.",
+                "reward": ["wings to discovery", 30]
+            },
+            {
+                "condition": "4 chests opened",
+                "description": "Remiem Temple - Chocobo Races: Win with 4 chests opened.",
+                "reward": ["pendulum", 30]
+            },
+            {
+                "condition": "5 chests opened",
+                "description": "Remiem Temple - Chocobo Races: Win with 5 chests opened.",
+                "reward": ["three stars", 60]
+            }
+        ]
+    },
+
+
+    "chocobo_training": {
+        "title": "Calm Lands - Chocobo Training",
+        "first_col_title": "Discipline",
+        "data": [
+            {
+                "condition": "Wobbly Chocobo (First Win)",
+                "description": "Calm Lands - Chocobo Training: Beat the target time at Wobbly Chocobo.",
+                "reward": ["elixir", 1]
+            },
+            {
+                "condition": "Wobbly Chocobo (Improved Record)",
+                "description": "Calm Lands - Chocobo Training: Improved record at Wobbly Chocobo.",
+                "reward": ["x-potion", 1]
+            },
+            {
+                "condition": "Dodger Chocobo (First Win)",
+                "description": "Calm Lands - Chocobo Training: Beat the target time at Dodger Chocobo.",
+                "reward": ["lv. 1 key sphere", 1]
+            },
+            {
+                "condition": "Dodger Chocobo (Improved Record)",
+                "description": "Calm Lands - Chocobo Training: Improved record at Dodger Chocobo.",
+                "reward": ["mega-potion", 1]
+            },
+            {
+                "condition": "Hyper Dodger Chocobo (First Win)",
+                "description": "Calm Lands - Chocobo Training: Beat the target time at Hyper Dodger Chocobo.",
+                "reward": ["lv. 2 key sphere", 1]
+            },
+            {
+                "condition": "Hyper Dodger Chocobo (Improved Record)",
+                "description": "Calm Lands - Chocobo Training: Improved record at Hyper Dodger Chocobo.",
+                "reward": ["ether", 1]
+            },
+            {
+                "condition": "Catcher Chocobo (First Win)",
+                "description": "Calm Lands - Chocobo Training: Initial win at Catcher Chocobo.",
+                "reward": ["lv. 3 key sphere", 1]
+            },
+            {
+                "condition": "Catcher Chocobo (Improved Record)",
+                "description": "Calm Lands - Chocobo Training: Improved Record at Catcher Chocobo.",
+                "reward": ["turbo ether", 1]
+            }
+        ]
+    },
+
+
+    "lightning_dodging": {
+        "title": "Thunder Plains - Lightning Dodging",
+        "first_col_title": "Lightning Dodges",
+        "data": [
+            {
+                "condition": "Dodge 5 lightning strikes in a row.",
+                "description": "Thunder Plains: Dodge 5 lightning strikes in a row.",
+                "reward": ["x-potion", 2]
+            },
+            {
+                "condition": "Dodge 10 lightning strikes in a row.",
+                "description": "Thunder Plains: Dodge 10 lightning strikes in a row.",
+                "reward": ["mega-potion", 2]
+            },
+            {
+                "condition": "Dodge 20 lightning strikes in a row.",
+                "description": "Thunder Plains: Dodge 20 lightning strikes in a row.",
+                "reward": ["MP sphere", 2]
+            },
+            {
+                "condition": "Dodge 50 lightning strikes in a row.",
+                "description": "Thunder Plains: Dodge 50 lightning strikes in a row.",
+                "reward": ["strength sphere", 3]
+            },
+            {
+                "condition": "Dodge 100 lightning strikes in a row.",
+                "description": "Thunder Plains: Dodge 100 lightning strikes in a row.",
+                "reward": ["hp sphere", 3]
+            },
+            {
+                "condition": "Dodge 150 lightning strikes in a row.",
+                "description": "Thunder Plains: Dodge 150 lightning strikes in a row.",
+                "reward": ["megalixir", 4]
+            },
+            {
+                "condition": "Dodge 200 lightning strikes in a row.",
+                "description": "Thunder Plains: Dodge 200 lightning strikes in a row.",
+                "reward": ["venus sigil", 1]
+            }
+        ]
+    },
+
+
+    "cactuar_valley": {
+        "title": "Bikanel - Valley of the Cactuars",
+        "first_col_title": "Amount of Guardian Spheres",
+        "data": [
+            {
+                "condition": "1-2",
+                "description": "Bikanel - Valley of the Cactuars: 1 or more Guardian Spheres",
+                "reward": ["potion", 1]
+            },
+            {
+                "condition": "3-5",
+                "description": "Bikanel - Valley of the Cactuars: 3 or more Guardian Spheres",
+                "reward": ["elixir", 1]
+            },
+            {
+                "condition": "6-7",
+                "description": "Bikanel - Valley of the Cactuars: 6 or more Guardian Spheres",
+                "reward": ["megalixir", 1]
+            },
+            {
+                "condition": "8-9",
+                "description": "Bikanel - Valley of the Cactuars: 8 or more Guardian Spheres",
+                "reward": ["friend sphere", 1]
+            }
+        ]
+    },
+
+
+    "butterfly_hunt": {
+        "title": "Macalania Woods - Butterfly Hunt",
+        "first_col_title": "Location",
+        "data": [
+            {
+                "condition": "Central - Before defeating Spherimorph.",
+                "description": "Macalania Woods - Butterfly Hunt: Central - Before defeating Spherimorph.",
+                "reward": ["mp sphere", 1]
+            },
+            {
+                "condition": "North - Before defeating Spherimorph.",
+                "description": "Macalania Woods - Butterfly Hunt: North - Before defeating Spherimorph.",
+                "reward": ["ether", 1]
+            },
+            {
+                "condition": "Central - After defeating Spherimorph.",
+                "description": "Macalania Woods - Butterfly Hunt: Central - After defeating Spherimorph.",
+                "reward": ["megalixir", 2]
+            },
+            {
+                "condition": "North - After defeating Spherimorph.",
+                "description": "Macalania Woods - Butterfly Hunt: North - After defeating Spherimorph.",
+                "reward": ["elixir", 2]
+            },
+            {
+                "condition": "One Butterfly Hunt completed - After acquiring the Airship.",
+                "description": "Macalania Woods - Butterfly Hunt: One completed after acquiring the Airship.",
+                "reward": ["teleport sphere", 1]
+            },
+            {
+                "condition": "Both Butterfly Hunts completed - After acquiring the Airship.",
+                "description": "Macalania Woods - Butterfly Hunt: Both completed after acquiring the Airship.",
+                "reward": ["saturn sigil", 1]
+            }
+        ]
+    },
+
+
+    "other": {
+        "title": "Others",
+        "first_col_title": "Condition",
+        "data": [
+            {
+                "condition": "Collect all 26 Al Bhed Primers and talk to Rin on the Airship.",
+                "description": "Collect all 26 Al Bhed Primers and talk to Rin on the Airship.",
+                "reward": ["underdogs secret", 99]
+            }
+        ]
+    }
+}
