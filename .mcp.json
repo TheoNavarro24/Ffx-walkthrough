@@ -2,7 +2,16 @@
   "mcpServers": {
     "fetch": {
       "command": "uvx",
-      "args": ["mcp-server-fetch"]
+      "args": [
+        "mcp-server-fetch"
+      ]
+    },
+    "memory": {
+      "command": "node",
+      "args": [
+        "/opt/node22/lib/node_modules/claude-code-memory/dist/index.js",
+        "/home/user/Ffx-walkthrough"
+      ]
     }
   }
 }
