@@ -1,0 +1,744 @@
+{
+  "version": 2,
+
+  "besaid": [
+    {
+      "name": "Dingo",
+      "slug": "dingo",
+      "count": 0,
+      "offset": "4254",
+      "complete": false
+    },
+    {
+      "name": "Condor",
+      "slug": "condor",
+      "count": 0,
+      "offset": "4267",
+      "complete": false
+    },
+    {
+      "name": "Water Flan",
+      "slug": "water-flan",
+      "count": 0,
+      "offset": "425B",
+      "complete": false
+    }
+  ],
+  "kilika": [
+    {
+      "name": "Dinonix",
+      "slug": "dinonix",
+      "count": 0,
+      "offset": "4261",
+      "complete": false
+    },
+    {
+      "name": "Killer Bee",
+      "slug": "killer-bee",
+      "count": 0,
+      "offset": "426A",
+      "complete": false
+    },
+    {
+      "name": "Yellow Element",
+      "slug": "yellow-element",
+      "count": 0,
+      "offset": "4289",
+      "complete": false
+    },
+    {
+      "name": "Ragora",
+      "slug": "ragora",
+      "count": 0,
+      "offset": "4272",
+      "complete": false
+    }
+  ],
+  "miihenHighroad": [
+    {
+      "name": "Ipiria",
+      "slug": "ipiria",
+      "count": 0,
+      "offset": "4262",
+      "complete": false
+    },
+    {
+      "name": "Mi'ihen Fang",
+      "slug": "mi-ihen-fang",
+      "count": 0,
+      "offset": "4255",
+      "complete": false
+    },
+    {
+      "name": "Floating Eye",
+      "slug": "floating-eye",
+      "count": 0,
+      "offset": "426E",
+      "complete": false
+    },
+    {
+      "name": "White Element",
+      "slug": "white-element",
+      "count": 0,
+      "offset": "428A",
+      "complete": false
+    },
+    {
+      "name": "Raldo",
+      "slug": "raldo",
+      "count": 0,
+      "offset": "424C",
+      "complete": false
+    },
+    {
+      "name": "Vouivre",
+      "slug": "vouivre",
+      "count": 0,
+      "offset": "427E",
+      "complete": false
+    },
+    {
+      "name": "Bomb",
+      "slug": "bomb",
+      "count": 0,
+      "offset": "42A1",
+      "complete": false
+    },
+    {
+      "name": "Dual Horn",
+      "slug": "dual-horn",
+      "count": 0,
+      "offset": "427B",
+      "complete": false
+    }
+  ],
+  "mushroomRockRoad": [
+    {
+      "name": "Raptor",
+      "slug": "raptor",
+      "count": 0,
+      "offset": "4263",
+      "complete": false
+    },
+    {
+      "name": "Gandarewa",
+      "slug": "gandarewa",
+      "count": 0,
+      "offset": "4251",
+      "complete": false
+    },
+    {
+      "name": "Thunder Flan",
+      "slug": "thunder-flan",
+      "count": 0,
+      "offset": "425C",
+      "complete": false
+    },
+    {
+      "name": "Red Element",
+      "slug": "red-element",
+      "count": 0,
+      "offset": "428B",
+      "complete": false
+    },
+    {
+      "name": "Lamashtu",
+      "slug": "lamashtu",
+      "count": 0,
+      "offset": "427F",
+      "complete": false
+    },
+    {
+      "name": "Funguar",
+      "slug": "funguar",
+      "count": 0,
+      "offset": "42A7",
+      "complete": false
+    },
+    {
+      "name": "Garuda",
+      "slug": "garuda",
+      "count": 0,
+      "offset": "4274",
+      "complete": false
+    }
+  ],
+  "djoseRoad": [
+    {
+      "name": "Garm",
+      "slug": "garm",
+      "count": 0,
+      "offset": "4256",
+      "complete": false
+    },
+    {
+      "name": "Simurgh",
+      "slug": "simurgh",
+      "count": 0,
+      "offset": "4268",
+      "complete": false
+    },
+    {
+      "name": "Bite Bug",
+      "slug": "bite-bug",
+      "count": 0,
+      "offset": "426B",
+      "complete": false
+    },
+    {
+      "name": "Snow Flan",
+      "slug": "snow-flan",
+      "count": 0,
+      "offset": "425D",
+      "complete": false
+    },
+    {
+      "name": "Bunyip",
+      "slug": "bunyip",
+      "count": 0,
+      "offset": "424D",
+      "complete": false
+    },
+    {
+      "name": "Basilisk",
+      "slug": "basilisk",
+      "count": 0,
+      "offset": "429B",
+      "complete": false
+    },
+    {
+      "name": "Ochu",
+      "slug": "ochu",
+      "count": 0,
+      "offset": "429F",
+      "complete": false
+    }
+  ],
+  "thunderPlains": [
+    {
+      "name": "Melusine",
+      "slug": "melusine",
+      "count": 0,
+      "offset": "4264",
+      "complete": false
+    },
+    {
+      "name": "Aerouge",
+      "slug": "aerouge",
+      "count": 0,
+      "offset": "4252",
+      "complete": false
+    },
+    {
+      "name": "Buer",
+      "slug": "buer",
+      "count": 0,
+      "offset": "426F",
+      "complete": false
+    },
+    {
+      "name": "Gold Element",
+      "slug": "gold-element",
+      "count": 0,
+      "offset": "428C",
+      "complete": false
+    },
+    {
+      "name": "Kusariqqu",
+      "slug": "kusariqqu",
+      "count": 0,
+      "offset": "4280",
+      "complete": false
+    },
+    {
+      "name": "Larva",
+      "slug": "larva",
+      "count": 0,
+      "offset": "42A5",
+      "complete": false
+    },
+    {
+      "name": "Iron Giant",
+      "slug": "iron-giant",
+      "count": 0,
+      "offset": "4298",
+      "complete": false
+    },
+    {
+      "name": "Qactuar",
+      "slug": "qactuar",
+      "count": 0,
+      "offset": "42A3",
+      "complete": false
+    }
+  ],
+  "macalania": [
+    {
+      "name": "Snow Wolf",
+      "slug": "snow-wolf",
+      "count": 0,
+      "offset": "4257",
+      "complete": false
+    },
+    {
+      "name": "Iguion",
+      "slug": "iguion",
+      "count": 0,
+      "offset": "4265",
+      "complete": false
+    },
+    {
+      "name": "Wasp",
+      "slug": "wasp",
+      "count": 0,
+      "offset": "426C",
+      "complete": false
+    },
+    {
+      "name": "Evil Eye",
+      "slug": "evil-eye",
+      "count": 0,
+      "offset": "4270",
+      "complete": false
+    },
+    {
+      "name": "Ice Flan",
+      "slug": "ice-flan",
+      "count": 0,
+      "offset": "425E",
+      "complete": false
+    },
+    {
+      "name": "Blue Element",
+      "slug": "blue-element",
+      "count": 0,
+      "offset": "428D",
+      "complete": false
+    },
+    {
+      "name": "Murussu",
+      "slug": "murussu",
+      "count": 0,
+      "offset": "424E",
+      "complete": false
+    },
+    {
+      "name": "Mafdet",
+      "slug": "mafdet",
+      "count": 0,
+      "offset": "424F",
+      "complete": false
+    },
+    {
+      "name": "Xiphos",
+      "slug": "xiphos",
+      "count": 0,
+      "offset": "42AA",
+      "complete": false
+    },
+    {
+      "name": "Chimera",
+      "slug": "chimera",
+      "count": 0,
+      "offset": "4293",
+      "complete": false
+    }
+  ],
+  "bikanel": [
+    {
+      "name": "Sand Wolf",
+      "slug": "sand-wolf",
+      "count": 0,
+      "offset": "4258",
+      "complete": false
+    },
+    {
+      "name": "Alcyone",
+      "slug": "alcyone",
+      "count": 0,
+      "offset": "4269",
+      "complete": false
+    },
+    {
+      "name": "Mushussu",
+      "slug": "mushussu",
+      "count": 0,
+      "offset": "4281",
+      "complete": false
+    },
+    {
+      "name": "Zu",
+      "slug": "zu",
+      "count": 0,
+      "offset": "4275",
+      "complete": false
+    },
+    {
+      "name": "Sand Worm",
+      "slug": "sand-worm",
+      "count": 0,
+      "offset": "4276",
+      "complete": false
+    },
+    {
+      "name": "Cactuar",
+      "slug": "cactuar",
+      "count": 0,
+      "offset": "42A4",
+      "complete": false
+    }
+  ],
+  "calmLands": [
+    {
+      "name": "Skoll",
+      "slug": "skoll",
+      "count": 0,
+      "offset": "4259",
+      "complete": false
+    },
+    {
+      "name": "Nebiros",
+      "slug": "nebiros",
+      "count": 0,
+      "offset": "426D",
+      "complete": false
+    },
+    {
+      "name": "Flame Flan",
+      "slug": "flame-flan",
+      "count": 0,
+      "offset": "425F",
+      "complete": false
+    },
+    {
+      "name": "Shred",
+      "slug": "shred",
+      "count": 0,
+      "offset": "4250",
+      "complete": false
+    },
+    {
+      "name": "Anacondaur",
+      "slug": "anacondaur",
+      "count": 0,
+      "offset": "429C",
+      "complete": false
+    },
+    {
+      "name": "Ogre",
+      "slug": "ogre",
+      "count": 0,
+      "offset": "4285",
+      "complete": false
+    },
+    {
+      "name": "Coeurl",
+      "slug": "coeurl",
+      "count": 0,
+      "offset": "4295",
+      "complete": false
+    },
+    {
+      "name": "Chimera Brain",
+      "slug": "chimera-brain",
+      "count": 0,
+      "offset": "4294",
+      "complete": false
+    },
+    {
+      "name": "Malboro",
+      "slug": "malboro",
+      "count": 0,
+      "offset": "4283",
+      "complete": false
+    }
+  ],
+  "stolenFaythCavern": [
+    {
+      "name": "Yowie",
+      "slug": "yowie",
+      "count": 0,
+      "offset": "4266",
+      "complete": false
+    },
+    {
+      "name": "Imp",
+      "slug": "imp",
+      "count": 0,
+      "offset": "4253",
+      "complete": false
+    },
+    {
+      "name": "Dark Element",
+      "slug": "dark-element",
+      "count": 0,
+      "offset": "428E",
+      "complete": false
+    },
+    {
+      "name": "Nidhogg",
+      "slug": "nidhogg",
+      "count": 0,
+      "offset": "4282",
+      "complete": false
+    },
+    {
+      "name": "Thorn",
+      "slug": "thorn",
+      "count": 0,
+      "offset": "42A8",
+      "complete": false
+    },
+    {
+      "name": "Valaha",
+      "slug": "valaha",
+      "count": 0,
+      "offset": "427C",
+      "complete": false
+    },
+    {
+      "name": "Epaaj",
+      "slug": "epaaj",
+      "count": 0,
+      "offset": "4290",
+      "complete": false
+    },
+    {
+      "name": "Ghost",
+      "slug": "ghost",
+      "count": 0,
+      "offset": "4278",
+      "complete": false
+    },
+    {
+      "name": "Tonberry",
+      "slug": "tonberry",
+      "count": 0,
+      "offset": "42AE",
+      "complete": false
+    }
+  ],
+  "mtGagazet": [
+    {
+      "name": "Bandersnatch",
+      "slug": "bandersnatch",
+      "count": 0,
+      "offset": "425A",
+      "complete": false
+    },
+    {
+      "name": "Ahriman",
+      "slug": "ahriman",
+      "count": 0,
+      "offset": "4271",
+      "complete": false
+    },
+    {
+      "name": "Dark Flan",
+      "slug": "dark-flan",
+      "count": 0,
+      "offset": "4260",
+      "complete": false
+    },
+    {
+      "name": "Grenade",
+      "slug": "grenade",
+      "count": 0,
+      "offset": "42A2",
+      "complete": false
+    },
+    {
+      "name": "Grat",
+      "slug": "grat",
+      "count": 0,
+      "offset": "4273",
+      "complete": false
+    },
+    {
+      "name": "Grendel",
+      "slug": "grendel",
+      "count": 0,
+      "offset": "427D",
+      "complete": false
+    },
+    {
+      "name": "Bashura",
+      "slug": "bashura",
+      "count": 0,
+      "offset": "4286",
+      "complete": false
+    },
+    {
+      "name": "Mandragora",
+      "slug": "mandragora",
+      "count": 0,
+      "offset": "42A0",
+      "complete": false
+    },
+    {
+      "name": "Behemoth",
+      "slug": "behemoth",
+      "count": 0,
+      "offset": "4291",
+      "complete": false
+    },
+    {
+      "name": "Splasher",
+      "slug": "splasher",
+      "count": 0,
+      "offset": "4288",
+      "complete": false
+    },
+    {
+      "name": "Achelous",
+      "slug": "achelous",
+      "count": 0,
+      "offset": "4279",
+      "complete": false
+    },
+    {
+      "name": "Maelspike",
+      "slug": "maelspike",
+      "count": 0,
+      "offset": "427A",
+      "complete": false
+    }
+  ],
+  "insideSin": [
+    {
+      "name": "Exoray",
+      "slug": "exoray",
+      "count": 0,
+      "offset": "42A9",
+      "complete": false
+    },
+    {
+      "name": "Gemini (Club)",
+      "slug": "gemini-a",
+      "count": 0,
+      "offset": "4299",
+      "complete": false
+    },
+    {
+      "name": "Gemini (Sword)",
+      "slug": "gemini-b",
+      "count": 0,
+      "offset": "429A",
+      "complete": false
+    },
+    {
+      "name": "Wraith",
+      "slug": "wraith",
+      "count": 0,
+      "offset": "42AD",
+      "complete": false
+    },
+    {
+      "name": "Demonolith",
+      "slug": "demonolith",
+      "count": 0,
+      "offset": "4297",
+      "complete": false
+    },
+    {
+      "name": "Great Malboro",
+      "slug": "great-malboro",
+      "count": 0,
+      "offset": "4284",
+      "complete": false
+    },
+    {
+      "name": "Barbatos",
+      "slug": "barbatos",
+      "count": 0,
+      "offset": "42A6",
+      "complete": false
+    },
+    {
+      "name": "Adamantoise",
+      "slug": "adamantoise",
+      "count": 0,
+      "offset": "429D",
+      "complete": false
+    },
+    {
+      "name": "Behemoth King",
+      "slug": "behemoth-king",
+      "count": 0,
+      "offset": "4292",
+      "complete": false
+    }
+  ],
+  "omegaDungeon": [
+    {
+      "name": "Zaurus",
+      "slug": "zaurus",
+      "count": 0,
+      "offset": "42B0",
+      "complete": false
+    },
+    {
+      "name": "Floating Death",
+      "slug": "floating-death",
+      "count": 0,
+      "offset": "42B2",
+      "complete": false
+    },
+    {
+      "name": "Black Element",
+      "slug": "black-element",
+      "count": 0,
+      "offset": "428F",
+      "complete": false
+    },
+    {
+      "name": "Halma",
+      "slug": "halma",
+      "count": 0,
+      "offset": "42B1",
+      "complete": false
+    },
+    {
+      "name": "Varuna",
+      "slug": "varuna",
+      "count": 0,
+      "offset": "429E",
+      "complete": false
+    },
+    {
+      "name": "Puroboros",
+      "slug": "puroboros",
+      "count": 0,
+      "offset": "42AB",
+      "complete": false
+    },
+    {
+      "name": "Spirit",
+      "slug": "spirit",
+      "count": 0,
+      "offset": "42AC",
+      "complete": false
+    },
+    {
+      "name": "Machea",
+      "slug": "machea",
+      "count": 0,
+      "offset": "42B3",
+      "complete": false
+    },
+    {
+      "name": "Master Coeurl",
+      "slug": "master-coeurl",
+      "count": 0,
+      "offset": "4296",
+      "complete": false
+    },
+    {
+      "name": "Master Tonberry",
+      "slug": "master-tonberry",
+      "count": 0,
+      "offset": "42AF",
+      "complete": false
+    }
+  ]
+}
