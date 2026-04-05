@@ -2,6 +2,38 @@
 @import "./ffx-theme.css";
 @import "./animations.css";
 
+@font-face {
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/Ffx-walkthrough/fonts/tuffy-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tuffy';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/Ffx-walkthrough/fonts/tuffy-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tuffy';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/Ffx-walkthrough/fonts/tuffy-italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tuffy';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/Ffx-walkthrough/fonts/tuffy-bold-italic.ttf') format('truetype');
+}
+
 *,
 *::before,
 *::after {
