@@ -62,7 +62,7 @@ On first app load after this update, if `spira-slots` doesn't exist:
 
 Migration edge cases:
 - `spira-slots` exists and parseable → do nothing (idempotent)
-- `spira-slots` exists but malformed/unparseable → treat as missing; re-initialize with a default slot (existing `spira-checks:*` slot keys are left in place)
+- `spira-slots` exists but malformed/unparseable → treat as missing; re-initialize with a new default slot. Any existing `spira-checks:slot-*` keys in localStorage are orphaned and unrecoverable via the UI. This is an acceptable consequence of metadata corruption — data loss in this scenario is acknowledged.
 - `spira-slots` missing, `spira-checks` exists → migrate: copy `spira-checks` → `spira-checks:slot-default` only if `spira-checks:slot-default` does not already exist; then delete the old `spira-checks` key regardless
 - `spira-slots` missing, `spira-checks` missing or empty → create default slot with empty checks
 - `spira-checks` is malformed/unparseable → treat as empty object, proceed with migration
@@ -95,7 +95,7 @@ Constraints:
 - Cannot delete the last remaining slot
 - Slot IDs are generated as `slot-${Date.now()}`
 - `createSlot` switches to the new slot immediately
-- `deleteSlot(id)` on the active slot: switch to the first slot in the remaining array after removal; on a non-active slot: just remove it, active slot unchanged. In both cases, the corresponding `spira-checks:{id}` key is deleted from localStorage.
+- `deleteSlot(id)` on the active slot: switch to `slots[0]` of the remaining array after removal (array index 0, i.e. the slot that was previously at index 1); on a non-active slot: just remove it, active slot unchanged. In both cases, the corresponding `spira-checks:{id}` key is deleted from localStorage.
 
 ### `useCheckbox` (refactored)
 
@@ -121,7 +121,7 @@ No changes needed in any component that currently calls `useCheckbox`. If `spira
 
 Reads/writes `spira-pyrefly` in localStorage. Default `true`. This preference is global across all slots — toggling it on or off applies regardless of which slot is active. Used by:
 - Settings page toggle
-- `usePyreflyBurst` hook (check before triggering animation)
+- `usePyreflyBurst` hook: the hook itself calls `usePyrefly()` and checks `pyreflyEnabled` before calling `triggerPyreflyBurst`. Callers do not need to guard.
 
 ---
 
@@ -142,9 +142,9 @@ The exported filename is `spira-save-{slotName}.json` (spaces replaced with hyph
 
 ### Import validation
 
-A file is valid if it is parseable JSON and contains both `"checks"` (object) and `"version"` (number) keys. Other fields (`slotName`, `exportedAt`) are optional and ignored on import — they do not overwrite the active slot's name or any other metadata. Import only writes to `spira-checks:{activeSlotId}`. Invalid files show an inline error in the Data panel and abort.
+A file is valid if it is parseable JSON and contains both `"checks"` (object) and `"version"` (number) keys. Other fields (`slotName`, `exportedAt`) are optional and ignored on import — they do not overwrite the active slot's name or any other metadata. Import only writes to `spira-checks:{activeSlotId}`. All values in `checks` are coerced to boolean on write. Invalid files show an inline error in the Data panel and abort.
 
-The confirmation message uses the **active slot's name**, not the file's `slotName` field.
+The confirmation message always uses the **active slot's current name**, not the file's `slotName` field. This is intentional — the user is overwriting the active slot, so showing the active slot's name is correct regardless of what the file was originally exported from.
 
 ---
 
@@ -211,6 +211,7 @@ A standalone function `migrateLegacyChecks()` runs synchronously inside `SaveCon
 - Import — file read failure (permission error, etc.): show inline error in Data panel, abort
 - Delete last slot: button is visually disabled; no action on click
 - Slot not found (e.g. corrupted `spira-slots`): detected at `SaveContextProvider` init time — re-run migration to create a fresh default slot. This can only occur at startup, not lazily during operation.
+- localStorage quota exceeded on any write: display an inline error in the affected panel and do not modify state. If quota is hit during migration at startup, allow the exception to surface — this signals a storage issue requiring manual intervention beyond the app's scope.
 
 ---
 
