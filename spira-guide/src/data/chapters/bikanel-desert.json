@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Sanubia Desert West",
-      "prose": "Tidus wakes up alone in a desert oasis — swim the lower left side of the pool before climbing out to grab four Remedies from a submerged chest. The Zu you'll encounter heading north is a serious threat: cast Slow on it and Haste on Tidus, then use Delay Attacks. Follow the path northeast to reunite with Wakka, then continue to find the other party members scattered across the dunes.",
+      "prose": "Tidus wakes up alone in a desert oasis — swim the lower left side of the pool before climbing out to grab four Remedies from a submerged chest. The Zu you'll encounter heading north is a serious threat: cast Slow on it and Haste on Tidus, then use Delay Attacks. Follow the path northeast to reunite with Wakka, then continue to find the other party members scattered across the dunes. As you piece the party back together it becomes clear this is the approach to Al Bhed Home — Rikku's people and the connection to Cid are both about to pay off.",
       "guideImages": ["image_0052_00.jpeg"],
       "items": [
         { "id": "bikanel-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "icon": "primer", "missable": false },

@@ -20,7 +20,7 @@
     },
     {
       "name": "Salvage Ship",
-      "prose": "After the fight, Rikku's crew pulls you aboard. Talk to the soldier on the left for three Potions, then find Al Bhed Primer Vol. I in the northeast corner of the deck — it's easy to walk past. Chat with Rikku to unlock the Sphere Grid tutorial and earn a Sphere Level from the last fight.",
+      "prose": "After the fight, Rikku's crew pulls you aboard. Talk to the soldier on the left for three Potions, then find Al Bhed Primer Vol. I in the northeast corner of the deck — it's easy to walk past. Chat with Rikku to unlock the Sphere Grid tutorial and earn a Sphere Level from the last fight. This is where Rikku teaches Tidus a few words of Al Bhed — worth talking to the other crew members before the voyage ends, as they each have brief lines that flesh out the salvage operation.",
       "items": [
         { "id": "baaj-ship-200-gil", "name": "200 Gil", "icon": "gil", "missable": false },
         { "id": "baaj-ship-potion-2", "name": "Potion ×2", "icon": "potion", "missable": false },

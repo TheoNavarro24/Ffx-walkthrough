@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Guadosalam",
-      "prose": "Mostly story — Seymour's feast, the Farplane, and the proposal. Explore the winding backstreets before entering the red double doors; there are chests with a Mega-Potion, Elixir, and 3,000 gil tucked around the western room, plus Primer XIII on the floor. In the corridor leading to the Farplane, check the left wall for a hidden chest with Lightning Marbles. On the Farplane itself, speak to Wakka and Lulu to trigger their scenes — this upgrades the Brotherhood with Strength +10%, Sensor, and Waterstrike.",
+      "prose": "Mostly story — Seymour's feast, the Farplane, and the proposal. Explore the winding backstreets before entering the red double doors; there are chests with a Mega-Potion, Elixir, and 3,000 gil tucked around the western room, plus Primer XIII on the floor. In the corridor leading to the Farplane, check the left wall for a hidden chest with Lightning Marbles. On the Farplane itself, speak to Wakka and Lulu to trigger their scenes — this upgrades the Brotherhood with Strength +10%, Sensor, and Waterstrike. Notice that everyone except Tidus sees a loved one — his father's spirit appears to him instead, visually changed in a way that quietly confirms what Jecht has become. You already know, but it's the game's first explicit on-screen acknowledgement.",
       "guideImages": ["image_0046_00.jpeg"],
       "items": [
         { "id": "guadosalam-primer-xii", "name": "Al Bhed Primer Vol. XII", "icon": "primer", "missable": false },

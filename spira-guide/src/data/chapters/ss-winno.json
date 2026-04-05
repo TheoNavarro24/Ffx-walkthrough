@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "S.S. Winno",
-      "prose": "Quick voyage with a few things to do before you dock. Grab a Hi-Potion from the chest in your cabin, then find Al Bhed Primer Vol. V on the deckhouse near the stairs and another Hi-Potion nearby. Donate to O'aka again if your Gil total is nearing the 1,001 threshold. When you're ready, save at the Save Sphere and examine the blitzball on deck to attempt the Jecht Shot — match the D-pad directions that flash on screen. You can reload and retry; it's one of Tidus's best blitzball moves.",
+      "prose": "Quick voyage with a few things to do before you dock. Grab a Hi-Potion from the chest in your cabin, then find Al Bhed Primer Vol. V on the deckhouse near the stairs and another Hi-Potion nearby. Donate to O'aka again if your Gil total is nearing the 1,001 threshold. When you're ready, save at the Save Sphere and examine the blitzball on deck to attempt the Jecht Shot — match the D-pad directions that flash on screen. You can reload and retry; it's one of Tidus's best blitzball moves. Also look for the glowing sphere near the stern — this is Jecht Sphere #1, which unlocks Auron's Overdrive Bushido: Dragon Fang. Talk to the Blitzball players on deck to run passing drills with the team before you arrive at Luca.",
       "guideImages": ["image_0034_00.jpeg", "image_0035_00.jpeg"],
       "items": [
         { "id": "winno-hi-potion-1", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },

@@ -12,7 +12,7 @@
   "subLocations": [
     {
       "name": "Home Exterior",
-      "prose": "After meeting Cid, search the area outside Home before going in. Primer XVIII is right outside the main entrance on the ground — grab it immediately. Fiends swarm the area in waves as you push forward, so you won't get a quiet moment to backtrack.",
+      "prose": "After meeting Cid, search the area outside Home before going in. Primer XVIII is right outside the main entrance on the ground — grab it immediately. Fiends swarm the area in waves as you push forward, so you won't get a quiet moment to backtrack. Prioritize clearing the exterior enemies quickly so you can enter and sweep all three interior Primers before the destruction cutscene — this entire location is permanently gone afterward, and the interior Primers are among the easiest missables in the game.",
       "guideImages": ["image_0054_00.jpeg"],
       "items": [
         { "id": "home-primer-xviii", "name": "Al Bhed Primer Vol. XVIII", "icon": "primer", "missable": true }
