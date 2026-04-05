@@ -57,17 +57,17 @@
 - [x] 45. Accuracy QA pass — cross-reference missables, boss HPs, and primer locations against research docs
 
 ## Phase 3: Collectibles Hub
-- [ ] 46. Build CollectiblesHub page shell
-- [ ] 47. Build CelestialTracker (character portraits + 3-step weapon→crest→sigil progress)
-- [ ] 48. Build PrimerList (26 primers, missable flags, synced checkboxes)
-- [ ] 49. Build JechtSpheres (10 spheres, overdrive unlock milestones)
-- [ ] 50. Build CloisterChecklist (6 temples, maps, Anima progress)
-- [ ] 51. Build AeonTracker (aeon cards with images, obtained tracking)
-- [ ] 52. Add Blitzball note (Wakka's overdrives + Jupiter Sigil only)
+- [x] 46. Build CollectiblesHub page shell
+- [x] 47. Build CelestialTracker (character portraits + 3-step weapon→crest→sigil progress)
+- [x] 48. Build PrimerList (26 primers, missable flags, synced checkboxes)
+- [x] 49. Build JechtSpheres (10 spheres, overdrive unlock milestones)
+- [x] 50. Build CloisterChecklist (6 temples, maps, Anima progress)
+- [x] 51. Build AeonTracker (aeon cards with images, obtained tracking)
+- [x] 52. Add Blitzball note (Wakka's overdrives + Jupiter Sigil only)
 - [ ] 53. Wire up checkbox sync between area pages and hub (single source of truth)
 
 ## Phase 4: Save System & Settings
-- [ ] 54. Build useLocalStorage hook (debounced writes, lazy init)
+- [x] 54. Build useLocalStorage hook (debounced writes, lazy init)
 - [ ] 55. Build useSaveSlot hook (CRUD for unlimited named slots)
 - [ ] 56. Build SaveManager UI (create/rename/delete slots, switch active)
 - [ ] 57. Build export/import JSON
@@ -80,9 +80,9 @@
 - [ ] 62. Build ElementalChart, StatusEffects, KeyItems reference content
 
 ## Phase 6: Polish & Deploy
-- [ ] 63. Build pyrefly page transition (CSS-only dissolve)
-- [ ] 64. Build pyrefly celebration burst (completion effect)
-- [ ] 65. Configure PWA manifest + icons for iPad home screen install
+- [x] 63. Build pyrefly page transition (CSS-only dissolve)
+- [x] 64. Build pyrefly celebration burst (completion effect)
+- [x] 65. Configure PWA manifest + icons for iPad home screen install
 - [ ] 66. Test offline mode
-- [ ] 67. Responsive polish for iPad Pro landscape
+- [x] 67. Responsive polish for iPad Pro landscape — visual audit pass: panel colours matched to FFX in-game reference, header redesigned with logo + pastel gradient, Highwind font size/spacing enforced throughout, AppShell scroll bug fixed
 - [ ] 68. Final GitHub Pages deployment
