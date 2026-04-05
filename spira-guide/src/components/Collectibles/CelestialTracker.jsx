@@ -74,7 +74,7 @@ export default function CelestialTracker() {
 
   return (
     <div>
-      <div className="grid grid-cols-7 gap-3">
+      <div className="grid grid-cols-4 lg:grid-cols-7 gap-3">
         {Object.values(CELESTIALS_BY_CHARACTER).map((char) => (
           <CharacterCard key={char.name} char={char} airshipUnlocked={airshipUnlocked} />
         ))}
