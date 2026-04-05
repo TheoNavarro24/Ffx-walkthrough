@@ -7,6 +7,8 @@ import { useToc } from '../context/TocContext'
 import SubLocation from '../components/SubLocation'
 import MissableAlert from '../components/MissableAlert'
 import ItemList from '../components/ItemList'
+import BossCard from '../components/BossCard'
+import { getBoss } from '../data/bossBySlug'
 
 const SECTION_IDS = ['section-walkthrough', 'section-bosses', 'section-collectibles']
 const SECTION_LABELS = [
@@ -65,6 +67,16 @@ export default function ChapterPage() {
 
       <section id="section-bosses" aria-label="Boss Encounters">
         <h2 className="ffx-header text-base mb-2">Boss Encounters</h2>
+        <div className="flex flex-col gap-3">
+          {data.bosses.map((bossSlug) => (
+            <BossCard
+              key={bossSlug}
+              chapterSlug={slug}
+              bossSlug={bossSlug}
+              boss={getBoss(bossSlug)}
+            />
+          ))}
+        </div>
       </section>
 
       <section id="section-collectibles" aria-label="Collectibles">
