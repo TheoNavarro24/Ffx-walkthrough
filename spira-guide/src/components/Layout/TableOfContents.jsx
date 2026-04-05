@@ -1,4 +1,4 @@
-export default function TableOfContents({ isOpen, onToggle }) {
+export default function TableOfContents({ isOpen, onToggle, sections = [], activeId = null }) {
   return (
     <div
       data-testid="toc-panel"
@@ -12,9 +12,25 @@ export default function TableOfContents({ isOpen, onToggle }) {
         {isOpen ? '›' : '‹'}
       </button>
       {isOpen && (
-        <div className="p-2 text-sm">
-          <p className="ffx-header text-xs">Contents</p>
-        </div>
+        <nav className="p-2 text-sm" aria-label="Page contents">
+          <p className="ffx-header text-xs mb-2">Contents</p>
+          <ul className="flex flex-col gap-1">
+            {sections.map((s) => (
+              <li key={s.id}>
+                <a
+                  href={`#${s.id}`}
+                  className={`block text-xs px-2 py-1 border-l-2 transition-colors ${
+                    activeId === s.id
+                      ? 'border-[var(--color-border)] text-[var(--color-border)]'
+                      : 'border-transparent text-gray-400 hover:text-white'
+                  }`}
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       )}
     </div>
   )

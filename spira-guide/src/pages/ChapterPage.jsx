@@ -1,11 +1,32 @@
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { getChapterBySlug } from '../data/chapterIndex'
 import { getChapterData } from '../data/chapterData'
+import { useScrollSpy } from '../hooks/useScrollSpy'
+import { useToc } from '../context/TocContext'
+
+const SECTION_IDS = ['section-walkthrough', 'section-bosses', 'section-collectibles']
+const SECTION_LABELS = [
+  { id: 'section-walkthrough', label: 'Walkthrough' },
+  { id: 'section-bosses', label: 'Bosses' },
+  { id: 'section-collectibles', label: 'Collectibles' },
+]
 
 export default function ChapterPage() {
   const { slug } = useParams()
   const chapter = getChapterBySlug(slug)
   const data = getChapterData(slug)
+  const activeId = useScrollSpy(SECTION_IDS)
+  const { setSections, setActiveId } = useToc()
+
+  useEffect(() => {
+    setSections(SECTION_LABELS)
+    return () => setSections([])
+  }, [])
+
+  useEffect(() => {
+    setActiveId(activeId)
+  }, [activeId])
 
   return (
     <div className="max-w-4xl mx-auto py-4 flex flex-col gap-4">

@@ -7,6 +7,7 @@ import LandingPage from './pages/LandingPage'
 import ChapterPage from './pages/ChapterPage'
 import CollectiblesHub from './pages/CollectiblesHub'
 import SettingsPage from './pages/SettingsPage'
+import { TocProvider } from './context/TocContext'
 
 const router = createHashRouter([
   {
@@ -23,6 +24,8 @@ const router = createHashRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TocProvider>
+      <RouterProvider router={router} />
+    </TocProvider>
   </StrictMode>
 )

@@ -3,10 +3,12 @@ import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import ChapterDrawer from './ChapterDrawer'
 import TableOfContents from './TableOfContents'
+import { useToc } from '../../context/TocContext'
 
 export default function AppShell() {
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [tocOpen, setTocOpen] = useState(false)
+  const { sections, activeId } = useToc()
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -25,6 +27,8 @@ export default function AppShell() {
         <TableOfContents
           isOpen={tocOpen}
           onToggle={() => setTocOpen((o) => !o)}
+          sections={sections}
+          activeId={activeId}
         />
       </div>
     </div>
