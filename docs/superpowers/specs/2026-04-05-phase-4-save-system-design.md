@@ -61,7 +61,8 @@ On first app load after this update, if `spira-slots` doesn't exist:
 4. Write `spira-slots` with the new slot as active
 
 Migration edge cases:
-- `spira-slots` exists → do nothing (idempotent)
+- `spira-slots` exists and parseable → do nothing (idempotent)
+- `spira-slots` exists but malformed/unparseable → treat as missing; re-initialize with a default slot (existing `spira-checks:*` slot keys are left in place)
 - `spira-slots` missing, `spira-checks` exists → migrate (copy checks, delete old key)
 - `spira-slots` missing, `spira-checks` missing or empty → create default slot with empty checks
 - `spira-checks` is malformed/unparseable → treat as empty object, proceed with migration
@@ -204,11 +205,12 @@ A standalone function `migrateLegacyChecks()` runs synchronously inside `SaveCon
 
 ## Error Handling
 
-- Import — invalid/missing keys: show inline error in Data panel, abort import
+- Import — invalid/missing keys: show inline error in Data panel (local component state, cleared on next import attempt), abort import
 - Import — file picker cancelled by user: do nothing (no error shown)
+- Import — user declines `window.confirm` prompt: abort import, do not modify active slot checks (no error shown)
 - Import — file read failure (permission error, etc.): show inline error in Data panel, abort
 - Delete last slot: button is visually disabled; no action on click
-- Slot not found (e.g. corrupted `spira-slots`): fall back to creating a fresh default slot
+- Slot not found (e.g. corrupted `spira-slots`): detected at `SaveContextProvider` init time — re-run migration to create a fresh default slot. This can only occur at startup, not lazily during operation.
 
 ---
 
