@@ -8,6 +8,7 @@
     {
       "name": "Lake Macalania",
       "prose": "The Travel Agency is your last save point and shop before two back-to-back boss fights — stock up. Clasko is outside and gives a useful hint about chocobo breeding; suggest he try it and he'll reward you later with a Friend Sphere. Primer XVI is on the ground near him. Save before heading into the temple — you won't be able to come back.",
+      "guideImages": ["image_0053_00.jpeg"],
       "items": [
         { "id": "lake-mac-primer-xv", "name": "Al Bhed Primer Vol. XV", "icon": "primer", "missable": false }
       ]
