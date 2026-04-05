@@ -23,17 +23,27 @@ export default function SubLocation({ slug, name, prose, guideImages, items = []
         )}
       </button>
       {open && (
-        <div className="px-4 py-3 flex flex-col gap-2">
-          {prose && <p className="text-xs text-gray-400 italic mb-1">{prose}</p>}
-          <GuideImages images={guideImages} />
-          {children ?? items.map((item) => (
-            <div key={item.id} className="flex items-center gap-2 text-sm">
-              {item.name}
-              {item.missable && (
-                <span className="text-[10px] text-red-400 font-bold uppercase tracking-wide ml-2">Missable</span>
-              )}
+        <div className="px-4 py-3 flex flex-col gap-3">
+          {prose && (
+            <div className="flex flex-col gap-2">
+              {prose.split('\n\n').map((para, i) => (
+                <p key={i} className="text-sm text-gray-200 leading-relaxed">{para}</p>
+              ))}
             </div>
-          ))}
+          )}
+          <GuideImages images={guideImages} />
+          {(children || items.length > 0) && (
+            <div className="flex flex-col gap-2 pt-2 border-t border-[#1e3a5f]">
+              {children ?? items.map((item) => (
+                <div key={item.id} className="flex items-center gap-2 text-sm">
+                  {item.name}
+                  {item.missable && (
+                    <span className="text-[10px] text-red-400 font-bold uppercase tracking-wide ml-2">Missable</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
