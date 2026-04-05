@@ -7,7 +7,8 @@
   "subLocations": [
     {
       "name": "Highbridge",
-      "prose": "After escaping the Via Purifico, the party reunites on the Highbridge for another confrontation with Seymour. There are two Save Spheres here — one at each end of the bridge — making this a good spot to level before the boss fight. Try to get your party into Overdrive before engaging; Seymour hits harder as his HP drops, so front-loading damage matters.",
+      "prose": "After escaping the Via Purifico, the party reunites on the Highbridge for another confrontation with Seymour. There are two Save Spheres here — one at each end of the bridge — making this a good spot to level before the boss fight. Try to get your party into Overdrive before engaging; Seymour hits harder as his HP drops, so front-loading damage matters. After the fight, Yuna's aeons are fully restored — all of them are available again, including any you had previously and Bahamut if you completed the Bevelle Cloister.",
+      "guideImages": ["image_0060_01.jpeg"],
       "items": []
     }
   ],

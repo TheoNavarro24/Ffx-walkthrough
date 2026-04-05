@@ -33,6 +33,7 @@
     {
       "name": "Cavern of the Stolen Fayth",
       "prose": "Accessible from the northeast corner of the Calm Lands gorge. The cavern is challenging but manageable at this point. To recruit Yojimbo: choose 'To defeat the most powerful enemies' when asked your purpose — this lowers his price significantly. Budget at least 200,000 Gil; divide his first asking price by 2 and add 1 for a fair counter. His Zanmato ability can one-shot any enemy regardless of HP.",
+      "guideImages": ["image_0062_00.jpeg"],
       "items": [
         { "id": "airship-yojimbo-aeon", "name": "Yojimbo (Aeon)", "icon": "yojimbo", "missable": false }
       ]
@@ -40,6 +41,7 @@
     {
       "name": "Baaj Temple (Revisit)",
       "prose": "Airship coordinates: X:11-16, Y:57-63. Geosgaeno guards the temple entrance — weak to Ice, hits hard. Inside, dive between the southern pillars to find Lulu's Onion Knight on the seafloor. Anima's fayth becomes accessible once you have all seven other Aeons and have collected the Destruction Sphere treasures from each Cloister.",
+      "guideImages": ["image_0025_00.jpeg"],
       "items": [
         { "id": "airship-baaj-onion-knight", "name": "Onion Knight (Lulu's Celestial Weapon)", "icon": "onion-knight", "missable": false },
         { "id": "airship-baaj-anima", "name": "Anima (Aeon — requires all 7 other Aeons' Cloisters complete)", "icon": "anima", "missable": false }
@@ -48,6 +50,7 @@
     {
       "name": "Omega Ruins",
       "prose": "Airship coordinates: X:69-75, Y:33-38. The toughest optional dungeon in the game — no maps, extremely high encounter rate, and endgame-tier fiends throughout. Ultima Weapon and Omega Weapon are the two superbosses waiting inside. Primer XXVI is found within the ruins.",
+      "guideImages": ["image_0073_00.jpeg"],
       "items": [
         { "id": "airship-omega-primer-xxvi", "name": "Al Bhed Primer Vol. XXVI", "icon": "primer", "missable": false },
         { "id": "airship-omega-master-sphere-2", "name": "Master Sphere ×2", "icon": "master-sphere", "missable": false }
@@ -56,6 +59,7 @@
     {
       "name": "Cactuar Village (Bikanel Desert Revisit)",
       "prose": "Ten Cactuars are hidden across Sanubia Desert — each hides near a specific landmark or cactus patch. Speak to Marnela at the giant stone to begin the hunt. Finding all ten earns the Mercury Sigil for Rikku's Godhand. Each Cactuar encounter is a unique fight with low HP but high evasion.",
+      "guideImages": ["image_0059_00.jpeg"],
       "items": [
         { "id": "airship-cactuar-mercury-sigil", "name": "Mercury Sigil (Rikku — find all 10 Cactuars)", "icon": "mercury-sigil", "missable": false }
       ]
@@ -63,6 +67,7 @@
     {
       "name": "Monster Arena (Calm Lands)",
       "prose": "Buy Capture weapons from the arena owner and work through every area of Spira — some monsters only appear in specific sub-zones, so explore widely. Completing the full capture list for each area unlocks arena-only creations that drop rare upgrade materials. The Mars Sigil for Auron's Masamune requires capturing at least one fiend from each of 10 different areas.",
+      "guideImages": ["image_0062_01.jpeg"],
       "items": [
         { "id": "airship-arena-mars-sigil", "name": "Mars Sigil (Auron — capture 1 fiend from each of 10 areas)", "icon": "mars-sigil", "missable": false }
       ]
