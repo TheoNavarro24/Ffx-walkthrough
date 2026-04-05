@@ -22,7 +22,7 @@
   "bosses": [
     {
       "slug": "crawler",
-      "strategy": "Destroy the Negator first (1,000 HP) — it nullifies all magic. Once it's down, Haste your party and cast Blizzard/Ice on Crawler. Power Break reduces its physical damage. When it charges the cannon, hit it to interrupt. HP: 16,000 + Negator 1,000."
+      "strategy": "The small Negator floating in the air prevents all spellcasting and summoning — take it out first. Focus Wakka on the Negator while the other fighters buff Wakka or chip the Crawler. Once the Negator is gone, magic and aeons become available again, but Crawler immediately starts counting down to its Mana Beam — a sweeping attack that can devastate the entire party. Summon an aeon and use its Shield ability to block the blast; aeons like Ifrit and Ixion can heal themselves by casting their own black magic while shielding. After blocking Mana Beam, pour Lightning spells and physical attacks into Crawler until it falls."
     },
     {
       "slug": "seymour",

@@ -31,7 +31,7 @@
   "bosses": [
     {
       "slug": "oblitzerator",
-      "strategy": "Use the crane interact prompt 3 times while Lulu casts Thunder after each one. After 3 hits, finish it off. Lulu's Fury (Thunder) is ideal if you have it charged. HP: 6,000."
+      "strategy": "At this point Tidus and Kimahri rely on physical attacks while Lulu is still casting low-level spells — this is a difficult fight without the crane. Cast Haste on Lulu first if Tidus has learned it, then have Lulu cast Thunder to trigger the crane Trigger Command (it appears after Thunder hits). The crane deals roughly 5,000 damage — close to killing Oblitzerator in one hit. After the crane fires, finish it off with Thunder spells and physical attacks. Don't waste Overdrives before the crane; the fight is much easier once the crane hits."
     }
   ],
   "cloister": null,

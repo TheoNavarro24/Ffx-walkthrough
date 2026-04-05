@@ -15,7 +15,7 @@
   "bosses": [
     {
       "slug": "sinspawn-ammes",
-      "strategy": "Tutorial fight. Attack with Tidus; Auron finishes it with a scripted Overdrive. No strategy needed."
+      "strategy": "Both Tidus and Auron begin this fight with their Overdrive gauges nearly full — Sinspawn Ammes's first attack pushes Auron's gauge over the edge. Use Auron's Bushido (Dragon Fang) immediately, then execute Tidus's Swordplay Overdrive when the gauge fills. Ammes only casts Demi, which reduces HP by a percentage and can never actually kill you, so there's no danger — finish it off with normal attacks after both Overdrives land."
     }
   ],
   "cloister": null,

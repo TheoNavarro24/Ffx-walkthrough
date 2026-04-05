@@ -22,7 +22,7 @@
   "bosses": [
     {
       "slug": "sinspawn-gui",
-      "strategy": "Round 1 (12,000 HP body / 4,000 HP head / 800 HP arms ×2): Destroy both arms first — Power Break helps, they deal heavy damage and heal Gui. Then target the head with Wakka (ranged). Valefor can damage the body when physical attacks can't. Round 2 (6,000 HP): Much weaker — same approach: arms → head → body. Overkill for bonus AP."
+      "strategy": "Start with Lulu, Wakka, and Yuna, exclusively targeting the head. When the head begins to move, counter the incoming attack with any long-range attack or spell — if you can't interrupt it, have Esuna ready for the deadly Venom poison. Save Overdrives and both of Yuna's aeons until the head is nearly dead, then use them to finish the head and damage other parts at the same time. After the head falls, bring in Auron and Kimahri to pound the body — take out any surviving arms first since they regenerate every third turn and protect the body. After the apparent defeat a second phase follows, but it's much weaker and Seymour fights alongside you; this is the only opportunity to see Seymour's Overdrive."
     }
   ],
   "cloister": null,

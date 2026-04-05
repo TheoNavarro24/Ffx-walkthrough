@@ -15,7 +15,7 @@
   "bosses": [
     {
       "slug": "evrae",
-      "strategy": "Evrae alternates between ranged and melee. At range: use the Harpoon lever to pull it in for physical attacks. Cast Slow on Evrae and Haste on your party — this alone can win the fight. Watch for Photon Spray (party damage) and Stone Gaze (Petrify — equip Stoneproof or have Soft ready). Auron's Power/Armor Break accelerate the kill. HP: 32,000."
+      "strategy": "Have Tidus cast Slow on Evrae immediately, then Haste himself and other key party members — the speed advantage is decisive. Use the Trigger Command to pull the ship back when Evrae won't have a turn before Cid's next salvo; keeping Evrae at long range lets Cid unleash a powerful missile volley (usable up to three times). Later in the fight Evrae will cast Haste to counter your Slow — reapply Slow immediately. When Evrae is close, use physical attackers like Tidus, Auron, and Rikku; when at long range, switch to Lulu and Wakka for spells and Blitzball throws. Evrae is resistant to all elements, so non-elemental weapons and raw physicals are more reliable."
     }
   ],
   "cloister": null,

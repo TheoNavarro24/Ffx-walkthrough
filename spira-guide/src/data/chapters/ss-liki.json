@@ -23,7 +23,7 @@
     },
     {
       "slug": "sinspawn-echuilles",
-      "strategy": "Drain Touch is nasty — keep HP above 200. Have Yuna heal each round. Sin's Fin may return; deal with Echuilles first to end the fight. NulBlaze/NulShock from Yuna blocks the elemental damage. HP: 2,000."
+      "strategy": "Use Tidus's Cheer to boost both men's Strength and Defense, then have Wakka apply Dark Attack to blind Echuilles — blinding it causes Drain Touch to miss and gives you a chance to dodge the powerful Blender attack. Ignore the Sinscales that continuously spawn; they deal some damage but don't need to be killed. Keep a close eye on the CTB window — use a Potion or Hi-Potion when a character is low on HP and the enemy has consecutive turns coming up. Replenish Wakka's MP with an Ether if he runs dry and needs to reapply Dark Attack."
     }
   ],
   "cloister": null,

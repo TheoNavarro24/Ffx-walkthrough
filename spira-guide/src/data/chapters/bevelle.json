@@ -27,7 +27,7 @@
   "bosses": [
     {
       "slug": "seymour-natus",
-      "strategy": "Seymour Natus (36,000 HP) + Mortibody (4,000 HP). Mortibody uses Seymour's turns to cast the opposite of the last element you used — Dispel it before attacking with magic. Seymour charges Total Annihilation as HP drops; burst him down or use Auron's Shooting Star. Haste your party and Slow Seymour. Protect reduces damage significantly."
+      "strategy": "Tidus, Yuna, and Auron each have Trigger Commands to boost their Strength or Magic Defense — not worth the turn. Open with Overdrives if available; only summon aeons that can immediately use their own Overdrive, as Seymour Banishes summoned aeons after a single attack. Have Lulu tag Seymour with Bio for sustained damage throughout the fight. Use Reflect on Seymour to redirect the Mortibody's Cura spells back onto your team — this turns the enemy's healing into your healing. Seymour's defenses strengthen as HP drops: Break spells after losing 1/3, Flare spells after 2/3, and eventually he casts Protect on himself. Frontload your heavy attacks to maximise damage before the Protect lands. If you're struggling, target the Mortibody instead — when its HP drains, it siphons HP from Seymour, and if you can outpace its Cura casts it will drain Seymour to death."
     }
   ],
   "cloister": "bevelle",

@@ -22,7 +22,7 @@
   "bosses": [
     {
       "slug": "extractor",
-      "strategy": "Underwater fight with only Tidus and Wakka. Dark Attack reduces its accuracy — use it early. Spiral Cut deals high damage. When the shoulder panels open, it's charging a powerful attack — interrupt it with any hit. Wakka's elemental balls inflict status if you have them. HP: 4,000."
+      "strategy": "Only Tidus and Wakka are available for this fight. Equip both with Lightningstrike weapons to exploit the Thunder weakness, then have Tidus cast Haste on himself and Wakka — with Haste you get multiple attacks for every one of the Extractor's turns. If the machina launches depth charges, use Hi-Potions to recover the HP. The fight is straightforward once Haste is up; just keep both characters healthy and maintain the speed advantage."
     }
   ],
   "cloister": null,

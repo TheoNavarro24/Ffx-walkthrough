@@ -17,7 +17,7 @@
   "bosses": [
     {
       "slug": "spherimorph",
-      "strategy": "Spherimorph's weakness cycles based on the last element cast. Pattern: Fire → weak to Ice, Ice → weak to Thunder, Thunder → weak to Water, Water → weak to Fire. Use Lulu to exploit the cycle. Auron's Shooting Star works regardless of element. HP: 12,000."
+      "strategy": "Spherimorph counterattacks every spell you cast with the same element it currently embodies — hitting its weakness shifts it to a new random element. Watch what spell it casts on its turn: that spell reveals its current element, meaning you need to hit the opposite. For example, if it casts Fire, attack with Blizzard; if it casts Water, attack with Thunder. Equip non-elemental weapons on your physical fighters to avoid accidentally healing it — their job is just to deal damage and bait out its counterattack spell to identify the current element. Each time you hit the weakness it shifts, so don't expect to chain the same element twice."
     }
   ],
   "cloister": null,

@@ -35,7 +35,7 @@
     },
     {
       "slug": "yunalesca",
-      "strategy": "Three phases — 24k / 48k / 60k HP. Phase 1: Mega Death can hit the party; equip Deathproof or tank with an Aeon. Phase 2: Adds Holy and zombifies a character — Zombie can actually be useful in Phase 3. Phase 3: Hellbiter zombifies the whole party — equip Zombie Ward armor on everyone beforehand OR embrace being undead (don't use healing magic on Zombie chars, they absorb it). Dispel her buffs. Overkill each phase for AP."
+      "strategy": "Three forms: humanoid (24k HP) → lamia (48k HP) → full undead (60k HP). In the first form Yunalesca counters physical attacks with Darkness, spells with Silence, and special techniques with Sleep — equip armor that resists her counter, or use Reflect to deflect her responses. In the second form she adds Hellbiter, which inflicts Zombie; don't be too aggressive about curing it since you need at least one Zombie character active in the final form. In the third form her Mega-Death instantly kills every non-Zombie character — keep at least one or two characters Zombied at all times going into this phase and cure any active Regen with Dispel (Regen will heal a Zombie character to death). Cast Haste and Protect on the party before she reaches full power, then bring in your strongest aeons and unload Overdrives."
     }
   ],
   "cloister": "zanarkand-dome",

@@ -36,7 +36,7 @@
     },
     {
       "slug": "evrae-altana",
-      "strategy": "Evrae Altana is undead — throw Phoenix Downs for ~9,999 damage each. Two Phoenix Downs kill it outright. Holy Water also works. Do NOT heal it with cure magic or Al Bhed Potions."
+      "strategy": "Evrae Altana is fully afflicted with zombie status — two Phoenix Downs kill it outright, dealing roughly 9,999 damage each. Alternatively, use the Trigger Commands to open the locks on the gates behind you; escaping through all the gates traps Evrae in the final underwater chamber where your attacks deal more damage and some of its attacks are prevented. Warning: if you use the gate escape, the gates lock behind you and you permanently lose access to the Avenger and Wakka's Rematch further back in the channels."
     }
   ],
   "cloister": null,
