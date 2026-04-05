@@ -228,11 +228,14 @@ src/
 
 **Goal**: Robust save management and user preferences.
 
+> **Architecture note (post-Phase 2)**: The current `useCheckbox` hook writes to a single flat `spira-checks` key in localStorage. Multi-slot support requires refactoring `useCheckbox` to be slot-aware — reads/writes must be scoped to the active slot. This refactor is the **first task** of Phase 4 and everything else depends on it.
+
 ### Tasks
-1. **Unlimited named save slots**: Create, rename, delete, switch between
-2. **Export/import**: Download save as JSON, upload to restore
-3. **Settings page**: Save manager, toggle pyrefly effects, display preferences
-4. **"New Game" flow**: Create a new named save slot with all checkboxes cleared
+1. **Refactor `useCheckbox` for slot awareness**: Replace the flat `spira-checks` key with a slot-scoped read/write — active slot ID determines which key is used. Pair with a `useSaveSlot` hook that holds current slot state and exposes slot CRUD.
+2. **Unlimited named save slots**: Create, rename, delete, switch between
+3. **Export/import**: Download save as JSON, upload to restore
+4. **Settings page**: Save manager, toggle pyrefly effects, display preferences
+5. **"New Game" flow**: Create a new named save slot with all checkboxes cleared
 
 ---
 
@@ -253,11 +256,11 @@ src/
 ## Phase 6: Polish & Deploy
 
 ### Tasks
-1. **PWA setup**: Service worker for offline caching, manifest for iPad home screen install
-2. **Pyrefly page transitions**: Dissolve/fade between chapter navigations
+1. ~~**PWA setup**: Service worker for offline caching, manifest for iPad home screen install~~ ✅ Done — VitePWA configured in Phase 1; Tuffy font self-hosted and workbox-cached.
+2. **Pyrefly page transitions**: Dissolve/fade between chapter navigations (keyframes stubbed in `animations.css`)
 3. **Completion celebrations**: Pyrefly burst on completing a chapter or collectible set
 4. **Image lazy loading**: IntersectionObserver for 352+ images
-5. **GitHub Actions CI/CD**: Auto-build and deploy to GitHub Pages on push to main
+5. ~~**GitHub Actions CI/CD**: Auto-build and deploy to GitHub Pages on push to main~~ ✅ Done — `deploy.yml` in place and working.
 6. **Optional bosses section**: Dark Aeons and optional bosses listed under relevant area pages
 7. **Responsive testing**: Verify landscape iPad Pro layout, test drawer/TOC at various widths
 

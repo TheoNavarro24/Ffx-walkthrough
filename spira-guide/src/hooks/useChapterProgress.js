@@ -3,7 +3,7 @@ import { useCheckbox } from './useCheckbox'
 
 function getAllCheckableIds(data) {
   const itemIds = data.subLocations.flatMap((loc) => loc.items.map((i) => i.id))
-  const bossIds = data.bosses.map((slug) => `${data.slug}-boss-${slug}`)
+  const bossIds = data.bosses.map((b) => `${data.slug}-boss-${typeof b === 'string' ? b : b.slug}`)
   const optionalIds = (data.optionalAreas ?? []).flatMap((area) =>
     area.items.map((i) => i.id)
   )
