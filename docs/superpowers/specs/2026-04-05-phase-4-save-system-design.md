@@ -63,11 +63,11 @@ On first app load after this update, if `spira-slots` doesn't exist:
 Migration edge cases:
 - `spira-slots` exists and parseable → do nothing (idempotent)
 - `spira-slots` exists but malformed/unparseable → treat as missing; re-initialize with a default slot (existing `spira-checks:*` slot keys are left in place)
-- `spira-slots` missing, `spira-checks` exists → migrate (copy checks, delete old key)
+- `spira-slots` missing, `spira-checks` exists → migrate: copy `spira-checks` → `spira-checks:slot-default` only if `spira-checks:slot-default` does not already exist; then delete the old `spira-checks` key regardless
 - `spira-slots` missing, `spira-checks` missing or empty → create default slot with empty checks
 - `spira-checks` is malformed/unparseable → treat as empty object, proceed with migration
 
-`spira-pyrefly` is not touched by migration — it is created on first read with default `true` if absent.
+`spira-pyrefly` is not touched by migration — it is created lazily on first read by `usePyrefly`, defaulting to `true` if absent. Migration does not create it.
 
 ---
 
@@ -95,7 +95,7 @@ Constraints:
 - Cannot delete the last remaining slot
 - Slot IDs are generated as `slot-${Date.now()}`
 - `createSlot` switches to the new slot immediately
-- `deleteSlot(id)` on the active slot: switch to the first slot in the remaining array after removal; on a non-active slot: just remove it, active slot unchanged
+- `deleteSlot(id)` on the active slot: switch to the first slot in the remaining array after removal; on a non-active slot: just remove it, active slot unchanged. In both cases, the corresponding `spira-checks:{id}` key is deleted from localStorage.
 
 ### `useCheckbox` (refactored)
 
@@ -110,7 +110,7 @@ const { activeSlot } = useSaveSlot()
 const [checks, setChecks] = useLocalStorage(`spira-checks:${activeSlot.id}`, {})
 ```
 
-No changes needed in any component that currently calls `useCheckbox`.
+No changes needed in any component that currently calls `useCheckbox`. If `spira-checks:{activeSlotId}` is malformed or absent at runtime, `useLocalStorage` defaults to `{}` — all checkboxes read as unchecked. No additional runtime repair needed.
 
 ### `usePyrefly` (new)
 
