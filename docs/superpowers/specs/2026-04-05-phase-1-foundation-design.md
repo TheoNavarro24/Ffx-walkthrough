@@ -11,10 +11,12 @@
 By the end of Phase 1 the app should:
 - Look like an FFX in-game menu (dark blue, teal borders, gold accents, Tuffy font)
 - Have all 4 pages set up (Home, Chapter, Collectibles Hub, Settings) — empty but navigable
-- Have the chapter drawer working (27 chapters grouped by 4 acts, slide-in/out)
+- Have the chapter drawer working (26 chapters grouped by 4 acts, slide-in/out)
 - Have a collapsible TOC strip on the right
 - Deploy automatically to GitHub Pages on every push to `main`
 - Be installable as a PWA on iPad
+
+> **PWA note:** The implementation plan defers full PWA to Phase 6, but the build-steps include `vite-plugin-pwa` in Phase 1's Vite config. We are pulling full PWA setup into Phase 1 to unblock deploy verification and avoid rework later. Phase 6 retains offline testing and iPad install UX verification.
 
 ---
 
@@ -32,6 +34,7 @@ Infrastructure first, then UI. Each step must compile before moving to the next.
 8. Build progress dashboard (stub)
 9. Create chapter index data
 10. GitHub Actions deploy workflow + PWA
+11. Verify deploy
 
 ---
 
@@ -52,7 +55,7 @@ vite-plugin-pwa
 - **Plugins:** `@vitejs/plugin-react`, `@tailwindcss/vite`, `VitePWA`
 - **Base path:** `/Ffx-walkthrough/` (required for GitHub Pages)
 - **Path alias:** `@data` → `../docs/source-data/`
-- **`server.fs.allow: ['..']`** — permits Vite dev server to read files outside `spira-guide/`
+- **`server.fs.allow: ['..']`** — permits the Vite dev server to read files outside `spira-guide/`. Not needed at build time (Vite resolves aliases at bundle time), but required for `npm run dev`.
 - **PWA config** (see Section 10)
 
 ---
@@ -60,20 +63,21 @@ vite-plugin-pwa
 ## 3. Styling
 
 ### Font
-Load Tuffy from Google Fonts via `<link>` in `spira-guide/index.html`:
-- Weights: 400, 700
-- Styles: normal, italic
+Tuffy is available on Google Fonts. Load all 4 variants via `<link>` in `spira-guide/index.html`:
+```html
+<link href="https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+```
 
 ### FFX Theme CSS (`src/styles/ffx-theme.css`)
 CSS custom properties and reusable classes that make components look like FFX in-game menus.
 
 **Color variables:**
-```
---color-bg-deep:    #0a0e27   (page background)
---color-bg-panel:   #1a2444   (panel/card background)
---color-border:     #4fc3f7   (teal border)
---color-border-alt: #81d4fa   (lighter teal)
---color-gold:       #ffd54f   (headings, accents)
+```css
+--color-bg-deep:    #0a0e27   /* page background */
+--color-bg-panel:   #1a2444   /* panel/card background */
+--color-border:     #4fc3f7   /* teal border */
+--color-border-alt: #81d4fa   /* lighter teal */
+--color-gold:       #ffd54f   /* headings, accents */
 --color-text:       #ffffff
 ```
 
@@ -83,32 +87,39 @@ CSS custom properties and reusable classes that make components look like FFX in
 - `.ffx-button` — teal border, dark background, hover glow effect
 
 ### Animations (`src/styles/animations.css`)
-Stub file with named keyframes for pyrefly effects — empty in Phase 1, filled in Phase 6:
-- `@keyframes pyrefly-dissolve`
-- `@keyframes pyrefly-burst`
+Stub file with named keyframes — empty in Phase 1, filled in Phase 6:
+```css
+@keyframes pyrefly-dissolve {}
+@keyframes pyrefly-burst {}
+```
 
-### Global CSS (`src/index.css`)
+### Global CSS (`src/styles/index.css`)
 - `@import "tailwindcss"`
-- Imports `ffx-theme.css` and `animations.css`
+- `@import "./ffx-theme.css"`
+- `@import "./animations.css"`
 - Global reset
 - `font-family: 'Tuffy', sans-serif` on body
-- Background: `--color-bg-deep`
+- `background-color: var(--color-bg-deep)` on body
+
+> **Note:** Styles live at `src/styles/index.css` (not `src/index.css`). Update the import in `src/main.jsx` accordingly.
 
 ---
 
 ## 4. Routing (`src/main.jsx`)
 
-Using `createHashRouter` (required for GitHub Pages — no server-side routing).
+Using `createHashRouter` (required for GitHub Pages — no server-side routing support).
+
+`main.jsx` creates the router and renders `<RouterProvider>`. `App.jsx` is deleted — it is replaced by `AppShell` (the shared layout) and the route page components.
 
 **Routes:**
 | Path | Component | Notes |
 |------|-----------|-------|
 | `/` | `LandingPage` | Home screen |
-| `/chapter/:slug` | `ChapterPage` | 27 area pages |
+| `/chapter/:slug` | `ChapterPage` | 26 area pages |
 | `/collectibles` | `CollectiblesHub` | Tracking hub |
 | `/settings` | `SettingsPage` | Save slots, prefs |
 
-All routes render inside `AppShell`.
+All routes render inside `AppShell` as their layout wrapper.
 
 ---
 
@@ -128,40 +139,47 @@ The shared outer frame present on every page.
 └────────┴────────────────────────────────┴────────┘
 ```
 
-**Header:**
-- Hamburger button (☰) — toggles chapter drawer
-- "Spira Guide" branding
-- Search bar (stub in Phase 1, wired in Phase 5)
-- Settings icon linking to `/settings`
+**State owned by AppShell:**
+- `drawerOpen` (boolean) — passed down to `Header` as `onHamburgerClick` and to `ChapterDrawer` as `isOpen`
+- `tocOpen` (boolean) — controls TOC expanded/collapsed state
+
+**Header (`src/components/Layout/Header.jsx`):**
+
+Props received from AppShell:
+- `onHamburgerClick` — toggles `drawerOpen`
+- `isDrawerOpen` — used to set aria-expanded on the hamburger button
+
+Content: hamburger button, "Spira Guide" branding, search bar stub (non-functional in Phase 1), settings icon link to `/settings`.
 
 **Chapter Drawer:**
 - Hidden by default
-- Slides in from the left on hamburger tap
-- Tap hamburger again (or outside the drawer) to close
+- Slides in from the left when `drawerOpen` is true
+- A semi-transparent backdrop overlay sits behind the drawer; clicking the backdrop sets `drawerOpen` to false (close on outside tap)
 - See Section 6 for drawer internals
 
-**TOC strip:**
+**TOC strip (`src/components/Layout/TableOfContents.jsx`):**
 - Narrow right column (~160px when expanded)
-- Collapsible — collapses to a small tab/icon when not needed
-- Stub in Phase 1 (no content yet); wired in Phase 2 with `useScrollSpy`
+- Collapses to a small tab (~24px) when `tocOpen` is false
+- Clicking the tab toggles `tocOpen`
+- In Phase 1: stub content ("Contents") — wired with real section data in Phase 2
 
 **Main content:**
-- Full-width scrollable area between drawer and TOC
-- Renders the current route's page component
+- Fills remaining width between drawer and TOC
+- Scrollable, renders the active route's page component via `<Outlet />`
 
 ---
 
 ## 6. Chapter Drawer (`src/components/Layout/ChapterDrawer.jsx`)
 
-Slide-out panel showing all 27 chapters grouped by act.
+Slide-out panel showing all 26 chapters grouped by act.
 
 **Structure:**
-- **Dashboard header** — stub in Phase 1: "Story: 0%, Primers: 0/26, Celestials: 0/7"
+- **`ProgressDashboard` component** at top (see Section 8)
 - **4 collapsible act groups:**
-  - Act 1: Zanarkand → Luca (6 chapters)
-  - Act 2: Mi'ihen → Macalania (8 chapters)
-  - Act 3: Bikanel → Zanarkand Ruins (7 chapters)
-  - Act 4: Airship → Inside Sin (6 chapters, including optional areas)
+  - Act 1: Zanarkand → Luca (7 chapters)
+  - Act 2: Mi'ihen Highroad → Bikanel Desert (9 chapters)
+  - Act 3: Home → Via Purifico (4 chapters)
+  - Act 4: Highbridge → Inside Sin (6 chapters)
 - Each chapter row: name + progress bar (stub: 0%)
 - Clicking a chapter navigates to `/chapter/:slug` and closes the drawer
 
@@ -172,18 +190,18 @@ Slide-out panel showing all 27 chapters grouped by act.
 Simple home screen.
 
 **Elements:**
-- "Spira Guide" title + subtitle
+- "Spira Guide" title + subtitle (styled with `.ffx-header`)
 - **Continue** button — navigates to last viewed chapter (stub: goes to `/chapter/zanarkand`)
-- **Next Incomplete** button — navigates to first chapter with incomplete items (stub: same as above)
-- Links to Collectibles Hub and Settings
-
-Styled with `.ffx-panel` and `.ffx-header`.
+- **Next Incomplete** button — navigates to first chapter with incomplete items (stub: same as Continue)
+- Link to Collectibles Hub (`/collectibles`)
+- Link to Settings (`/settings`)
+- `ProgressDashboard` component (same as in drawer header)
 
 ---
 
-## 8. Progress Dashboard (stub)
+## 8. Progress Dashboard (`src/components/Layout/ProgressDashboard.jsx`)
 
-A small summary component used in the drawer header and on the landing page.
+A small summary component used in two places: the drawer header and the landing page.
 
 Phase 1 version shows hardcoded zeros:
 ```
@@ -196,7 +214,9 @@ Wired to real data in Phase 2 when the save system and checkboxes exist.
 
 ## 9. Chapter Index (`src/data/chapterIndex.js`)
 
-A static JS file listing all 27 chapters. Powers the drawer, routing, and progress bars.
+A static JS file listing all 26 chapters. Powers the drawer, routing, and progress bars.
+
+**Slug generation rule:** lowercase, spaces to hyphens, strip all punctuation (e.g. "S.S. Winno" → `ss-winno`, "Mt. Gagazet" → `mt-gagazet`).
 
 **Shape of each entry:**
 ```js
@@ -208,21 +228,59 @@ A static JS file listing all 27 chapters. Powers the drawer, routing, and progre
 }
 ```
 
-**27 chapters in order:**
-Zanarkand, Baaj Temple, Salvage Ship, Besaid, Kilika, S.S. Winno, Luca, Mi'ihen Highroad, Mushroom Rock Road, Djose Highroad, Djose Temple, Moonflow, Guadosalam, Thunder Plains, Macalania Woods, Lake Macalania, Macalania Temple, Bikanel Desert, Home, Bevelle, Via Purifico, Calm Lands, Gagazet, Zanarkand Ruins, Inside Sin, Airship (+ optional areas)
+**Canonical chapter list (26 chapters, in order):**
+
+| # | Slug | Name | Act |
+|---|------|------|-----|
+| 1 | `zanarkand` | Zanarkand | 1 |
+| 2 | `baaj-temple` | Baaj Temple | 1 |
+| 3 | `besaid` | Besaid | 1 |
+| 4 | `ss-liki` | S.S. Liki | 1 |
+| 5 | `kilika` | Kilika | 1 |
+| 6 | `ss-winno` | S.S. Winno | 1 |
+| 7 | `luca` | Luca | 1 |
+| 8 | `miihen-highroad` | Mi'ihen Highroad | 2 |
+| 9 | `mushroom-rock-road` | Mushroom Rock Road | 2 |
+| 10 | `djose` | Djose | 2 |
+| 11 | `moonflow` | Moonflow | 2 |
+| 12 | `guadosalam` | Guadosalam | 2 |
+| 13 | `thunder-plains` | Thunder Plains | 2 |
+| 14 | `macalania-woods` | Macalania Woods | 2 |
+| 15 | `lake-macalania` | Lake Macalania | 2 |
+| 16 | `bikanel-desert` | Bikanel Desert | 2 |
+| 17 | `home` | Home | 3 |
+| 18 | `airship` | Airship | 3 |
+| 19 | `bevelle` | Bevelle | 3 |
+| 20 | `via-purifico` | Via Purifico | 3 |
+| 21 | `highbridge` | Highbridge | 4 |
+| 22 | `calm-lands` | Calm Lands | 4 |
+| 23 | `mt-gagazet` | Mt. Gagazet | 4 |
+| 24 | `zanarkand-dome` | Zanarkand Dome | 4 |
+| 25 | `airship-sin` | Airship (En Route to Sin) | 4 |
+| 26 | `inside-sin` | Inside Sin | 4 |
+
+> Source: `docs/source-data/walkthrough-index.json` (files 02–27). Optional areas are sub-sections of `airship-sin`, not separate chapters.
 
 ---
 
 ## 10. GitHub Actions + PWA
 
 ### GitHub Actions (`.github/workflows/deploy.yml`)
-- Trigger: push to `main`
-- Steps: checkout → setup Node → `npm ci` → `npm run build` → deploy `dist/` to GitHub Pages
-- Uses `actions/deploy-pages`
+- **Trigger:** push to `main`
+- **Steps:** checkout → setup Node → `npm ci` (working directory: `spira-guide`) → `npm run build` (working directory: `spira-guide`) → deploy `spira-guide/dist/` to GitHub Pages
+- All `npm` steps must set `working-directory: spira-guide` since the app lives in a subdirectory
 
-### PWA (`vite.config.js` VitePWA options)
+### PWA (`vite.config.js` — VitePWA options)
+
+**Icon generation:** VitePWA does not auto-generate PNG icons from SVG. Manually create two PNG files from `public/favicon.svg` (the pre-existing Vite template icon) and place them at:
+- `public/icons/icon-192.png` (192×192)
+- `public/icons/icon-512.png` (512×512)
+
+Any image editor or CLI tool (e.g. `rsvg-convert`, Inkscape, or an online converter) works.
+
+**VitePWA config:**
 ```js
-{
+VitePWA({
   registerType: 'autoUpdate',
   manifest: {
     name: 'Spira Guide',
@@ -232,15 +290,30 @@ Zanarkand, Baaj Temple, Salvage Ship, Besaid, Kilika, S.S. Winno, Luca, Mi'ihen 
     background_color: '#0a0e27',
     display: 'standalone',
     orientation: 'landscape',
-    icons: [/* 192x192, 512x512 */]
+    icons: [
+      { src: '/Ffx-walkthrough/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { src: '/Ffx-walkthrough/icons/icon-512.png', sizes: '512x512', type: 'image/png' }
+    ]
   },
   workbox: {
     globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}']
   }
-}
+})
 ```
 
-PWA icons: generate from `public/favicon.svg` at 192×192 and 512×512.
+---
+
+## 11. Verification Checklist
+
+After deploying to GitHub Pages, confirm:
+
+- [ ] App loads at `https://theonavarro24.github.io/Ffx-walkthrough/`
+- [ ] Landing page renders with FFX styling (dark background, teal borders, Tuffy font)
+- [ ] Hamburger opens/closes chapter drawer; backdrop tap also closes it
+- [ ] All 4 routes are reachable via the UI (home, a chapter, collectibles, settings)
+- [ ] Navigating directly to a hash URL (e.g. `/#/chapter/besaid`) works — hash routing handles deep links on Pages
+- [ ] TOC strip is visible and collapsible on the right
+- [ ] PWA: on iPad Safari, "Add to Home Screen" option is available and app opens in standalone mode
 
 ---
 
@@ -248,38 +321,40 @@ PWA icons: generate from `public/favicon.svg` at 192×192 and 512×512.
 
 ```
 spira-guide/
-├── index.html                          # Add Google Fonts <link>, update title
-├── vite.config.js                      # Full config (aliases, base, PWA, Tailwind)
-├── package.json                        # Add new dependencies
+├── index.html                              # Add Google Fonts <link>, update <title>
+├── vite.config.js                          # Full config: plugins, aliases, base, PWA
+├── package.json                            # Add new dependencies
 ├── public/
+│   ├── favicon.svg                         # Pre-existing; used as source for PWA icons
 │   └── icons/
-│       ├── icon-192.png                # PWA icon
-│       └── icon-512.png                # PWA icon
+│       ├── icon-192.png                    # PWA icon (generated manually from favicon.svg)
+│       └── icon-512.png                    # PWA icon (generated manually from favicon.svg)
 └── src/
-    ├── main.jsx                        # Replace with createHashRouter setup
-    ├── App.jsx                         # Replace with RouterProvider
-    ├── App.css                         # Delete (replaced by theme CSS)
-    ├── index.css                       # Global styles entry point
+    ├── main.jsx                            # Replace with createHashRouter + RouterProvider
+    ├── App.jsx                             # DELETE — replaced by AppShell + page components
+    ├── App.css                             # DELETE — replaced by styles/ffx-theme.css
     ├── styles/
-    │   ├── ffx-theme.css               # FFX color vars + reusable classes
-    │   └── animations.css              # Pyrefly keyframe stubs
+    │   ├── index.css                       # Global entry: imports Tailwind + theme + animations
+    │   ├── ffx-theme.css                   # FFX color vars + reusable classes
+    │   └── animations.css                  # Pyrefly keyframe stubs (empty)
     ├── data/
-    │   └── chapterIndex.js             # 27 chapters with slugs, acts, map paths
+    │   └── chapterIndex.js                 # 26 chapters with slugs, acts, map image paths
     ├── components/
     │   └── Layout/
-    │       ├── AppShell.jsx            # Outer frame (header + drawer + content + TOC)
-    │       ├── Header.jsx              # Branding, hamburger, search stub, settings link
-    │       ├── ChapterDrawer.jsx       # Slide-out chapter list with act groups
-    │       └── TableOfContents.jsx     # Collapsible right strip (stub content)
+    │       ├── AppShell.jsx                # Outer frame: header, drawer, content, TOC
+    │       ├── Header.jsx                  # Branding, hamburger, search stub, settings link
+    │       ├── ChapterDrawer.jsx           # Slide-out chapter list with act groups + backdrop
+    │       ├── TableOfContents.jsx         # Collapsible right strip (stub content)
+    │       └── ProgressDashboard.jsx       # Stub summary: story %, primers, celestials
     └── pages/
-        ├── LandingPage.jsx             # Home screen
-        ├── ChapterPage.jsx             # Stub (Phase 2 fills this)
-        ├── CollectiblesHub.jsx         # Stub (Phase 3 fills this)
-        └── SettingsPage.jsx            # Stub (Phase 4 fills this)
+        ├── LandingPage.jsx                 # Home screen with Continue + Next Incomplete
+        ├── ChapterPage.jsx                 # Stub (Phase 2 fills this)
+        ├── CollectiblesHub.jsx             # Stub (Phase 3 fills this)
+        └── SettingsPage.jsx                # Stub (Phase 4 fills this)
 
 .github/
 └── workflows/
-    └── deploy.yml                      # Auto-deploy to GitHub Pages on push to main
+    └── deploy.yml                          # Auto-deploy to GitHub Pages on push to main
 ```
 
 ---
@@ -290,4 +365,5 @@ spira-guide/
 - Working checkboxes / save system (Phase 2/4)
 - Search functionality (Phase 5)
 - Pyrefly animations (Phase 6)
+- Offline testing and iPad PWA UX verification (Phase 6)
 - Responsive testing beyond iPad landscape (Phase 6)
