@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Djose Highroad",
-      "prose": "Rikku officially joins here after the post-battle regrouping on the beach. Soldiers praying along the road will hand over items, and a chest on the right hides Phoenix Down near the start. Primer XI is across from that chest — look behind a spiky rock. Basilisks here can stone your party, so equip a Soft Ring on Yuna, or use Kimahri's Lancet to learn Stone Breath from them for later.",
+      "prose": "Rikku officially joins here after the post-battle regrouping on the beach. Soldiers praying along the road will hand over items, and a chest on the right hides Phoenix Down near the start. Primer XI is across from that chest — look behind a spiky rock. Basilisks here can stone your party, so equip a Soft Ring on Yuna, or use Kimahri's Lancet to learn Stone Breath from them for later. Pick up Stoneproof armor from Rin's Agency (available just before this area) for Tidus and Yuna at minimum — Basilisks can inflict Petrify instantly; Thunder magic and Tidus's physical attacks are effective against them.",
       "guideImages": ["image_0042_00.jpeg"],
       "items": [
         { "id": "djose-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Djose Temple",
-      "prose": "Inside the temple, meet Isaaru and his brothers, then loot both side chambers before ascending — the chest by the left chamber has an Ether. The 4,000 gil chest is on the far west side of the exterior grounds. The Magistral Rod from the Destruction Sphere is not missable; you can return via the Highroad at any point before the endgame.",
+      "prose": "Inside the temple, meet Isaaru and his brothers, then loot both side chambers before ascending — the chest by the left chamber has an Ether. The 4,000 gil chest is on the far west side of the exterior grounds. The Magistral Rod from the Destruction Sphere is not missable; you can return via the Highroad at any point before the endgame. Garm and Bite Bug enemies inside are straightforward, but Garm can inflict Darkness — Wakka and Lulu handle them cleanly; the Cloister puzzle is more layered than Kilika, requiring you to stack spheres and use the pedestal to carry them into the lightning current.",
       "guideImages": ["image_0044_00.jpeg"],
       "items": [
         { "id": "djose-magistral-rod", "name": "Magistral Rod (Destruction Sphere — not missable)", "icon": "magistral-rod", "missable": false }

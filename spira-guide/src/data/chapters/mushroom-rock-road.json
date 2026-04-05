@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Mushroom Rock Road",
-      "prose": "The road to Operation Mi'ihen — Crusaders hand out items as you climb the switchbacks. Ride the Yevon platforms up each tier; there's a hidden path west of the second platform leading down to the Serene Armlet. Primer X is at the gate area near the Precipice. Operation Mi'ihen fails — this is a narrative beat with no good outcome, but you'll get the aftermath scene either way depending on what you said to Gatta earlier.",
+      "prose": "The road to Operation Mi'ihen — Crusaders hand out items as you climb the switchbacks. Ride the Yevon platforms up each tier; there's a hidden path west of the second platform leading down to the Serene Armlet. Primer X is at the gate area near the Precipice. Operation Mi'ihen fails — this is a narrative beat with no good outcome, but you'll get the aftermath scene either way depending on what you said to Gatta earlier. Garuda enemies here are flyers that only Wakka and magic can reliably hit; Dingo enemies on the lower paths are weak to Ice, so Lulu's Blizzard gets extra mileage in this area.",
       "guideImages": ["image_0040_00.jpeg", "image_0041_00.jpeg"],
       "items": [
         { "id": "mmr-remedy", "name": "Remedy", "icon": "remedy", "missable": false },

@@ -14,7 +14,7 @@
     },
     {
       "name": "Macalania Temple",
-      "prose": "Inside, Tromell gives a Shell Targe and Shelinda is here — collect both X-Potions and the 5,000 gil from the main hall before entering the Cloister. After the Seymour fight you're immediately on the run through the ice tunnel — Guado Guardians chase you out, and if one catches you it triggers a battle. You won't return to Macalania Temple.",
+      "prose": "Inside, Tromell gives a Shell Targe and Shelinda is here — collect both X-Potions and the 5,000 gil from the main hall before entering the Cloister. After the Seymour fight you're immediately on the run through the ice tunnel — Guado Guardians chase you out, and if one catches you it triggers a battle. You won't return to Macalania Temple. The Guado Guardians blocking the temple path fight in groups — have Rikku use Al Bhed Potions for party-wide healing and keep Auron or Tidus up front for physical damage; there's a brief cutscene confrontation with Seymour before you reach the Cloister.",
       "guideImages": ["image_0051_00.jpeg", "image_0051_01.jpeg"],
       "items": []
     }
