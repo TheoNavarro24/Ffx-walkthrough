@@ -204,7 +204,7 @@ src/
 
 ### Data Work
 - **Convert walkthrough research to JSON**: Structure `research-walkthrough-items.md` into per-chapter JSON files in `src/data/chapters/`
-- **Source walkthrough prose**: Adapt brief narration from existing online guides for each of the 27 chapters
+- **Source walkthrough prose**: Extract from BradyGames Official Strategy Guide (`docs/official-guide/brady-guide.xml`, DAISY XML). Guide screenshots (`img/guide/image_NNNN_NN.jpeg`) extracted from the EPUB are paired to sub-locations via `guideImages` field for dual-coding display.
 - **Map bosses to chapters**: Cross-reference `monsters.json` location IDs with chapter slugs
 - **Optional areas under Airship**: Remiem Temple, Baaj, Omega Ruins, Cactuar Village, etc. as sub-sections of the Airship chapter
 

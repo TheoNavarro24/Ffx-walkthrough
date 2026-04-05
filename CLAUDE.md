@@ -117,7 +117,8 @@ npm run preview  # Preview production build locally
 - No background particles, no audio
 
 ### Content
-- Walkthrough prose sourced/adapted from existing online guides
+- Walkthrough prose sourced from BradyGames Official Strategy Guide (`docs/official-guide/brady-guide.xml`, DAISY XML) — grep by area heading for each chapter
+- Guide screenshots extracted from `Official Strategy Guide/*.epub` to `spira-guide/public/img/guide/` as `image_NNNN_NN.jpeg` (NNNN = guide page number)
 - Boss strategies: general level (explains mechanics), not just stat dumps
 - Blitzball: minimal — only Wakka's overdrives and Jupiter Sigil
 - Endgame: optional bosses listed, no farming/stat-maxing guides
@@ -156,3 +157,4 @@ File locations (all filenames lowercase):
 - World map: `img/maps/Spira.png`
 - Item icon (SD): `img/items/sd/{name}.png`
 - Aeon: `img/party/aeons/{name}.png`
+- Guide screenshot: `img/guide/{image_NNNN_NN.jpeg}` (BradyGames EPUB page scans, FFX walkthrough pages 23–74; `guideImages` field lives on sub-location objects, not chapter root)

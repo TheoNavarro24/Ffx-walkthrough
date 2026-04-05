@@ -35,6 +35,7 @@
 - [x] 26. Build cloister sections (map images + step-by-step solutions)
 - [x] 27. Build ChapterNav (prev/next cards with thumbnail + progress bar)
 - [x] 28. Add optional areas as sub-sections under the Airship chapter
+- [ ] 28a. Build GuideImages component (render `guideImages` array inline in ChapterPage — scrollable row of BradyGames screenshots with lightbox tap-to-expand)
 
 ## Phase 2.5: Content
 - [ ] 29. Populate Act 1 chapter JSONs — items, sub-locations, missable flags (Zanarkand → Luca, 7 chapters)
