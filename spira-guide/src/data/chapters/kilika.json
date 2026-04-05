@@ -9,7 +9,7 @@
   "subLocations": [
     {
       "name": "Kilika Port",
-      "prose": "Help the NPCs after the Sin attack. The Ether is only available if you rescue the child from the crumbling hut. Rest at the inn to restore HP/MP.",
+      "prose": "The port is in ruins after Sin's attack. Follow the party west to find Yuna performing the Sending. The next morning, before leaving: rescue the crying girl from the rubble west of the docks to trigger a small scene, and find Al Bhed Primer Vol. IV just west of the inn. The merchant woman near the south chest sells arms and armor — worth checking if any of your party members need upgrades. Rest at the inn when ready.",
       "guideImages": ["image_0031_00.jpeg"],
       "items": [
         { "id": "kilika-ether", "name": "Ether", "icon": "ether", "missable": false },
@@ -19,7 +19,7 @@
     },
     {
       "name": "Kilika Woods",
-      "prose": "Linear path with side branches. Lord Ochu is an optional east-side fight — very tough at this stage (4,649 HP) but Luzzu gives an Elixir if you win. The Scout blitzball item is on a hidden side path west of the main road.",
+      "prose": "Take the west side path past Lord Ochu's position to find Wakka's Scout weapon in a chest — you can skip the boss entirely. Lord Ochu is optional and hits hard at this stage (weak to Fire — have Lulu go in with Cheer stacked), but Luzzu hands you an Elixir if you pull it off. Use Kimahri's Lancet on the Ragora here to learn Seed Cannon. The Luck Sphere is at the north end of the central path before you turn east toward the temple stairs.",
       "items": [
         { "id": "kilika-2-mana-spheres", "name": "Mana Sphere ×2", "icon": "mana-sphere", "missable": false },
         { "id": "kilika-scout", "name": "Scout (Wakka's blitzball)", "icon": "scout", "missable": false },
@@ -31,7 +31,7 @@
     },
     {
       "name": "Kilika Temple",
-      "prose": "Complete the Cloister of Trials. Before leaving, activate the Destruction Sphere to open the hidden chest containing the Red Armlet. You cannot return once you exit — this is permanently missable.",
+      "prose": "Work through the fire-sphere puzzle to reach the deep chamber. Before leaving via the exit door, obtain the Destruction Sphere from the secret chamber on the top platform and use it in the slot beneath the ledge to reveal the Red Armlet chest. This is permanently missable — unlike Besaid, you cannot return to Kilika Temple at any point in the game.",
       "guideImages": ["image_0032_00.jpeg", "image_0032_01.jpeg"],
       "items": [
         { "id": "kilika-red-armlet", "name": "Red Armlet (Destruction Sphere — MISSABLE)", "icon": "red-armlet", "missable": true }

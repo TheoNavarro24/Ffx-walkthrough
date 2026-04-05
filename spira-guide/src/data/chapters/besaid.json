@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Beach",
-      "prose": "Head east along the beach before entering the village. The Moon Crest chest is in the eastern alcove — missable once you leave Besaid.",
+      "prose": "After Wakka shoves Tidus into the lagoon, dive to the southeast wall for three sunken chests — two Antidotes and 200 Gil. Back on the beach, the Moon Crest is in a small cove just east of where you met the Aurochs. Don't leave the island without it — it's missable once you sail away.",
       "guideImages": ["image_0027_00.jpeg"],
       "items": [
         { "id": "besaid-moon-crest", "name": "Moon Crest", "icon": "moon-crest", "missable": true },
@@ -17,7 +17,7 @@
     },
     {
       "name": "Besaid Village",
-      "prose": "Talk to NPCs and check chests around the huts.",
+      "prose": "Sweep the village before resting — chests near the first tent and outside the Crusaders Lodge hold Phoenix Down, two Potions, a Hi-Potion, and 400 Gil. Stop by the Crusaders Lodge to speak to Luzzu and Gatta. After the campfire scene, rest at the inn; the next morning Wakka gives you Brotherhood and Yuna joins. Al Bhed Primer Vol. II is on the ground near the lodge's reception desk — grab it before leaving.",
       "items": [
         { "id": "besaid-phoenix-down", "name": "Phoenix Down", "icon": "phoenix-down", "missable": false },
         { "id": "besaid-2potions", "name": "Potion ×2", "icon": "potion", "missable": false },
@@ -28,7 +28,7 @@
     },
     {
       "name": "Besaid Temple",
-      "prose": "Complete the Cloister of Trials. Get the Destruction Sphere chest before leaving — unavailable after Valefor fight.",
+      "prose": "Work through the Cloister and place the Besaid Sphere in the pedestal to expose the Destruction Sphere slot. Before you push the pedestal to the final room, detour: place the Destruction Sphere in the slot where you found the Besaid Sphere to reveal a hidden chamber with the Rod of Wisdom. If you skip this step there's no going back — Dark Valefor blocks the temple entrance in the HD version once you have the airship.",
       "items": [
         { "id": "besaid-rod-of-wisdom", "name": "Rod of Wisdom", "icon": "rod-of-wisdom", "missable": true }
       ]

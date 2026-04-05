@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Dock Area",
-      "prose": "Explore before the blitzball tournament. Dock 5 has a hidden squeeze through crates — gives Magic Sphere + HP Sphere. The Tidal Spear is a good upgrade for Kimahri.",
+      "prose": "Sweep all the docks before the tournament kicks off. On Dock 1 (where the Winno is anchored): a chest has two Phoenix Down; further back, pick up 600 Gil and the Tidal Spear. At the back of Dock 5, squeeze behind the crates for a hidden path that yields a Magic Sphere and an HP Sphere. Luzzu and Gatta are across the balcony east of the town square — worth talking to. Don't leave Luca without checking the stadium corridors for the Primers.",
       "guideImages": ["image_0034_00.jpeg", "image_0034_01.jpeg", "image_0035_00.jpeg"],
       "items": [
         { "id": "luca-600-gil", "name": "600 Gil", "icon": "gil", "missable": false },
@@ -19,7 +19,7 @@
     },
     {
       "name": "Luca Stadium",
-      "prose": "Two Primers in the stadium. Oblitzerator is fought mid-tournament with only Tidus and Lulu — use the crane 3 times. After the tournament, Auron permanently joins.",
+      "prose": "Al Bhed Primer Vol. VI is on the floor behind the closest player in the opposing team's locker room corridor; two Hi-Potions are in a chest at the back of the same hall. Al Bhed Primer Vol. VII is in the Sphere Theater at the south end of town. Mid-tournament, Lulu/Tidus/Kimahri board the Al Bhed ship to fight Oblitzerator: use the crane Trigger Command three times (Lulu casts Thunder after each hit to exploit its weakness), then finish it off. After the blitzball final, fight your way out of the fiend-invaded stadium — Auron arrives and formally joins the party.",
       "guideImages": ["image_0036_00.jpeg", "image_0036_01.jpeg"],
       "items": [
         { "id": "luca-primer-vi", "name": "Al Bhed Primer Vol. VI", "icon": "primer", "missable": false },
