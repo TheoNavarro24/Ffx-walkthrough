@@ -1,7 +1,7 @@
 :root {
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'Highwind', sans-serif;
   --font-body: 'Tuffy', sans-serif;
-  --color-bg-deep: #ffffff;
+  --color-bg-deep: #1a1430;
   --color-bg-panel: #1a2040;
   --color-bg-panel-dark: #252858;
   --color-border: #8898cc;
@@ -22,6 +22,7 @@
 }
 
 .ffx-header {
+  font-family: var(--font-display);
   color: var(--color-gold);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -35,7 +36,7 @@
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  font-family: inherit;
+  font-family: var(--font-display);
   transition: box-shadow 0.2s;
 }
 

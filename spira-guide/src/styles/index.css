@@ -3,12 +3,19 @@
 @import "./animations.css";
 
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: 'Highwind';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/Ffx-walkthrough/fonts/bebas-neue-latin-400-normal.woff2') format('woff2'),
-       url('/Ffx-walkthrough/fonts/bebas-neue-latin-400-normal.woff') format('woff');
+  src: url('/Ffx-walkthrough/fonts/Highwind.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Highwind';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/Ffx-walkthrough/fonts/Highwind-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -53,7 +60,10 @@
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-bg-deep);
-  color: var(--color-text-dark);
+  background-image: url('/Ffx-walkthrough/img/bg-macalania.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  color: var(--color-text);
   min-height: 100vh;
 }

@@ -11,7 +11,7 @@ export default function BlitzballNote() {
           onError={(e) => { e.target.style.display = 'none' }}
         />
         <div>
-          <h2 className="text-2xl mb-1" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-text-dark)' }}>
+          <h2 className="text-2xl mb-1" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-gold)' }}>
             WAKKA'S OVERDRIVES
           </h2>
           <p className="text-sm italic" style={{ color: 'var(--color-border-alt)' }}>

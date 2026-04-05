@@ -25,7 +25,7 @@ export default function CollectiblesHub() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
-      <h1 className="text-4xl mb-6" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-text-dark)' }}>
+      <h1 className="text-4xl mb-6" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-gold)' }}>
         COLLECTIBLES
       </h1>
       <HubDashboard />

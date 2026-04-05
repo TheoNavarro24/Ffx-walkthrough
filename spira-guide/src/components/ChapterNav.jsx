@@ -1,25 +1,39 @@
 import { Link } from 'react-router-dom'
 import { chapters } from '../data/chapterIndex'
 import { useChapterProgress } from '../hooks/useChapterProgress'
+import { assetUrl } from '../utils/assetUrl'
 
 function NavCard({ chapter, direction }) {
   const { checked, total } = useChapterProgress(chapter.slug)
   const pct = total > 0 ? Math.round((checked / total) * 100) : 0
+  const isNext = direction === 'next'
 
   return (
     <Link
       to={`/chapter/${chapter.slug}`}
-      className={`flex-1 ffx-panel px-4 py-3 flex flex-col gap-2 hover:border-[var(--color-border-alt)] transition-colors ${direction === 'next' ? 'text-right items-end' : 'items-start'}`}
+      className={`flex-1 ffx-panel overflow-hidden flex ${isNext ? 'flex-row-reverse' : 'flex-row'} hover:border-[var(--color-border-alt)] transition-colors`}
     >
-      <p className="text-[10px] text-gray-500 uppercase tracking-widest">
-        {direction === 'prev' ? '← Previous' : 'Next →'}
-      </p>
-      <p className="text-sm text-[var(--color-border-alt)]">{chapter.name}</p>
-      <div className="w-full h-1 bg-[#0d2137] rounded">
-        <div
-          className="h-full bg-[var(--color-border)] rounded transition-all"
-          style={{ width: `${pct}%` }}
+      {chapter.navImage && (
+        <img
+          src={assetUrl(chapter.navImage)}
+          alt=""
+          className="w-24 h-16 object-cover flex-shrink-0 opacity-80"
+          onError={(e) => { e.target.style.display = 'none' }}
         />
+      )}
+      <div className={`flex flex-col justify-between px-4 py-3 gap-1 flex-1 ${isNext ? 'items-end text-right' : 'items-start'}`}>
+        <p className="text-[10px] text-[var(--color-border-alt)] uppercase tracking-widest">
+          {isNext ? 'Next →' : '← Previous'}
+        </p>
+        <p style={{ fontFamily: 'var(--font-display)', color: 'var(--color-text)', fontSize: '1rem' }}>
+          {chapter.name}
+        </p>
+        <div className="w-full h-1 bg-[#0d2137] rounded">
+          <div
+            className="h-full bg-[var(--color-border)] rounded transition-all"
+            style={{ width: `${pct}%` }}
+          />
+        </div>
       </div>
     </Link>
   )
