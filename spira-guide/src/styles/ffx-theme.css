@@ -1,0 +1,37 @@
+:root {
+  --color-bg-deep: #0a0e27;
+  --color-bg-panel: #1a2444;
+  --color-border: #4fc3f7;
+  --color-border-alt: #81d4fa;
+  --color-gold: #ffd54f;
+  --color-text: #ffffff;
+}
+
+.ffx-panel {
+  background: linear-gradient(135deg, rgba(26, 36, 68, 0.92), rgba(10, 14, 39, 0.95));
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  color: var(--color-text);
+}
+
+.ffx-header {
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.ffx-button {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: box-shadow 0.2s;
+}
+
+.ffx-button:hover {
+  box-shadow: 0 0 8px var(--color-border);
+}
