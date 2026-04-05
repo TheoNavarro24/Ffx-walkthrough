@@ -15,7 +15,7 @@ function renderChapter(slug = 'besaid') {
 describe('ChapterPage', () => {
   it('renders the chapter name as a heading', () => {
     renderChapter('besaid')
-    expect(screen.getByRole('heading', { name: /besaid/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /besaid/i, level: 1 })).toBeInTheDocument()
   })
 
   it('renders section anchors for TOC', () => {
