@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Via Purifico (Yuna's Path)",
-      "prose": "Yuna solo at first, then Kimahri and Lulu join. The sphere and ring chests are spread through the rooms; the Gil and Lucid Ring are in a locked area requiring keys.",
+      "prose": "The party is split and sentenced to the Via Purifico. Yuna navigates the maze solo until she finds Kimahri and then Lulu via teleport pads. Work your way to the southern dead end to activate the glyph that unlocks the treasure room — that's where the Elixir, Black Magic Sphere, and other valuables are stashed.",
       "guideImages": ["image_0059_00.jpeg"],
       "items": [
         { "id": "via-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Via Purifico (Tidus's Sewers)",
-      "prose": "Tidus, Auron, and Wakka in the underground sewers. Two chests here — grab the Evade & Counter armguard for Wakka.",
+      "prose": "Tidus, Auron, and Wakka navigate the underwater channels. There's a shop chest near the start if you need supplies before Evrae Altana. The boss is undead — throw Phoenix Downs at it for ~9,999 damage each. Two Phoenix Downs kill it outright; don't use cure magic or Al Bhed Potions on it.",
       "guideImages": ["image_0060_00.jpeg", "image_0060_01.jpeg"],
       "items": [
         { "id": "via-evade-counter", "name": "Evade & Counter Armguard (Wakka)", "icon": "armguard", "missable": false },

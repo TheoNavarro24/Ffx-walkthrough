@@ -9,7 +9,7 @@
   "subLocations": [
     {
       "name": "Zanarkand Dome Approach",
-      "prose": "Grab everything on the path before committing to the Dome. The Friend Sphere and Fortune Sphere are in the NE branch off the main path.",
+      "prose": "After camp at the familiar hill, the party finally enters Zanarkand Ruins. The early maps are linear and guarded by the same fiends from Gagazet. Don't miss the Fortune Sphere and Spiritual Targe on the approach — they're in chests off the main path. Inside the dome, Defender Z fiends hit hard; use Armor Break and Mental Break to manage them.",
       "guideImages": ["image_0068_00.jpeg", "image_0068_01.jpeg", "image_0068_02.jpeg", "image_0068_03.jpeg", "image_0069_00.jpeg"],
       "items": [
         { "id": "zanarkand-dome-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Zanarkand Dome Interior",
-      "prose": "Braska's pilgrimage memory unfolds. After defeating Yunalesca, walk back and pick up the Sun Crest from the floor — it's easy to forget in the post-fight excitement.",
+      "prose": "The dome interior holds several more chests including a Friend Sphere and rare Lv. 3 Key Sphere — check the eastern platforms and the debris paths carefully. Braska's story unfolds here before Yunalesca. After the fight, descend the broken staircase behind her and pick up the Sun Crest from the chest — it's easy to walk out without it. The Destruction Sphere chest in the Zanarkand Cloister can only be retrieved after you return via airship.",
       "guideImages": ["image_0071_00.jpeg", "image_0071_01.jpeg"],
       "items": [
         { "id": "zanarkand-dome-sun-crest", "name": "Sun Crest (Tidus's Caladbolg — pick up AFTER Yunalesca)", "icon": "sun-crest", "missable": true }

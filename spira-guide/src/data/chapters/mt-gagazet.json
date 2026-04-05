@@ -9,7 +9,7 @@
   "subLocations": [
     {
       "name": "Mountain Trail",
-      "prose": "Talk to Wantz near the start of the trail — he enables his shop later at Macalania with exclusive 4-slot equipment. Primer XXV is behind a rock pillar on the right side of the trail.",
+      "prose": "The Ronso gatekeepers stand down after Yuna impresses them. Talk to Wantz near the start of the mountain trail — if you skip him here, his shop at Macalania (with exclusive 4-slot equipment) never appears. Primer XXV is tucked behind a rock pillar on the right side of the trail as you ascend.",
       "guideImages": ["image_0064_00.jpeg", "image_0065_00.jpeg", "image_0065_01.jpeg"],
       "items": [
         { "id": "gagazet-primer-xxv", "name": "Al Bhed Primer Vol. XXV", "icon": "primer", "missable": false },
@@ -19,7 +19,7 @@
     },
     {
       "name": "Mountain Trial / Prominence",
-      "prose": "The underwater trial gives a Fortune Sphere. The Saturn Crest for Kimahri's Spirit Lance is behind a pillar on the right side of the Prominence area — walk behind the rock.",
+      "prose": "This is a tough stretch — large maps, frequent encounters, and sparse save points. After the Biran & Yenke fight, check behind the eastern Save Sphere for the Saturn Crest (Kimahri's Spirit Lance) before moving on. The half-submerged cavern section splits Tidus, Wakka, and Rikku from the others for the underwater trials. After completing both trials, loot the cavern chests before taking the stone stairway out.",
       "guideImages": ["image_0066_00.jpeg", "image_0067_00.jpeg"],
       "items": [
         { "id": "gagazet-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },

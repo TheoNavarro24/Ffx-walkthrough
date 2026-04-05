@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Inside Sin",
-      "prose": "The final dungeon. Strong fiends throughout — use your best party configurations and save before every boss. Jecht Sphere #10 is here for Auron's final Overdrive. The passage chests contain powerful endgame equipment.",
+      "prose": "Inside Sin is a labyrinth of waterfalls and platforms — the mini-map only shows what's immediately nearby. Fiends here are extremely powerful, especially Behemoth Kings (Meteor for ~6,000 to the party), so save often and lean on aeons. Chests throughout contain strong endgame equipment including Wakka's Four-on-One and Yuna's Laevatein. The final Save Sphere before the climb to the Tower of Death is your last chance to return to the airship for side quests.",
       "guideImages": ["image_0074_00.jpeg"],
       "items": [
         { "id": "inside-sin-jecht-sphere-10", "name": "Jecht Sphere #10 (Auron's Tornado Overdrive)", "icon": "jecht-sphere", "missable": false }

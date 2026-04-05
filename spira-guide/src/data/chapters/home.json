@@ -12,7 +12,7 @@
   "subLocations": [
     {
       "name": "Home Exterior",
-      "prose": "Primer XVIII is on the ground just outside the main entrance — pick it up before going in. Home is destroyed at the end of this chapter.",
+      "prose": "After meeting Cid, search the area outside Home before going in. Primer XVIII is right outside the main entrance on the ground — grab it immediately. Fiends swarm the area in waves as you push forward, so you won't get a quiet moment to backtrack.",
       "guideImages": ["image_0054_00.jpeg"],
       "items": [
         { "id": "home-primer-xviii", "name": "Al Bhed Primer Vol. XVIII", "icon": "primer", "missable": true }
@@ -20,7 +20,7 @@
     },
     {
       "name": "Home Interior",
-      "prose": "THREE permanently missable Primers are inside. At the three-way fork: go RIGHT for XX, then go LEFT/STRAIGHT for XXI. XIX is in the room where the forced fight happens — check the bed at the back before engaging. Do not rush.",
+      "prose": "Three Primers are permanently missable once Home is destroyed — don't rush. Primer XIX is in the room where the forced fight occurs; check the bed at the back before engaging. At the three-way fork, go RIGHT down the northeast corridor for Primer XXI on the floor, then come back and take the left/straight path for Primer XX. The two Al Bhed puzzle chests in the inner rooms contain a Friend Sphere and a Skill Sphere — the correct answers are listed in the guide if you're short on Primers to translate them yourself.",
       "guideImages": ["image_0054_01.jpeg"],
       "items": [
         { "id": "home-primer-xix", "name": "Al Bhed Primer Vol. XIX (room with forced fight, on a bed)", "icon": "primer", "missable": true },

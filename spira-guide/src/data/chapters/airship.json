@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Fahrenheit Deck (Evrae Approach)",
-      "prose": "The party escapes Home on the Fahrenheit. Evrae blocks the approach to Bevelle — fought on the airship deck. After Bevelle, the Fahrenheit becomes your permanent base of operations.",
+      "prose": "The Fahrenheit is Cid's airship and the party's base of operations from here through the end of the game. Evrae is the boss fight on the deck during the approach to Bevelle — Slow it and Haste your party, and the fight becomes much more manageable. After Bevelle you return here, and Cid gives you free reign of the world map.",
       "guideImages": ["image_0056_00.jpeg"],
       "items": []
     }
@@ -22,7 +22,7 @@
   "optionalAreas": [
     {
       "name": "Remiem Temple",
-      "prose": "Reach via Chocobo from the Calm Lands (hidden eastern cliff path). Belgemine challenges you to Aeon duels — defeating all 8 earns the Moon Sigil for Yuna's Nirvana. The Chocobo Race wins the Cloudy Mirror, which is required to unlock ALL Celestial Weapons. Primer XXIV is on the ground outside the entrance.",
+      "prose": "Reach Remiem Temple by riding a Chocobo from the Calm Lands to the hidden eastern cliff path. The Chocobo Race here wins the Cloudy Mirror — required to unlock every Celestial Weapon in the game, so don't skip it. Belgemine challenges Yuna to a series of Aeon duels; defeating all eight earns the Moon Sigil for Nirvana. Primer XXIV is on the ground just outside the entrance.",
       "guideImages": ["image_0072_00.jpeg"],
       "items": [
         { "id": "airship-remiem-cloudy-mirror", "name": "Cloudy Mirror (Chocobo Race — required for all Celestial Weapons)", "icon": "cloudy-mirror", "missable": false },
@@ -32,14 +32,14 @@
     },
     {
       "name": "Cavern of the Stolen Fayth",
-      "prose": "Accessible from Calm Lands northeast. To recruit Yojimbo: when asked 'What do you need Yojimbo for?', say 'To defeat the most powerful enemies'. Divide his first price counter by 2, add 1, and offer that. Pay ~190,001 Gil total. Yojimbo's Zanmato ignores HP — useful for any boss.",
+      "prose": "Accessible from the northeast corner of the Calm Lands gorge. The cavern is challenging but manageable at this point. To recruit Yojimbo: choose 'To defeat the most powerful enemies' when asked your purpose — this lowers his price significantly. Budget at least 200,000 Gil; divide his first asking price by 2 and add 1 for a fair counter. His Zanmato ability can one-shot any enemy regardless of HP.",
       "items": [
         { "id": "airship-yojimbo-aeon", "name": "Yojimbo (Aeon)", "icon": "yojimbo", "missable": false }
       ]
     },
     {
       "name": "Baaj Temple (Revisit)",
-      "prose": "Airship coordinates: X:11-16, Y:57-63. Fight Geosgaeno first (32,000 HP, weak to Ice). Dive between the southern pillars to find Lulu's Onion Knight on the seafloor. Once you have all other 7 Aeons, Anima becomes available here.",
+      "prose": "Airship coordinates: X:11-16, Y:57-63. Geosgaeno guards the temple entrance — weak to Ice, hits hard. Inside, dive between the southern pillars to find Lulu's Onion Knight on the seafloor. Anima's fayth becomes accessible once you have all seven other Aeons and have collected the Destruction Sphere treasures from each Cloister.",
       "items": [
         { "id": "airship-baaj-onion-knight", "name": "Onion Knight (Lulu's Celestial Weapon)", "icon": "onion-knight", "missable": false },
         { "id": "airship-baaj-anima", "name": "Anima (Aeon — requires all 7 other Aeons' Cloisters complete)", "icon": "anima", "missable": false }
@@ -47,7 +47,7 @@
     },
     {
       "name": "Omega Ruins",
-      "prose": "Airship coordinates: X:69-75, Y:33-38. The hardest optional dungeon — fiends are endgame-level. Ultima Weapon (99,999 HP) and Omega Weapon (999,999 HP) await. Primer XXVI is inside the ruins.",
+      "prose": "Airship coordinates: X:69-75, Y:33-38. The toughest optional dungeon in the game — no maps, extremely high encounter rate, and endgame-tier fiends throughout. Ultima Weapon and Omega Weapon are the two superbosses waiting inside. Primer XXVI is found within the ruins.",
       "items": [
         { "id": "airship-omega-primer-xxvi", "name": "Al Bhed Primer Vol. XXVI", "icon": "primer", "missable": false },
         { "id": "airship-omega-master-sphere-2", "name": "Master Sphere ×2", "icon": "master-sphere", "missable": false }
@@ -55,14 +55,14 @@
     },
     {
       "name": "Cactuar Village (Bikanel Desert Revisit)",
-      "prose": "10 Cactuars are hidden across Bikanel Desert. Speak to Marnela at the giant stone to begin. Finding all 10 earns the Mercury Sigil for Rikku's Godhand.",
+      "prose": "Ten Cactuars are hidden across Sanubia Desert — each hides near a specific landmark or cactus patch. Speak to Marnela at the giant stone to begin the hunt. Finding all ten earns the Mercury Sigil for Rikku's Godhand. Each Cactuar encounter is a unique fight with low HP but high evasion.",
       "items": [
         { "id": "airship-cactuar-mercury-sigil", "name": "Mercury Sigil (Rikku — find all 10 Cactuars)", "icon": "mercury-sigil", "missable": false }
       ]
     },
     {
       "name": "Monster Arena (Calm Lands)",
-      "prose": "Capture fiends from all 10 areas (buy Capture weapons from the owner). Completing the capture list unlocks arena-only creations with powerful drop rewards. Mars Sigil (Auron's Masamune) requires capturing at least 1 of every fiend type in 10 different areas.",
+      "prose": "Buy Capture weapons from the arena owner and work through every area of Spira — some monsters only appear in specific sub-zones, so explore widely. Completing the full capture list for each area unlocks arena-only creations that drop rare upgrade materials. The Mars Sigil for Auron's Masamune requires capturing at least one fiend from each of 10 different areas.",
       "items": [
         { "id": "airship-arena-mars-sigil", "name": "Mars Sigil (Auron — capture 1 fiend from each of 10 areas)", "icon": "mars-sigil", "missable": false }
       ]

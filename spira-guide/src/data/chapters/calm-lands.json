@@ -10,7 +10,7 @@
   "subLocations": [
     {
       "name": "Calm Lands",
-      "prose": "Buy the Magic Counter Shield from the Hover Vendor immediately — it's only available on your first visit. Buy Capture weapons from the Monster Arena owner and start filling the arena. Beat the Chocobo Trainer to unlock the Caladbolg chest in the northwest.",
+      "prose": "Buy the Magic Counter Shield from the Hover Vendor the moment you arrive — it's only available on your first visit and is the only reliable source of the Magic Counter ability on armor. Head east along the base of the cliff to find the Monster Arena; the owner sells Capture weapons and kicks off the capture quest. Primer XXIII is in the extreme northwest corner near the cliff edge, close to the Chocobo Trainer.",
       "guideImages": ["image_0061_00.jpeg", "image_0062_00.jpeg", "image_0062_01.jpeg"],
       "items": [
         { "id": "calmlands-primer-xxiii", "name": "Al Bhed Primer Vol. XXIII", "icon": "primer", "missable": false },
