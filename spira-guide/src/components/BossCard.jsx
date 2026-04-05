@@ -37,6 +37,41 @@ function formatDrops(boss) {
   return Array.isArray(c) ? c[0] : c
 }
 
+function formatOverkill(boss) {
+  const hp = boss.stats?.hp
+  if (!hp || !hp[1]) return null
+  return hp[1].toLocaleString()
+}
+
+function formatAp(boss) {
+  if (!boss.ap) return null
+  const [normal, ok] = boss.ap
+  if (!normal && !ok) return null
+  if (ok && ok !== normal) return `${normal} / ${ok} (Overkill)`
+  return String(normal)
+}
+
+function formatGil(boss) {
+  if (!boss.gil) return null
+  return boss.gil.toLocaleString()
+}
+
+function formatImmunities(boss) {
+  if (!boss.stat_resists) return null
+  const immune = Object.entries(boss.stat_resists)
+    .filter(([, v]) => (Array.isArray(v) ? v[0] : v) >= 100)
+    .map(([k]) => k.charAt(0).toUpperCase() + k.slice(1).replace(/_/g, ' '))
+  return immune.length ? immune.join(', ') : null
+}
+
+function formatNullifies(boss) {
+  if (!boss.elem_resists) return null
+  const nulls = Object.entries(boss.elem_resists)
+    .filter(([, v]) => v <= 0)
+    .map(([k]) => k.charAt(0).toUpperCase() + k.slice(1))
+  return nulls.length ? nulls.join(', ') : null
+}
+
 export default function BossCard({ chapterSlug, bossSlug, boss }) {
   const [expanded, setExpanded] = useState(false)
   const { isChecked, toggle } = useCheckbox()
@@ -46,6 +81,14 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
 
   const bossName = boss.name ?? bossSlug
   const defeated = isChecked(checkId)
+
+  const overkill = formatOverkill(boss)
+  const ap = formatAp(boss)
+  const gil = formatGil(boss)
+  const immunities = formatImmunities(boss)
+  const nullifies = formatNullifies(boss)
+
+  const showSecondRow = overkill || ap
 
   return (
     <div className={`ffx-panel p-0 overflow-hidden transition-opacity ${defeated ? 'opacity-50' : ''}`}>
@@ -75,6 +118,22 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
               <span className="boss-stat-value">{formatWeaknesses(boss)}</span>
             </span>
           </div>
+          {showSecondRow && (
+            <div className="flex gap-3 mt-0.5">
+              {overkill && (
+                <span className="boss-stat">
+                  <span className="boss-stat-label">OK</span>
+                  <span className="boss-stat-value">{overkill}</span>
+                </span>
+              )}
+              {ap && (
+                <span className="boss-stat">
+                  <span className="boss-stat-label">AP</span>
+                  <span className="boss-stat-value">{ap}</span>
+                </span>
+              )}
+            </div>
+          )}
         </div>
         <span className="text-gray-600 text-xs">{expanded ? '▲' : '▼'}</span>
       </button>
@@ -83,6 +142,26 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
         <div className="px-4 pb-4 flex flex-col gap-3 border-t border-[#1e3a5f]">
           {boss.strategy && (
             <p className="text-sm text-gray-300 mt-3">{boss.strategy}</p>
+          )}
+          {immunities && (
+            <p className="text-xs text-gray-400">
+              <span className="text-[var(--color-border)]">Immune:</span> {immunities}
+            </p>
+          )}
+          {nullifies && (
+            <p className="text-xs text-gray-400">
+              <span className="text-[var(--color-border)]">Nullifies:</span> {nullifies}
+            </p>
+          )}
+          {ap && (
+            <p className="text-xs text-gray-400">
+              <span className="text-[var(--color-border)]">AP:</span> {boss.ap[0]}{boss.ap[1] && boss.ap[1] !== boss.ap[0] ? ` (Overkill: ${boss.ap[1]})` : ''}
+            </p>
+          )}
+          {gil && (
+            <p className="text-xs text-gray-400">
+              <span className="text-[var(--color-border)]">Gil:</span> {gil}
+            </p>
           )}
           {formatSteals(boss) && (
             <p className="text-xs text-gray-400">
