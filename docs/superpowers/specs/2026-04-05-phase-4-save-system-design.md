@@ -93,9 +93,9 @@ A `SaveContext` provider is added in `src/App.jsx`, wrapping `<Routes>` but insi
 
 Constraints:
 - Cannot delete the last remaining slot
-- Slot IDs are generated as `slot-${Date.now()}`
+- Slot IDs are generated as `slot-${Date.now()}`. ID collision (two slots created in the same millisecond) is accepted as negligible for a single-user iPad app.
 - `createSlot` switches to the new slot immediately
-- `deleteSlot(id)` on the active slot: switch to `slots[0]` of the remaining array after removal (array index 0, i.e. the slot that was previously at index 1); on a non-active slot: just remove it, active slot unchanged. In both cases, the corresponding `spira-checks:{id}` key is deleted from localStorage.
+- `deleteSlot(id)` on the active slot: switch to index 0 of the `slots` array after the deleted slot has been removed; on a non-active slot: just remove it, active slot unchanged. In both cases, the corresponding `spira-checks:{id}` key is deleted from localStorage.
 
 ### `useCheckbox` (refactored)
 
@@ -144,14 +144,14 @@ The exported filename is `spira-save-{slotName}.json` (spaces replaced with hyph
 
 A file is valid if it is parseable JSON and contains both `"checks"` (object) and `"version"` (number) keys. Other fields (`slotName`, `exportedAt`) are optional and ignored on import — they do not overwrite the active slot's name or any other metadata. Import only writes to `spira-checks:{activeSlotId}`. All values in `checks` are coerced to boolean on write. Invalid files show an inline error in the Data panel and abort.
 
-The confirmation message always uses the **active slot's current name**, not the file's `slotName` field. This is intentional — the user is overwriting the active slot, so showing the active slot's name is correct regardless of what the file was originally exported from.
+The confirmation message always uses the **active slot's current name**, not the file's `slotName` field. This is intentional — the user is overwriting the active slot, so showing the active slot's name is correct regardless of what the file was originally exported from. Import always overwrites the active slot in place; there is no "import as new slot" option — users who want that must create a new slot first, switch to it, then import.
 
 ---
 
 ## Slot Name Constraints
 
 - Max length: 40 characters
-- Empty names not allowed (rename reverts to previous name; "New Slot" prompt re-asks)
+- Empty names not allowed. On rename: empty string reverts to the previous name (see rename behavior below). On "New Slot" prompt: empty string or cancel is a no-op — the prompt does not re-ask.
 - Duplicate names are allowed
 - On rename: Escape key or blur with empty string cancels and reverts to the previous name; Enter or blur with a non-empty string confirms
 
@@ -208,7 +208,7 @@ A standalone function `migrateLegacyChecks()` runs synchronously inside `SaveCon
 - Import — invalid/missing keys: show inline error in Data panel (local component state, cleared on next import attempt), abort import
 - Import — file picker cancelled by user: do nothing (no error shown)
 - Import — user declines `window.confirm` prompt: abort import, do not modify active slot checks (no error shown)
-- Import — file read failure (permission error, etc.): show inline error in Data panel, abort
+- Import — file read failure (permission error, I/O error, etc.): catch via the FileReader `error` event; show inline error in Data panel, abort
 - Delete last slot: button is visually disabled; no action on click
 - Slot not found (e.g. corrupted `spira-slots`): detected at `SaveContextProvider` init time — re-run migration to create a fresh default slot. This can only occur at startup, not lazily during operation.
 - localStorage quota exceeded on any write: display an inline error in the affected panel and do not modify state. If quota is hit during migration at startup, allow the exception to surface — this signals a storage issue requiring manual intervention beyond the app's scope.
