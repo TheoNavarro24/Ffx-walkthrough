@@ -1,0 +1,39 @@
+{
+  "slug": "besaid",
+  "missables": ["Rod of Wisdom — Destruction Sphere, Besaid Temple. Dark Valefor blocks return in HD."],
+  "party": ["Tidus", "Wakka", "Lulu", "Yuna"],
+  "oaka": { "meeting": true, "cumulativeTarget": 1001 },
+  "sgTip": "Yuna joins here. Prioritise NulBlaze and NulShock — they trivialise the next two Sinspawn fights.",
+  "subLocations": [
+    {
+      "name": "Beach",
+      "prose": "Head east along the beach before entering the village. The Moon Crest chest is in the eastern alcove — missable once you leave Besaid.",
+      "items": [
+        { "id": "besaid-moon-crest", "name": "Moon Crest", "icon": "moon-crest", "missable": true },
+        { "id": "besaid-antidote", "name": "Antidote", "icon": "antidote", "missable": false },
+        { "id": "besaid-200gil", "name": "200 Gil", "icon": "gil", "missable": false }
+      ]
+    },
+    {
+      "name": "Besaid Village",
+      "prose": "Talk to NPCs and check chests around the huts.",
+      "items": [
+        { "id": "besaid-phoenix-down", "name": "Phoenix Down", "icon": "phoenix-down", "missable": false },
+        { "id": "besaid-2potions", "name": "Potion ×2", "icon": "potion", "missable": false },
+        { "id": "besaid-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "besaid-400gil", "name": "400 Gil", "icon": "gil", "missable": false },
+        { "id": "besaid-primer-ii", "name": "Al Bhed Primer Vol. II", "icon": "primer", "missable": false }
+      ]
+    },
+    {
+      "name": "Besaid Temple",
+      "prose": "Complete the Cloister of Trials. Get the Destruction Sphere chest before leaving — unavailable after Valefor fight.",
+      "items": [
+        { "id": "besaid-rod-of-wisdom", "name": "Rod of Wisdom", "icon": "rod-of-wisdom", "missable": true }
+      ]
+    }
+  ],
+  "bosses": ["valefor"],
+  "cloister": "besaid",
+  "optionalAreas": []
+}

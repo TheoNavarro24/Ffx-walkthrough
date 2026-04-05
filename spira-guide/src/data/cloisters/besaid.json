@@ -1,0 +1,16 @@
+{
+  "slug": "besaid",
+  "name": "Besaid Cloister of Trials",
+  "mapImage": "/img/maps/cloisters/besaid.png",
+  "destructionSphere": "Rod of Wisdom",
+  "missable": true,
+  "steps": [
+    "Take the Besaid Sphere from the recess on the left wall.",
+    "Insert it into the slot beside the door — the door opens.",
+    "Take the Glyph Sphere from the pedestal ahead.",
+    "Insert the Glyph Sphere into the recess in the wall to reveal a hidden door.",
+    "Go through the hidden door and take the Destruction Sphere.",
+    "Insert the Destruction Sphere into the recess inside — chest appears with Rod of Wisdom.",
+    "Return the Besaid Sphere to its original recess to unlock the path forward."
+  ]
+}
