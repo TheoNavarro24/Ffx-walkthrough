@@ -8,15 +8,6 @@ export default function CloisterSection({ cloister }) {
     <div className="ffx-panel p-4 flex flex-col gap-3">
       <h3 className="ffx-header text-sm">{cloister.name}</h3>
 
-      {cloister.mapImage && (
-        <img
-          src={assetUrl(cloister.mapImage)}
-          alt={`${cloister.name} map`}
-          className="rounded border border-[#1e3a5f] max-w-xs"
-          onError={(e) => { e.target.style.display = 'none' }}
-        />
-      )}
-
       {cloister.missable && cloister.destructionSphere && (
         <p className="text-xs text-red-300 border border-red-800 bg-red-900/20 rounded px-3 py-2">
           ⚠ Destruction Sphere reward: <strong>{cloister.destructionSphere}</strong> — get it before leaving.
@@ -29,7 +20,17 @@ export default function CloisterSection({ cloister }) {
             <li key={i} className="text-sm text-gray-300">{step}</li>
           ))}
         </ol>
-        <GuideImages images={cloister.guideImages ?? []} />
+        <div className="flex flex-col gap-2 flex-shrink-0">
+          {cloister.mapImage && (
+            <img
+              src={assetUrl(cloister.mapImage)}
+              alt={`${cloister.name} map`}
+              className="rounded border border-[#1e3a5f] w-40"
+              onError={(e) => { e.target.parentElement.style.display = 'none' }}
+            />
+          )}
+          <GuideImages images={cloister.guideImages ?? []} />
+        </div>
       </div>
     </div>
   )
