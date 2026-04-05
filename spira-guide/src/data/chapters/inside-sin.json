@@ -17,11 +17,11 @@
   "bosses": [
     {
       "slug": "sinspawn-genais",
-      "strategy": "HP: 20,000. Two components — the Sinspawn body and a Sin cell. Kill the Sinspawn body first; the cell can revive it once. Finish both quickly. Magic and Aeons are effective."
+      "strategy": "HP: 20,000. Two components: the Sinspawn body and a Sin cell attached to it. Attack the body exclusively — the cell will revive the body once if you kill the body first without first destroying the cell, so kill the cell after the body goes down. Genais uses Sin's Venom (moderate party damage + Poison) and Demi — keep HP up and cure Poison promptly. Aeons and multi-target Overdrives make short work of both components."
     },
     {
       "slug": "seymour-omnis",
-      "strategy": "HP: 80,000. Mortiphasms surround him (1 HP each) — they grant Seymour elemental absorption. Destroy them before using any element. Multi-Spell can hit multiple times in a row; Protect + high HP is essential. Dispel buffs. Strong physicals and Overdrives throughout."
+      "strategy": "HP: 80,000. Four Mortiphasms (1 HP each) orbit Seymour and grant him elemental absorption — but they reform at the start of every one of Seymour's turns. Destroy all four before casting any spell each round, every round, or your magic will heal him. Non-elemental attacks (Tidus, Auron, Wakka physicals; Rikku's throws) are always safe. Seymour's Multi-Spell fires off a random number of hits targeting random characters — keep everyone above 2,000 HP and run Protect + Shell. Use Dispel when he casts Protect or Shell on himself. Save Overdrives for bursts between Mortiphasms clears."
     },
     {
       "slug": "braska-final-aeon",
