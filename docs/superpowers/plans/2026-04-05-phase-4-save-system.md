@@ -439,7 +439,7 @@ Add a wrapper to every `renderHook` call. Replace the entire file:
 ```js
 import { renderHook, act } from '@testing-library/react'
 import { useCheckbox } from './useCheckbox'
-import { SaveContextProvider } from '../context/SaveContext'
+import { SaveContextProvider, useSaveSlot } from '../context/SaveContext'
 
 function wrapper({ children }) {
   return <SaveContextProvider>{children}</SaveContextProvider>
@@ -482,18 +482,17 @@ describe('useCheckbox', () => {
   })
 
   it('scopes checks to active slot — checks in slot A do not appear in slot B', () => {
-    // This test renders a component that can switch slots and check isolation
-    const { result: saveResult } = renderHook(() => {
-      const save = require('../context/SaveContext').useSaveSlot()
-      const check = useCheckbox()
-      return { save, check }
-    }, { wrapper })
+    // Render a hook that combines both useSaveSlot and useCheckbox
+    const { result } = renderHook(
+      () => ({ save: useSaveSlot(), check: useCheckbox() }),
+      { wrapper }
+    )
 
-    act(() => saveResult.current.check.toggle('isolated-item'))
-    expect(saveResult.current.check.isChecked('isolated-item')).toBe(true)
+    act(() => result.current.check.toggle('isolated-item'))
+    expect(result.current.check.isChecked('isolated-item')).toBe(true)
 
-    act(() => saveResult.current.save.createSlot('Slot B'))
-    expect(saveResult.current.check.isChecked('isolated-item')).toBe(false)
+    act(() => result.current.save.createSlot('Slot B'))
+    expect(result.current.check.isChecked('isolated-item')).toBe(false)
   })
 })
 ```
@@ -917,7 +916,8 @@ function importSave(activeSlot, onSuccess, onError) {
           Object.entries(data.checks).map(([k, v]) => [k, Boolean(v)])
         )
         localStorage.setItem(`spira-checks:${activeSlot.id}`, JSON.stringify(coerced))
-        // Reload the page so useLocalStorage re-reads the new data
+        // Reload so useLocalStorage re-reads the new data.
+        // Intentional: no success message shown — the reload itself confirms the import worked.
         window.location.reload()
       } catch {
         onError('Could not parse the save file.')
