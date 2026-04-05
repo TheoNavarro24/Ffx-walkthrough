@@ -239,26 +239,25 @@ src/
 
 ---
 
-## Phase 5: Search & Quick Reference
+## Phase 5: Search, Quick Reference, Landing Page & Pyrefly ✅ Done
 
-**Goal**: Instant access to any piece of information.
+**Goal**: Instant access to any piece of information, polished landing page, ambient effects.
 
 ### Tasks
-1. **Global search bar**: Always visible in header, dropdown results as you type
-2. **Search index**: Bosses, items, primers, celestials, locations — all searchable with categorized results linking to the relevant area page section
-3. **QuickRefPanel**: Pullout panel accessible from any page containing:
-   - Elemental weakness chart (Fire/Ice/Thunder/Water wheel)
-   - Status effects reference (what each does, cures, immunity gear)
-   - Key item uses (Key Spheres, Al Bhed Potions, special items)
+1. ~~**Global search bar**: Always visible in header, dropdown results as you type~~ ✅ Done — `SearchDropdown` in Header with instant results.
+2. ~~**Search index**: Bosses, items, primers, celestials, locations — all searchable with categorized results linking to the relevant area page section~~ ✅ Done — `searchIndex.js` + `useSearch` hook with type-priority sorting.
+3. ~~**QuickRefPanel**: Pullout panel accessible from any page~~ ✅ Done — 3 tabs: ElementalChart, StatusEffects, KeyItems.
+4. ~~**Landing page rework**: Hero cover art background, corner card with progress + navigation~~ ✅ Done — BradyGames guide cover as hero bg.
+5. ~~**Pyrefly page transitions**: Canvas overlay with wisps + blooms, route-change boost~~ ✅ Done — `PyreflyTransition` component wired into AppShell.
 
 ---
 
-## Phase 6: Polish & Deploy
+## Phase 6: Remaining Polish
 
 ### Tasks
 1. ~~**PWA setup**: Service worker for offline caching, manifest for iPad home screen install~~ ✅ Done — VitePWA configured in Phase 1; Tuffy font self-hosted and workbox-cached.
-2. **Pyrefly page transitions**: Dissolve/fade between chapter navigations (keyframes stubbed in `animations.css`)
-3. **Completion celebrations**: Pyrefly burst on completing a chapter or collectible set
+2. ~~**Pyrefly page transitions**: Dissolve/fade between chapter navigations~~ ✅ Done — moved to Phase 5.
+3. ~~**Completion celebrations**: Pyrefly burst on completing a chapter or collectible set~~ ✅ Done — `usePyreflyBurst` implemented in Phase 1.
 4. **Image lazy loading**: IntersectionObserver for 352+ images
 5. ~~**GitHub Actions CI/CD**: Auto-build and deploy to GitHub Pages on push to main~~ ✅ Done — `deploy.yml` in place and working.
 6. **Optional bosses section**: Dark Aeons and optional bosses listed under relevant area pages
@@ -268,11 +267,12 @@ src/
 
 ## Priority & Dependency Chain
 
-| Phase | What | Depends On | Estimated Scope |
-|-------|------|------------|-----------------|
-| 1 | Foundation (shell, theme, router, drawer) | — | Core setup |
-| 2 | Area Pages (walkthrough, items, bosses, missables) | Phase 1 | Largest phase — 27 pages of content |
-| 3 | Collectibles Hub (celestials, primers, spheres, cloisters, aeons) | Phase 2 (synced checkboxes) | Medium |
-| 4 | Save System & Settings (slots, export, preferences) | Phase 2 (needs data to save) | Medium |
-| 5 | Search & Quick Reference | Phase 2 (needs content to search) | Medium |
-| 6 | Polish & Deploy (PWA, effects, CI/CD) | All above | Finishing touches |
+| Phase | What | Status |
+|-------|------|--------|
+| 1 | Foundation (shell, theme, router, drawer) | ✅ Done |
+| 2 | Area Pages (walkthrough, items, bosses, missables) | ✅ Done |
+| 2.5 | Content & Layout Polish (prose, guide images, party indicators) | ✅ Done |
+| 3 | Collectibles Hub (celestials, primers, spheres, cloisters, aeons) | ✅ Done |
+| 4 | Save System & Settings (slots, export, preferences) | ✅ Done |
+| 5 | Search, Quick Reference, Landing Page, Pyrefly Transitions | ✅ Done |
+| 6 | Remaining Polish (lazy loading, optional bosses, responsive testing) | Partial — 3 items remain |
