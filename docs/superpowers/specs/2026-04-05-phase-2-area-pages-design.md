@@ -30,7 +30,8 @@ ChapterPage
 ├── OakaReminder           — donation card; only renders when O'aka is present
 ├── [Boss section]
 │   └── BossCard ×N       — compact (name, HP, weakness) → expanded (strategy, steals/drops, image)
-├── [Cloister section]     — map image + step-by-step solution; only renders at temple chapters
+├── [Cloister section]
+│   └── CloisterSection   — map image + step list; only renders at temple chapters
 └── ChapterNav             — prev/next chapter cards with thumbnail and progress bar
 ```
 
@@ -51,7 +52,10 @@ Schema:
   "slug": "besaid",
   "missables": ["Rod of Wisdom — Destruction Sphere, Besaid Temple"],
   "party": ["Tidus", "Wakka", "Lulu", "Yuna"],
-  "oaka": { "meeting": true, "donationTier": 1001 },
+  "oaka": {
+    "meeting": true,
+    "cumulativeTarget": 1001
+  },
   "sgTip": "Unlock NulBlaze/NulShock before leaving.",
   "subLocations": [
     {
@@ -64,18 +68,83 @@ Schema:
     }
   ],
   "bosses": ["valefor"],
-  "cloister": null
+  "cloister": null,
+  "optionalAreas": []
 }
 ```
 
-- `bosses` — array of slugs; full stats and strategy text resolved from `monsters.json`
-- `cloister` — slug pointing to a cloister data file, or `null`
-- `oaka` — `null` if O'aka doesn't appear in this chapter
+Field notes:
+
+- `bosses` — array of slug strings; full stats and strategy text resolved from `monsters.json` via `bossBySlug.js`. Boss checkbox ids are derived as `"{chapterSlug}-boss-{bossSlug}"` (e.g. `"besaid-boss-valefor"`). `BossCard` uses `useCheckbox` with this id so defeated bosses can be checked off.
+- `cloister` — slug string pointing to a cloister data file (see below), or `null`
+- `oaka` — `null` if O'aka doesn't appear in this chapter. `cumulativeTarget` is the running total of gil donated across all O'aka meetings so far; `OakaReminder` uses it to show how much to donate at this meeting to cross the next pricing tier
 - `sgTip` — `null` if no tip for this chapter
+- `optionalAreas` — array of sub-section objects (same shape as `subLocations`) for post-game optional content; empty array if none. Used by the Airship chapter to house Remiem, Baaj revisit, Omega Ruins, etc.
 
-### Development stub
+### O'aka donation tiers
 
-A single real data file for Besaid (`besaid.json`) is created at the start of Phase 2 and used across all component development. All other 26 chapters fall back to this file until Phase 2.5 populates them.
+O'aka's shop pricing is determined by total cumulative gil donated across all meetings:
+
+| Cumulative gil donated | Shop prices |
+|---|---|
+| 0 – 100 | 130% (surcharge) |
+| 101 – 1,000 | 110% |
+| 1,001 – 10,000 | 100% (standard) |
+| 10,001+ | 80% (discount) |
+
+`OakaReminder` shows the user their running total and how much more to donate to reach the next tier.
+
+### Cloister data files
+
+Location: `spira-guide/src/data/cloisters/{slug}.json`
+
+Schema:
+
+```json
+{
+  "slug": "besaid",
+  "name": "Besaid Cloister of Trials",
+  "mapImage": "/img/maps/cloisters/besaid.png",
+  "destructionSphere": "Rod of Wisdom",
+  "missable": true,
+  "steps": [
+    "Take the Besaid Sphere from the recess in the wall.",
+    "Insert it into the slot next to the door — door opens.",
+    "Take the Glyph Sphere from the pedestal.",
+    "Insert the Glyph Sphere into the recess to reveal a hidden door.",
+    "Take the Destruction Sphere — opens the treasure chest with Rod of Wisdom."
+  ]
+}
+```
+
+Cloister files are authored in Phase 2.5 (step 36). During Phase 2 development, a stub file for Besaid is created alongside the chapter stub.
+
+### Chapter progress utility
+
+File: `spira-guide/src/hooks/useChapterProgress.js`
+
+Returns `{ checked, total }` for any chapter slug by loading that chapter's JSON and counting all checkable item and boss ids, then cross-referencing with `useCheckbox`. Used by `ChapterNav` to render progress bars on adjacent chapters.
+
+- If a chapter's JSON file does not exist yet (pre-Phase 2.5), `total` returns 0 and `checked` returns 0 — ChapterNav shows an empty progress bar rather than erroring.
+
+### chapterIndex.js shape
+
+File: `spira-guide/src/data/chapterIndex.js` (built in Phase 1)
+
+Exports:
+
+- `chapters` — array of `{ slug, name, act, mapImage }` objects for all 27 chapters in story order
+- `getChapterBySlug(slug)` — returns a single chapter object by slug
+- `getChaptersByAct(act)` — returns all chapters for a given act number (1–4)
+- `ACT_NAMES` — map of `{ 1: "Act 1: ...", 2: ..., 3: ..., 4: ... }` display strings
+
+`ChapterPage` uses `getChapterBySlug` to resolve route params. `ChapterNav` uses `chapters` to find the previous and next entries by index.
+
+### Boss resolver utility
+
+File: `spira-guide/src/data/bossBySlug.js`
+
+A simple lookup that imports `monsters.json` and exports a function `getBoss(slug)` returning the matching boss object. Built in Phase 2 alongside BossCard so components never import the full monsters list directly.
 
 ### Existing data sources
 
@@ -84,22 +153,33 @@ A single real data file for Besaid (`besaid.json`) is created at the start of Ph
 - Primers: `docs/source-data/primers.json`
 - Chapter index: `spira-guide/src/data/chapterIndex.js`
 
+### Development stub
+
+A single real data file for Besaid (`besaid.json`) plus a Besaid cloister stub are created at the start of Phase 2 and used across all component development. All other chapters fall back gracefully until Phase 2.5 populates them.
+
 ---
 
 ## State Management
 
 ### useCheckbox hook
 
-A thin hook at `spira-guide/src/hooks/useCheckbox.js` persists checkbox state to localStorage:
+File: `spira-guide/src/hooks/useCheckbox.js`
+
+Persists checkbox state to localStorage:
 
 - Each checkable item has a globally unique `id` string (e.g. `"besaid-moon-crest"`)
 - The hook maintains a flat map `{ [id]: boolean }` in localStorage under the key `"spira-checks"`
-- Exposes `isChecked(id)`, `toggle(id)`, and `checkedCount(ids[])` utilities
+- Exposes `isChecked(id)`, `toggle(id)`, and `checkedCount(ids)` (accepts a string array, returns count of checked items)
 - Phase 4 upgrades the hook internals to support named save slots; no component changes required
 
-### SubLocation collapse state
+### useLocalStorage hook
 
-Each SubLocation tracks its own open/closed state via `useLocalStorage` keyed to `"subloc-{slug}-{name}"`, so collapse state persists across navigation.
+File: `spira-guide/src/hooks/useLocalStorage.js`
+
+A general-purpose hook used for any persistent UI state that is not checkbox data (e.g. SubLocation collapse state). Wraps `useState` with lazy init from `localStorage` and debounced writes.
+
+- SubLocation collapse state is keyed to `"subloc-{slug}-{name}"`
+- Used by other phases for drawer state, settings, etc.
 
 ---
 
@@ -108,8 +188,11 @@ Each SubLocation tracks its own open/closed state via `useLocalStorage` keyed to
 | Component | File | Notes |
 |---|---|---|
 | `ChapterPage` | `src/pages/ChapterPage.jsx` | Stub exists; replace with full implementation |
-| `useScrollSpy` | `src/hooks/useScrollSpy.js` | New hook |
+| `useScrollSpy` | `src/hooks/useScrollSpy.js` | New |
+| `useCheckbox` | `src/hooks/useCheckbox.js` | New |
+| `useLocalStorage` | `src/hooks/useLocalStorage.js` | New |
 | `TableOfContents` | `src/components/Layout/TableOfContents.jsx` | Stub exists; wire up with useScrollSpy |
+| `ChapterHeader` | `src/components/ChapterHeader.jsx` | New |
 | `SubLocation` | `src/components/SubLocation.jsx` | New |
 | `ItemList` | `src/components/ItemList.jsx` | New |
 | `MissableAlert` | `src/components/MissableAlert.jsx` | New |
@@ -117,9 +200,10 @@ Each SubLocation tracks its own open/closed state via `useLocalStorage` keyed to
 | `PartyIndicator` | `src/components/PartyIndicator.jsx` | New |
 | `OakaReminder` | `src/components/OakaReminder.jsx` | New |
 | `SphereGridTip` | `src/components/SphereGridTip.jsx` | New |
-| `CloistersSection` | `src/components/CloisterSection.jsx` | New |
+| `CloisterSection` | `src/components/CloisterSection.jsx` | New |
 | `ChapterNav` | `src/components/ChapterNav.jsx` | New |
-| `useCheckbox` | `src/hooks/useCheckbox.js` | New |
+| `bossBySlug` | `src/data/bossBySlug.js` | New utility |
+| `useChapterProgress` | `src/hooks/useChapterProgress.js` | New |
 
 ---
 
@@ -127,21 +211,22 @@ Each SubLocation tracks its own open/closed state via `useLocalStorage` keyed to
 
 Outside-in: get a working page visible on device as early as possible, then layer in sections.
 
-1. **Schema + stub data** — define JSON schema, create `besaid.json` dev file
+1. **Schema + stub data** — define JSON schema, create `besaid.json` and `cloisters/besaid.json` dev stubs
 2. **ChapterPage shell** — layout skeleton with section anchors, loads chapter data
 3. **useScrollSpy + TableOfContents** — sticky right sidebar wired to scroll position
-4. **SubLocation + ItemList** — collapsible groups with checkboxes and item icons
-5. **useCheckbox hook** — localStorage persistence; wire into ItemList
-6. **"Show unchecked only" toggle** — filter within ItemList
-7. **MissableAlert** — red banner at page top
-8. **BossCard** — compact → expanded; pulls from monsters.json
-9. **Boss-to-chapter mapping** — resolves boss slugs to chapter data
-10. **PartyIndicator** — character portrait icons
-11. **OakaReminder** — donation tier cards
-12. **SphereGridTip** — inline milestone text
-13. **CloisterSection** — map image + step list
-14. **ChapterNav** — prev/next cards with progress bar
-15. **Optional areas** — sub-sections under Airship chapter
+4. **useLocalStorage hook** — general persistence utility used by SubLocation and others
+5. **SubLocation + ItemList** — collapsible groups with item rows and SD icon placeholders
+6. **useCheckbox hook** — localStorage persistence; wire into ItemList
+7. **"Show unchecked only" toggle** — filter within ItemList
+8. **MissableAlert** — red banner at page top
+9. **bossBySlug utility** — boss slug resolver; imports monsters.json
+10. **BossCard** — compact → expanded; pulls from bossBySlug
+11. **ChapterHeader + PartyIndicator** — map thumbnail, chapter name, act, party portraits
+12. **OakaReminder** — donation tier card using cumulativeTarget from chapter data
+13. **SphereGridTip** — inline milestone text
+14. **CloisterSection** — map image + step list from cloister data file
+15. **ChapterNav + useChapterProgress** — prev/next cards with thumbnail; progress bars use useChapterProgress to show checked/total for adjacent chapters
+16. **Optional areas** — render optionalAreas array as additional SubLocation groups under Airship chapter
 
 ---
 
@@ -149,6 +234,7 @@ Outside-in: get a working page visible on device as early as possible, then laye
 
 - Walkthrough prose (Phase 2.5)
 - Populating all 27 chapter JSON files (Phase 2.5)
+- Cloister solutions for all 6 temples (Phase 2.5)
 - Named save slots (Phase 4)
 - Checkbox sync with Collectibles Hub (Phase 3)
 - Search index integration (Phase 5)
