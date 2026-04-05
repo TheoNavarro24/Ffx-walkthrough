@@ -1,0 +1,119 @@
+{
+  "preparation": {
+    "title": "Preparing to Face the Dark Aeons",
+    "prose": [
+      "After you acquire the Airship, Yevonite zealots begin an aggressive campaign to assassinate the party by unleashing the super-powered versions of aeons known as dark aeons. When you see a new character in an old region of the map, tread carefully — it could be a summoner. Their aeons are absolutely deadly to unprepared parties.",
+      "The dark aeons and the superboss Penance offer the game's greatest challenge; they are among the most challenging foes in RPG history. If you hope to have a realistic shot against them, you must do a lot of prep — we're talking 50–100 hours here. If you're up for it, read on!",
+      "Step One: Pick Your Team — Rikku is far and away the best utility character. Her Mix ability can heal the entire party or apply a half-dozen buffs in a single action. Wakka and Tidus distinguish themselves as heavy hitters with multi-hit Overdrive attacks. Yuna is essential as summoner — summoned aeons are primarily used to absorb dark aeon Overdrives. The most important factor when choosing a team is your ability to acquire that character's Celestial Weapon — you won't get far without it.",
+      "Step Two: Grind in the Omega Ruins — The Omega Ruins are the best training ground in the game. Fight everything, steal everything, and don't leave until your party is comfortable with the enemies there.",
+      "Step Three: Complete the Monster Arena — Capture 10 of every monster in every region. This unlocks powerful arena creations that drop the rare spheres you need to max your stats.",
+      "Step Four: Craft Your Battle Armor — Your ideal armor has: Auto-Haste, Auto-Phoenix, Auto-Protect, and Ribbon (or Stoneproof + Confuseproof + Curseproof if Ribbon isn't available). Some dark aeons drop rare armor with Break HP Limit and Ribbon pre-installed — if so, add Auto-Haste and Auto-Phoenix to the empty slots.",
+      "Step Five: Upgrade the Sphere Grid — A character who completes the Sphere Grid ends up with around 20,000 HP, 200 Strength, and 70–150 of the other stats. You can do better — and if you hope to beat Penance, you'll have to. Use Clear Spheres to erase low-value +1/+2 nodes, then replace them with +4 spheres from arena creations. The game's stats max at 99,999 HP and 255 for everything else."
+    ],
+    "guideImages": ["image_0085_00.jpeg", "image_0086_00.jpeg"]
+  },
+  "generalStrategy": "All Dark Aeons are immune to every ailment, including breaks. They are not vulnerable to any elements, so physical attacks (especially Quick Hit) are far stronger than magic. Watch their Overdrive bars and summon an aeon to absorb the hit when they're nearly full. Rikku's Mix ability is invaluable — Final Elixir (Hi-Potion + any sphere) restores all HP and cures all ailments, Final Phoenix (Phoenix Down + any sphere) revives all fallen characters at full HP, and Hyper Mighty G (Lv.4 Key Sphere + any sphere or similar) applies Auto-Life, Shell, Protect, Haste, and Regen to the entire party.",
+  "darkAeons": [
+    {
+      "slug": "dark-valefor",
+      "name": "Dark Valefor",
+      "location": "Besaid Village entrance",
+      "locationDescription": "Dark Valefor strikes when you attempt to enter Besaid Village. With only 800,000 HP, it's the weakest of the dark aeons, but it still packs a punch. Don't let your ability to survive its Energy Ray Overdrive (which deals 9,999 damage to the party) make you overconfident; its next Overdrive could be Energy Blast, which can shatter the damage limit to wipe out your party. Use Auto-Life spells or have an aeon take the hit.",
+      "regionMap": "img/maps/regions/besaid/besaid village.png",
+      "strategy": "Weakest dark aeon at 800,000 HP. Energy Ray Overdrive deals 9,999 to the party — survivable. Energy Blast breaks the damage limit and can wipe you. Use Auto-Life or summon an aeon to absorb Overdrives."
+    },
+    {
+      "slug": "dark-ifrit",
+      "name": "Dark Ifrit",
+      "location": "Sanubia Sands, near Home",
+      "locationDescription": "In Sanubia Sands, you encounter a woman near the entrance to Home who claims to be looking for a lost child. Go along with her little ruse to battle Dark Ifrit.",
+      "regionMap": "img/maps/regions/bikanel/Sanubia Desert.png",
+      "strategy": "Dark Ifrit counters each of your attacks with a powerful physical attack. Since Ifrit is slow and doesn't get frequent turns, focus on reviving or casting Auto-Life on your attackers. Auto-Phoenix handles this automatically. 1,400,000 HP."
+    },
+    {
+      "slug": "dark-ixion-first-fight",
+      "name": "Dark Ixion (First Fight)",
+      "location": "Thunder Plains",
+      "locationDescription": "Dark Ixion's summoner can be found in the Thunder Plains. It should be one of the first dark aeons you fight.",
+      "regionMap": "img/maps/regions/thunder plains/Thunder Plains.png",
+      "strategy": "1,200,000 HP. With two characters with Auto-Phoenix and diligent aeon summoning before its Overdrive, it can be beaten fairly easily. Attacks inflict Sleep and various break effects. Auto-Med ability is helpful."
+    },
+    {
+      "slug": "dark-ixion-second-fight",
+      "name": "Dark Ixion (Second Fight)",
+      "location": "Thunder Plains, during lightning",
+      "locationDescription": "After defeating Dark Ixion, it disappears, but during lightning strikes it appears briefly. Run up to it to fight it a second time and defeat it for good. You're free to save and heal between the two battles.",
+      "regionMap": "img/maps/regions/thunder plains/Thunder Plains.png",
+      "strategy": "Second encounter — attacks now inflict Confuse and Petrify instead of Sleep and breaks. Stoneproof or Ribbon armor essential. You can also have aeons do the bulk of the fighting."
+    },
+    {
+      "slug": "dark-shiva",
+      "name": "Dark Shiva",
+      "location": "Macalania Temple approach",
+      "locationDescription": "When you approach Macalania Temple, a Guado summoner attacks with Dark Shiva.",
+      "regionMap": "img/maps/regions/macalania/Macalania Temple.png",
+      "strategy": "High agility allows frequent attacks. Heavenly Strike has an instant-death effect that circumvents Auto-Life entirely. Auto-Phoenix armor is highly effective — her only multi-target attack is her Overdrive, which you can survive by summoning an aeon. Only 1,100,000 HP, so a relatively quick fight."
+    },
+    {
+      "slug": "dark-bahamut",
+      "name": "Dark Bahamut",
+      "location": "Zanarkand Dome, Yunalesca's chamber",
+      "locationDescription": "You can find Dark Bahamut in the Zanarkand Dome chamber where you met Yunalesca.",
+      "regionMap": "img/maps/regions/zanarkand/Zanarkand Ruins.png",
+      "strategy": "4,000,000 HP. His Impulse counterattack damages every party member and causes status conditions including Petrify. If fatal damage + Petrify hits, the character shatters permanently — Auto-Life and Auto-Phoenix won't help. Everyone must have Ribbon or Stoneproof. Alternatively, have one character constantly use Sentinel to prevent the counterattack entirely."
+    },
+    {
+      "slug": "dark-yojimbo",
+      "name": "Dark Yojimbo (x5 fights)",
+      "location": "Cavern of the Stolen Fayth",
+      "locationDescription": "Enter the area with the teleport pad that can send you into Yojimbo's chamber and attempt to walk south. A Yevonite summons Yojimbo to block the way. Once beaten, Yojimbo continues to appear in various parts of the cavern until you've defeated him five times. You're free to save and heal between battles, but leaving the cavern resets the encounter count. You can farm Dark Yojimbo's rare drops (including Ribbon armor) by intentionally leaving after winning four or fewer fights.",
+      "regionMap": "img/maps/regions/cotsf/Cavern of the Stolen Fayth.png",
+      "strategy": "Ambushes the party at fight start. Start with a First Strike character (Auron with Masamune), then swap for Yuna (summon aeon) or Rikku (Hyper Mighty G for Auto-Life). Always summon aeons for Zanmato Overdrive — it kills the entire party instantly and ignores Auto-Life. Stoneproof or Ribbon essential (dog attacks with Stonetouch). Must defeat 5 times to clear."
+    },
+    {
+      "slug": "dark-anima",
+      "name": "Dark Anima",
+      "location": "Mt. Gagazet entrance",
+      "locationDescription": "Return to the Mt. Gagazet Mountain Cave and have Wakka throw his ball through the spinning shield again. Dark Anima will then appear at the entrance to Mt. Gagazet to await your challenge.",
+      "regionMap": "img/maps/regions/gagazet/Gagazet Outside.png",
+      "strategy": "8,000,000 HP. Pain is an instant-kill attack that cannot be stopped by Ribbon or Deathproof. Mega-Graviton deals damage equal to slightly more than half max HP and inflicts Sleep, Slow, and Doom. Oblivion Overdrive is almost certainly not survivable. Auto-Phoenix and Auto-Life essential. If lacking Ribbon armor, consider Auto-Med ability instead."
+    },
+    {
+      "slug": "dark-cindy",
+      "name": "Dark Cindy",
+      "location": "Mushroom Rock Road entrance",
+      "locationDescription": "The Dark Magus Sisters make for a deadly encounter when fought three-on-three, but they are much easier to beat individually. Walk past the summoner at the entrance to Mushroom Rock Road, then run into the valley following the path to the Operation Mi'ihen staging area. When 'Getting Away' text appears, keep running — one by one the sisters give up the chase, letting you fight them solo.",
+      "regionMap": "img/maps/regions/mushroom rock road/MRR.png",
+      "strategy": "When fought together, all three begin with full Overdrive bars — summon an aeon immediately. When fought solo, they use Mega-Graviton instead of their usual Overdrive. With Stoneproof/Ribbon and two Auto-Phoenix characters, the sisters have little hope when fought individually."
+    },
+    {
+      "slug": "dark-sandy",
+      "name": "Dark Sandy",
+      "location": "Mushroom Rock Road entrance",
+      "locationDescription": "Separate Dark Sandy from the group using the same fleeing strategy as Dark Cindy.",
+      "regionMap": "img/maps/regions/mushroom rock road/MRR.png",
+      "strategy": "Same general strategy as Dark Cindy. Cannot damage multiple characters with non-Overdrive attacks when fought solo. Stoneproof or Ribbon required for Stonetouch attacks."
+    },
+    {
+      "slug": "dark-mindy",
+      "name": "Dark Mindy",
+      "location": "Mushroom Rock Road entrance",
+      "locationDescription": "Separate Dark Mindy from the group using the same fleeing strategy.",
+      "regionMap": "img/maps/regions/mushroom rock road/MRR.png",
+      "strategy": "Weakest of the three sisters but still deadly. Same solo isolation strategy. Stoneproof or Ribbon and Auto-Phoenix make this manageable."
+    }
+  ],
+  "penance": {
+    "slug": "penance",
+    "armsSlug": "penance-arms",
+    "name": "Penance",
+    "prerequisite": "Requires defeating all Dark Aeons. Penance then appears in the Airship destination list.",
+    "strategy": "Penance's body has 12,000,000 HP and each arm has 500,000 HP. Destroying the arms is essential — as long as one or both are destroyed, Penance can't use Judgment Day (which clears the battlefield). Time your killing blows on arms just before the arm's turn for maximum regeneration delay. Use Auto-Potion, Auto-Regen, or Regen to sustain offense.\n\nIf everyone has Ribbon, prioritize destroying the left arm. Without Ribbon, the right arm is more dangerous (focused on ailments). Focus attacks on Penance's body only when both arms are destroyed.\n\nAfter dealing 3,000,000 damage to the body, Penance casts Haste on itself (Dispel it) and switches from Obliteration (party-wide heavy damage, reduced by Cheer) to Immolation (single-target, inflicts breaks and drains MP). Use Dispel on break statuses and Three Stars item when MP runs out.",
+    "zanmatoTip": "If you get to a boss you just can't beat, there's always one last hope: summoning Yojimbo and hoping he uses Zanmato. The odds against a dark aeon or Penance are extremely low, but you can increase them slightly by paying handsomely, having Yojimbo in Overdrive, and maintaining a record of decent payments without dismissing him early or letting him fall in combat."
+  },
+  "nemesis": {
+    "slug": "nemesis",
+    "name": "Nemesis",
+    "note": "Unlocked by capturing every monster 10 times and defeating all Area Conquest, Species Conquest, and Original monsters in the Monster Arena."
+  }
+}

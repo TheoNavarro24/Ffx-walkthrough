@@ -71,6 +71,12 @@
       "items": [
         { "id": "airship-arena-mars-sigil", "name": "Mars Sigil (Auron — capture 1 fiend from each of 10 areas)", "icon": "mars-sigil", "missable": false }
       ]
+    },
+    {
+      "name": "Dark Aeons & Penance",
+      "prose": "After acquiring the Airship, Yevonite zealots station dark aeon summoners at locations throughout Spira. These super-powered aeons and the superboss they unlock are the game's ultimate challenge — expect to invest 50–100 hours of preparation. For Dark Aeon locations, strategies, and Penance, see the Superbosses page.",
+      "guideImages": ["image_0089_00.jpeg"],
+      "items": []
     }
   ]
 }

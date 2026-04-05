@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { searchIndex } from '../data/searchIndex'
 
-const TYPE_PRIORITY = { chapter: 0, boss: 1, primer: 2, 'jecht-sphere': 3, celestial: 4 }
+const TYPE_PRIORITY = { chapter: 0, boss: 1, superboss: 2, primer: 3, 'jecht-sphere': 4, celestial: 5 }
 
 export function useSearch(query) {
   return useMemo(() => {

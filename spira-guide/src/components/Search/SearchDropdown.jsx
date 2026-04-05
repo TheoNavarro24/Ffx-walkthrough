@@ -8,6 +8,7 @@ const TYPE_LABELS = {
   primer: 'PRIMER',
   'jecht-sphere': 'JECHT',
   celestial: 'CELESTIAL',
+  superboss: 'SUPERBOSS',
 }
 
 export default function SearchDropdown() {
@@ -41,7 +42,7 @@ export default function SearchDropdown() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
-        className="bg-black/5 border border-black/20 rounded px-3 py-1 w-32 text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-black/40 transition-colors"
+        className="bg-black/5 border border-black/20 rounded px-3 py-1 w-20 sm:w-32 text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-black/40 transition-colors"
         placeholder="Search…"
       />
 
@@ -57,8 +58,15 @@ export default function SearchDropdown() {
             results.map((r, i) => (
               <Link
                 key={i}
-                to={`/chapter/${r.chapterId}${r.anchor ? '#' + r.anchor : ''}`}
-                onClick={() => setQuery('')}
+                to={r.path ?? `/chapter/${r.chapterId}${r.anchor ? '#' + r.anchor : ''}`}
+                onClick={() => {
+                  setQuery('')
+                  if (r.scrollTo) {
+                    setTimeout(() => {
+                      document.getElementById(r.scrollTo)?.scrollIntoView({ behavior: 'smooth' })
+                    }, 100)
+                  }
+                }}
                 className="flex items-center gap-2 px-3 py-2 hover:bg-white/10 transition-colors border-b border-[var(--color-border)] last:border-0"
               >
                 <span className="text-[9px] font-bold tracking-wider opacity-50 w-16 flex-shrink-0">

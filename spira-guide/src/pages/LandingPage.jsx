@@ -32,15 +32,13 @@ export default function LandingPage() {
         style={{ background: 'rgba(10,8,32,0.55)', zIndex: 1 }}
       />
 
-      {/* Corner card */}
+      {/* Corner card — centered on small screens, corner-positioned on md+ */}
       <div
-        className="absolute top-4 left-4 ffx-panel flex flex-col gap-3 p-5"
+        className="relative mx-auto mt-8 md:absolute md:top-4 md:left-4 md:mx-0 md:mt-0 ffx-panel flex flex-col gap-3 p-5 w-[calc(100%-2rem)] max-w-[280px] md:w-auto md:min-w-[200px] md:max-w-[240px]"
         style={{
           background: 'rgba(10,8,32,0.82)',
           backdropFilter: 'blur(8px)',
           zIndex: 2,
-          minWidth: '200px',
-          maxWidth: '240px',
         }}
       >
         <div>
@@ -71,6 +69,9 @@ export default function LandingPage() {
           </Link>
           <Link to="/collectibles" className="ffx-button text-center py-1.5 text-xs">
             Collectibles Hub
+          </Link>
+          <Link to="/superbosses" className="ffx-button text-center py-1.5 text-xs">
+            Superbosses
           </Link>
           <Link to="/settings" className="ffx-button text-center py-1.5 text-xs">
             Settings

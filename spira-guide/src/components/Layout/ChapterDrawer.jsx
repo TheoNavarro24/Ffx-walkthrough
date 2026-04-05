@@ -2,6 +2,13 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ACT_NAMES, getChaptersByAct } from '../../data/chapterIndex'
 import ProgressDashboard from './ProgressDashboard'
+import { useCheckbox } from '../../hooks/useCheckbox'
+
+const SUPERBOSS_IDS = [
+  'dark-valefor', 'dark-ifrit', 'dark-ixion-first-fight', 'dark-ixion-second-fight',
+  'dark-shiva', 'dark-bahamut', 'dark-yojimbo', 'dark-anima',
+  'dark-cindy', 'dark-sandy', 'dark-mindy', 'penance', 'penance-arms', 'nemesis',
+]
 
 function ActGroup({ actNumber, children }) {
   const [expanded, setExpanded] = useState(true)
@@ -29,6 +36,8 @@ function ActGroup({ actNumber, children }) {
 
 export default function ChapterDrawer({ isOpen, onClose }) {
   const navigate = useNavigate()
+  const { isChecked } = useCheckbox()
+  const defeatedCount = SUPERBOSS_IDS.filter((id) => isChecked(`superbosses-boss-${id}`)).length
 
   function handleChapterClick(slug) {
     navigate(`/chapter/${slug}`)
@@ -68,6 +77,16 @@ export default function ChapterDrawer({ isOpen, onClose }) {
             ))}
           </ActGroup>
         ))}
+        <div className="mt-2 border-t border-[var(--color-border-alt)] pt-2">
+          <button
+            className="w-full text-left px-3 py-1.5 text-sm hover:text-[var(--color-gold)] ffx-header tracking-wider"
+            style={{ fontSize: '14px' }}
+            onClick={() => { navigate('/superbosses'); onClose() }}
+          >
+            Superbosses
+            <span className="text-[10px] opacity-60 ml-2 font-normal">{defeatedCount}/14</span>
+          </button>
+        </div>
       </nav>
     </>
   )

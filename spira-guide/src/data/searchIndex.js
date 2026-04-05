@@ -4,6 +4,7 @@ import { getChapterData } from './chapterData'
 import { PRIMERS } from './collectibles/primersData'
 import { JECHT_SPHERES } from './collectibles/jechtSpheresData'
 import { CELESTIALS_BY_CHARACTER } from './collectibles/celestialsData'
+import superbossData from './superbosses.json'
 
 function toTitleCase(str) {
   return str.replace(/\b\w/g, (c) => c.toUpperCase())
@@ -64,5 +65,30 @@ for (const [characterKey, character] of Object.entries(CELESTIALS_BY_CHARACTER))
     })
   }
 }
+
+// Superbosses
+for (const da of superbossData.darkAeons) {
+  records.push({
+    type: 'superboss',
+    title: da.name,
+    subtitle: da.location,
+    path: '/superbosses',
+    scrollTo: `boss-${da.slug}`,
+  })
+}
+records.push({
+  type: 'superboss',
+  title: 'Penance',
+  subtitle: 'Airship destination',
+  path: '/superbosses',
+  scrollTo: `boss-${superbossData.penance.slug}`,
+})
+records.push({
+  type: 'superboss',
+  title: 'Nemesis',
+  subtitle: 'Monster Arena',
+  path: '/superbosses',
+  scrollTo: `boss-${superbossData.nemesis.slug}`,
+})
 
 export const searchIndex = records

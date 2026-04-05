@@ -1,4 +1,4 @@
-export default function MissableAlert({ missables = [] }) {
+export default function MissableAlert({ missables = [], heading = 'Missable in this chapter' }) {
   if (missables.length === 0) return null
 
   return (
@@ -8,7 +8,7 @@ export default function MissableAlert({ missables = [] }) {
     >
       <p className="text-[10px] uppercase tracking-widest text-red-300 mb-2 font-bold flex items-center gap-1.5">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
-        Missable in this chapter
+        {heading}
       </p>
       <ul className="flex flex-col gap-1">
         {missables.map((m, i) => (
