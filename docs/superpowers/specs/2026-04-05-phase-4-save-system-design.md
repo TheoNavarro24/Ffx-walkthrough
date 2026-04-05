@@ -68,7 +68,7 @@ Migration is idempotent — if `spira-slots` already exists, do nothing.
 
 ### Approach: `SaveContext` + scoped `useCheckbox`
 
-A `SaveContext` provider wraps the app (inside the router, outside page components). It owns slot metadata and the active slot ID. `useCheckbox` reads the active slot ID from this context to scope its localStorage key.
+A `SaveContext` provider is added in `src/App.jsx`, wrapping `<Routes>` but inside `<BrowserRouter>`. It owns slot metadata and the active slot ID. `useCheckbox` reads the active slot ID from this context to scope its localStorage key.
 
 ### `SaveContext` / `useSaveSlot`
 
@@ -88,6 +88,7 @@ Constraints:
 - Cannot delete the last remaining slot
 - Slot IDs are generated as `slot-${Date.now()}`
 - `createSlot` switches to the new slot immediately
+- `deleteSlot` on the active slot switches to the first slot in the remaining array (after removal)
 
 ### `useCheckbox` (refactored)
 
@@ -111,7 +112,7 @@ No changes needed in any component that currently calls `useCheckbox`.
 { pyreflyEnabled, togglePyrefly }
 ```
 
-Reads/writes `spira-pyrefly` in localStorage. Default `true`. Used by:
+Reads/writes `spira-pyrefly` in localStorage. Default `true`. This preference is global across all slots — toggling it on or off applies regardless of which slot is active. Used by:
 - Settings page toggle
 - `usePyreflyBurst` hook (check before triggering animation)
 
@@ -164,7 +165,7 @@ Three FFX-style panels:
 ### Data panel
 
 - "↓ Export Save" button: serialises `spira-checks:{activeSlotId}` + slot name/date as JSON, triggers browser download as `spira-save-{slotName}.json`
-- "↑ Import Save" button: opens a file picker (`<input type="file" accept=".json">`), reads file, confirms overwrite with `window.confirm`, then writes data into the active slot's checks key
+- "↑ Import Save" button: opens a file picker (`<input type="file" accept=".json">`), reads file, confirms overwrite with `window.confirm` showing the message "Replace all checks in [Slot Name] with imported data? This cannot be undone.", then writes data into the active slot's checks key
 - Subtitle line shows which slot is currently active
 
 ### Display panel
@@ -189,7 +190,7 @@ Three FFX-style panels:
 
 ## Migration Utility
 
-A standalone function `migrateLegacyChecks()` runs once at app startup (before render or in a `useEffect` in the provider). It is synchronous and reads/writes localStorage directly.
+A standalone function `migrateLegacyChecks()` runs synchronously inside `SaveContextProvider` during its initial state setup (not in a `useEffect`) — it reads/writes localStorage before the context value is first provided to children, ensuring no child ever sees the old un-migrated state.
 
 ---
 
