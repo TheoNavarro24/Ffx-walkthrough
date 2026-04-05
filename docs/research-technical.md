@@ -268,3 +268,266 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 ```
+
+---
+
+## GitHub Pages SPA Routing (404 Fix)
+
+GitHub Pages doesn't support SPA client-side routing natively. Navigating directly to `/chapter/besaid` returns a 404.
+
+### Solution: Copy index.html as 404.html
+
+GitHub Pages serves `404.html` for any URL that doesn't match a file. If `404.html` is a copy of `index.html`, React Router handles the route.
+
+Add to build script in `package.json`:
+```json
+"build": "vite build && cp dist/index.html dist/404.html"
+```
+
+### Alternative: HashRouter
+
+Use `createHashRouter` instead of `createBrowserRouter`. URLs become `/#/chapter/besaid` — uglier but zero config needed.
+
+**Recommendation**: Use `createHashRouter` for simplicity. The 404.html copy trick works but can cause issues with SEO and initial 404 status codes (not a concern for a personal PWA).
+
+---
+
+## Vite Path Aliases (Importing JSON from docs/)
+
+The game data lives in `docs/source-data/` which is outside `spira-guide/src/`. Need a Vite alias to import it cleanly.
+
+### vite.config.js
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import path from 'path'
+
+export default defineConfig({
+  base: '/Ffx-walkthrough/',
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+      '@data': path.resolve(__dirname, '../docs/source-data'),
+    }
+  }
+})
+```
+
+### Usage in components
+```javascript
+import monsters from '@data/monsters.json'
+import chapters from '@data/walkthrough-index.json'
+```
+
+### Dynamic import for large files
+```javascript
+// monsters.json is 549 KB — lazy load it
+const loadMonsters = () => import('@data/monsters.json')
+
+// In component:
+useEffect(() => {
+  loadMonsters().then(data => setMonsters(data.default))
+}, [])
+```
+
+---
+
+## PWA Setup: vite-plugin-pwa
+
+### Install
+```bash
+npm install vite-plugin-pwa -D
+```
+
+### vite.config.js
+```javascript
+import { VitePWA } from 'vite-plugin-pwa'
+
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'img/**/*'],
+      manifest: {
+        name: 'Spira Guide — FFX Walkthrough',
+        short_name: 'Spira Guide',
+        description: 'Interactive FFX HD Remaster walkthrough',
+        theme_color: '#0a0e27',
+        background_color: '#0a0e27',
+        display: 'standalone',
+        orientation: 'landscape',
+        icons: [
+          { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+        ],
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,png,jpg,svg,json}'],
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024, // 3 MB (for large JSON/images)
+      },
+    }),
+  ],
+})
+```
+
+**Notes**:
+- `registerType: 'autoUpdate'` — automatically updates the service worker when new content is deployed
+- `includeAssets` — precaches the 352 game images for offline use
+- `workbox.maximumFileSizeToCacheInBytes` — raised to 3 MB to accommodate monsters.json (549 KB) and large map images
+- PWA only works in production builds (`npm run build` + `npm run preview`)
+- Need to create icon-192.png and icon-512.png for the manifest
+
+---
+
+## Scroll Spy (Sticky TOC)
+
+### Approach: IntersectionObserver with React Hook
+
+Track which section headings are visible in the viewport to highlight the active TOC item.
+
+### useScrollSpy hook
+```javascript
+import { useState, useEffect, useRef } from 'react'
+
+export function useScrollSpy(sectionIds, options = {}) {
+  const [activeId, setActiveId] = useState(null)
+  const observerRef = useRef(null)
+
+  useEffect(() => {
+    const elements = sectionIds
+      .map(id => document.getElementById(id))
+      .filter(Boolean)
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        // Find the first intersecting entry
+        const intersecting = entries.find(e => e.isIntersecting)
+        if (intersecting) {
+          setActiveId(intersecting.target.id)
+        }
+      },
+      {
+        // -100px top accounts for sticky header
+        // -40% bottom means headings in bottom 40% don't count
+        rootMargin: '-100px 0px -40% 0px',
+        threshold: 0,
+        ...options,
+      }
+    )
+
+    elements.forEach(el => observerRef.current.observe(el))
+
+    return () => observerRef.current?.disconnect()
+  }, [sectionIds])
+
+  return activeId
+}
+```
+
+### TOC component pattern
+```jsx
+function TableOfContents({ sections }) {
+  const activeId = useScrollSpy(sections.map(s => s.id))
+
+  return (
+    <nav className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto">
+      {sections.map(section => (
+        <a
+          key={section.id}
+          href={`#${section.id}`}
+          className={activeId === section.id ? 'text-gold border-l-2 border-gold' : 'text-gray'}
+        >
+          {section.label}
+        </a>
+      ))}
+    </nav>
+  )
+}
+```
+
+---
+
+## localStorage Save System
+
+### useLocalStorage hook (with debounce)
+```javascript
+import { useState, useEffect, useCallback, useRef } from 'react'
+
+export function useLocalStorage(key, initialValue) {
+  const [value, setValue] = useState(() => {
+    try {
+      const stored = localStorage.getItem(key)
+      return stored ? JSON.parse(stored) : initialValue
+    } catch {
+      return initialValue
+    }
+  })
+
+  // Debounce writes to localStorage (100ms)
+  const timeoutRef = useRef(null)
+  useEffect(() => {
+    clearTimeout(timeoutRef.current)
+    timeoutRef.current = setTimeout(() => {
+      try {
+        localStorage.setItem(key, JSON.stringify(value))
+      } catch (e) {
+        console.warn('localStorage write failed:', e)
+      }
+    }, 100)
+    return () => clearTimeout(timeoutRef.current)
+  }, [key, value])
+
+  return [value, setValue]
+}
+```
+
+### Best practices
+- **Debounce writes** — localStorage is synchronous; rapid writes (checkbox spam) can cause jank
+- **Try/catch everything** — storage quota can be exceeded (~5-10 MB per origin)
+- **Lazy initialization** — read from localStorage only once on mount via `useState(() => ...)`
+- **JSON.stringify/parse** — always wrap in try/catch for malformed data
+- **Cross-tab sync** not needed (personal single-device use)
+
+---
+
+## Image Lazy Loading
+
+### Native browser lazy loading (simplest)
+```jsx
+<img src="/img/bosses/evrae.png" alt="Evrae" loading="lazy" />
+```
+
+Works in all modern browsers including Safari on iPad. No library needed.
+
+### For more control: IntersectionObserver
+Only needed if we want fade-in effects or placeholder images. Start with native `loading="lazy"` — optimize later if needed.
+
+---
+
+## Summary: All Dependencies
+
+### Production
+```
+react               (already installed)
+react-dom            (already installed)
+react-router         (routing)
+```
+
+### Dev
+```
+tailwindcss          (styling)
+@tailwindcss/vite    (Vite integration)
+vite-plugin-pwa      (PWA/offline)
+```
+
+### Optional (add later if needed)
+```
+sparticles           (pyrefly particle effects)
+```
+
+### Total new packages: 4 (react-router, tailwindcss, @tailwindcss/vite, vite-plugin-pwa)
