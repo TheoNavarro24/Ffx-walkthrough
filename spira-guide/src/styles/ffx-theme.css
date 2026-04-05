@@ -1,14 +1,15 @@
 :root {
-  --color-bg-deep: #0a0e27;
-  --color-bg-panel: #1a2444;
-  --color-border: #4fc3f7;
-  --color-border-alt: #81d4fa;
-  --color-gold: #ffd54f;
+  --color-bg-deep: #1a1430;
+  --color-bg-panel: #37437B;
+  --color-bg-panel-dark: #2e285d;
+  --color-border: #707e9d;
+  --color-border-alt: #575b88;
+  --color-gold: #FFC10F;
   --color-text: #ffffff;
 }
 
 .ffx-panel {
-  background: linear-gradient(135deg, rgba(26, 36, 68, 0.92), rgba(10, 14, 39, 0.95));
+  background: linear-gradient(135deg, rgba(55, 67, 123, 0.92), rgba(46, 40, 93, 0.95));
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   color: var(--color-text);
@@ -34,4 +35,22 @@
 
 .ffx-button:hover {
   box-shadow: 0 0 8px var(--color-border);
+}
+
+.boss-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.boss-stat-label {
+  color: var(--color-border-alt);
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+}
+
+.boss-stat-value {
+  color: var(--color-text);
 }

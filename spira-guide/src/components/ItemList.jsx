@@ -1,4 +1,5 @@
 import { useCheckbox } from '../hooks/useCheckbox'
+import { assetUrl } from '../utils/assetUrl'
 
 export default function ItemList({ items = [], showUncheckedOnly = false }) {
   const { isChecked, toggle } = useCheckbox()
@@ -28,7 +29,7 @@ export default function ItemList({ items = [], showUncheckedOnly = false }) {
               className="w-3.5 h-3.5 accent-[var(--color-border)] cursor-pointer"
             />
             <img
-              src={`/img/items/sd/${item.icon}.png`}
+              src={assetUrl(`img/items/sd/${item.icon}.png`)}
               alt=""
               width={16}
               height={16}

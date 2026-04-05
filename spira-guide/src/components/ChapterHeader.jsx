@@ -1,11 +1,12 @@
 import PartyIndicator from './PartyIndicator'
+import { assetUrl } from '../utils/assetUrl'
 
 export default function ChapterHeader({ name, act, slug, mapImage, party = [] }) {
   return (
     <div className="ffx-panel p-3 flex gap-4 items-center">
       {mapImage && (
         <img
-          src={mapImage}
+          src={assetUrl(mapImage)}
           alt={`${name} map`}
           className="w-28 h-20 object-cover rounded border border-[#1e3a5f] flex-shrink-0"
           onError={(e) => { e.target.style.display = 'none' }}

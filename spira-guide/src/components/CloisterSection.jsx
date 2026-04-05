@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assetUrl'
+
 export default function CloisterSection({ cloister }) {
   if (!cloister) return null
 
@@ -7,7 +9,7 @@ export default function CloisterSection({ cloister }) {
 
       {cloister.mapImage && (
         <img
-          src={cloister.mapImage}
+          src={assetUrl(cloister.mapImage)}
           alt={`${cloister.name} map`}
           className="rounded border border-[#1e3a5f] max-w-xs"
           onError={(e) => { e.target.style.display = 'none' }}

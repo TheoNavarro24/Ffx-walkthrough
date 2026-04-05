@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assetUrl'
+
 export default function PartyIndicator({ party = [] }) {
   if (party.length === 0) return null
 
@@ -6,7 +8,7 @@ export default function PartyIndicator({ party = [] }) {
       {party.map((name) => (
         <img
           key={name}
-          src={`/img/party/characters/${name.toLowerCase()}.png`}
+          src={assetUrl(`img/party/characters/${name.toLowerCase()}.png`)}
           alt={name}
           title={name}
           width={28}

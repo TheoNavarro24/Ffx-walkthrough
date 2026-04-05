@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useCheckbox } from '../hooks/useCheckbox'
+import { assetUrl } from '../utils/assetUrl'
 
 function formatHp(boss) {
   const hp = boss.hp ?? boss.stats?.hp?.[0]
@@ -55,7 +56,7 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
         aria-expanded={expanded}
       >
         <img
-          src={`/img/bosses/${bossSlug}.png`}
+          src={assetUrl(`img/bosses/${bossSlug}.png`)}
           alt={bossName}
           width={52}
           height={52}
@@ -64,9 +65,16 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
         />
         <div className="flex-1 min-w-0">
           <p className="ffx-header text-sm">{bossName}</p>
-          <p className="text-xs text-gray-400 mt-0.5">
-            HP: {formatHp(boss)} · Weak: {formatWeaknesses(boss)}
-          </p>
+          <div className="flex gap-3 mt-0.5">
+            <span className="boss-stat">
+              <span className="boss-stat-label">HP</span>
+              <span className="boss-stat-value">{formatHp(boss)}</span>
+            </span>
+            <span className="boss-stat">
+              <span className="boss-stat-label">Weak</span>
+              <span className="boss-stat-value">{formatWeaknesses(boss)}</span>
+            </span>
+          </div>
         </div>
         <span className="text-gray-600 text-xs">{expanded ? '▲' : '▼'}</span>
       </button>
