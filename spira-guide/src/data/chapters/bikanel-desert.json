@@ -16,7 +16,7 @@
     },
     {
       "name": "Sanubia Desert East",
-      "prose": "The desert splits into two forks here — left has stronger fiends, right has weaker ones, but both have items. Al Bhed signs point the way; the northern area has chests with Megalixirs and Teleport Spheres, but some are rigged Sandragora pits. Kill Sandragoras with fire and cure Confusion immediately with Remedies. Rikku's Al Bhed Potions are invaluable here since Yuna isn't in the party — use them freely.",
+      "prose": "The desert splits into two forks here — left has stronger fiends, right has weaker ones, but both have items. Al Bhed signs point the way; the northern area has chests with Megalixirs and Teleport Spheres, but some are rigged Sandragora pits. Kill Sandragoras with fire and cure Confusion immediately with Remedies. Rikku's Al Bhed Potions are invaluable here since Yuna isn't in the party — use them freely. Zu enemies are a persistent hazard throughout this section — they're flying-type so only Wakka's attacks are reliable, and they inflict Stop and Slow, so equip Stopproof armor if you have it.",
       "guideImages": ["image_0053_00.jpeg"],
       "items": [
         { "id": "bikanel-primer-xvii", "name": "Al Bhed Primer Vol. XVII", "icon": "primer", "missable": false }

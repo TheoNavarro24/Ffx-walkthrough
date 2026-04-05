@@ -9,7 +9,7 @@
   "subLocations": [
     {
       "name": "Mountain Trail",
-      "prose": "The Ronso gatekeepers stand down after Yuna impresses them. Talk to Wantz near the start of the mountain trail — if you skip him here, his shop at Macalania (with exclusive 4-slot equipment) never appears. Primer XXV is tucked behind a rock pillar on the right side of the trail as you ascend.",
+      "prose": "The Ronso gatekeepers stand down after Yuna impresses them. Talk to Wantz near the start of the mountain trail — if you skip him here, his shop at Macalania (with exclusive 4-slot equipment) never appears. Primer XXV is tucked behind a rock pillar on the right side of the trail as you ascend. Later sections of the trail are plagued by Grendels and Behemoths — both hit extremely hard, can inflict Confuse, and have large HP pools, making this the toughest random encounter gauntlet outside Sin. The Ronso fiends early on are worth a Lancet from Kimahri — Gagazet Mountain Trail enemies carry a variety of Blue Magic abilities including useful status skills.",
       "guideImages": ["image_0064_00.jpeg", "image_0065_00.jpeg", "image_0065_01.jpeg"],
       "items": [
         { "id": "gagazet-primer-xxv", "name": "Al Bhed Primer Vol. XXV", "icon": "primer", "missable": false },
@@ -19,7 +19,7 @@
     },
     {
       "name": "Mountain Trial / Prominence",
-      "prose": "This is a tough stretch — large maps, frequent encounters, and sparse save points. After the Biran & Yenke fight, check behind the eastern Save Sphere for the Saturn Crest (Kimahri's Spirit Lance) before moving on. The half-submerged cavern section splits Tidus, Wakka, and Rikku from the others for the underwater trials. After completing both trials, loot the cavern chests before taking the stone stairway out.",
+      "prose": "This is a tough stretch — large maps, frequent encounters, and sparse save points. After the Biran & Yenke fight, check behind the eastern Save Sphere for the Saturn Crest (Kimahri's Spirit Lance) before moving on. The half-submerged cavern section splits Tidus, Wakka, and Rikku from the others for the underwater trials — this sub-group faces several fiend groups solo, so make sure all three have decent equipment before entering the mountain. If you have access to Rikku's Hyper Mighty G mix (Gambler's Spirit + Healing Spring), using it before Seymour Flux grants Haste, Protect, and Shell to the whole party and significantly eases the fight. After completing both trials, loot the cavern chests before taking the stone stairway out.",
       "guideImages": ["image_0066_00.jpeg", "image_0067_00.jpeg"],
       "items": [
         { "id": "gagazet-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },

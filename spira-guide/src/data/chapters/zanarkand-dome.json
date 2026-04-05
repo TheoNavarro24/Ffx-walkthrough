@@ -9,7 +9,7 @@
   "subLocations": [
     {
       "name": "Zanarkand Dome Approach",
-      "prose": "After camp at the familiar hill, the party finally enters Zanarkand Ruins. The early maps are linear and guarded by the same fiends from Gagazet. Don't miss the Fortune Sphere and Spiritual Targe on the approach — they're in chests off the main path. Inside the dome, Defender Z fiends hit hard; use Armor Break and Mental Break to manage them.",
+      "prose": "After camp at the familiar hill, the party finally enters Zanarkand Ruins. The early maps are linear and guarded by the same fiends from Gagazet. Don't miss the Fortune Sphere and Spiritual Targe on the approach — they're in chests off the main path. Inside the dome, Defender Z fiends hit hard; use Armor Break and Mental Break to manage them. Defender Z are also one of the best sources of Lv. 4 Key Spheres in the game — steal or bribe them if your Sphere Grid needs unlocking late-gate nodes.",
       "guideImages": ["image_0068_00.jpeg", "image_0068_01.jpeg", "image_0068_02.jpeg", "image_0068_03.jpeg", "image_0069_00.jpeg"],
       "items": [
         { "id": "zanarkand-dome-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },

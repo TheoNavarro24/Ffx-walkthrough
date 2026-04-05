@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Via Purifico (Yuna's Path)",
-      "prose": "The party is split and sentenced to the Via Purifico. Yuna navigates the maze solo until she finds Kimahri and then Lulu via teleport pads. Work your way to the southern dead end to activate the glyph that unlocks the treasure room — that's where the Elixir, Black Magic Sphere, and other valuables are stashed.",
+      "prose": "The party is split and sentenced to the Via Purifico. Yuna navigates the maze solo until she finds Kimahri and then Lulu via teleport pads. Work your way to the southern dead end to activate the glyph that unlocks the treasure room — that's where the Elixir, Black Magic Sphere, and other valuables are stashed. Maze Larva and Aqua Flan enemies populate the maze — fire and ice magic from Lulu cut through them quickly, and there's no time pressure here so clear everything for the AP.",
       "guideImages": ["image_0059_00.jpeg"],
       "items": [
         { "id": "via-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Via Purifico (Tidus's Sewers)",
-      "prose": "Tidus, Auron, and Wakka navigate the underwater channels. There's a shop chest near the start if you need supplies before Evrae Altana. The boss is undead — throw Phoenix Downs at it for ~9,999 damage each. Two Phoenix Downs kill it outright; don't use cure magic or Al Bhed Potions on it.",
+      "prose": "Tidus, Auron, and Wakka navigate the underwater channels. There's a shop chest near the start if you need supplies before Evrae Altana. Phlegyas and Exoray enemies roam the sewers — Exoray's Spore attack inflicts Darkness and Confusion on the party, so equip Confuseproof armor on Tidus and Auron if available. The boss is undead — throw Phoenix Downs at it for ~9,999 damage each. Two Phoenix Downs kill it outright; don't use cure magic or Al Bhed Potions on it.",
       "guideImages": ["image_0060_00.jpeg", "image_0060_01.jpeg"],
       "items": [
         { "id": "via-evade-counter", "name": "Evade & Counter Armguard (Wakka)", "icon": "armguard", "missable": false },

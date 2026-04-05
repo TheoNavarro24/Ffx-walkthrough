@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Inside Sin",
-      "prose": "Inside Sin is a labyrinth of waterfalls and platforms — the mini-map only shows what's immediately nearby. Fiends here are extremely powerful, especially Behemoth Kings (Meteor for ~6,000 to the party), so save often and lean on aeons. Chests throughout contain strong endgame equipment including Wakka's Four-on-One and Yuna's Laevatein. The final Save Sphere before the climb to the Tower of Death is your last chance to return to the airship for side quests.",
+      "prose": "Inside Sin is a labyrinth of waterfalls and platforms — the mini-map only shows what's immediately nearby. Fiends here are extremely powerful, especially Behemoth Kings (Meteor for ~6,000 to the party), so save often and lean on aeons. Critically, Behemoth Kings use Meteor as a death rattle when killed — avoid triggering that final blow while party HP is low, and don't use White Magic to finish them off. The teleport-pad sections also contain Energy Dragons, which are weak to Bio — Lulu's Bio spell or Poisontouch weapons do solid work here. Chests throughout contain strong endgame equipment including Wakka's Four-on-One and Yuna's Laevatein. The final Save Sphere before the climb to the Tower of Death is your last chance to return to the airship for side quests.",
       "guideImages": ["image_0074_00.jpeg"],
       "items": [
         { "id": "inside-sin-jecht-sphere-10", "name": "Jecht Sphere #10 (Auron's Tornado Overdrive)", "icon": "jecht-sphere", "missable": false }
