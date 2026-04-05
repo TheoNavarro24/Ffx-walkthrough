@@ -1,0 +1,39 @@
+{
+  "slug": "airship",
+  "missables": [],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Airship Deck",
+      "prose": "The airship becomes your base of operations. Use the destination menu to access optional areas.",
+      "items": []
+    }
+  ],
+  "bosses": [],
+  "cloister": null,
+  "optionalAreas": [
+    {
+      "name": "Remiem Temple",
+      "prose": "Accessible via chocobo from the Calm Lands. Home of the Magus Sisters aeon and celestial weapon rewards.",
+      "items": [
+        { "id": "airship-remiem-cloudy-mirror", "name": "Cloudy Mirror", "icon": "cloudy-mirror", "missable": false }
+      ]
+    },
+    {
+      "name": "Baaj Temple (Revisit)",
+      "prose": "Return to Baaj via airship coordinates. Anima awaits if all other aeons are obtained.",
+      "items": [
+        { "id": "airship-baaj-anima", "name": "Anima (Aeon)", "icon": "anima", "missable": false }
+      ]
+    },
+    {
+      "name": "Omega Ruins",
+      "prose": "High-level optional dungeon. Enter via airship coordinates. Omega Weapon is the final optional boss.",
+      "items": [
+        { "id": "airship-omega-master-sphere", "name": "Master Sphere ×2", "icon": "master-sphere", "missable": false }
+      ]
+    }
+  ]
+}

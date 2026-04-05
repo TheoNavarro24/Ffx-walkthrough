@@ -28,4 +28,10 @@ describe('ChapterPage', () => {
     renderChapter('unknown-slug')
     expect(document.getElementById('section-walkthrough')).toBeInTheDocument()
   })
+
+  it('renders optional area sub-sections for airship chapter', () => {
+    renderChapter('airship')
+    expect(screen.getByText(/Remiem Temple/)).toBeInTheDocument()
+    expect(screen.getByText(/Baaj Temple \(Revisit\)/)).toBeInTheDocument()
+  })
 })

@@ -106,6 +106,25 @@ export default function ChapterPage() {
         )}
       </section>
 
+      {data.optionalAreas?.length > 0 && (
+        <section id="section-optional" aria-label="Optional Areas">
+          <h2 className="ffx-header text-base mb-2">Optional Areas</h2>
+          <div className="ffx-panel">
+            {data.optionalAreas.map((area) => (
+              <SubLocation
+                key={area.name}
+                slug={slug}
+                name={area.name}
+                prose={area.prose}
+                items={area.items}
+              >
+                <ItemList items={area.items} showUncheckedOnly={showUncheckedOnly} />
+              </SubLocation>
+            ))}
+          </div>
+        </section>
+      )}
+
       <ChapterNav currentSlug={slug} />
     </div>
   )

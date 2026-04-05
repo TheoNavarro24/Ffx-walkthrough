@@ -1,8 +1,10 @@
 // spira-guide/src/data/chapterData.js
 import besaidData from './chapters/besaid.json' with { type: 'json' }
+import airshipData from './chapters/airship.json' with { type: 'json' }
 
 const chapters = {
   besaid: besaidData,
+  airship: airshipData,
 }
 
 const EMPTY_CHAPTER = {
