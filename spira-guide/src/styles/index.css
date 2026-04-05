@@ -3,6 +3,15 @@
 @import "./animations.css";
 
 @font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/Ffx-walkthrough/fonts/bebas-neue-latin-400-normal.woff2') format('woff2'),
+       url('/Ffx-walkthrough/fonts/bebas-neue-latin-400-normal.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Tuffy';
   font-style: normal;
   font-weight: 400;

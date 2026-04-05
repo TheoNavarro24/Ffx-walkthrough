@@ -1,4 +1,6 @@
 :root {
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Tuffy', sans-serif;
   --color-bg-deep: #1a1430;
   --color-bg-panel: #37437B;
   --color-bg-panel-dark: #2e285d;
