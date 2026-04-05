@@ -41,7 +41,7 @@
   "bosses": [
     {
       "slug": "lord-ochu",
-      "strategy": "Optional fight in Kilika Woods. Very difficult at this stage — 4,649 HP, can inflict Sleep. Fire spells from Lulu are effective. Reward: Elixir from Luzzu. Skip if underleveled."
+      "strategy": "Optional fight in Kilika Woods — skip if underleveled, reward is an Elixir from Luzzu. Lord Ochu's main threats are Ochu Dance (Sleep on all party members), Poison, and heavy physicals. Key warning: if it falls asleep at partial HP it wakes up fully healed, so never let it doze off mid-fight — keep attacking. Recommended setup: Wakka and Tidus for physicals, Lulu spamming Fire (its weakness), and Yuna on healing and status removal. Stack two Cheers before committing to a full assault so the party can absorb its hits."
     },
     {
       "slug": "sinspawn-geneaux",

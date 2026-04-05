@@ -15,11 +15,11 @@
   "bosses": [
     {
       "slug": "sin-left-fin",
-      "strategy": "HP: 65,000. No special mechanics — full assault with Overdrives and Celestial Weapons."
+      "strategy": "HP: 65,000. Left Fin is the first of Sin's four exterior fights — the order is Left Fin, Right Fin, Head, then Core inside Sin. The Fin uses Gravija, which reduces all party HP by 75%, so follow it immediately with Mega-Potions (flat recovery beats percentage heals here). Save your Overdrives and big summons for the Head and Core; the fins don't require them and the gauntlet is long."
     },
     {
       "slug": "sin-right-fin",
-      "strategy": "HP: 65,000. Same as Left Fin. Return to airship between fights if needed."
+      "strategy": "HP: 65,000. Second exterior fight — same kit as Left Fin, including Gravija (75% HP reduction on everyone). You can return to the airship between fights to restock; Cid can also fire missiles if you pull the ship back, dealing modest bonus damage. Keep Overdrives banked — they're better spent on the Head and Core that follow."
     },
     {
       "slug": "sin-head",
@@ -27,7 +27,7 @@
     },
     {
       "slug": "sin-core",
-      "strategy": "HP: 36,000. After the head, you enter Sin. The core is weaker — Overdrives and strong physicals finish it quickly."
+      "strategy": "HP: 36,000. After defeating the Head you enter Sin itself — the Core is the fourth and final fight in the exterior gauntlet. It has lower HP than the fins, so the Overdrives and summons saved through the earlier fights will end this quickly. Burn everything here; it's the last checkpoint before the endgame interior sequence."
     }
   ],
   "cloister": null,

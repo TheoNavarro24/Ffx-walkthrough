@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "S.S. Liki",
-      "prose": "Head below deck first — find O'aka in the hall and start your donations toward the 1,001 Gil total. In the southeast corner of the power room, Al Bhed Primer Vol. III is half-hidden on the floor; look for the corner sticking out. In the cabin to the west, kick the luggage — if you have fewer than 20 Potions it yields one each kick, up to 20 total. A Remedy is also down here. On deck before the boss, Sin's Fin attacks first: only Wakka, Lulu, and Auron can reach it, so let them focus the fin while Tidus or Kimahri handles the Sinscales.",
+      "prose": "Head below deck first — find O'aka in the hall and start your donations toward the 1,001 Gil total. In the southeast corner of the power room, Al Bhed Primer Vol. III is half-hidden on the floor; look for the corner sticking out. In the cabin to the west, kick the luggage — if you have fewer than 20 Potions it yields one each kick, up to 20 total. A Remedy is also down here. On deck before the boss, Sin's Fin attacks first: only Wakka, Lulu, and Auron can reach it, so let them focus the fin while Tidus or Kimahri handles the Sinscales. The Sinscales on deck before Echuilles respawn in waves and are easy experience — fighting them builds everyone's Overdrive gauges, which pay off immediately in the boss fight that follows.",
       "guideImages": ["image_0026_00.jpeg", "image_0029_00.jpeg"],
       "items": [
         { "id": "liki-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
@@ -19,7 +19,7 @@
   "bosses": [
     {
       "slug": "sin-fin",
-      "strategy": "Sin's Fin appears on deck first. Focus attacks on it — no special mechanics. HP: 2,000."
+      "strategy": "HP: 2,000. The Sinscale fights earlier on deck are designed to fill Overdrive gauges — make sure Tidus, Wakka, and Lulu enter this fight with Overdrives ready. The Fin has high physical defense for this stage of the game so Overdrives cut through it far faster than regular attacks; use them here rather than hoarding them. After the Fin falls, Sin attacks the ship directly and leads straight into the Echuilles fight with no break, so don't waste healing items on the Fin itself."
     },
     {
       "slug": "sinspawn-echuilles",

@@ -32,7 +32,7 @@
   "bosses": [
     {
       "slug": "klikk",
-      "strategy": "Rikku joins mid-fight as AI. Just attack with Tidus — Klikk has 1,500 HP and dies fast. No special mechanics."
+      "strategy": "HP: 1,500. Tidus starts completely alone and cannot win solo — Klikk hits for roughly 180–200 damage per turn, which is lethal without help. Survive by guarding and using Potions until Rikku dives in mid-fight. Once she joins she uses Al Bhed Potions to heal the whole party and can use her Mix Overdrive if her gauge charged during the opening turns — let her act freely. After Rikku arrives it's a straightforward burn; just attack with Tidus while she keeps both characters alive."
     },
     {
       "slug": "tros",
