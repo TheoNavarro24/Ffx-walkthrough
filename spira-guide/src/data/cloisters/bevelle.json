@@ -1,0 +1,23 @@
+{
+  "slug": "bevelle",
+  "name": "Bevelle Cloister of Trials",
+  "destructionSphere": "Knight Lance",
+  "missable": false,
+  "guideImages": ["image_0058_00.jpeg", "image_0059_00.jpeg"],
+  "steps": [
+    "Place a Bevelle Sphere into the pedestal and push it onto the moving path. Ride the platform — press the button when the glyph arrow points right to steer correctly.",
+    "At the top of the maze, use the floor glyph to turn right. At the next glyph, turn right again.",
+    "Remove one Bevelle Sphere from the pedestal and place it in the slot to activate a portion of the lower path. Push the pedestal off the end to start at the lower path.",
+    "At the end of the top path, use the last glyph to turn 180 degrees and ride back.",
+    "Push the pedestal back onto the path and ride off the end to reach the beginning of the lower path.",
+    "Ride the lower path to the end and turn right. Cross to the purple glyph and insert the Glyph Sphere — the wall gives way, revealing a Destruction Sphere.",
+    "Take the Destruction Sphere and get back on the platform. Ride it off the end to start from the beginning.",
+    "Use the middle glyph to turn right. Remove the Bevelle Sphere from the slot and place it into the pedestal. Ride the path.",
+    "At the second-to-last glyph, turn right. At the next glyph, turn right again. Run the long stretch and insert the Destruction Sphere into the slot.",
+    "At the first glyph on the top path, turn right and ride down. Turn left at the intersection and go to the end.",
+    "Take the Glyph Sphere from the far end and place it into the pedestal. Ride back to the last lower-level glyph, turn right, and insert the Bevelle Sphere into the pedestal.",
+    "Move past the first two glyphs and turn right at the last glyph near the edge. Insert one Bevelle Sphere into the slot to open the path ahead.",
+    "Leave the pedestal at the bottom of the stairs. Ascend and open the chest on the right for an HP Sphere.",
+    "Insert one Bevelle Sphere into the slot to open a path on the left. Push the pedestal down the left path and ride to the end to receive the Knight Lance."
+  ]
+}

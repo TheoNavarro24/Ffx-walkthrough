@@ -1,7 +1,7 @@
 {
   "slug": "besaid",
   "name": "Besaid Cloister of Trials",
-  "mapImage": "/img/maps/cloisters/besaid.png",
+  "mapImage": "img/maps/cloisters/Besaid Cloister.png",
   "destructionSphere": "Rod of Wisdom",
   "missable": true,
   "steps": [

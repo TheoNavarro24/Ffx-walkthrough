@@ -15,6 +15,11 @@ import CloisterSection from '../components/CloisterSection'
 import ChapterNav from '../components/ChapterNav'
 import { getBoss } from '../data/bossBySlug'
 import besaidCloister from '../data/cloisters/besaid.json'
+import kilikaCloister from '../data/cloisters/kilika.json'
+import djosequCloister from '../data/cloisters/djose.json'
+import macalaniaCloister from '../data/cloisters/macalania.json'
+import bevelleCloister from '../data/cloisters/bevelle.json'
+import zanarkandDomeCloister from '../data/cloisters/zanarkand-dome.json'
 
 const SECTION_IDS = ['section-walkthrough', 'section-bosses', 'section-collectibles']
 const SECTION_LABELS = [
@@ -25,6 +30,11 @@ const SECTION_LABELS = [
 
 const CLOISTER_DATA = {
   besaid: besaidCloister,
+  kilika: kilikaCloister,
+  djose: djosequCloister,
+  macalania: macalaniaCloister,
+  bevelle: bevelleCloister,
+  'zanarkand-dome': zanarkandDomeCloister,
 }
 
 export default function ChapterPage() {

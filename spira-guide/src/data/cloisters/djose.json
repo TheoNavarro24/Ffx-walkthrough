@@ -1,0 +1,23 @@
+{
+  "slug": "djose",
+  "name": "Djose Cloister of Trials",
+  "mapImage": "img/maps/cloisters/Djose Cloister.png",
+  "destructionSphere": "Magistral Rod",
+  "missable": false,
+  "guideImages": ["image_0044_00.jpeg", "image_0046_00.jpeg"],
+  "steps": [
+    "Push the pedestal holding the Djose Sphere under the upside-down pedestal to super-charge the sphere.",
+    "Push the pedestal (now with two Djose Spheres) into the lightning-filled room — it becomes a suspended platform. Leap across.",
+    "Take the super-charged Djose Sphere from the slot to the right of the door and place it into the slot to the left.",
+    "Locate the glowing spot on the west wall near the floor switch — examine it to reveal a glyph.",
+    "Insert the super-charged Djose Sphere into the slot to the right of the central door to open a pit room.",
+    "Push the pedestal on the other side of the lightning to activate the 'iris' symbol in the main chamber.",
+    "The completed floor symbol turns the pedestal into an elevator. Ride it up to the next level.",
+    "Touch the glyph to open the wall — take the Destruction Sphere, then return to the upper level via the magic lift.",
+    "Remove the two Djose Spheres from the eastern wall and place them both on the pedestal.",
+    "Jump back to the main room and use the west floor switch to extract the pedestal from the lightning.",
+    "On the upper level, push all five pedestals into the walls to activate the five ceiling spokes.",
+    "Place the Destruction Sphere into the central pedestal — a section of the east wall is destroyed, revealing a treasure chest (Magistral Rod).",
+    "Take a Djose Sphere and insert it into either slot on the east platform to unlock the final path. Follow the stairs to the Chamber of the Fayth."
+  ]
+}

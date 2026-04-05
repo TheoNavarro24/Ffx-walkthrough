@@ -1,4 +1,5 @@
 import { assetUrl } from '../utils/assetUrl'
+import GuideImages from './GuideImages'
 
 export default function CloisterSection({ cloister }) {
   if (!cloister) return null
@@ -22,11 +23,14 @@ export default function CloisterSection({ cloister }) {
         </p>
       )}
 
-      <ol className="flex flex-col gap-1.5 list-decimal list-inside">
-        {cloister.steps.map((step, i) => (
-          <li key={i} className="text-sm text-gray-300">{step}</li>
-        ))}
-      </ol>
+      <div className="flex gap-4 items-start">
+        <ol className="flex flex-col gap-1.5 list-decimal list-inside flex-1 min-w-0">
+          {cloister.steps.map((step, i) => (
+            <li key={i} className="text-sm text-gray-300">{step}</li>
+          ))}
+        </ol>
+        <GuideImages images={cloister.guideImages ?? []} />
+      </div>
     </div>
   )
 }

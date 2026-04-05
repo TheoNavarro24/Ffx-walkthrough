@@ -1,0 +1,14 @@
+{
+  "slug": "zanarkand-dome",
+  "name": "Zanarkand Cloister of Trials",
+  "mapImage": "img/maps/cloisters/Zanarkand Cloister.png",
+  "missable": false,
+  "guideImages": ["image_0065_00.jpeg", "image_0065_01.jpeg", "image_0066_00.jpeg"],
+  "steps": [
+    "Step on the green square near the entrance to activate the floor puzzle. The solution pattern is displayed on the far wall.",
+    "Step on the floor panels to light the colored shapes matching the pattern shown. If you activate a shape NOT in the pattern, you must start over.",
+    "Complete all four pedestal sub-puzzles (Northwest, Southwest, Southeast, Northeast) in sequence — each one adds more ceiling nodes to the main chamber symbol.",
+    "Once all four pedestal puzzles are solved, the floor pattern is fully illuminated and the path to the Chamber of the Fayth opens.",
+    "Note: The Destruction Sphere cannot be retrieved on your first visit. Return via airship after acquiring it to access the hidden chest."
+  ]
+}

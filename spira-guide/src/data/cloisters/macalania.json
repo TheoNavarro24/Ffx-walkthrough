@@ -1,0 +1,23 @@
+{
+  "slug": "macalania",
+  "name": "Macalania Cloister of Trials",
+  "mapImage": "img/maps/cloisters/Macalania Cloister.png",
+  "destructionSphere": "Luck Sphere",
+  "missable": false,
+  "guideImages": ["image_0053_00.jpeg", "image_0054_00.jpeg", "image_0054_01.jpeg"],
+  "steps": [
+    "Push the pedestal down the ramp on the far side of the entry area. Follow it down.",
+    "Go back up the ramp and take the Macalania Sphere from the raised section. Return below and place it into the pedestal.",
+    "The pedestal is diverted right by the glyph and gets teleported into an ice stalagmite that holds a Destruction Sphere.",
+    "Place a Glyph Sphere into the nearby pedestal and push it toward the stalagmite — this shatters it and frees the Destruction Sphere.",
+    "Remove the Glyph Sphere from the pedestal and set it in the far-left slot — a cube section of wall rises into the chamber above.",
+    "Push the pedestal toward the column section on the far right to make a section of the ice tunnel reappear above.",
+    "Ascend the ramp and step on the floor switch to bring the pedestal and Macalania Sphere to the top level.",
+    "Descend and step on the floor switch to extract the pedestal from the stalagmite. Place the Macalania Sphere from below into the pedestal.",
+    "Return to the upper level and push the pedestal toward the stalagmites again to restore more ice. Retrieve the Macalania Sphere that caused the stalagmites to reappear.",
+    "Push the pedestal toward the ramp on the far side so it slides back below. Push it back into place at the bottom of the stairs.",
+    "Ascend to the upper level and take the Macalania Sphere that powers the ramp — place it into the last column to complete the ice tunnel.",
+    "Place the Destruction Sphere into the pedestal at the far end to reveal the Luck Sphere chest. Collect it.",
+    "Exit through the now-complete ice tunnel to reach the Chamber of the Fayth."
+  ]
+}

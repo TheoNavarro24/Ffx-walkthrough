@@ -1,0 +1,22 @@
+{
+  "slug": "kilika",
+  "name": "Kilika Cloister of Trials",
+  "mapImage": "img/maps/cloisters/Kilika Cloister.png",
+  "destructionSphere": "Red Armlet",
+  "missable": true,
+  "guideImages": ["image_0032_00.jpeg", "image_0032_01.jpeg"],
+  "steps": [
+    "Enter the Cloister and take the Kilika Sphere from the pedestal on the left.",
+    "Place the Kilika Sphere in the slot next to the door — it catches fire. Remove it and carry it to the next chamber.",
+    "Insert the Kilika Sphere into the slot on the north wall to reveal a glyph above the shelf. Remove the Kilika Sphere.",
+    "Remove the Glyph Sphere from the shelf and set it on one of the side shelves.",
+    "Step on the glowing floor switch in the fiery chamber to teleport the pedestal in from the previous room.",
+    "Take the Kilika Sphere from the right wall to extinguish the flames. Place it into the pedestal.",
+    "Return to the previous chamber and take the Glyph Sphere. Place it in the slot where you found the Kilika Sphere — this puts out the remaining fire and opens a secret chamber.",
+    "Push the pedestal (with Kilika Sphere) to the floor switch to drop a section of the platform.",
+    "Go downstairs and take the Kilika Sphere from the new slot. Place it into the slot next to the exit — leave it there.",
+    "Go back up: retrieve the Destruction Sphere from the secret chamber on the top platform.",
+    "Bring the Destruction Sphere downstairs and insert it into the new slot beneath the ledge — a chest appears containing the Red Armlet. Collect it now.",
+    "Take the Kilika Sphere from the slot beside the exit and proceed through the door."
+  ]
+}

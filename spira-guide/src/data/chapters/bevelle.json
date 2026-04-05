@@ -17,7 +17,6 @@
     {
       "name": "Bevelle Cloister of Trials",
       "prose": "The most mechanically complex Cloister — you ride a moving platform across glowing path glyphs, steering by pressing the button as arrows light up. The Destruction Sphere is needed to access the Knight Lance chest, which is one of the seven Cloister treasures required to unlock Anima later. Don't skip it.",
-      "guideImages": ["image_0058_00.jpeg"],
       "items": [
         { "id": "bevelle-hp-sphere", "name": "HP Sphere", "icon": "hp-sphere", "missable": false },
         { "id": "bevelle-knight-lance", "name": "Knight Lance (Kimahri, Destruction Sphere — needed for Anima)", "icon": "knight-lance", "missable": false }

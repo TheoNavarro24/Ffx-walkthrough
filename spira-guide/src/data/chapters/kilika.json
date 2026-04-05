@@ -32,7 +32,6 @@
     {
       "name": "Kilika Temple",
       "prose": "Work through the fire-sphere puzzle to reach the deep chamber. Before leaving via the exit door, obtain the Destruction Sphere from the secret chamber on the top platform and use it in the slot beneath the ledge to reveal the Red Armlet chest. This is permanently missable — unlike Besaid, you cannot return to Kilika Temple at any point in the game.",
-      "guideImages": ["image_0032_00.jpeg", "image_0032_01.jpeg"],
       "items": [
         { "id": "kilika-red-armlet", "name": "Red Armlet (Destruction Sphere — MISSABLE)", "icon": "red-armlet", "missable": true }
       ]
