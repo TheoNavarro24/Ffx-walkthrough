@@ -30,6 +30,7 @@
     {
       "name": "Besaid Temple",
       "prose": "Work through the Cloister and place the Besaid Sphere in the pedestal to expose the Destruction Sphere slot. Before you push the pedestal to the final room, detour: place the Destruction Sphere in the slot where you found the Besaid Sphere to reveal a hidden chamber with the Rod of Wisdom. If you skip this step there's no going back — Dark Valefor blocks the temple entrance in the HD version once you have the airship.",
+      "guideImages": ["image_0029_00.jpeg"],
       "items": [
         { "id": "besaid-rod-of-wisdom", "name": "Rod of Wisdom", "icon": "rod-of-wisdom", "missable": true }
       ]

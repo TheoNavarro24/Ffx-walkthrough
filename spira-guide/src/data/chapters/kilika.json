@@ -20,6 +20,7 @@
     {
       "name": "Kilika Woods",
       "prose": "Take the west side path past Lord Ochu's position to find Wakka's Scout weapon in a chest — you can skip the boss entirely. Lord Ochu is optional and hits hard at this stage (weak to Fire — have Lulu go in with Cheer stacked), but Luzzu hands you an Elixir if you pull it off. Use Kimahri's Lancet on the Ragora here to learn Seed Cannon. The Luck Sphere is at the north end of the central path before you turn east toward the temple stairs.",
+      "guideImages": ["image_0031_00.jpeg"],
       "items": [
         { "id": "kilika-2-mana-spheres", "name": "Mana Sphere ×2", "icon": "mana-sphere", "missable": false },
         { "id": "kilika-scout", "name": "Scout (Wakka's blitzball)", "icon": "scout", "missable": false },
@@ -32,6 +33,7 @@
     {
       "name": "Kilika Temple",
       "prose": "Work through the fire-sphere puzzle to reach the deep chamber. Before leaving via the exit door, obtain the Destruction Sphere from the secret chamber on the top platform and use it in the slot beneath the ledge to reveal the Red Armlet chest. This is permanently missable — unlike Besaid, you cannot return to Kilika Temple at any point in the game.",
+      "guideImages": ["image_0032_00.jpeg", "image_0032_01.jpeg"],
       "items": [
         { "id": "kilika-red-armlet", "name": "Red Armlet (Destruction Sphere — MISSABLE)", "icon": "red-armlet", "missable": true }
       ]
