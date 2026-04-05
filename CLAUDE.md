@@ -67,9 +67,9 @@ npm run preview  # Preview production build locally
 ## Design Decisions (Finalized)
 
 ### Visual Style
-- **Match FFX in-game menus**: Translucent dark-blue gradient panels, teal borders, gold accents
+- **Match FFX in-game menus**: Translucent blue-purple gradient panels, slate-blue borders, gold accents
 - **FFX-style font**: Web font matching the game's menu typography
-- **Colors**: Deep blues (#0a0e27, #1a2444), teal borders (#4fc3f7, #81d4fa), gold (#ffd54f), white text
+- **Colors**: Blue-purple panels (#37437B), dark purple backgrounds (#2e285d), slate borders (#707e9d), gold (#FFC10F), white text — sourced from actual game UI palette (gameuidatabase.com/gameData.php?id=474)
 - **Images everywhere**: Maps, boss portraits, character icons, SD item sprites inline
 
 ### Layout
@@ -140,13 +140,19 @@ npm run preview  # Preview production build locally
 
 ## Image Asset Paths
 
-Images are in `spira-guide/public/img/` and referenced as `/img/...` in the app:
+Images live in `spira-guide/public/img/`. Always reference them via `assetUrl()` from `src/utils/assetUrl.js` — never with a bare `/img/...` path, as Vite's base path (`/Ffx-walkthrough/`) means absolute paths 404 on GitHub Pages.
 
-- Boss: `/img/bosses/{name}.png`
-- Fiend: `/img/fiends/{name}.png`
-- Character: `/img/party/characters/{name}.png`
-- Region map: `/img/maps/regions/{region}/{area}.png`
-- Cloister map: `/img/maps/cloisters/{name}.png`
-- World map: `/img/maps/Spira.png`
-- Item icon (SD): `/img/items/sd/{name}.png`
-- Aeon: `/img/party/aeons/{name}.png`
+```js
+import { assetUrl } from '../utils/assetUrl'
+// assetUrl('img/bosses/valefor.png') → '/Ffx-walkthrough/img/bosses/valefor.png'
+```
+
+File locations (all filenames lowercase):
+- Boss: `img/bosses/{slug}.png`
+- Fiend: `img/fiends/{name}.png`
+- Character: `img/party/characters/{name}.png` (lowercase, e.g. `tidus.png`)
+- Region map: `img/maps/regions/{region}/{area}.png`
+- Cloister map: `img/maps/cloisters/{name}.png`
+- World map: `img/maps/Spira.png`
+- Item icon (SD): `img/items/sd/{name}.png`
+- Aeon: `img/party/aeons/{name}.png`

@@ -20,21 +20,21 @@
 - [x] 13. Verify build + deploy works on GitHub Pages
 
 ## Phase 2: Area Page Components
-- [ ] 14. Design per-chapter JSON schema — define shape for items, bosses, missables, party, O'aka, SG tips, prose
-- [ ] 15. Build ChapterPage shell (assembles sections, provides TOC anchors; use one stub data file for dev)
-- [ ] 16. Build useScrollSpy hook + TableOfContents component (sticky right sidebar)
-- [ ] 17. Build SubLocation component (collapsible groups with persisted state)
-- [ ] 18. Build ItemList with checkboxes + SD item icons
-- [ ] 19. Build "show unchecked only" toggle
-- [ ] 20. Build MissableAlert component (red banners — top summary + inline)
-- [ ] 21. Build BossCard (expandable: compact stats → full strategy + steals/drops + image)
-- [ ] 22. Map bosses from `monsters.json` to chapter slugs
-- [ ] 23. Build PartyIndicator (character portrait icons showing party changes)
-- [ ] 24. Build OakaReminder cards (donation tiers + running total)
-- [ ] 25. Build SphereGridTip (inline milestone advice)
-- [ ] 26. Build cloister sections (map images + step-by-step solutions)
-- [ ] 27. Build ChapterNav (prev/next cards with thumbnail + progress bar)
-- [ ] 28. Add optional areas as sub-sections under the Airship chapter
+- [x] 14. Design per-chapter JSON schema — define shape for items, bosses, missables, party, O'aka, SG tips, prose
+- [x] 15. Build ChapterPage shell (assembles sections, provides TOC anchors; use one stub data file for dev)
+- [x] 16. Build useScrollSpy hook + TableOfContents component (sticky right sidebar)
+- [x] 17. Build SubLocation component (collapsible groups with persisted state)
+- [x] 18. Build ItemList with checkboxes + SD item icons
+- [x] 19. Build "show unchecked only" toggle
+- [x] 20. Build MissableAlert component (red banners — top summary + inline)
+- [x] 21. Build BossCard (expandable: compact stats → full strategy + steals/drops + image)
+- [x] 22. Map bosses from `monsters.json` to chapter slugs via `bossBySlug.js`
+- [x] 23. Build PartyIndicator (character portrait icons showing party changes)
+- [x] 24. Build OakaReminder cards (donation tiers + running total)
+- [x] 25. Build SphereGridTip (inline milestone advice)
+- [x] 26. Build cloister sections (map images + step-by-step solutions)
+- [x] 27. Build ChapterNav (prev/next cards with thumbnail + progress bar)
+- [x] 28. Add optional areas as sub-sections under the Airship chapter
 
 ## Phase 2.5: Content
 - [ ] 29. Populate Act 1 chapter JSONs — items, sub-locations, missable flags (Zanarkand → Luca, 7 chapters)
