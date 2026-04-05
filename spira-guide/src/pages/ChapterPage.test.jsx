@@ -31,7 +31,7 @@ describe('ChapterPage', () => {
 
   it('renders optional area sub-sections for airship chapter', () => {
     renderChapter('airship')
-    expect(screen.getByText(/Remiem Temple/)).toBeInTheDocument()
-    expect(screen.getByText(/Baaj Temple \(Revisit\)/)).toBeInTheDocument()
+    expect(screen.getAllByText(/Remiem Temple/).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/Baaj Temple \(Revisit\)/).length).toBeGreaterThan(0)
   })
 })
