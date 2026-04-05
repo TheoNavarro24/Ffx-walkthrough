@@ -92,7 +92,7 @@ A `SaveContext` provider is added in `src/App.jsx`, wrapping `<Routes>` but insi
 ```
 
 Constraints:
-- Cannot delete the last remaining slot
+- Cannot delete the last remaining slot. `deleteSlot(id)` checks `slots.length > 1` at call time and returns without modifying state if only one slot exists — the guard is in the function, not only in the button's disabled state.
 - Slot IDs are generated as `slot-${Date.now()}`. ID collision (two slots created in the same millisecond) is accepted as negligible for a single-user iPad app.
 - `createSlot` switches to the new slot immediately
 - `deleteSlot(id)` on the active slot: switch to index 0 of the `slots` array after the deleted slot has been removed; on a non-active slot: just remove it, active slot unchanged. In both cases, the corresponding `spira-checks:{id}` key is deleted from localStorage.
