@@ -4,6 +4,8 @@ import { getChapterBySlug } from '../data/chapterIndex'
 import { getChapterData } from '../data/chapterData'
 import { useScrollSpy } from '../hooks/useScrollSpy'
 import { useToc } from '../context/TocContext'
+import SubLocation from '../components/SubLocation'
+import ItemList from '../components/ItemList'
 
 const SECTION_IDS = ['section-walkthrough', 'section-bosses', 'section-collectibles']
 const SECTION_LABELS = [
@@ -16,27 +18,47 @@ export default function ChapterPage() {
   const { slug } = useParams()
   const chapter = getChapterBySlug(slug)
   const data = getChapterData(slug)
+  const [showUncheckedOnly, setShowUncheckedOnly] = useState(false)
   const activeId = useScrollSpy(SECTION_IDS)
   const { setSections, setActiveId } = useToc()
 
   useEffect(() => {
     setSections(SECTION_LABELS)
     return () => setSections([])
-  }, [])
+  }, [setSections])
 
   useEffect(() => {
     setActiveId(activeId)
-  }, [activeId])
+  }, [activeId, setActiveId])
 
   return (
     <div className="max-w-4xl mx-auto py-4 flex flex-col gap-4">
       <h1 className="ffx-header text-2xl">{chapter?.name ?? slug}</h1>
 
+      <div className="flex justify-end">
+        <button
+          className="ffx-button text-xs"
+          onClick={() => setShowUncheckedOnly((v) => !v)}
+        >
+          {showUncheckedOnly ? 'Show All' : 'Unchecked Only'}
+        </button>
+      </div>
+
       <section id="section-walkthrough" aria-label="Walkthrough and Items">
         <h2 className="ffx-header text-base mb-2">Walkthrough &amp; Items</h2>
-        {data.subLocations.map((loc) => (
-          <div key={loc.name}>{loc.name}</div>
-        ))}
+        <div className="ffx-panel">
+          {data.subLocations.map((loc) => (
+            <SubLocation
+              key={loc.name}
+              slug={slug}
+              name={loc.name}
+              prose={loc.prose}
+              items={loc.items}
+            >
+              <ItemList items={loc.items} showUncheckedOnly={showUncheckedOnly} />
+            </SubLocation>
+          ))}
+        </div>
       </section>
 
       <section id="section-bosses" aria-label="Boss Encounters">
