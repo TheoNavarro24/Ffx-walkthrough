@@ -11,7 +11,9 @@ import BossCard from '../components/BossCard'
 import ChapterHeader from '../components/ChapterHeader'
 import OakaReminder from '../components/OakaReminder'
 import SphereGridTip from '../components/SphereGridTip'
+import CloisterSection from '../components/CloisterSection'
 import { getBoss } from '../data/bossBySlug'
+import besaidCloister from '../data/cloisters/besaid.json'
 
 const SECTION_IDS = ['section-walkthrough', 'section-bosses', 'section-collectibles']
 const SECTION_LABELS = [
@@ -19,6 +21,10 @@ const SECTION_LABELS = [
   { id: 'section-bosses', label: 'Bosses' },
   { id: 'section-collectibles', label: 'Collectibles' },
 ]
+
+const CLOISTER_DATA = {
+  besaid: besaidCloister,
+}
 
 export default function ChapterPage() {
   const { slug } = useParams()
@@ -94,6 +100,9 @@ export default function ChapterPage() {
 
       <section id="section-collectibles" aria-label="Collectibles">
         <h2 className="ffx-header text-base mb-2">Collectibles</h2>
+        {data.cloister && (
+          <CloisterSection cloister={CLOISTER_DATA[data.cloister] ?? null} />
+        )}
       </section>
     </div>
   )
