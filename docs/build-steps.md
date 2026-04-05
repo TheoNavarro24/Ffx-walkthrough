@@ -64,7 +64,7 @@
 - [x] 50. Build CloisterChecklist (6 temples, maps, Anima progress)
 - [x] 51. Build AeonTracker (aeon cards with images, obtained tracking)
 - [x] 52. Add Blitzball note (Wakka's overdrives + Jupiter Sigil only)
-- [ ] 53. Wire up checkbox sync between area pages and hub (single source of truth)
+- [x] 53. Wire up checkbox sync between area pages and hub (single source of truth) — already implemented via shared useCheckbox() hook writing to single 'spira-checks' localStorage key; verified live
 
 ## Phase 4: Save System & Settings
 - [x] 54. Build useLocalStorage hook (debounced writes, lazy init)
