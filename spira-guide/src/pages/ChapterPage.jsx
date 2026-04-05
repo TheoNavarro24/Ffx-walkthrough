@@ -10,6 +10,7 @@ import ItemList from '../components/ItemList'
 import BossCard from '../components/BossCard'
 import ChapterHeader from '../components/ChapterHeader'
 import OakaReminder from '../components/OakaReminder'
+import SphereGridTip from '../components/SphereGridTip'
 import { getBoss } from '../data/bossBySlug'
 
 const SECTION_IDS = ['section-walkthrough', 'section-bosses', 'section-collectibles']
@@ -74,6 +75,8 @@ export default function ChapterPage() {
       </section>
 
       <OakaReminder oaka={data.oaka} />
+
+      <SphereGridTip tip={data.sgTip} />
 
       <section id="section-bosses" aria-label="Boss Encounters">
         <h2 className="ffx-header text-base mb-2">Boss Encounters</h2>
