@@ -1,0 +1,21 @@
+{
+  "slug": "ss-winno",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
+  "oaka": { "meeting": true, "cumulativeTarget": 1001 },
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "S.S. Winno",
+      "prose": "Short chapter — mostly story. Grab the two Hi-Potions and the Primer on deck. The Jecht Shot mini-game is on the deck: match the timing prompts to learn Jecht Shot. You can save before and reload if you miss it — worth learning.",
+      "items": [
+        { "id": "winno-hi-potion-1", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "winno-hi-potion-2", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "winno-primer-v", "name": "Al Bhed Primer Vol. V", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [],
+  "cloister": null,
+  "optionalAreas": []
+}

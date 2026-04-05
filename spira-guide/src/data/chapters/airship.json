@@ -3,36 +3,68 @@
   "missables": [],
   "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "Haste + Slow are your best tools for Evrae. Slow him, Haste your party — the fight becomes trivial.",
   "subLocations": [
     {
-      "name": "Airship Deck",
-      "prose": "The airship becomes your base of operations. Use the destination menu to access optional areas.",
+      "name": "Fahrenheit Deck (Evrae Approach)",
+      "prose": "The party escapes Home on the Fahrenheit. Evrae blocks the approach to Bevelle — fought on the airship deck. After Bevelle, the Fahrenheit becomes your permanent base of operations.",
+      "guideImages": ["image_0056_00.jpeg"],
       "items": []
     }
   ],
-  "bosses": [],
+  "bosses": [
+    {
+      "slug": "evrae",
+      "strategy": "Evrae alternates between ranged and melee. At range: use the Harpoon lever to pull it in for physical attacks. Cast Slow on Evrae and Haste on your party — this alone can win the fight. Watch for Photon Spray (party damage) and Stone Gaze (Petrify — equip Stoneproof or have Soft ready). Auron's Power/Armor Break accelerate the kill. HP: 32,000."
+    }
+  ],
   "cloister": null,
   "optionalAreas": [
     {
       "name": "Remiem Temple",
-      "prose": "Accessible via chocobo from the Calm Lands. Home of the Magus Sisters aeon and celestial weapon rewards.",
+      "prose": "Reach via Chocobo from the Calm Lands (hidden eastern cliff path). Belgemine challenges you to Aeon duels — defeating all 8 earns the Moon Sigil for Yuna's Nirvana. The Chocobo Race wins the Cloudy Mirror, which is required to unlock ALL Celestial Weapons. Primer XXIV is on the ground outside the entrance.",
+      "guideImages": ["image_0072_00.jpeg"],
       "items": [
-        { "id": "airship-remiem-cloudy-mirror", "name": "Cloudy Mirror", "icon": "cloudy-mirror", "missable": false }
+        { "id": "airship-remiem-cloudy-mirror", "name": "Cloudy Mirror (Chocobo Race — required for all Celestial Weapons)", "icon": "cloudy-mirror", "missable": false },
+        { "id": "airship-remiem-primer-xxiv", "name": "Al Bhed Primer Vol. XXIV", "icon": "primer", "missable": false },
+        { "id": "airship-remiem-moon-sigil", "name": "Moon Sigil (Yuna — defeat all 8 of Belgemine's Aeons)", "icon": "moon-sigil", "missable": false }
+      ]
+    },
+    {
+      "name": "Cavern of the Stolen Fayth",
+      "prose": "Accessible from Calm Lands northeast. To recruit Yojimbo: when asked 'What do you need Yojimbo for?', say 'To defeat the most powerful enemies'. Divide his first price counter by 2, add 1, and offer that. Pay ~190,001 Gil total. Yojimbo's Zanmato ignores HP — useful for any boss.",
+      "items": [
+        { "id": "airship-yojimbo-aeon", "name": "Yojimbo (Aeon)", "icon": "yojimbo", "missable": false }
       ]
     },
     {
       "name": "Baaj Temple (Revisit)",
-      "prose": "Return to Baaj via airship coordinates. Anima awaits if all other aeons are obtained.",
+      "prose": "Airship coordinates: X:11-16, Y:57-63. Fight Geosgaeno first (32,000 HP, weak to Ice). Dive between the southern pillars to find Lulu's Onion Knight on the seafloor. Once you have all other 7 Aeons, Anima becomes available here.",
       "items": [
-        { "id": "airship-baaj-anima", "name": "Anima (Aeon)", "icon": "anima", "missable": false }
+        { "id": "airship-baaj-onion-knight", "name": "Onion Knight (Lulu's Celestial Weapon)", "icon": "onion-knight", "missable": false },
+        { "id": "airship-baaj-anima", "name": "Anima (Aeon — requires all 7 other Aeons' Cloisters complete)", "icon": "anima", "missable": false }
       ]
     },
     {
       "name": "Omega Ruins",
-      "prose": "High-level optional dungeon. Enter via airship coordinates. Omega Weapon is the final optional boss.",
+      "prose": "Airship coordinates: X:69-75, Y:33-38. The hardest optional dungeon — fiends are endgame-level. Ultima Weapon (99,999 HP) and Omega Weapon (999,999 HP) await. Primer XXVI is inside the ruins.",
       "items": [
-        { "id": "airship-omega-master-sphere", "name": "Master Sphere ×2", "icon": "master-sphere", "missable": false }
+        { "id": "airship-omega-primer-xxvi", "name": "Al Bhed Primer Vol. XXVI", "icon": "primer", "missable": false },
+        { "id": "airship-omega-master-sphere-2", "name": "Master Sphere ×2", "icon": "master-sphere", "missable": false }
+      ]
+    },
+    {
+      "name": "Cactuar Village (Bikanel Desert Revisit)",
+      "prose": "10 Cactuars are hidden across Bikanel Desert. Speak to Marnela at the giant stone to begin. Finding all 10 earns the Mercury Sigil for Rikku's Godhand.",
+      "items": [
+        { "id": "airship-cactuar-mercury-sigil", "name": "Mercury Sigil (Rikku — find all 10 Cactuars)", "icon": "mercury-sigil", "missable": false }
+      ]
+    },
+    {
+      "name": "Monster Arena (Calm Lands)",
+      "prose": "Capture fiends from all 10 areas (buy Capture weapons from the owner). Completing the capture list unlocks arena-only creations with powerful drop rewards. Mars Sigil (Auron's Masamune) requires capturing at least 1 of every fiend type in 10 different areas.",
+      "items": [
+        { "id": "airship-arena-mars-sigil", "name": "Mars Sigil (Auron — capture 1 fiend from each of 10 areas)", "icon": "mars-sigil", "missable": false }
       ]
     }
   ]

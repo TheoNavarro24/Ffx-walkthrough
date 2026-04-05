@@ -1,0 +1,17 @@
+{
+  "slug": "highbridge",
+  "missables": [],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Highbridge",
+      "prose": "Short story chapter — Kinoc is revealed, another Seymour confrontation. No items to collect here. Proceed to the Calm Lands.",
+      "items": []
+    }
+  ],
+  "bosses": [],
+  "cloister": null,
+  "optionalAreas": []
+}

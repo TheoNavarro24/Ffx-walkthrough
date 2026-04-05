@@ -1,0 +1,44 @@
+{
+  "slug": "via-purifico",
+  "missables": [],
+  "party": ["Yuna", "Kimahri", "Lulu", "Tidus", "Auron", "Wakka"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Via Purifico (Yuna's Path)",
+      "prose": "Yuna solo at first, then Kimahri and Lulu join. The sphere and ring chests are spread through the rooms; the Gil and Lucid Ring are in a locked area requiring keys.",
+      "guideImages": ["image_0059_00.jpeg"],
+      "items": [
+        { "id": "via-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
+        { "id": "via-wht-magic-sphere", "name": "Wht Magic Sphere", "icon": "wht-magic-sphere", "missable": false },
+        { "id": "via-elixir", "name": "Elixir", "icon": "elixir", "missable": false },
+        { "id": "via-blk-magic-sphere", "name": "Blk Magic Sphere", "icon": "blk-magic-sphere", "missable": false },
+        { "id": "via-skill-sphere", "name": "Skill Sphere", "icon": "skill-sphere", "missable": false },
+        { "id": "via-lucid-ring", "name": "Lucid Ring", "icon": "lucid-ring", "missable": false },
+        { "id": "via-10000-gil", "name": "10,000 Gil", "icon": "gil", "missable": false }
+      ]
+    },
+    {
+      "name": "Via Purifico (Tidus's Sewers)",
+      "prose": "Tidus, Auron, and Wakka in the underground sewers. Two chests here — grab the Evade & Counter armguard for Wakka.",
+      "guideImages": ["image_0060_00.jpeg", "image_0060_01.jpeg"],
+      "items": [
+        { "id": "via-evade-counter", "name": "Evade & Counter Armguard (Wakka)", "icon": "armguard", "missable": false },
+        { "id": "via-avenger", "name": "Avenger", "icon": "avenger", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "isaaru-aeons",
+      "strategy": "Yuna vs Isaaru's 3 Aeons: Grothia (Ifrit), Pterya (Valefor), Spathi (Bahamut). Summon your own version of each — your Aeons are stronger. Charge Overdrives before entering if possible. Yuna's Bahamut vs Spathi is the key fight."
+    },
+    {
+      "slug": "evrae-altana",
+      "strategy": "Evrae Altana is undead — throw Phoenix Downs for ~9,999 damage each. Two Phoenix Downs kill it outright. Holy Water also works. Do NOT heal it with cure magic or Al Bhed Potions."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

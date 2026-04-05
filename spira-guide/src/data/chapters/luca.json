@@ -1,0 +1,39 @@
+{
+  "slug": "luca",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Dock Area",
+      "prose": "Explore before the blitzball tournament. Dock 5 has a hidden squeeze through crates — gives Magic Sphere + HP Sphere. The Tidal Spear is a good upgrade for Kimahri.",
+      "guideImages": ["image_0034_00.jpeg", "image_0034_01.jpeg", "image_0035_00.jpeg"],
+      "items": [
+        { "id": "luca-600-gil", "name": "600 Gil", "icon": "gil", "missable": false },
+        { "id": "luca-tidal-spear", "name": "Tidal Spear (Kimahri)", "icon": "tidal-spear", "missable": false },
+        { "id": "luca-phoenix-down-2", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false },
+        { "id": "luca-magic-sphere", "name": "Magic Sphere", "icon": "magic-sphere", "missable": false },
+        { "id": "luca-hp-sphere", "name": "HP Sphere", "icon": "hp-sphere", "missable": false }
+      ]
+    },
+    {
+      "name": "Luca Stadium",
+      "prose": "Two Primers in the stadium. Oblitzerator is fought mid-tournament with only Tidus and Lulu — use the crane 3 times. After the tournament, Auron permanently joins.",
+      "guideImages": ["image_0036_00.jpeg", "image_0036_01.jpeg"],
+      "items": [
+        { "id": "luca-primer-vi", "name": "Al Bhed Primer Vol. VI", "icon": "primer", "missable": false },
+        { "id": "luca-2-hi-potions", "name": "Hi-Potion ×2", "icon": "hi-potion", "missable": false },
+        { "id": "luca-primer-vii", "name": "Al Bhed Primer Vol. VII", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "oblitzerator",
+      "strategy": "Use the crane interact prompt 3 times while Lulu casts Thunder after each one. After 3 hits, finish it off. Lulu's Fury (Thunder) is ideal if you have it charged. HP: 6,000."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

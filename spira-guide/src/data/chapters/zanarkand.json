@@ -1,0 +1,23 @@
+{
+  "slug": "zanarkand",
+  "missables": [],
+  "party": ["Tidus"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Dream Zanarkand",
+      "prose": "Tutorial section — watch cutscenes and follow Auron. The blitzball match vs the Goers is scripted. After Sin attacks, Sinspawn Ammes ambushes the stadium.",
+      "guideImages": ["image_0023_00.jpeg"],
+      "items": []
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "sinspawn-ammes",
+      "strategy": "Tutorial fight. Attack with Tidus; Auron finishes it with a scripted Overdrive. No strategy needed."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

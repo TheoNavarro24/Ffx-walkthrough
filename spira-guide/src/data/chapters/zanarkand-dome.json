@@ -1,0 +1,43 @@
+{
+  "slug": "zanarkand-dome",
+  "missables": [
+    "Sun Crest — on the floor after the Yunalesca fight. Do NOT leave without picking it up — it's Tidus's Caladbolg upgrade prerequisite."
+  ],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": "Yunalesca removes all positive statuses at the start of each phase. Don't pre-buff — wait until after her opener. Zombie protection (Zombie Ward or Deathproof armor) is critical for Phase 3.",
+  "subLocations": [
+    {
+      "name": "Zanarkand Dome Approach",
+      "prose": "Grab everything on the path before committing to the Dome. The Friend Sphere and Fortune Sphere are in the NE branch off the main path.",
+      "guideImages": ["image_0068_00.jpeg", "image_0068_01.jpeg", "image_0068_02.jpeg", "image_0068_03.jpeg", "image_0069_00.jpeg"],
+      "items": [
+        { "id": "zanarkand-dome-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },
+        { "id": "zanarkand-dome-spiritual-targe", "name": "Spiritual Targe (Rikku)", "icon": "spiritual-targe", "missable": false },
+        { "id": "zanarkand-dome-10000-gil", "name": "10,000 Gil", "icon": "gil", "missable": false },
+        { "id": "zanarkand-dome-luck-sphere", "name": "Luck Sphere", "icon": "luck-sphere", "missable": false },
+        { "id": "zanarkand-dome-friend-sphere", "name": "Friend Sphere", "icon": "friend-sphere", "missable": false }
+      ]
+    },
+    {
+      "name": "Zanarkand Dome Interior",
+      "prose": "Braska's pilgrimage memory unfolds. After defeating Yunalesca, walk back and pick up the Sun Crest from the floor — it's easy to forget in the post-fight excitement.",
+      "guideImages": ["image_0071_00.jpeg", "image_0071_01.jpeg"],
+      "items": [
+        { "id": "zanarkand-dome-sun-crest", "name": "Sun Crest (Tidus's Caladbolg — pick up AFTER Yunalesca)", "icon": "sun-crest", "missable": true }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "spectral-keeper",
+      "strategy": "Uses Berserk + Glyph Mines. Remove Berserk with Esuna immediately — Berserk characters walk into mines. Don't move berserked characters onto glyphs. Wakka and Auron attack from range/power. Protect on the party. HP: 52,000."
+    },
+    {
+      "slug": "yunalesca",
+      "strategy": "Three phases — 24k / 48k / 60k HP. Phase 1: Mega Death can hit the party; equip Deathproof or tank with an Aeon. Phase 2: Adds Holy and zombifies a character — Zombie can actually be useful in Phase 3. Phase 3: Hellbiter zombifies the whole party — equip Zombie Ward armor on everyone beforehand OR embrace being undead (don't use healing magic on Zombie chars, they absorb it). Dispel her buffs. Overkill each phase for AP."
+    }
+  ],
+  "cloister": "zanarkand-dome",
+  "optionalAreas": []
+}

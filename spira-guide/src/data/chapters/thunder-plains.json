@@ -1,0 +1,35 @@
+{
+  "slug": "thunder-plains",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "oaka": null,
+  "sgTip": "Equip the Yellow Shield on Tidus immediately — Lightningproof stops random strike damage. Kimahri's Spirit Lance requires praying at 3 Qactuar stones (press Square near each).",
+  "subLocations": [
+    {
+      "name": "Thunder Plains South",
+      "prose": "Buy or find the Yellow Shield outside the Agency right away — equip it on Tidus to stop random lightning damage. Hunt the three Qactuar stones for the Spirit Lance: two are in the south section, one in the north.",
+      "guideImages": ["image_0047_00.jpeg"],
+      "items": [
+        { "id": "thunder-phoenix-down-2", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false },
+        { "id": "thunder-hi-potion-2", "name": "Hi-Potion ×2", "icon": "hi-potion", "missable": false },
+        { "id": "thunder-5000-gil", "name": "5,000 Gil", "icon": "gil", "missable": false },
+        { "id": "thunder-water-ball", "name": "Water Ball", "icon": "water-ball", "missable": false },
+        { "id": "thunder-lightningproof-shield", "name": "Yellow Shield (Lightningproof, for Tidus)", "icon": "yellow-shield", "missable": false },
+        { "id": "thunder-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false }
+      ]
+    },
+    {
+      "name": "Thunder Plains North",
+      "prose": "Talk to Rikku first, then speak to Rin and answer 'Okay' when he asks about Al Bhed studies — this unlocks Primer XIII. The Spirit Lance Qactuar stone #3 is in this section.",
+      "items": [
+        { "id": "thunder-ether", "name": "Ether", "icon": "ether", "missable": false },
+        { "id": "thunder-2000-gil", "name": "2,000 Gil", "icon": "gil", "missable": false },
+        { "id": "thunder-primer-xiii", "name": "Al Bhed Primer Vol. XIII (say 'Okay' to Rin after talking to Rikku)", "icon": "primer", "missable": false },
+        { "id": "thunder-spirit-lance", "name": "Spirit Lance (Kimahri's Celestial Weapon — pray at 3 stones)", "icon": "spirit-lance", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [],
+  "cloister": null,
+  "optionalAreas": []
+}

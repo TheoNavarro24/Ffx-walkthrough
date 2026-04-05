@@ -1,0 +1,34 @@
+{
+  "slug": "djose",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "oaka": { "meeting": true, "cumulativeTarget": 10001 },
+  "sgTip": "Rikku joins here — put her in the active party for her Steal and Use commands. Al Bhed Potions (which she can Use) are very effective for group healing.",
+  "subLocations": [
+    {
+      "name": "Djose Highroad",
+      "prose": "Rikku officially joins the party. NPCs hand out items generously. The Serene Armlet is on a western branch. The four Ability Spheres are clustered near the northeast corner of the temple exterior.",
+      "guideImages": ["image_0042_00.jpeg"],
+      "items": [
+        { "id": "djose-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false },
+        { "id": "djose-10-potions", "name": "Potion ×10", "icon": "potion", "missable": false },
+        { "id": "djose-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
+        { "id": "djose-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false },
+        { "id": "djose-serene-armlet", "name": "Serene Armlet", "icon": "serene-armlet", "missable": false },
+        { "id": "djose-4-ability-spheres", "name": "Ability Sphere ×4", "icon": "ability-sphere", "missable": false },
+        { "id": "djose-4000-gil", "name": "4,000 Gil", "icon": "gil", "missable": false }
+      ]
+    },
+    {
+      "name": "Djose Temple",
+      "prose": "The Magistral Rod (Destruction Sphere reward) is NOT missable — you can return to Djose Temple later via the Highroad. Complete the Cloister at your own pace.",
+      "guideImages": ["image_0044_00.jpeg"],
+      "items": [
+        { "id": "djose-magistral-rod", "name": "Magistral Rod (Destruction Sphere — not missable)", "icon": "magistral-rod", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [],
+  "cloister": "djose",
+  "optionalAreas": []
+}

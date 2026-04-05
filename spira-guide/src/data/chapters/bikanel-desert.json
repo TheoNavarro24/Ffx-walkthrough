@@ -1,0 +1,29 @@
+{
+  "slug": "bikanel-desert",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Rikku"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Sanubia Desert West",
+      "prose": "Split from the main group. The Mercury Crest is in a shifting sand pit in the west — look for the swirling ground texture. Primer XVI is under ruins nearby.",
+      "guideImages": ["image_0052_00.jpeg"],
+      "items": [
+        { "id": "bikanel-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "icon": "primer", "missable": false },
+        { "id": "bikanel-mercury-crest", "name": "Mercury Crest (Rikku's Godhand)", "icon": "mercury-crest", "missable": false }
+      ]
+    },
+    {
+      "name": "Sanubia Desert East",
+      "prose": "Primer XVII is near the signpost. Several chests contain Al Bhed Potions and equipment throughout both desert sections.",
+      "guideImages": ["image_0053_00.jpeg"],
+      "items": [
+        { "id": "bikanel-primer-xvii", "name": "Al Bhed Primer Vol. XVII", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [],
+  "cloister": null,
+  "optionalAreas": []
+}

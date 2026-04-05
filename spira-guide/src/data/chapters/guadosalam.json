@@ -1,0 +1,22 @@
+{
+  "slug": "guadosalam",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Guadosalam",
+      "prose": "Story chapter — meet Seymour, visit the Farplane. Primer XII is in the small house to the left of Seymour's manor. While in the Farplane, grab the Venus Crest from the chest — it's needed for Lulu's Onion Knight celestial weapon.",
+      "guideImages": ["image_0046_00.jpeg"],
+      "items": [
+        { "id": "guadosalam-primer-xii", "name": "Al Bhed Primer Vol. XII", "icon": "primer", "missable": false },
+        { "id": "guadosalam-3000-gil", "name": "3,000 Gil", "icon": "gil", "missable": false },
+        { "id": "guadosalam-venus-crest", "name": "Venus Crest (Lulu's Onion Knight)", "icon": "venus-crest", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [],
+  "cloister": null,
+  "optionalAreas": []
+}

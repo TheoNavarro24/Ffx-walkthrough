@@ -1,0 +1,44 @@
+{
+  "slug": "baaj-temple",
+  "missables": [],
+  "party": ["Tidus"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Submerged Ruins",
+      "prose": "Swim through the flooded corridors collecting chests before each boss. Klikk ambushes from the water — Rikku appears as AI support. Tros is tougher; stay mobile and use Spiral Cut when available.",
+      "guideImages": ["image_0024_00.jpeg", "image_0024_01.jpeg", "image_0025_00.jpeg"],
+      "items": [
+        { "id": "baaj-2-potions", "name": "Potion ×2", "icon": "potion", "missable": false },
+        { "id": "baaj-200-gil", "name": "200 Gil", "icon": "gil", "missable": false },
+        { "id": "baaj-hi-potion-1", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "baaj-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false },
+        { "id": "baaj-ether", "name": "Ether", "icon": "ether", "missable": false },
+        { "id": "baaj-hi-potion-2", "name": "Hi-Potion", "icon": "hi-potion", "missable": false }
+      ]
+    },
+    {
+      "name": "Salvage Ship",
+      "prose": "After Tros, the Al Bhed crew rescues you. Grab the Primer off the ship's deck — it's sitting on the ground at the back.",
+      "items": [
+        { "id": "baaj-ship-200-gil", "name": "200 Gil", "icon": "gil", "missable": false },
+        { "id": "baaj-ship-potion-2", "name": "Potion ×2", "icon": "potion", "missable": false },
+        { "id": "baaj-ship-3-potions", "name": "Potion ×3", "icon": "potion", "missable": false },
+        { "id": "baaj-primer-i", "name": "Al Bhed Primer Vol. I", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "klikk",
+      "strategy": "Rikku joins mid-fight as AI. Just attack with Tidus — Klikk has 1,500 HP and dies fast. No special mechanics."
+    },
+    {
+      "slug": "tros",
+      "strategy": "Watch for Nautilus Charge: Tros retreats, then rushes — move to the Retreat position (corner prompt) to dodge it. Use Spiral Cut when available. Focus the body; arms regenerate HP if ignored but are a low priority. HP: 2,200."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

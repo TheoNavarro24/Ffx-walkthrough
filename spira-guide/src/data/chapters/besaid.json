@@ -8,6 +8,7 @@
     {
       "name": "Beach",
       "prose": "Head east along the beach before entering the village. The Moon Crest chest is in the eastern alcove — missable once you leave Besaid.",
+      "guideImages": ["image_0027_00.jpeg"],
       "items": [
         { "id": "besaid-moon-crest", "name": "Moon Crest", "icon": "moon-crest", "missable": true },
         { "id": "besaid-antidote", "name": "Antidote", "icon": "antidote", "missable": false },
@@ -33,7 +34,12 @@
       ]
     }
   ],
-  "bosses": ["valefor"],
+  "bosses": [
+    {
+      "slug": "valefor",
+      "strategy": "Valefor is obtained here, not fought as an enemy. No strategy needed — this entry exists for tracking purposes."
+    }
+  ],
   "cloister": "besaid",
   "optionalAreas": []
 }

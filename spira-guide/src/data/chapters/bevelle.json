@@ -1,0 +1,35 @@
+{
+  "slug": "bevelle",
+  "missables": [
+    "Al Bhed Primer Vol. XXII — Priests' Passage, on the floor before the Cloister save sphere. PERMANENTLY MISSABLE — walk past this and it's gone forever."
+  ],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": "Steal Lv. 1–2 Key Spheres from enemies in Bevelle to unlock path nodes for everyone.",
+  "subLocations": [
+    {
+      "name": "Priests' Passage",
+      "prose": "The Primer XXII is on the floor of the passage before reaching the Cloister save sphere — it's easy to miss because the game pulls you forward. Slow down and look for the glowing item on the ground.",
+      "items": [
+        { "id": "bevelle-primer-xxii", "name": "Al Bhed Primer Vol. XXII (floor before Cloister save sphere)", "icon": "primer", "missable": true }
+      ]
+    },
+    {
+      "name": "Bevelle Cloister of Trials",
+      "prose": "The most mechanically complex Cloister — uses a moving platform with glyph spheres. The Destruction Sphere chest (Knight Lance) counts toward Anima acquisition. Complete it fully before leaving.",
+      "guideImages": ["image_0058_00.jpeg"],
+      "items": [
+        { "id": "bevelle-hp-sphere", "name": "HP Sphere", "icon": "hp-sphere", "missable": false },
+        { "id": "bevelle-knight-lance", "name": "Knight Lance (Kimahri, Destruction Sphere — needed for Anima)", "icon": "knight-lance", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "seymour-natus",
+      "strategy": "Seymour Natus (36,000 HP) + Mortibody (4,000 HP). Mortibody uses Seymour's turns to cast the opposite of the last element you used — Dispel it before attacking with magic. Seymour charges Total Annihilation as HP drops; burst him down or use Auron's Shooting Star. Haste your party and Slow Seymour. Protect reduces damage significantly."
+    }
+  ],
+  "cloister": "bevelle",
+  "optionalAreas": []
+}

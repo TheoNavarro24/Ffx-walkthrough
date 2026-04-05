@@ -1,0 +1,53 @@
+{
+  "slug": "kilika",
+  "missables": [
+    "Red Armlet — Destruction Sphere chest, Kilika Temple. Cannot return to Kilika Temple after leaving — this is permanently missable."
+  ],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri"],
+  "oaka": { "meeting": true, "cumulativeTarget": 1001 },
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Kilika Port",
+      "prose": "Help the NPCs after the Sin attack. The Ether is only available if you rescue the child from the crumbling hut. Rest at the inn to restore HP/MP.",
+      "guideImages": ["image_0031_00.jpeg"],
+      "items": [
+        { "id": "kilika-ether", "name": "Ether", "icon": "ether", "missable": false },
+        { "id": "kilika-primer-iv", "name": "Al Bhed Primer Vol. IV", "icon": "primer", "missable": false },
+        { "id": "kilika-3-potions", "name": "Potion ×3", "icon": "potion", "missable": false }
+      ]
+    },
+    {
+      "name": "Kilika Woods",
+      "prose": "Linear path with side branches. Lord Ochu is an optional east-side fight — very tough at this stage (4,649 HP) but Luzzu gives an Elixir if you win. The Scout blitzball item is on a hidden side path west of the main road.",
+      "items": [
+        { "id": "kilika-2-mana-spheres", "name": "Mana Sphere ×2", "icon": "mana-sphere", "missable": false },
+        { "id": "kilika-scout", "name": "Scout (Wakka's blitzball)", "icon": "scout", "missable": false },
+        { "id": "kilika-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
+        { "id": "kilika-luck-sphere", "name": "Luck Sphere", "icon": "luck-sphere", "missable": false },
+        { "id": "kilika-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "kilika-elixir", "name": "Elixir (from Luzzu after Lord Ochu — optional)", "icon": "elixir", "missable": false }
+      ]
+    },
+    {
+      "name": "Kilika Temple",
+      "prose": "Complete the Cloister of Trials. Before leaving, activate the Destruction Sphere to open the hidden chest containing the Red Armlet. You cannot return once you exit — this is permanently missable.",
+      "guideImages": ["image_0032_00.jpeg", "image_0032_01.jpeg"],
+      "items": [
+        { "id": "kilika-red-armlet", "name": "Red Armlet (Destruction Sphere — MISSABLE)", "icon": "red-armlet", "missable": true }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "lord-ochu",
+      "strategy": "Optional fight in Kilika Woods. Very difficult at this stage — 4,649 HP, can inflict Sleep. Fire spells from Lulu are effective. Reward: Elixir from Luzzu. Skip if underleveled."
+    },
+    {
+      "slug": "sinspawn-geneaux",
+      "strategy": "Phase 1 (shell form, 3,000 HP): Only magic penetrates the shell body. Kill both tentacles first (450 HP each) — they heal Geneaux every turn. Lulu's Fury with Thunder is ideal. Phase 2 (exposed): Physical attacks work. Yuna heals, Wakka and Tidus attack. Stay above 300 HP to survive Venom."
+    }
+  ],
+  "cloister": "kilika",
+  "optionalAreas": []
+}

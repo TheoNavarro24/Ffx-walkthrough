@@ -1,0 +1,48 @@
+{
+  "slug": "mt-gagazet",
+  "missables": [
+    "Wantz — speak to him on the Mountain Trail during this visit. If missed, he will NOT set up his shop later (exclusive 4-slot equipment)."
+  ],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": "Steal Lv. 3 Key Spheres from Biran and Yenke (4–5 if possible) — they're rare. Kimahri should also learn Mighty Guard and Bad Breath from fiends on this mountain.",
+  "subLocations": [
+    {
+      "name": "Mountain Trail",
+      "prose": "Talk to Wantz near the start of the trail — he enables his shop later at Macalania with exclusive 4-slot equipment. Primer XXV is behind a rock pillar on the right side of the trail.",
+      "guideImages": ["image_0064_00.jpeg", "image_0065_00.jpeg", "image_0065_01.jpeg"],
+      "items": [
+        { "id": "gagazet-primer-xxv", "name": "Al Bhed Primer Vol. XXV", "icon": "primer", "missable": false },
+        { "id": "gagazet-lv1-key-sphere", "name": "Lv. 1 Key Sphere", "icon": "lv1-key-sphere", "missable": false },
+        { "id": "gagazet-pep-talk-armor", "name": "Pep Talk Armor (Wakka)", "icon": "pep-talk-armor", "missable": false }
+      ]
+    },
+    {
+      "name": "Mountain Trial / Prominence",
+      "prose": "The underwater trial gives a Fortune Sphere. The Saturn Crest for Kimahri's Spirit Lance is behind a pillar on the right side of the Prominence area — walk behind the rock.",
+      "guideImages": ["image_0066_00.jpeg", "image_0067_00.jpeg"],
+      "items": [
+        { "id": "gagazet-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },
+        { "id": "gagazet-return-sphere", "name": "Return Sphere", "icon": "return-sphere", "missable": false },
+        { "id": "gagazet-recovery-ring", "name": "Recovery Ring", "icon": "recovery-ring", "missable": false },
+        { "id": "gagazet-saturn-crest", "name": "Saturn Crest (Kimahri's Spirit Lance)", "icon": "saturn-crest", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "biran-ronso",
+      "strategy": "Kimahri solo vs Biran and Yenke — their stats scale with Kimahri's level. Steal Lv. 3 Key Spheres from each (4–5 total if lucky). Use Lancet on both to learn their Blue Magic (Mighty Guard is endgame-useful). Focus Yenke first, then Biran. Use whatever Overdrives Kimahri has."
+    },
+    {
+      "slug": "seymour-flux",
+      "strategy": "Seymour Flux (70,000 HP) + Mortiorchis. Lance of Atrophy + Full Life combo from Mortiorchis can revive and re-kill a character in one turn — keep HP high and have Phoenix Downs ready. Seymour uses Flare on whoever acts next; Haste your party and hit hard. Auron's Shooting Star bypasses defense. Dispel any buffs Seymour gains."
+    },
+    {
+      "slug": "sanctuary-keeper",
+      "strategy": "Uses Mana Breath (large MP drain) and Photon Spray (party damage). Use Megalixir to restore MP if drained. Haste + physical attacks. HP: 40,000."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

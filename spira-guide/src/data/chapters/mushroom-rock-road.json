@@ -1,0 +1,30 @@
+{
+  "slug": "mushroom-rock-road",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
+  "oaka": { "meeting": true, "cumulativeTarget": 10001 },
+  "sgTip": "Auron's Power Break is essential for Gui's arms — they deal heavy damage and heal Gui if left alive.",
+  "subLocations": [
+    {
+      "name": "Mushroom Rock Road",
+      "prose": "Path to Operation Mi'ihen. Grab items along the route. The Primer X is at the Precipice — follow the winding path to the very end. Sinspawn Gui is fought twice at the ridge.",
+      "guideImages": ["image_0040_00.jpeg", "image_0041_00.jpeg"],
+      "items": [
+        { "id": "mmr-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
+        { "id": "mmr-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "mmr-serene-armlet", "name": "Serene Armlet", "icon": "serene-armlet", "missable": false },
+        { "id": "mmr-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
+        { "id": "mmr-serene-bracer", "name": "Serene Bracer", "icon": "serene-bracer", "missable": false },
+        { "id": "mmr-primer-x", "name": "Al Bhed Primer Vol. X", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "sinspawn-gui",
+      "strategy": "Round 1 (12,000 HP body / 4,000 HP head / 800 HP arms ×2): Destroy both arms first — Power Break helps, they deal heavy damage and heal Gui. Then target the head with Wakka (ranged). Valefor can damage the body when physical attacks can't. Round 2 (6,000 HP): Much weaker — same approach: arms → head → body. Overkill for bonus AP."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

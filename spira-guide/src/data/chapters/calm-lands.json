@@ -1,0 +1,30 @@
+{
+  "slug": "calm-lands",
+  "missables": [
+    "Magic Counter Shield — sold by the hover vendor on FIRST VISIT only. The only source of Magic Counter on armor in the game.",
+    "Duren (Blitzball player) — recruitable at the bottom of Calm Lands Gorge before reaching Zanarkand. Disappears after."
+  ],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": "Buy the Caladbolg (Tidus's Celestial Weapon) after beating the Chocobo Trainer — the NW area chest becomes accessible. Start capturing fiends with Capture weapons from the Monster Arena owner.",
+  "subLocations": [
+    {
+      "name": "Calm Lands",
+      "prose": "Buy the Magic Counter Shield from the Hover Vendor immediately — it's only available on your first visit. Buy Capture weapons from the Monster Arena owner and start filling the arena. Beat the Chocobo Trainer to unlock the Caladbolg chest in the northwest.",
+      "guideImages": ["image_0061_00.jpeg", "image_0062_00.jpeg", "image_0062_01.jpeg"],
+      "items": [
+        { "id": "calmlands-primer-xxiii", "name": "Al Bhed Primer Vol. XXIII", "icon": "primer", "missable": false },
+        { "id": "calmlands-magic-counter-shield", "name": "Magic Counter Shield (Hover Vendor — FIRST VISIT ONLY)", "icon": "shield", "missable": true },
+        { "id": "calmlands-caladbolg", "name": "Caladbolg (Tidus's Celestial Weapon)", "icon": "caladbolg", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "defender-x",
+      "strategy": "Uses Taunt to force all attacks onto one character. Use Lancet with Kimahri to learn Mighty Guard (extremely useful). Provoke with Tidus to keep squishier characters safe. Armor Break + physical attacks. Very high HP but no threatening mechanics. HP: 64,000."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

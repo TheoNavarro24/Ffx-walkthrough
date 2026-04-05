@@ -1,0 +1,30 @@
+{
+  "slug": "moonflow",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "oaka": { "meeting": true, "cumulativeTarget": 10001 },
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Moonflow South Bank",
+      "prose": "Multiple NPCs hand out items. The Bright Bangle is in a hidden chest off the main road — look for a small alcove on the right. Primer XI is at the top of the ramp near the Shoopuf dock.",
+      "items": [
+        { "id": "moonflow-soft-ring", "name": "Soft Ring", "icon": "soft-ring", "missable": false },
+        { "id": "moonflow-ether", "name": "Ether", "icon": "ether", "missable": false },
+        { "id": "moonflow-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "moonflow-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
+        { "id": "moonflow-variable-steel", "name": "Variable Steel", "icon": "variable-steel", "missable": false },
+        { "id": "moonflow-bright-bangle", "name": "Bright Bangle", "icon": "bright-bangle", "missable": false },
+        { "id": "moonflow-primer-xi", "name": "Al Bhed Primer Vol. XI", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "extractor",
+      "strategy": "Underwater fight with only Tidus and Wakka. Dark Attack reduces its accuracy — use it early. Spiral Cut deals high damage. When the shoulder panels open, it's charging a powerful attack — interrupt it with any hit. Wakka's elemental balls inflict status if you have them. HP: 4,000."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

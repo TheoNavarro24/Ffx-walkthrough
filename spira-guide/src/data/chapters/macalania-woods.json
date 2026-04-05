@@ -1,0 +1,25 @@
+{
+  "slug": "macalania-woods",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "oaka": { "meeting": true, "cumulativeTarget": 10001 },
+  "sgTip": "Get Haste on Tidus before the Crawler fight in Lake Macalania — it transforms the fight. Use Lv. 1 Key Spheres to unlock the node if needed.",
+  "subLocations": [
+    {
+      "name": "Macalania Woods",
+      "prose": "Multiple branching paths. O'aka is on the Lake Road path. Primer XIV is on the right-side path near O'aka — easy to walk past.",
+      "guideImages": ["image_0048_00.jpeg", "image_0048_01.jpeg", "image_0049_00.jpeg"],
+      "items": [
+        { "id": "mac-woods-primer-xiv", "name": "Al Bhed Primer Vol. XIV", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "spherimorph",
+      "strategy": "Spherimorph's weakness cycles based on the last element cast. Pattern: Fire → weak to Ice, Ice → weak to Thunder, Thunder → weak to Water, Water → weak to Fire. Use Lulu to exploit the cycle. Auron's Shooting Star works regardless of element. HP: 12,000."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

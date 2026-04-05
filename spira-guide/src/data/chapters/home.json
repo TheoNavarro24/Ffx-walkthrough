@@ -1,0 +1,45 @@
+{
+  "slug": "home",
+  "missables": [
+    "Al Bhed Primer Vol. XVIII — outside the main entrance. Missable if you rush past.",
+    "Al Bhed Primer Vol. XIX — inside, room with forced fight, on a bed at the back. PERMANENTLY MISSABLE — Home is destroyed after this chapter.",
+    "Al Bhed Primer Vol. XX — three-way fork, RIGHT hallway, at the end. PERMANENTLY MISSABLE.",
+    "Al Bhed Primer Vol. XXI — three-way fork, straight/left path. PERMANENTLY MISSABLE."
+  ],
+  "party": ["Tidus", "Wakka", "Rikku"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Home Exterior",
+      "prose": "Primer XVIII is on the ground just outside the main entrance — pick it up before going in. Home is destroyed at the end of this chapter.",
+      "guideImages": ["image_0054_00.jpeg"],
+      "items": [
+        { "id": "home-primer-xviii", "name": "Al Bhed Primer Vol. XVIII", "icon": "primer", "missable": true }
+      ]
+    },
+    {
+      "name": "Home Interior",
+      "prose": "THREE permanently missable Primers are inside. At the three-way fork: go RIGHT for XX, then go LEFT/STRAIGHT for XXI. XIX is in the room where the forced fight happens — check the bed at the back before engaging. Do not rush.",
+      "guideImages": ["image_0054_01.jpeg"],
+      "items": [
+        { "id": "home-primer-xix", "name": "Al Bhed Primer Vol. XIX (room with forced fight, on a bed)", "icon": "primer", "missable": true },
+        { "id": "home-primer-xx", "name": "Al Bhed Primer Vol. XX (three-way fork, right hallway)", "icon": "primer", "missable": true },
+        { "id": "home-primer-xxi", "name": "Al Bhed Primer Vol. XXI (three-way fork, straight/left path)", "icon": "primer", "missable": true },
+        { "id": "home-6-al-bhed-potions", "name": "Al Bhed Potion ×6", "icon": "al-bhed-potion", "missable": false },
+        { "id": "home-lv4-key-sphere", "name": "Lv. 4 Key Sphere", "icon": "lv4-key-sphere", "missable": false },
+        { "id": "home-lv2-key-sphere", "name": "Lv. 2 Key Sphere", "icon": "lv2-key-sphere", "missable": false },
+        { "id": "home-10000-gil", "name": "10,000 Gil", "icon": "gil", "missable": false },
+        { "id": "home-friend-sphere", "name": "Friend Sphere", "icon": "friend-sphere", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "wendigo",
+      "strategy": "Wendigo (18,000 HP) + 2 Guado Guardians (1,200 HP each). Kill both Guardians first — if Wendigo falls while they're alive, they revive it. Rikku's Use with Al Bhed Potions heals the whole party. Wendigo is weak to Fire. HP: 18,000."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

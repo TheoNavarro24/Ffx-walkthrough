@@ -1,0 +1,37 @@
+{
+  "slug": "inside-sin",
+  "missables": [],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Inside Sin",
+      "prose": "The final dungeon. Strong fiends throughout — use your best party configurations and save before every boss. Jecht Sphere #10 is here for Auron's final Overdrive. The passage chests contain powerful endgame equipment.",
+      "guideImages": ["image_0074_00.jpeg"],
+      "items": [
+        { "id": "inside-sin-jecht-sphere-10", "name": "Jecht Sphere #10 (Auron's Tornado Overdrive)", "icon": "jecht-sphere", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "sinspawn-genais",
+      "strategy": "HP: 20,000. Two components — the Sinspawn body and a Sin cell. Kill the Sinspawn body first; the cell can revive it once. Finish both quickly. Magic and Aeons are effective."
+    },
+    {
+      "slug": "seymour-omnis",
+      "strategy": "HP: 80,000. Mortiphasms surround him (1 HP each) — they grant Seymour elemental absorption. Destroy them before using any element. Multi-Spell can hit multiple times in a row; Protect + high HP is essential. Dispel buffs. Strong physicals and Overdrives throughout."
+    },
+    {
+      "slug": "braska-final-aeon",
+      "strategy": "Phase 1 (60,000 HP): Jecht Beam can Petrify — have Stoneproof on key characters or Soft ready. Phase 2 (120,000 HP — he pulls out his sword): HP doubles. Triumphant Grasp combo (Petrify + Shatter) is the kill move; Stoneproof is non-negotiable. Hastega + full Overdrives. Auron has unique scripted dialogue. This is the true final fight."
+    },
+    {
+      "slug": "yu-yevon",
+      "strategy": "Unkillable conventionally — Yu Yevon has permanent Auto-Life. The game ends the fight automatically after Braska's Final Aeon. Watch the ending."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

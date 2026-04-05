@@ -1,0 +1,35 @@
+{
+  "slug": "airship-sin",
+  "missables": [],
+  "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
+  "oaka": null,
+  "sgTip": "Final preparations — ensure everyone has their Celestial Weapons if you have the crests/sigils. Stock Megalixirs, Elixirs, and Phoenix Downs. You can return to the airship between Sin exterior fights.",
+  "subLocations": [
+    {
+      "name": "Airship En Route to Sin",
+      "prose": "Goodbyes and last preparations. The four Sin exterior battles follow in sequence: Left Fin, Right Fin, Head, Core. You can return to the airship between fights to heal.",
+      "guideImages": ["image_0073_00.jpeg"],
+      "items": []
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "sin-left-fin",
+      "strategy": "HP: 65,000. No special mechanics — full assault with Overdrives and Celestial Weapons."
+    },
+    {
+      "slug": "sin-right-fin",
+      "strategy": "HP: 65,000. Same as Left Fin. Return to airship between fights if needed."
+    },
+    {
+      "slug": "sin-head",
+      "strategy": "HP: 140,000. Watch for Gravija (reduces all HP by 75% — follow with Mega-Potions for flat recovery). Dispel any buffs. Standard damage doesn't work with Gravity-based spells but everything else does. Sustained Overdrives and Hastega."
+    },
+    {
+      "slug": "sin-core",
+      "strategy": "HP: 36,000. After the head, you enter Sin. The core is weaker — Overdrives and strong physicals finish it quickly."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}

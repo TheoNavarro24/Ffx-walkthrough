@@ -1,0 +1,34 @@
+{
+  "slug": "lake-macalania",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "oaka": null,
+  "sgTip": null,
+  "subLocations": [
+    {
+      "name": "Lake Macalania",
+      "prose": "Primer XV is outside the Travel Agency, to the left of the door. The Crawler and Seymour fights follow in sequence — no chance to shop between them.",
+      "items": [
+        { "id": "lake-mac-primer-xv", "name": "Al Bhed Primer Vol. XV", "icon": "primer", "missable": false }
+      ]
+    },
+    {
+      "name": "Macalania Temple",
+      "prose": "Complete the Cloister, then the Seymour confrontation. After the fight you're on the run — no opportunity to return to the temple.",
+      "guideImages": ["image_0051_00.jpeg", "image_0051_01.jpeg"],
+      "items": []
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "crawler",
+      "strategy": "Destroy the Negator first (1,000 HP) — it nullifies all magic. Once it's down, Haste your party and cast Blizzard/Ice on Crawler. Power Break reduces its physical damage. When it charges the cannon, hit it to interrupt. HP: 16,000 + Negator 1,000."
+    },
+    {
+      "slug": "seymour",
+      "strategy": "Two phases. Phase 1: Kill the Guado Guardians first — they cast NulAll on Seymour, blocking magic. Seymour uses NulBlaze + NulFrost; wait them out or use Dispel. Phase 2: Anima appears (18,000 HP) — use your own Aeons or Thunder. Seymour's HP: 6,000 + 6,000. Have Yuna ready to heal throughout."
+    }
+  ],
+  "cloister": "macalania",
+  "optionalAreas": []
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "ss-liki",
+  "missables": [],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri"],
+  "oaka": { "meeting": true, "cumulativeTarget": 1001 },
+  "sgTip": "Prioritize NulBlaze and NulShock for Yuna — they trivialise the upcoming Sinspawn fights.",
+  "subLocations": [
+    {
+      "name": "S.S. Liki",
+      "prose": "Meet O'aka and donate toward the 1,001 Gil cumulative target for mid-tier discounts. The Potion suitcase on the main deck can be kicked multiple times for up to 20 Potions — worth doing. Primer III is in the Power Room at the back.",
+      "guideImages": ["image_0026_00.jpeg", "image_0029_00.jpeg"],
+      "items": [
+        { "id": "liki-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
+        { "id": "liki-potions-20", "name": "Potion (up to ×20, kick suitcase repeatedly)", "icon": "potion", "missable": false },
+        { "id": "liki-primer-iii", "name": "Al Bhed Primer Vol. III", "icon": "primer", "missable": false }
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "slug": "sin-fin",
+      "strategy": "Sin's Fin appears on deck first. Focus attacks on it — no special mechanics. HP: 2,000."
+    },
+    {
+      "slug": "sinspawn-echuilles",
+      "strategy": "Drain Touch is nasty — keep HP above 200. Have Yuna heal each round. Sin's Fin may return; deal with Echuilles first to end the fight. NulBlaze/NulShock from Yuna blocks the elemental damage. HP: 2,000."
+    }
+  ],
+  "cloister": null,
+  "optionalAreas": []
+}
