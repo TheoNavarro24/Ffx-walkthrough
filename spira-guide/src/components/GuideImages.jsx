@@ -8,7 +8,7 @@ export default function GuideImages({ images = [] }) {
 
   return (
     <>
-      <div className="flex gap-2 overflow-x-auto py-1">
+      <div className="flex flex-col gap-2 flex-shrink-0">
         {images.map((filename) => (
           <button
             key={filename}

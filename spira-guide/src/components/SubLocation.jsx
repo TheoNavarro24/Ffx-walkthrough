@@ -24,14 +24,18 @@ export default function SubLocation({ slug, name, prose, guideImages, items = []
       </button>
       {open && (
         <div className="px-4 py-3 flex flex-col gap-3">
-          {prose && (
-            <div className="flex flex-col gap-2">
-              {prose.split('\n\n').map((para, i) => (
-                <p key={i} className="text-sm text-gray-200 leading-relaxed">{para}</p>
-              ))}
+          {(prose || (guideImages && guideImages.length > 0)) && (
+            <div className="flex gap-4 items-start">
+              {prose && (
+                <div className="flex flex-col gap-2 flex-1 min-w-0">
+                  {prose.split('\n\n').map((para, i) => (
+                    <p key={i} className="text-sm text-gray-200 leading-relaxed">{para}</p>
+                  ))}
+                </div>
+              )}
+              <GuideImages images={guideImages} />
             </div>
           )}
-          <GuideImages images={guideImages} />
           {(children || items.length > 0) && (
             <div className="flex flex-col gap-2 pt-2 border-t border-[#1e3a5f]">
               {children ?? items.map((item) => (
