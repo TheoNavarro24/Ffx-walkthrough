@@ -12,6 +12,7 @@ import ChapterHeader from '../components/ChapterHeader'
 import OakaReminder from '../components/OakaReminder'
 import SphereGridTip from '../components/SphereGridTip'
 import CloisterSection from '../components/CloisterSection'
+import ChapterNav from '../components/ChapterNav'
 import { getBoss } from '../data/bossBySlug'
 import besaidCloister from '../data/cloisters/besaid.json'
 
@@ -104,6 +105,8 @@ export default function ChapterPage() {
           <CloisterSection cloister={CLOISTER_DATA[data.cloister] ?? null} />
         )}
       </section>
+
+      <ChapterNav currentSlug={slug} />
     </div>
   )
 }
