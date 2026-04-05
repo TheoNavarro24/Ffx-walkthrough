@@ -8,6 +8,7 @@ import SubLocation from '../components/SubLocation'
 import MissableAlert from '../components/MissableAlert'
 import ItemList from '../components/ItemList'
 import BossCard from '../components/BossCard'
+import ChapterHeader from '../components/ChapterHeader'
 import { getBoss } from '../data/bossBySlug'
 
 const SECTION_IDS = ['section-walkthrough', 'section-bosses', 'section-collectibles']
@@ -37,7 +38,13 @@ export default function ChapterPage() {
   return (
     <div className="max-w-4xl mx-auto py-4 flex flex-col gap-4">
       <MissableAlert missables={data.missables} />
-      <h1 className="ffx-header text-2xl">{chapter?.name ?? slug}</h1>
+      <ChapterHeader
+        name={chapter?.name ?? slug}
+        act={chapter?.act ?? 1}
+        slug={slug}
+        mapImage={chapter?.mapImage}
+        party={data.party}
+      />
 
       <div className="flex justify-end">
         <button
