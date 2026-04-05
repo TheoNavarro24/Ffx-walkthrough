@@ -39,6 +39,15 @@ Ffx-walkthrough/
     │   ├── items/         # Item icons (hd/ and sd/)
     │   └── spheres/       # Sphere Grid icons
     └── src/               # React source (app entry point)
+        ├── context/
+        │   ├── SaveContext.jsx   # SaveContextProvider, useSaveSlot(), migrateLegacyChecks()
+        │   └── TocContext.jsx    # TOC scroll-spy context
+        ├── hooks/
+        │   ├── useCheckbox.js    # Slot-scoped checkbox state (key: spira-checks:{slotId})
+        │   ├── usePyrefly.js     # Pyrefly toggle (key: spira-pyrefly)
+        │   └── usePyreflyBurst.js # DOM burst animation (respects pyrefly pref)
+        └── pages/
+            └── SettingsPage.jsx  # Save Slots + Data (export/import) + Display panels
 ```
 
 ## Development Commands
@@ -145,6 +154,9 @@ npm run preview  # Preview production build locally
 - **Highwind font readability**: The Highwind display font becomes hard to read below ~24px. Minimum sizes: SubLocation headers `text-3xl` (30px), section headings `2rem`, chapter titles `text-3xl`. Always pair with `tracking-widest` or `letter-spacing: 0.18em+`.
 - **AppShell must use `h-screen` not `min-h-screen`**: The outer flex container needs `h-screen` so the `<main>` element's `overflow-auto` contains all scrolling. With `min-h-screen`, the document itself becomes scrollable and the header scrolls off screen. Always scroll via `document.querySelector('main').scrollTop`, not `window.scrollTo`.
 - **Image paths need `assetUrl()`**: Never use bare `/img/...` paths — they 404 on GitHub Pages due to the `/Ffx-walkthrough/` base path.
+- **`useLocalStorage` key changes require a `useEffect`**: `useState` initialiser runs once at mount — if the key changes (e.g. slot switch), the value goes stale. `useCheckbox` handles this with `useEffect([key])` that re-reads localStorage when the active slot changes. Don't use `useLocalStorage` directly when the key is dynamic.
+- **`useSaveSlot()` has a null-safe fallback**: Returns a default `slot-default` object when called outside `SaveContextProvider` (e.g. in tests that don't wrap). Production always has the provider; the fallback prevents crashes in component tests.
+- **Test localStorage keys after Phase 4**: Any test that pre-populates `spira-checks` must now use `spira-checks:slot-default` (the scoped key). The old flat key no longer exists after migration.
 
 ## Key Data Notes
 
