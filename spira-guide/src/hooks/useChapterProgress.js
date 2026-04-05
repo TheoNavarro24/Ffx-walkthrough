@@ -1,7 +1,7 @@
 import { getChapterData } from '../data/chapterData'
 import { useCheckbox } from './useCheckbox'
 
-function getAllCheckableIds(data) {
+export function getAllCheckableIds(data) {
   const itemIds = data.subLocations.flatMap((loc) => loc.items.map((i) => i.id))
   const bossIds = data.bosses.map((b) => `${data.slug}-boss-${typeof b === 'string' ? b : b.slug}`)
   const optionalIds = (data.optionalAreas ?? []).flatMap((area) =>
