@@ -11,7 +11,7 @@ describe('useStoryProgress', () => {
   })
 
   it('checked increases when an item is pre-checked in localStorage', () => {
-    localStorage.setItem('spira-checks', JSON.stringify({ 'besaid-moon-crest': true }))
+    localStorage.setItem('spira-checks:slot-default', JSON.stringify({ 'besaid-moon-crest': true }))
     const { result } = renderHook(() => useStoryProgress())
     expect(result.current.checked).toBe(1)
   })

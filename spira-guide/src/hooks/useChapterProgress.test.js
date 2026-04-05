@@ -17,7 +17,7 @@ describe('useChapterProgress', () => {
   })
 
   it('returns checked count reflecting localStorage state', () => {
-    localStorage.setItem('spira-checks', JSON.stringify({ 'besaid-antidote': true }))
+    localStorage.setItem('spira-checks:slot-default', JSON.stringify({ 'besaid-antidote': true }))
     const { result } = renderHook(() => useChapterProgress('besaid'))
     expect(result.current.checked).toBe(1)
   })

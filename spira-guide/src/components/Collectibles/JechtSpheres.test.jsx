@@ -20,7 +20,7 @@ it('shows overdrive milestone list', () => {
 })
 
 it('highlights reached milestone when spheres are checked', () => {
-  localStorage.setItem('spira-checks', JSON.stringify({ 'jecht-sphere-1': true }))
+  localStorage.setItem('spira-checks:slot-default', JSON.stringify({ 'jecht-sphere-1': true }))
   wrap(<JechtSpheres />)
   // Shooting Star milestone should be marked reached (1 sphere checked)
   const li = screen.getByText(/Shooting Star/i).closest('li')

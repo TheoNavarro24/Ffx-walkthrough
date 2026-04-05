@@ -1,14 +1,39 @@
-import { useLocalStorage } from './useLocalStorage'
+import { useState, useEffect } from 'react'
+import { useSaveSlot } from '../context/SaveContext'
 
 export function useCheckbox() {
-  const [checks, setChecks] = useLocalStorage('spira-checks', {})
+  const { activeSlot } = useSaveSlot()
+  const key = `spira-checks:${activeSlot.id}`
+
+  const [checks, setChecksState] = useState(() => {
+    try {
+      const stored = localStorage.getItem(key)
+      return stored !== null ? JSON.parse(stored) : {}
+    } catch {
+      return {}
+    }
+  })
+
+  // Reload from storage when slot changes
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(key)
+      setChecksState(stored !== null ? JSON.parse(stored) : {})
+    } catch {
+      setChecksState({})
+    }
+  }, [key])
+
+  function toggle(id) {
+    const next = { ...checks, [id]: !checks[id] }
+    setChecksState(next)
+    try {
+      localStorage.setItem(key, JSON.stringify(next))
+    } catch { /* storage full */ }
+  }
 
   function isChecked(id) {
     return checks[id] === true
-  }
-
-  function toggle(id) {
-    setChecks({ ...checks, [id]: !checks[id] })
   }
 
   function checkedCount(ids) {

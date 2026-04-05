@@ -1,4 +1,10 @@
 export function triggerPyreflyBurst(x, y, count = 8) {
+  // Check user preference directly — this is a DOM side-effect, not a hook
+  try {
+    const stored = localStorage.getItem('spira-pyrefly')
+    if (stored !== null && JSON.parse(stored) === false) return
+  } catch { /* proceed */ }
+
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
   for (let i = 0; i < count; i++) {
