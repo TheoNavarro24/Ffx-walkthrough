@@ -35,25 +35,25 @@
 - [x] 26. Build cloister sections (map images + step-by-step solutions)
 - [x] 27. Build ChapterNav (prev/next cards with thumbnail + progress bar)
 - [x] 28. Add optional areas as sub-sections under the Airship chapter
-- [ ] 28a. Build GuideImages component (render `guideImages` array inline in ChapterPage — scrollable row of BradyGames screenshots with lightbox tap-to-expand)
+- [x] 28a. Build GuideImages component (render `guideImages` array inline in ChapterPage — scrollable row of BradyGames screenshots with lightbox tap-to-expand)
 
 ## Phase 2.5: Content
-- [ ] 29. Populate Act 1 chapter JSONs — items, sub-locations, missable flags (Zanarkand → Luca, 7 chapters)
-- [ ] 30. Populate Act 2 chapter JSONs — items, sub-locations, missable flags (Mi'ihen → Bikanel, 9 chapters)
-- [ ] 31. Populate Act 3 chapter JSONs — items, sub-locations, missable flags (Home → Via Purifico, 4 chapters)
-- [ ] 32. Populate Act 4 chapter JSONs — items, sub-locations, missable flags (Highbridge → Inside Sin, 7 chapters)
-- [ ] 33. Write boss strategy text for Act 1 bosses (Sinspawn Ammes, Klikk, Tros, Echuilles, Oblitzerator, Gui, Garuda, Sin's Fin)
-- [ ] 34. Write boss strategy text for Act 2 bosses (Chocobo Eater, Gui 2, Extractor, Spherimorph, Crawler, Seymour 1, Wendigo, Yunalesca path)
-- [ ] 35. Write boss strategy text for Act 3 & 4 bosses (Seymour Natus, Evrae, Seymour Flux, Sanctuary Keeper, Yunalesca, Overdrive Sin, Braska's Final Aeon + Jecht)
-- [ ] 36. Write cloister of trials solutions for all 6 temples (Besaid, Kilika, Djose, Macalania, Bevelle, Zanarkand Dome)
-- [ ] 37. Document party composition changes per chapter (who joins, who leaves, who's available)
-- [ ] 38. Document O'aka encounter points and cumulative donation tiers across all meetings
-- [ ] 39. Write Sphere Grid milestone tips per chapter (key nodes, overdrive modes, key abilities to unlock)
-- [ ] 40. Write walkthrough prose for Act 1 (7 chapters — story beats, strategy notes, key decisions)
-- [ ] 41. Write walkthrough prose for Act 2 (9 chapters)
-- [ ] 42. Write walkthrough prose for Acts 3 & 4 (11 chapters)
-- [ ] 43. Write optional areas content (Remiem Temple, Baaj revisit, Omega Ruins, Monster Arena intro — sub-sections under Airship chapter)
-- [ ] 44. Map item icon filenames — match all item names in chapter JSONs to `/img/items/sd/` sprites; flag any missing assets
+- [x] 29. Populate Act 1 chapter JSONs — items, sub-locations, missable flags (Zanarkand → Luca, 7 chapters)
+- [x] 30. Populate Act 2 chapter JSONs — items, sub-locations, missable flags (Mi'ihen → Bikanel, 9 chapters)
+- [x] 31. Populate Act 3 chapter JSONs — items, sub-locations, missable flags (Home → Via Purifico, 4 chapters)
+- [x] 32. Populate Act 4 chapter JSONs — items, sub-locations, missable flags (Highbridge → Inside Sin, 7 chapters)
+- [x] 33. Write boss strategy text for Act 1 bosses (Sinspawn Ammes, Klikk, Tros, Echuilles, Oblitzerator, Gui, Garuda, Sin's Fin)
+- [x] 34. Write boss strategy text for Act 2 bosses (Chocobo Eater, Gui 2, Extractor, Spherimorph, Crawler, Seymour 1, Wendigo, Yunalesca path)
+- [x] 35. Write boss strategy text for Act 3 & 4 bosses (Seymour Natus, Evrae, Seymour Flux, Sanctuary Keeper, Yunalesca, Overdrive Sin, Braska's Final Aeon + Jecht)
+- [x] 36. Write cloister of trials solutions for all 6 temples (Besaid, Kilika, Djose, Macalania, Bevelle, Zanarkand Dome)
+- [x] 37. Document party composition changes per chapter (who joins, who leaves, who's available)
+- [x] 38. Document O'aka encounter points and cumulative donation tiers across all meetings
+- [x] 39. Write Sphere Grid milestone tips per chapter (key nodes, overdrive modes, key abilities to unlock)
+- [x] 40. Write walkthrough prose for Act 1 (7 chapters — story beats, strategy notes, key decisions)
+- [x] 41. Write walkthrough prose for Act 2 (9 chapters)
+- [x] 42. Write walkthrough prose for Acts 3 & 4 (11 chapters)
+- [x] 43. Write optional areas content (Remiem Temple, Baaj revisit, Omega Ruins, Monster Arena intro — sub-sections under Airship chapter)
+- [x] 44. Map item icon filenames — match all item names in chapter JSONs to `/img/items/sd/` sprites; flag any missing assets
 - [ ] 45. Accuracy QA pass — cross-reference missables, boss HPs, and primer locations against research docs
 
 ## Phase 3: Collectibles Hub
