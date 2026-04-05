@@ -117,9 +117,39 @@ Reads/writes `spira-pyrefly` in localStorage. Default `true`. Used by:
 
 ---
 
+## Export/Import JSON Format
+
+### Export
+
+```json
+{
+  "version": 1,
+  "slotName": "Main Run",
+  "exportedAt": "2026-04-05T12:00:00Z",
+  "checks": { "ch1-item-guard": true, "boss-sinspawn-ammes": true }
+}
+```
+
+The exported filename is `spira-save-{slotName}.json` (spaces replaced with hyphens, lowercased).
+
+### Import validation
+
+A file is valid if it is parseable JSON and contains both `"checks"` (object) and `"version"` (number) keys. Other fields are optional. Invalid files show an inline error in the Data panel and abort.
+
+---
+
+## Slot Name Constraints
+
+- Max length: 40 characters
+- Empty names not allowed (rename reverts to previous name; "New Slot" prompt re-asks)
+- Duplicate names are allowed
+- On rename: Escape key or blur with empty string cancels and reverts to the previous name; Enter or blur with a non-empty string confirms
+
+---
+
 ## Settings Page
 
-Route: `/settings` (already in router, currently a stub)
+Route: `/settings` — already registered in the router and linked from `LandingPage`. Currently renders a stub `<h1>`. Navigation to Settings exists; only the page body needs to be implemented.
 
 Three FFX-style panels:
 
@@ -151,6 +181,7 @@ Three FFX-style panels:
 | `src/context/SaveContext.jsx` | New | Provider + `useSaveSlot` hook |
 | `src/hooks/useCheckbox.js` | Refactor | Scope key to active slot |
 | `src/hooks/usePyrefly.js` | New | Pyrefly toggle preference |
+| `src/hooks/usePyreflyBurst.js` | Edit | Guard `triggerPyreflyBurst` behind `usePyrefly` check |
 | `src/pages/SettingsPage.jsx` | Rewrite | Replace stub with full page |
 | `src/main.jsx` or `App.jsx` | Edit | Wrap app in `SaveContextProvider`, run migration |
 
@@ -164,7 +195,9 @@ A standalone function `migrateLegacyChecks()` runs once at app startup (before r
 
 ## Error Handling
 
-- Import: if the JSON file is invalid or missing expected keys, show an error message (inline in the Data panel, not a modal) and abort
+- Import — invalid/missing keys: show inline error in Data panel, abort import
+- Import — file picker cancelled by user: do nothing (no error shown)
+- Import — file read failure (permission error, etc.): show inline error in Data panel, abort
 - Delete last slot: button is visually disabled; no action on click
 - Slot not found (e.g. corrupted `spira-slots`): fall back to creating a fresh default slot
 
