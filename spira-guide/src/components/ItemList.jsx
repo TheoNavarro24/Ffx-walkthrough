@@ -39,7 +39,7 @@ export default function ItemList({ items = [], showUncheckedOnly = false }) {
             <label htmlFor={item.id} className="cursor-pointer flex-1">
               {item.name}
               {item.missable && (
-                <span className="ml-2 text-[10px] text-red-400 font-bold uppercase tracking-wide">
+                <span className="ml-2 text-[10px] text-orange-400 font-bold uppercase tracking-wide">
                   Missable
                 </span>
               )}
