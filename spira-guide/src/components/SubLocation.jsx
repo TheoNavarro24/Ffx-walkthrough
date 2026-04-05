@@ -1,6 +1,7 @@
 import { useLocalStorage } from '../hooks/useLocalStorage'
+import GuideImages from './GuideImages'
 
-export default function SubLocation({ slug, name, prose, items = [], children }) {
+export default function SubLocation({ slug, name, prose, guideImages, items = [], children }) {
   const storageKey = `subloc-${slug}-${name}`
   const [open, setOpen] = useLocalStorage(storageKey, true)
 
@@ -24,6 +25,7 @@ export default function SubLocation({ slug, name, prose, items = [], children })
       {open && (
         <div className="px-4 py-3 flex flex-col gap-2">
           {prose && <p className="text-xs text-gray-400 italic mb-1">{prose}</p>}
+          <GuideImages images={guideImages} />
           {children ?? items.map((item) => (
             <div key={item.id} className="flex items-center gap-2 text-sm">
               {item.name}

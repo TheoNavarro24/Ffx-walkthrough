@@ -73,6 +73,7 @@ export default function ChapterPage() {
               slug={slug}
               name={loc.name}
               prose={loc.prose}
+              guideImages={loc.guideImages}
               items={loc.items}
             >
               <ItemList items={loc.items} showUncheckedOnly={showUncheckedOnly} />
@@ -88,14 +89,21 @@ export default function ChapterPage() {
       <section id="section-bosses" aria-label="Boss Encounters">
         <h2 className="ffx-header text-base mb-2">Boss Encounters</h2>
         <div className="flex flex-col gap-3">
-          {data.bosses.map((bossSlug) => (
-            <BossCard
-              key={bossSlug}
-              chapterSlug={slug}
-              bossSlug={bossSlug}
-              boss={getBoss(bossSlug)}
-            />
-          ))}
+          {data.bosses.map((entry) => {
+            const bossSlug = typeof entry === 'string' ? entry : entry.slug
+            const bossData = getBoss(bossSlug)
+            const boss = bossData && entry.strategy
+              ? { ...bossData, strategy: entry.strategy }
+              : bossData
+            return (
+              <BossCard
+                key={bossSlug}
+                chapterSlug={slug}
+                bossSlug={bossSlug}
+                boss={boss}
+              />
+            )
+          })}
         </div>
       </section>
 
