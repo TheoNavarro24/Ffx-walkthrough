@@ -17,6 +17,7 @@ function NavCard({ chapter, direction }) {
         <img
           src={assetUrl(chapter.navImage)}
           alt=""
+          loading="lazy"
           className="w-24 h-16 object-cover flex-shrink-0 opacity-80"
           onError={(e) => { e.target.style.display = 'none' }}
         />

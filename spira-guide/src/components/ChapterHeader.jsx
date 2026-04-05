@@ -8,6 +8,7 @@ export default function ChapterHeader({ name, act, slug, mapImage, party = [] })
         <img
           src={assetUrl(mapImage)}
           alt={`${name} map`}
+          loading="lazy"
           className="w-32 h-20 object-cover rounded border border-[var(--color-border-alt)] flex-shrink-0 opacity-90"
           onError={(e) => { e.target.style.display = 'none' }}
         />

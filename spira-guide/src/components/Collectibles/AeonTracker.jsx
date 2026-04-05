@@ -23,7 +23,7 @@ export default function AeonTracker() {
           >
             <div data-testid="aeon-card" className={`ffx-panel p-3 flex flex-col gap-2 ${checked ? 'opacity-50' : ''}`}>
               <img src={assetUrl(aeon.portrait)} alt={aeon.name}
-                className="w-16 h-16 object-contain mx-auto"
+                loading="lazy" className="w-16 h-16 object-contain mx-auto"
                 onError={(e) => { e.target.style.display = 'none' }} />
               <p className="text-center font-bold text-sm" style={{ color: 'var(--color-gold)' }}>{aeon.name}</p>
               <p className="text-xs text-center" style={{ color: 'var(--color-border-alt)' }}>{aeon.acquisition}</p>

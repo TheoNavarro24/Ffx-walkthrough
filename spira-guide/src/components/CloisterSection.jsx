@@ -25,6 +25,7 @@ export default function CloisterSection({ cloister }) {
             <img
               src={assetUrl(cloister.mapImage)}
               alt={`${cloister.name} map`}
+              loading="lazy"
               className="rounded border border-[#1e3a5f] w-64"
               onError={(e) => { e.target.parentElement.style.display = 'none' }}
             />

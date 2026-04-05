@@ -35,6 +35,7 @@ export default function ItemList({ items = [], showUncheckedOnly = false }) {
             <img
               src={assetUrl(`img/items/sd/${item.icon}.png`)}
               alt=""
+              loading="lazy"
               width={16}
               height={16}
               className="flex-shrink-0"

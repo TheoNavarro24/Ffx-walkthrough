@@ -13,6 +13,7 @@ export default function PrimerList() {
       <img
         src={assetUrl('img/guide/image_0023_00.jpeg')}
         alt="Al Bhed alphabet chart"
+        loading="lazy"
         className="w-full max-w-lg mb-6 rounded border border-[var(--color-border)]"
         onError={(e) => { e.target.style.display = 'none' }}
       />

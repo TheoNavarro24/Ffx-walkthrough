@@ -19,6 +19,7 @@ export default function GuideImages({ images = [] }) {
             <img
               src={assetUrl(`img/guide/${filename}`)}
               alt=""
+              loading="lazy"
               className="h-24 w-auto object-cover"
               onError={(e) => { e.target.parentElement.style.display = 'none' }}
             />

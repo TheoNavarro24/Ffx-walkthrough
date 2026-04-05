@@ -11,6 +11,7 @@ export default function PartyIndicator({ party = [] }) {
           src={assetUrl(`img/party/characters/${name.toLowerCase()}.png`)}
           alt={name}
           title={name}
+          loading="lazy"
           width={28}
           height={28}
           className="rounded-full object-cover border border-[var(--color-border)]"

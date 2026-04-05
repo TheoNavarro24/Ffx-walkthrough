@@ -37,7 +37,7 @@ export default function CloisterChecklist() {
               </div>
               {cloister.mapImage ? (
                 <img src={assetUrl(cloister.mapImage)} alt={`${cloister.name} cloister map`}
-                  className="w-full rounded" onError={(e) => { e.target.style.display = 'none' }} />
+                  loading="lazy" className="w-full rounded" onError={(e) => { e.target.style.display = 'none' }} />
               ) : (
                 <p className="text-xs italic" style={{ color: 'var(--color-border-alt)' }}>No cloister map available</p>
               )}

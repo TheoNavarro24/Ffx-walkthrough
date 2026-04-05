@@ -18,6 +18,7 @@ function CharacterCard({ char, airshipUnlocked }) {
       <img
         src={assetUrl(char.portrait)}
         alt={char.name}
+        loading="lazy"
         className="w-12 h-12 object-cover rounded mx-auto"
         onError={(e) => { e.target.style.display = 'none' }}
       />

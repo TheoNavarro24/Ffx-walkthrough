@@ -7,6 +7,7 @@ export default function BlitzballNote() {
         <img
           src={assetUrl('img/party/characters/wakka.png')}
           alt="Wakka"
+          loading="lazy"
           className="w-20 h-20 object-cover rounded flex-shrink-0"
           onError={(e) => { e.target.style.display = 'none' }}
         />

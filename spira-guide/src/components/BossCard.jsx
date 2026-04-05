@@ -102,6 +102,7 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
         <img
           src={assetUrl(`img/bosses/${bossSlug}.png`)}
           alt={bossName}
+          loading="lazy"
           width={52}
           height={52}
           className="rounded flex-shrink-0 object-cover"
