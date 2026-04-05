@@ -60,7 +60,13 @@ On first app load after this update, if `spira-slots` doesn't exist:
 3. Delete the old `spira-checks` key
 4. Write `spira-slots` with the new slot as active
 
-Migration is idempotent — if `spira-slots` already exists, do nothing.
+Migration edge cases:
+- `spira-slots` exists → do nothing (idempotent)
+- `spira-slots` missing, `spira-checks` exists → migrate (copy checks, delete old key)
+- `spira-slots` missing, `spira-checks` missing or empty → create default slot with empty checks
+- `spira-checks` is malformed/unparseable → treat as empty object, proceed with migration
+
+`spira-pyrefly` is not touched by migration — it is created on first read with default `true` if absent.
 
 ---
 
@@ -88,7 +94,7 @@ Constraints:
 - Cannot delete the last remaining slot
 - Slot IDs are generated as `slot-${Date.now()}`
 - `createSlot` switches to the new slot immediately
-- `deleteSlot` on the active slot switches to the first slot in the remaining array (after removal)
+- `deleteSlot(id)` on the active slot: switch to the first slot in the remaining array after removal; on a non-active slot: just remove it, active slot unchanged
 
 ### `useCheckbox` (refactored)
 
@@ -135,7 +141,9 @@ The exported filename is `spira-save-{slotName}.json` (spaces replaced with hyph
 
 ### Import validation
 
-A file is valid if it is parseable JSON and contains both `"checks"` (object) and `"version"` (number) keys. Other fields are optional. Invalid files show an inline error in the Data panel and abort.
+A file is valid if it is parseable JSON and contains both `"checks"` (object) and `"version"` (number) keys. Other fields (`slotName`, `exportedAt`) are optional and ignored on import — they do not overwrite the active slot's name or any other metadata. Import only writes to `spira-checks:{activeSlotId}`. Invalid files show an inline error in the Data panel and abort.
+
+The confirmation message uses the **active slot's name**, not the file's `slotName` field.
 
 ---
 
@@ -160,7 +168,7 @@ Three FFX-style panels:
 - Active slot: gold border, dot filled gold; Delete button disabled (last-slot rule also applies)
 - Rename: inline — clicking Rename turns the name into an `<input>`, blur/Enter confirms
 - Delete: shows a confirmation prompt before deleting
-- "New Slot" button (dashed border, full width): prompts for a name via `window.prompt`, creates slot on confirm
+- "New Slot" button (dashed border, full width): prompts for a name via `window.prompt`. If the user enters an empty string or cancels, do nothing. If the name is non-empty, create the slot. No re-ask loop — a cancelled prompt is simply a no-op.
 
 ### Data panel
 
