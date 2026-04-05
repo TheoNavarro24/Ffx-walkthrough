@@ -39,14 +39,40 @@ Ffx-walkthrough/
     │   ├── items/         # Item icons (hd/ and sd/)
     │   └── spheres/       # Sphere Grid icons
     └── src/               # React source (app entry point)
+        ├── components/
+        │   ├── Layout/
+        │   │   ├── AppShell.jsx         # Root layout: header + drawer + main + QRP + pyrefly
+        │   │   ├── Header.jsx           # Pastel header: hamburger, logo, search, settings, QRP toggle
+        │   │   ├── ChapterDrawer.jsx    # Slide-out chapter nav with acts + progress
+        │   │   ├── TableOfContents.jsx  # Sticky right TOC with scroll-spy
+        │   │   └── ProgressDashboard.jsx # Story %, primers, celestials counters
+        │   ├── Search/
+        │   │   └── SearchDropdown.jsx   # Instant search with type-labeled results
+        │   ├── QuickRef/
+        │   │   ├── QuickRefPanel.jsx    # Slide-in right panel with 3 tabs
+        │   │   ├── ElementalChart.jsx   # 9×6 elemental weakness grid
+        │   │   ├── StatusEffects.jsx    # 14 status effect descriptions
+        │   │   └── KeyItems.jsx         # 18 key item descriptions
+        │   ├── Collectibles/           # Hub components (TabBar, trackers, etc.)
+        │   └── PyreflyTransition.jsx    # Canvas overlay: wisps + blooms + route-change boost
         ├── context/
         │   ├── SaveContext.jsx   # SaveContextProvider, useSaveSlot(), migrateLegacyChecks()
         │   └── TocContext.jsx    # TOC scroll-spy context
+        ├── data/
+        │   ├── chapterIndex.js          # 26 chapters with slugs, names, acts
+        │   ├── chapterData.js           # JSON imports for all chapter data
+        │   ├── searchIndex.js           # Flat searchable records (chapters, bosses, collectibles)
+        │   └── collectibles/            # Primers, celestials, jecht spheres, aeons, cloisters
         ├── hooks/
         │   ├── useCheckbox.js    # Slot-scoped checkbox state (key: spira-checks:{slotId})
         │   ├── usePyrefly.js     # Pyrefly toggle (key: spira-pyrefly)
-        │   └── usePyreflyBurst.js # DOM burst animation (respects pyrefly pref)
+        │   ├── usePyreflyBurst.js # DOM burst animation (respects pyrefly pref)
+        │   ├── useSearch.js      # Substring filter + type-priority sort over searchIndex
+        │   └── useNavigation.js  # useLastVisited, useNextIncomplete
         └── pages/
+            ├── LandingPage.jsx   # Hero cover art bg, corner card with progress + nav
+            ├── ChapterPage.jsx   # Per-chapter walkthrough page
+            ├── CollectiblesPage.jsx # Collectibles Hub with tabbed trackers
             └── SettingsPage.jsx  # Save Slots + Data (export/import) + Display panels
 ```
 
@@ -122,14 +148,24 @@ npm run preview  # Preview production build locally
 - Dashboard in drawer header: overall story %, primers, celestials count
 
 ### Standalone Pages
-- **Landing page**: Branding, "Continue" (last viewed), "Next Incomplete", links to hub/settings
+- **Landing page**: Hero cover art background (`image_0000_00.jpeg`), corner card (top-left) with title, progress dashboard, Continue/Next Incomplete/Collectibles/Settings buttons, dark overlay for readability
 - **Collectibles Hub**: Celestial weapons (visual tracker), Al Bhed Primers, Jecht Spheres, Cloister Checklist, Aeon Tracker
 - **Settings**: Save slot management, effect toggles, display preferences
-- **Quick Reference Panel**: Pullout from any page — elemental chart, status effects, key item uses
+
+### Quick Reference Panel
+- Slide-in panel from right edge, toggled via book icon in Header
+- 3 tabs using `TabBar` component: Elements (elemental weakness grid), Status (14 status effects), Key Items (18 key consumables)
+- All data hardcoded (no JSON source for these categories)
+- Fixed position with `zIndex: 100`, slides via `translateX` transform
+
+### Global Search
+- `searchIndex.js` builds a flat array of records from chapters, bosses, primers, jecht spheres, celestials at import time
+- `useSearch` hook: substring match on title + subtitle, sorted by exact match first then type priority (chapter > boss > primer > jecht-sphere > celestial), capped at 12 results
+- `SearchDropdown` component: controlled input in Header, floating results panel with type labels, escape-to-close, click-outside-to-close
 
 ### Effects
-- Pyrefly dissolve on page transitions
-- Pyrefly burst on chapter/collectible completion
+- Pyrefly canvas overlay (`PyreflyTransition`): 30 wisps + 8 blooms, faint (alpha 0.2) at rest, boost to full alpha on route changes (~450ms ramp), respects pyrefly toggle from Settings
+- Pyrefly burst on chapter/collectible completion (DOM-based, separate from canvas)
 - No background particles, no audio
 
 ### Content
@@ -157,6 +193,10 @@ npm run preview  # Preview production build locally
 - **`useLocalStorage` key changes require a `useEffect`**: `useState` initialiser runs once at mount — if the key changes (e.g. slot switch), the value goes stale. `useCheckbox` handles this with `useEffect([key])` that re-reads localStorage when the active slot changes. Don't use `useLocalStorage` directly when the key is dynamic.
 - **`useSaveSlot()` has a null-safe fallback**: Returns a default `slot-default` object when called outside `SaveContextProvider` (e.g. in tests that don't wrap). Production always has the provider; the fallback prevents crashes in component tests.
 - **Test localStorage keys after Phase 4**: Any test that pre-populates `spira-checks` must now use `spira-checks:slot-default` (the scoped key). The old flat key no longer exists after migration.
+- **SearchDropdown needs `MemoryRouter` in tests**: Since it renders `<Link>` elements, any test must wrap it in a router provider.
+- **PyreflyTransition uses `useLocation`**: Cannot be rendered outside a router. AppShell already provides the router context.
+- **QuickRefPanel data is hardcoded**: ElementalChart, StatusEffects, and KeyItems contain no imports from source JSON — the game data files don't have category/status fields to drive these. Update the component files directly if data changes.
+- **searchIndex.js imports all chapter data at module load**: This is intentional for instant search but means the full chapter dataset is bundled. The 700KB bundle size is acceptable for a PWA that precaches everything.
 
 ## Key Data Notes
 
