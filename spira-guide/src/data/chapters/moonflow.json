@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Moonflow South Bank",
-      "prose": "Multiple NPCs hand out items. The Bright Bangle is in a hidden chest off the main road — look for a small alcove on the right. Primer XI is at the top of the ramp near the Shoopuf dock.",
+      "prose": "Head north and tangle with Kimahri's old rivals to get the X-Potion, then meet Belgemine for your second Aeon duel — she summons Ixion, so lead with Ifrit's Hellfire and heal with Fire spells if needed. Win or lose, she gives you the Summoner's Soul, which lets you teach aeons new abilities. Ochu are the worst regular enemy here — finish them quickly before they drop below half HP and start using Ochu Dance to inflict blindness, silence, and confusion on the whole party.\n\nAt the south wharf, grab the 5,000 gil chest behind Lulu before boarding the shoopuf. The crossing triggers the Extractor fight — you can only use Tidus and Wakka, so Wakka's Thunder attacks are your main damage source.",
       "items": [
         { "id": "moonflow-soft-ring", "name": "Soft Ring", "icon": "soft-ring", "missable": false },
         { "id": "moonflow-ether", "name": "Ether", "icon": "ether", "missable": false },

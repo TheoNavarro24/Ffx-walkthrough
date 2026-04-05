@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Djose Highroad",
-      "prose": "Rikku officially joins the party. NPCs hand out items generously. The Serene Armlet is on a western branch. The four Ability Spheres are clustered near the northeast corner of the temple exterior.",
+      "prose": "Rikku officially joins here after the post-battle regrouping on the beach. Soldiers praying along the road will hand over items, and a chest on the right hides Phoenix Down near the start. Primer XI is across from that chest — look behind a spiky rock. Basilisks here can stone your party, so equip a Soft Ring on Yuna, or use Kimahri's Lancet to learn Stone Breath from them for later.",
       "guideImages": ["image_0042_00.jpeg"],
       "items": [
         { "id": "djose-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Djose Temple",
-      "prose": "The Magistral Rod (Destruction Sphere reward) is NOT missable — you can return to Djose Temple later via the Highroad. Complete the Cloister at your own pace.",
+      "prose": "Inside the temple, meet Isaaru and his brothers, then loot both side chambers before ascending — the chest by the left chamber has an Ether. The 4,000 gil chest is on the far west side of the exterior grounds. The Magistral Rod from the Destruction Sphere is not missable; you can return via the Highroad at any point before the endgame.",
       "guideImages": ["image_0044_00.jpeg"],
       "items": [
         { "id": "djose-magistral-rod", "name": "Magistral Rod (Destruction Sphere — not missable)", "icon": "magistral-rod", "missable": false }

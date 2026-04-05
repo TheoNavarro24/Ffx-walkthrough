@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Macalania Woods",
-      "prose": "Multiple branching paths. O'aka is on the Lake Road path. Primer XIV is on the right-side path near O'aka — easy to walk past.",
+      "prose": "The woods maze branches frequently — there's a hidden Sleepy Cait Sith behind a tree trunk early on the left. O'aka is set up on the main Lake Road path; the butterfly chase mini-games in the clearing sections are optional but reward a useful item for completing both. Primer XVI is found later with Clasko near the Lake Macalania Travel Agency — the woods themselves just have chests and field encounters.",
       "guideImages": ["image_0048_00.jpeg", "image_0048_01.jpeg", "image_0049_00.jpeg"],
       "items": [
         { "id": "mac-woods-primer-xiv", "name": "Al Bhed Primer Vol. XIV", "icon": "primer", "missable": false }

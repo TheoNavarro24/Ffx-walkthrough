@@ -7,14 +7,14 @@
   "subLocations": [
     {
       "name": "Lake Macalania",
-      "prose": "Primer XV is outside the Travel Agency, to the left of the door. The Crawler and Seymour fights follow in sequence — no chance to shop between them.",
+      "prose": "The Travel Agency is your last save point and shop before two back-to-back boss fights — stock up. Clasko is outside and gives a useful hint about chocobo breeding; suggest he try it and he'll reward you later with a Friend Sphere. Primer XVI is on the ground near him. Save before heading into the temple — you won't be able to come back.",
       "items": [
         { "id": "lake-mac-primer-xv", "name": "Al Bhed Primer Vol. XV", "icon": "primer", "missable": false }
       ]
     },
     {
       "name": "Macalania Temple",
-      "prose": "Complete the Cloister, then the Seymour confrontation. After the fight you're on the run — no opportunity to return to the temple.",
+      "prose": "Inside, Tromell gives a Shell Targe and Shelinda is here — collect both X-Potions and the 5,000 gil from the main hall before entering the Cloister. After the Seymour fight you're immediately on the run through the ice tunnel — Guado Guardians chase you out, and if one catches you it triggers a battle. You won't return to Macalania Temple.",
       "guideImages": ["image_0051_00.jpeg", "image_0051_01.jpeg"],
       "items": []
     }

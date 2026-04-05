@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Sanubia Desert West",
-      "prose": "Split from the main group. The Mercury Crest is in a shifting sand pit in the west — look for the swirling ground texture. Primer XVI is under ruins nearby.",
+      "prose": "Tidus wakes up alone in a desert oasis — swim the lower left side of the pool before climbing out to grab four Remedies from a submerged chest. The Zu you'll encounter heading north is a serious threat: cast Slow on it and Haste on Tidus, then use Delay Attacks. Follow the path northeast to reunite with Wakka, then continue to find the other party members scattered across the dunes.",
       "guideImages": ["image_0052_00.jpeg"],
       "items": [
         { "id": "bikanel-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "icon": "primer", "missable": false },
@@ -16,7 +16,7 @@
     },
     {
       "name": "Sanubia Desert East",
-      "prose": "Primer XVII is near the signpost. Several chests contain Al Bhed Potions and equipment throughout both desert sections.",
+      "prose": "The desert splits into two forks here — left has stronger fiends, right has weaker ones, but both have items. Al Bhed signs point the way; the northern area has chests with Megalixirs and Teleport Spheres, but some are rigged Sandragora pits. Kill Sandragoras with fire and cure Confusion immediately with Remedies. Rikku's Al Bhed Potions are invaluable here since Yuna isn't in the party — use them freely.",
       "guideImages": ["image_0053_00.jpeg"],
       "items": [
         { "id": "bikanel-primer-xvii", "name": "Al Bhed Primer Vol. XVII", "icon": "primer", "missable": false }

@@ -7,7 +7,7 @@
   "subLocations": [
     {
       "name": "Mi'ihen Highroad South",
-      "prose": "Talk to every NPC — most give items freely. The Ice Brand is behind the ruined building on the left. Give the kid 3 Softs only if you DON'T kick the blitzball. The Red Ring (Silence Ward) goes to Yuna.",
+      "prose": "Most people on the Highroad are happy to hand things over — talk to everyone. Maechen on the left side gives the historian's spiel if you want the lore. Aerial enemies like the Zu are best handled by Wakka; use Lulu to blind the Dual Horns. After meeting the Chocobo Knights, drop into the right-side alcove to fight Belgemine for the first time — win with Valefor's Energy Ray and she hands over an Echo Ring.",
       "guideImages": ["image_0037_00.jpeg", "image_0037_01.jpeg"],
       "items": [
         { "id": "miihen-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
@@ -24,7 +24,7 @@
     },
     {
       "name": "Rin's Agency / Newroad",
-      "prose": "Rin gives Primer VIII for free when you speak to him. Primer IX is on the north cliff side of the Newroad. The Mars Crest (Auron's Masamune prerequisite) is on Oldroad South — accessible now or by airship later.",
+      "prose": "Rin introduces himself on the way out and hands over Primer VIII automatically. After defeating the Chocobo Eater, borrow Rin's chocobo — it lets you skip encounters and reach a feather-marked ledge north of the bridges for the Heat Lance, plus Primer IX is on the ground nearby. The Mars Crest is a detour back to Oldroad South, but it's not missable — you can grab it via airship later if you skip it now.",
       "guideImages": ["image_0039_00.jpeg"],
       "items": [
         { "id": "miihen-primer-viii", "name": "Al Bhed Primer Vol. VIII (free from Rin)", "icon": "primer", "missable": false },
