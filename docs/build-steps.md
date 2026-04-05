@@ -54,7 +54,7 @@
 - [x] 42. Write walkthrough prose for Acts 3 & 4 (11 chapters)
 - [x] 43. Write optional areas content (Remiem Temple, Baaj revisit, Omega Ruins, Monster Arena intro — sub-sections under Airship chapter)
 - [x] 44. Map item icon filenames — match all item names in chapter JSONs to `/img/items/sd/` sprites; flag any missing assets
-- [ ] 45. Accuracy QA pass — cross-reference missables, boss HPs, and primer locations against research docs
+- [x] 45. Accuracy QA pass — cross-reference missables, boss HPs, and primer locations against research docs
 
 ## Phase 3: Collectibles Hub
 - [ ] 46. Build CollectiblesHub page shell
