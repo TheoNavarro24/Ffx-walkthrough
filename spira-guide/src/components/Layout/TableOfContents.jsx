@@ -2,7 +2,7 @@ export default function TableOfContents({ isOpen, onToggle, sections = [], activ
   return (
     <div
       data-testid="toc-panel"
-      className={`transition-all ${isOpen ? 'toc-expanded w-40' : 'w-6'}`}
+      className={`transition-all hidden md:block ${isOpen ? 'toc-expanded w-40' : 'w-6'}`}
     >
       <button
         className="w-6 h-10 flex items-center justify-center text-[var(--color-border-alt)] hover:text-white hover:bg-white/10 transition-colors rounded cursor-pointer"

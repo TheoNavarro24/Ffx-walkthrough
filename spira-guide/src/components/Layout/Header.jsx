@@ -23,8 +23,7 @@ export default function Header({ onHamburgerClick, isDrawerOpen, onQRPClick, isQ
       <img
         src={assetUrl('img/ffx-logo.webp')}
         alt="Final Fantasy X"
-        className="flex-shrink-0"
-        style={{ height: '48px', width: 'auto' }}
+        className="flex-shrink-0 h-8 sm:h-12 w-auto"
       />
 
       <span className="flex-1" />
