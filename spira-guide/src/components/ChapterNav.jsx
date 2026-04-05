@@ -28,7 +28,7 @@ function NavCard({ chapter, direction }) {
         <p style={{ fontFamily: 'var(--font-display)', color: 'var(--color-text)', fontSize: '1rem' }}>
           {chapter.name}
         </p>
-        <div className="w-full h-1 bg-[#0d2137] rounded">
+        <div className="w-full h-1 bg-[var(--color-bg-deep)] rounded">
           <div
             className="h-full bg-[var(--color-border)] rounded transition-all"
             style={{ width: `${pct}%` }}

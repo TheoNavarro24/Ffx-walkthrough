@@ -1,11 +1,11 @@
 :root {
   --font-display: 'Highwind', sans-serif;
   --font-body: 'Tuffy', sans-serif;
-  --color-bg-deep: #1a1430;
-  --color-bg-panel: #1a2040;
-  --color-bg-panel-dark: #252858;
-  --color-border: #8898cc;
-  --color-border-alt: #6070a0;
+  --color-bg-deep: #2e285d;
+  --color-bg-panel: #37437B;
+  --color-bg-panel-dark: #2e285d;
+  --color-border: #8888c0;
+  --color-border-alt: #9898c8;
   --color-gold: #FFC10F;
   --color-accent-blue: #3878b8;
   --color-accent-orange: #e08030;
@@ -15,10 +15,11 @@
 }
 
 .ffx-panel {
-  background: linear-gradient(135deg, rgba(26, 32, 64, 0.92), rgba(37, 40, 88, 0.95));
+  background: linear-gradient(135deg, #5450a0 0%, #444080 45%, #322e68 100%);
   color: var(--color-text);
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .ffx-header {
@@ -37,11 +38,29 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-family: var(--font-display);
+  font-size: 1rem;
   transition: box-shadow 0.2s;
 }
 
 .ffx-button:hover {
   box-shadow: 0 0 8px var(--color-border);
+}
+
+.ffx-section-heading {
+  font-family: var(--font-display);
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid var(--color-border-alt);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.9);
+}
+
+.ffx-header-bar {
+  border-bottom: 1.5px solid var(--color-border-alt);
 }
 
 .boss-stat {

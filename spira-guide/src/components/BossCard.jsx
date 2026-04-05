@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useCheckbox } from '../hooks/useCheckbox'
 import { assetUrl } from '../utils/assetUrl'
+import { triggerPyreflyBurst } from '../hooks/usePyreflyBurst'
 
 function formatHp(boss) {
   const hp = boss.hp ?? boss.stats?.hp?.[0]
@@ -107,7 +108,7 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
           onError={(e) => { e.target.style.display = 'none' }}
         />
         <div className="flex-1 min-w-0">
-          <p className="ffx-header text-sm">{bossName}</p>
+          <p className="ffx-header text-lg">{bossName}</p>
           <div className="flex gap-3 mt-0.5">
             <span className="boss-stat">
               <span className="boss-stat-label">HP</span>
@@ -135,11 +136,16 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
             </div>
           )}
         </div>
-        <span className="text-gray-600 text-xs">{expanded ? '▲' : '▼'}</span>
+        <span className="text-gray-400">
+          {expanded
+            ? <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+            : <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          }
+        </span>
       </button>
 
       {expanded && (
-        <div className="px-4 pb-4 flex flex-col gap-3 border-t border-[#1e3a5f]">
+        <div className="px-4 pb-4 flex flex-col gap-3 border-t border-[var(--color-border-alt)]">
           {boss.strategy && (
             <p className="text-sm text-gray-300 mt-3">{boss.strategy}</p>
           )}
@@ -178,7 +184,10 @@ export default function BossCard({ chapterSlug, bossSlug, boss }) {
               type="checkbox"
               aria-label="Defeated"
               checked={defeated}
-              onChange={() => toggle(checkId)}
+              onChange={(e) => {
+                if (!defeated) triggerPyreflyBurst(e.clientX, e.clientY, 12)
+                toggle(checkId)
+              }}
               className="accent-[var(--color-border)]"
             />
             Mark as defeated

@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
 import ProgressDashboard from '../components/Layout/ProgressDashboard'
+import { useLastVisited, useNextIncomplete } from '../hooks/useNavigation'
 
 export default function LandingPage() {
+  const { lastVisited } = useLastVisited()
+  const nextIncomplete = useNextIncomplete()
+
   return (
     <div className="flex flex-col items-center gap-6 py-8">
       <div className="ffx-panel p-8 text-center">
@@ -12,10 +16,10 @@ export default function LandingPage() {
       <ProgressDashboard />
 
       <div className="flex gap-4">
-        <Link to="/chapter/zanarkand" className="ffx-button px-6 py-3">
+        <Link to={`/chapter/${lastVisited}`} className="ffx-button px-6 py-3">
           Continue
         </Link>
-        <Link to="/chapter/zanarkand" className="ffx-button px-6 py-3">
+        <Link to={`/chapter/${nextIncomplete}`} className="ffx-button px-6 py-3">
           Next Incomplete
         </Link>
       </div>

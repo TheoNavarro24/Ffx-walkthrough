@@ -67,9 +67,16 @@ npm run preview  # Preview production build locally
 ## Design Decisions (Finalized)
 
 ### Visual Style
-- **Match FFX in-game menus**: Translucent blue-purple gradient panels, slate-blue borders, gold accents
-- **FFX-style font**: Web font matching the game's menu typography
-- **Colors**: Blue-purple panels (#37437B), dark purple backgrounds (#2e285d), slate borders (#707e9d), gold (#FFC10F), white text — sourced from actual game UI palette (gameuidatabase.com/gameData.php?id=474)
+- **Match FFX in-game menus**: Diagonal gradient panels matching the actual in-game text box colour (top-left lighter, bottom-right darker), bright lavender border, gold accents
+- **FFX-style font**: Highwind (display/headings), Tuffy (body). **Highwind must be ≥24px to be readable** — never use it below that size
+- **Colors (current, finalized)**:
+  - Panel background: `linear-gradient(135deg, #5450a0 0%, #444080 45%, #322e68 100%)`
+  - Panel border: `#8888c0` (bright lavender, clearly visible against panel)
+  - Border alt (dividers, secondary text): `#9898c8`
+  - Gold: `#FFC10F`
+  - Body text: `#ffffff`
+  - Deep background: `#2e285d`
+- **Header**: Compact (52px), FFX logo image as left wordmark (`public/img/ffx-logo.webp`), pastel left-to-right gradient (`#ffffff → #d6eef8 → #f8dde8 → #fad4bc → #fdecc8`) matching the character art colours in the logo
 - **Images everywhere**: Maps, boss portraits, character icons, SD item sprites inline
 
 ### Layout
@@ -131,6 +138,13 @@ npm run preview  # Preview production build locally
 - **CSS**: Tailwind utilities for layout/spacing + custom CSS classes for FFX-themed components
 - **Exports**: Named exports preferred; default export for page-level components
 - **Data imports**: Import JSON from `docs/source-data/` using relative paths or Vite aliases
+
+## Known Pitfalls & Lessons Learned
+
+- **CSS reset outside `@layer` breaks all Tailwind spacing**: A `* { margin: 0; padding: 0 }` block placed outside any `@layer` directive will silently override all Tailwind padding/margin utilities (non-layered rules win over `@layer utilities`). Tailwind v4's preflight already handles this inside `@layer base` — never add a duplicate reset block.
+- **Highwind font readability**: The Highwind display font becomes hard to read below ~24px. Minimum sizes: SubLocation headers `text-3xl` (30px), section headings `2rem`, chapter titles `text-3xl`. Always pair with `tracking-widest` or `letter-spacing: 0.18em+`.
+- **AppShell must use `h-screen` not `min-h-screen`**: The outer flex container needs `h-screen` so the `<main>` element's `overflow-auto` contains all scrolling. With `min-h-screen`, the document itself becomes scrollable and the header scrolls off screen. Always scroll via `document.querySelector('main').scrollTop`, not `window.scrollTo`.
+- **Image paths need `assetUrl()`**: Never use bare `/img/...` paths — they 404 on GitHub Pages due to the `/Ffx-walkthrough/` base path.
 
 ## Key Data Notes
 

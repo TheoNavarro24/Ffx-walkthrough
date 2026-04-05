@@ -1,5 +1,6 @@
 import { useCheckbox } from '../hooks/useCheckbox'
 import { assetUrl } from '../utils/assetUrl'
+import { triggerPyreflyBurst } from '../hooks/usePyreflyBurst'
 
 export default function ItemList({ items = [], showUncheckedOnly = false }) {
   const { isChecked, toggle } = useCheckbox()
@@ -25,7 +26,10 @@ export default function ItemList({ items = [], showUncheckedOnly = false }) {
               type="checkbox"
               id={item.id}
               checked={checked}
-              onChange={() => toggle(item.id)}
+              onChange={(e) => {
+                if (!checked) triggerPyreflyBurst(e.clientX, e.clientY, 6)
+                toggle(item.id)
+              }}
               className="w-3.5 h-3.5 accent-[var(--color-border)] cursor-pointer"
             />
             <img

@@ -14,6 +14,7 @@ import SphereGridTip from '../components/SphereGridTip'
 import CloisterSection from '../components/CloisterSection'
 import ChapterNav from '../components/ChapterNav'
 import { getBoss } from '../data/bossBySlug'
+import { useLastVisited } from '../hooks/useNavigation'
 import besaidCloister from '../data/cloisters/besaid.json'
 import kilikaCloister from '../data/cloisters/kilika.json'
 import djosequCloister from '../data/cloisters/djose.json'
@@ -44,6 +45,11 @@ export default function ChapterPage() {
   const [showUncheckedOnly, setShowUncheckedOnly] = useState(false)
   const activeId = useScrollSpy(SECTION_IDS)
   const { setSections, setActiveId } = useToc()
+  const { setLastVisited } = useLastVisited()
+
+  useEffect(() => {
+    setLastVisited(slug)
+  }, [slug, setLastVisited])
 
   useEffect(() => {
     setSections(SECTION_LABELS)
@@ -55,7 +61,7 @@ export default function ChapterPage() {
   }, [activeId, setActiveId])
 
   return (
-    <div className="max-w-4xl mx-auto py-4 flex flex-col gap-4">
+    <div key={slug} className="max-w-4xl mx-auto py-4 flex flex-col gap-4 pyrefly-page-enter">
       <MissableAlert missables={data.missables} />
       <ChapterHeader
         name={chapter?.name ?? slug}
@@ -65,17 +71,16 @@ export default function ChapterPage() {
         party={data.party}
       />
 
-      <div className="flex justify-end">
-        <button
-          className="ffx-button text-xs"
-          onClick={() => setShowUncheckedOnly((v) => !v)}
-        >
-          {showUncheckedOnly ? 'Show All' : 'Unchecked Only'}
-        </button>
-      </div>
-
       <section id="section-walkthrough" aria-label="Walkthrough and Items">
-        <h2 className="ffx-header text-base mb-2">Walkthrough &amp; Items</h2>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="ffx-section-heading mb-0 border-0 pb-0">Walkthrough &amp; Items</h2>
+          <button
+            className="ffx-button text-sm px-4 py-2"
+            onClick={() => setShowUncheckedOnly((v) => !v)}
+          >
+            {showUncheckedOnly ? 'Show All' : 'Unchecked Only'}
+          </button>
+        </div>
         <div className="ffx-panel">
           {data.subLocations.map((loc) => (
             <SubLocation
@@ -97,7 +102,7 @@ export default function ChapterPage() {
       <SphereGridTip tip={data.sgTip} />
 
       <section id="section-bosses" aria-label="Boss Encounters">
-        <h2 className="ffx-header text-base mb-2">Boss Encounters</h2>
+        <h2 className="ffx-section-heading">Boss Encounters</h2>
         <div className="flex flex-col gap-3">
           {data.bosses.map((entry) => {
             const bossSlug = typeof entry === 'string' ? entry : entry.slug
@@ -118,7 +123,7 @@ export default function ChapterPage() {
       </section>
 
       <section id="section-collectibles" aria-label="Collectibles">
-        <h2 className="ffx-header text-base mb-2">Collectibles</h2>
+        <h2 className="ffx-section-heading">Collectibles</h2>
         {data.cloister && (
           <CloisterSection cloister={CLOISTER_DATA[data.cloister] ?? null} />
         )}
@@ -126,7 +131,7 @@ export default function ChapterPage() {
 
       {data.optionalAreas?.length > 0 && (
         <section id="section-optional" aria-label="Optional Areas">
-          <h2 className="ffx-header text-base mb-2">Optional Areas</h2>
+          <h2 className="ffx-section-heading">Optional Areas</h2>
           <div className="ffx-panel">
             {data.optionalAreas.map((area) => (
               <SubLocation

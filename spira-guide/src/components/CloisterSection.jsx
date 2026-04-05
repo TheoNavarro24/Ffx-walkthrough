@@ -6,7 +6,7 @@ export default function CloisterSection({ cloister }) {
 
   return (
     <div className="ffx-panel p-4 flex flex-col gap-3">
-      <h3 className="ffx-header text-sm">{cloister.name}</h3>
+      <h3 className="ffx-header text-xl">{cloister.name}</h3>
 
       {cloister.missable && cloister.destructionSphere && (
         <p className="text-xs text-red-300 border border-red-800 bg-red-900/20 rounded px-3 py-2">
