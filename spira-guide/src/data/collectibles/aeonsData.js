@@ -1,0 +1,11 @@
+// IDs for story aeons are hub-only; airship aeons match chapter JSON IDs
+export const AEONS = [
+  { id: 'aeon-valefor',         name: 'Valefor',       portrait: 'img/party/aeons/valefor.png',       chapterSlug: 'besaid',       anchor: 'aeon-valefor',      acquisition: 'Besaid Temple — story aeon',                                    airshipRequired: false },
+  { id: 'aeon-ifrit',           name: 'Ifrit',         portrait: 'img/party/aeons/ifrit.png',         chapterSlug: 'kilika',       anchor: 'aeon-ifrit',        acquisition: 'Kilika Temple — story aeon',                                    airshipRequired: false },
+  { id: 'aeon-ixion',           name: 'Ixion',         portrait: 'img/party/aeons/ixion.png',         chapterSlug: 'djose',        anchor: 'aeon-ixion',        acquisition: 'Djose Temple — story aeon',                                     airshipRequired: false },
+  { id: 'aeon-shiva',           name: 'Shiva',         portrait: 'img/party/aeons/shiva.png',         chapterSlug: 'lake-macalania', anchor: 'aeon-shiva',      acquisition: 'Macalania Temple — story aeon',                                 airshipRequired: false },
+  { id: 'aeon-bahamut',         name: 'Bahamut',       portrait: 'img/party/aeons/bahamut.png',       chapterSlug: 'zanarkand-dome', anchor: 'aeon-bahamut',    acquisition: 'Zanarkand Temple — story aeon',                                 airshipRequired: false },
+  { id: 'airship-yojimbo-aeon', name: 'Yojimbo',       portrait: 'img/party/aeons/yojimbo.png',       chapterSlug: 'airship',      anchor: 'airship-yojimbo-aeon', acquisition: 'Cavern of the Stolen Fayth — negotiate with 200,000+ Gil', airshipRequired: false },
+  { id: 'airship-baaj-anima',   name: 'Anima',         portrait: 'img/party/aeons/anima.png',         chapterSlug: 'airship',      anchor: 'airship-baaj-anima', acquisition: 'Baaj Temple — requires all 7 aeons + all 6 Cloisters',      airshipRequired: true },
+  { id: 'aeon-magus-sisters',   name: 'Magus Sisters', portrait: 'img/party/aeons/magus-sisters.png', chapterSlug: 'airship',      anchor: 'aeon-magus-sisters', acquisition: 'Remiem Temple — requires Yojimbo, Anima, and Belgemine defeats', airshipRequired: true },
+]
