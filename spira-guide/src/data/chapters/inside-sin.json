@@ -1,13 +1,13 @@
 {
   "slug": "inside-sin",
   "missables": [
-    "Point of no return — after the final Save Sphere in Tower of Death, you cannot return to the airship. Complete all side quests first.",
+    "Point of no return — the final Save Sphere sits at the top of the City of Dying Dreams ramp, just before the Tower of Death. After you enter the Tower and collect 10 crystal items, you cannot return to the airship. Complete all side quests before using that Save Sphere.",
     "City of Dying Dreams glyph doors — kill 10, then more, then 15 fiends in the immediate area to open three sequential doors. Reward: 1 Lv. 4 Key Sphere. If you bypass the glyph without killing the required fiends, the door stays shut permanently.",
     "Tower of Death crystals — small colored crystals appear and fade quickly as you navigate the Tower. Run to touch them before they vanish; you cannot loop back for missed ones."
   ],
   "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
   "oaka": null,
-  "sgTip": "Ensure your key characters have Auto-Life or a full complement of Overdrives before entering. This is the final dungeon.",
+  "sgTip": "When fighting Behemoth King, use Protect (not Shell) before the killing blow — Protect halves its death Meteor. Alternatively, let an aeon absorb the final hit. In the Jecht fight, put Zombie on him early so the Yu Pagodas damage him with every healing attempt; reapply as it wears off. You cannot carry items or gil into a new game, so spend everything — Spare Change (100,000 gil = 9,999 damage) and aeon Overdrives are free damage.",
   "subLocations": [
     {
       "name": "Sea of Sorrow",
@@ -37,7 +37,7 @@
       "prose": "Past the Sea of Sorrow's Save Sphere, search the right-hand wall for a glowing glyph. Kill 10 fiends in random encounters to open the first door; a second door requires more kills; a third demands 15. Total: 35 kills for a single Lv. 4 Key Sphere. Watch for Demonolith enemies — their Breath attack can petrify the entire party for an instant game over. Keep at least one front-liner in Stoneproof armor, or fight Demonoliths exclusively with summoned aeons. Treasure is scattered across lift platforms and a spiral slide building: step on the Yevon-symbol platform to ride up to Four-on-One, then cross the lowered bridge for the Defending Bracer. Laevatein is at the bottom of the spiral in the small southern building — press the wall prompt after collecting it to climb back out.",
       "items": [
         {
-          "id": "inside-sin-lv4-key-sphere",
+          "id": "inside-sin-cod-lv4-key-sphere",
           "name": "Lv. 4 Key Sphere",
           "description": "Reward for killing 35 fiends (10 + 10 + 15) to open the three glyph doors. All kills must occur in this area.",
           "missable": true
@@ -55,13 +55,13 @@
           "missable": false
         },
         {
-          "id": "inside-sin-20000-gil",
+          "id": "inside-sin-cod-20000-gil",
           "name": "20,000 Gil",
           "description": "Found at the ramp down near the bridge.",
           "missable": false
         },
         {
-          "id": "inside-sin-hp-sphere",
+          "id": "inside-sin-cod-hp-sphere",
           "name": "HP Sphere",
           "description": "Step on the platform beside the 20,000 Gil chest to ride up to this item.",
           "missable": false

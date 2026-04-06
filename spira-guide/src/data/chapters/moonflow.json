@@ -1,25 +1,28 @@
 {
   "slug": "moonflow",
-  "missables": ["Al Bhed Primer Vol. XII — North Wharf platform above O'aka; cannot return after leaving for Guadosalam"],
+  "missables": [
+    "Al Bhed Primer Vol. XII — North Wharf platform above O'aka; cannot return after leaving for Guadosalam",
+    "Dragon Scales ×2 — Belgemine reward for defeating her Ixion; only awarded for a win, not a loss"
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
-  "sgTip": null,
+  "sgTip": "Once Rikku joins at the North Wharf, she brings new nodes on Tidus's grid path — prioritise opening the Lv. 1 Key Sphere locks you've been collecting to unlock Speed and Strength branches before Guadosalam.",
   "subLocations": [
     {
       "name": "Moonflow South Bank",
-      "prose": "Head north and tangle with Kimahri's old rivals to get the X-Potion, then meet Belgemine for your second Aeon duel — she summons Ixion, so lead with Ifrit's Hellfire and heal with Fire spells if needed. Win or lose, she gives you the Summoner's Soul, which lets you teach aeons new abilities. Ochu are the worst regular enemy here — finish them quickly before they drop below half HP and start using Ochu Dance to inflict blindness, silence, and confusion on the whole party.\n\nAt the south wharf, grab the 5,000 gil chest behind Lulu before boarding the shoopuf. The crossing triggers the Extractor fight — you can only use Tidus and Wakka, so Wakka's Thunder attacks are your main damage source.",
+      "prose": "Head north from the Djose road. Follow the thin trail east of Shelinda to scoop up the first cluster of Lv. 1 Key Spheres, then continue up the main path toward Kimahri's old rivals — defeating them yields an X-Potion. A short alcove further along the northeast path holds a second cluster of Key Spheres. Before the road bends toward the wharf, take the narrow west detour to grab the Magic Def Sphere chest.\n\nBelgemine is waiting south of the wharf for your second Aeon duel. Start the fight with Yuna's aeons in Overdrive if possible. She summons Ixion, so counter with Ifrit and open immediately with Hellfire. If Ixion casts Haste and chains attacks, heal Ifrit with Fire spells between strikes; if Ixion looks close to Overdrive, use Boost on Ifrit to get there first. Win or lose she hands over the Summoner's Soul, which unlocks the ability to teach new moves to your aeons — you should now be able to assign Cheer, Aim, Focus, and Reflex to all three. A win also earns two Dragon Scales, which teach Watera to one aeon.\n\nOchu are the most dangerous standard enemy on the bank. Their claw attacks inflict Poison, but the real threat comes when they drop below half HP and trigger Ochu Dance — a full-party attack that simultaneously inflicts blindness, silence, and confusion. Apply Cheer, Slow the Ochu, and commit to offense before it reaches that threshold. Kimahri, Auron, and Lulu work well here; keep Yuna in reserve since aeons are ailment-immune and can bail you out if Ochu Dance lands.",
       "guideImages": ["image_0044_00.jpeg"],
       "items": [
         { "id": "moonflow-lv1-key-sphere-a", "name": "Lv. 1 Key Sphere ×3", "icon": "lv1-key-sphere", "missable": false, "note": "Thin trail east of Shelinda (first group)" },
         { "id": "moonflow-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false, "note": "After the Kimahri rival encounter" },
         { "id": "moonflow-lv1-key-sphere-b", "name": "Lv. 1 Key Sphere ×3", "icon": "lv1-key-sphere", "missable": false, "note": "Alcove on the northeast path (second group)" },
         { "id": "moonflow-magic-def-sphere", "name": "Magic Def Sphere", "icon": "magic-def-sphere", "missable": false, "note": "Narrow west detour off the northern trail before the wharf" },
-        { "id": "moonflow-dragon-scales", "name": "Dragon Scales ×2", "icon": "dragon-scales", "missable": false, "note": "Belgemine reward (win only) — teaches aeon Watera" }
+        { "id": "moonflow-dragon-scales", "name": "Dragon Scales ×2", "icon": "dragon-scales", "missable": true, "note": "Belgemine reward (win only) — MISSABLE if you lose; teaches aeon Watera" }
       ]
     },
     {
       "name": "South Wharf",
-      "prose": "Collect both chests before speaking to the shoopuf handler — the shoopuf departs as soon as you confirm, triggering the Extractor fight automatically during the crossing.",
+      "prose": "Collect both chests before speaking to the shoopuf handler — the chest behind Lulu holds 5,000 Gil and the one near O'aka holds two Phoenix Downs. The shoopuf departs immediately when you confirm boarding, so there is no opportunity to backtrack. The crossing triggers the Extractor fight automatically mid-river; Tidus and Wakka are the only party members available for the battle.",
       "guideImages": [],
       "items": [
         { "id": "moonflow-phoenix-down", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false, "note": "Chest near O'aka at the shoopuf wharf" },
@@ -28,7 +31,7 @@
     },
     {
       "name": "North Wharf",
-      "prose": "After Rikku is rescued, head up the slope to the right of the Hypello to grab the Al Bhed Primer before leaving the area — you cannot return once you continue to Guadosalam. O'aka is here selling medicines; stock up before moving on.",
+      "prose": "After the Extractor fight Rikku is rescued and joins the party permanently, and a Mix tutorial battle fires immediately — this teaches you her Overdrive mechanic. Use the Save Sphere on the wharf before doing anything else.\n\nAl Bhed Primer Vol. XII is on the platform above O'aka — go up the slope to the right of the Hypello and collect it before you leave. This is the last chance; the area closes permanently once you continue toward Guadosalam. Head west onto the trail and take the Ether from the treasure chest there. O'aka reappears here selling medicines only; stock up now since the Customize system becomes available in Guadosalam and medicine supplies are the fuel for adding abilities to your gear.",
       "guideImages": [],
       "items": [
         { "id": "moonflow-primer-xii", "name": "Al Bhed Primer Vol. XII", "icon": "primer", "missable": true, "note": "Platform above O'aka — MISSABLE, cannot return" },
@@ -37,7 +40,7 @@
     },
     {
       "name": "North Bank Road",
-      "prose": "The road north toward Guadosalam has two chests on opposite sides of the path. Rikku joins the party here permanently after the Extractor fight.",
+      "prose": "After the Extractor fight and the Mix tutorial on the North Wharf, the road north toward Guadosalam has two chests on opposite sides of the path — an Antidote ×4 on the right and a Mega-Potion on the left. Pick both up before proceeding. Rikku is now a full party member and her Al Bhed Potions are a reliable source of party-wide healing for the chapters ahead where Yuna's White Magic may not always be available.",
       "guideImages": [],
       "items": [
         { "id": "moonflow-antidote", "name": "Antidote ×4", "icon": "antidote", "missable": false, "note": "First chest on the right side of the road" },

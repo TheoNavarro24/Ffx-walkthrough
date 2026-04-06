@@ -11,7 +11,7 @@
   "subLocations": [
     {
       "name": "Priests' Passage",
-      "prose": "After the wedding scene and the escape sequences, the full party reunites in Bevelle Temple. Charge through several waves of Warrior Monks on the roof — the flamethrower monks hit the whole party with fire, so kill them first. Primer XXII is on the floor of the passage leading to the Cloister save sphere; the game pulls you forward here, so look down as you walk.",
+      "prose": "After the wedding scene and the airship escape, the full party reunites on Bevelle's rooftop for a multi-wave gauntlet — heal before engaging. Three distinct waves stand between you and the Cloister. The first consists of standard Warrior Monks; clear them and advance. The second brings two Warrior Monks alongside a giant machina: use Dark Attack or a Smoke Bomb to blind the machina immediately, then focus the monks before turning on the machine. The final wave is a YAT-99 — kill its flanking guards first to gain access. Flamethrower monks appear throughout; they can douse the entire party with fire in one action, so always eliminate them before anything else. Once past the battles, descend through the Priests' Passage. Al Bhed Primer Vol. XXII is lying on the floor just before the Cloister save sphere — the path pulls you forward quickly, so watch underfoot and grab it before saving. Use the save sphere before entering the Cloister; there is no opportunity to save again for a significant stretch.",
       "guideImages": ["image_0056_00.jpeg"],
       "items": [
         { "id": "bevelle-primer-xxii", "name": "Al Bhed Primer Vol. XXII (floor before Cloister save sphere)", "icon": "primer", "missable": true }
@@ -19,7 +19,7 @@
     },
     {
       "name": "Bevelle Cloister of Trials",
-      "prose": "The most mechanically complex Cloister — you ride a moving platform across glowing path glyphs, steering by pressing the button as arrows light up. The Destruction Sphere is needed to access the Knight Lance chest, which is one of the seven Cloister treasures required to unlock Anima later. Don't skip it.",
+      "prose": "Bevelle's Cloister is the most mechanically involved in the game. A pedestal holding a Bevelle Sphere becomes a moving platform when pushed onto the glowing track; pressing the action button at direction glyphs changes your heading. The critical rule: at step 18 of the puzzle you must have two Bevelle Spheres in hand simultaneously. One goes into a slot to open the left-branch path, and the other stays in the pedestal so you can continue riding. Miss this and the Knight Lance chest — required for unlocking Anima — is permanently gone. Before beginning, a chest at the top of the central stairs holds the HP Sphere; collect it before stepping on the floor switch beneath it, because the switch teleports the pedestal and causes the chest to vanish. The Destruction Sphere must also be inserted into its slot to reveal the locked path leading to the Knight Lance. At the very end of the puzzle, Yuna receives the aeon Bahamut — one of the most powerful aeons in the game. The party is then sentenced to the Via Purifico.",
       "guideImages": ["image_0058_00.jpeg", "image_0059_00.jpeg"],
       "items": [
         { "id": "bevelle-bevelle-sphere", "name": "Bevelle Sphere (puzzle key — pedestal key used to ride platform; need 2 simultaneously at step 18)", "icon": "sphere", "missable": false },

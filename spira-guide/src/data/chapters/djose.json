@@ -5,13 +5,13 @@
     "Stone Breath (Kimahri Overdrive) — use Lancet on a Basilisk on the Djose Highroad. Basilisks do not appear in later areas.",
     "Switch Hitter — inn chest, accessible only after completing the Cloister. Collect before departing the temple area."
   ],
-  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
-  "sgTip": "Rikku joins here — put her in the active party for her Steal and Use commands. Al Bhed Potions (which she can Use) are very effective for group healing.",
+  "sgTip": "This is a good moment to spend AP earned from the Operation Mi'ihen aftermath. Kimahri can branch toward Lancet-learned abilities; Wakka's Attack Reels path is worth activating if you have the Spheres.",
   "subLocations": [
     {
       "name": "Djose Highroad",
-      "prose": "Rikku officially joins here after the post-battle regrouping on the beach. Soldiers praying along the road will hand over items, and a chest on the right hides Phoenix Down near the start. Primer XI is across from that chest — look behind a spiky rock. Basilisks here can stone your party, so equip a Soft Ring on Yuna, or use Kimahri's Lancet to learn Stone Breath from them for later. Pick up Stoneproof armor from Rin's Agency (available just before this area) for Tidus and Yuna at minimum — Basilisks can inflict Petrify instantly; Thunder magic and Tidus's physical attacks are effective against them.",
+      "prose": "The party regroups on the road to Djose after the Operation Mi'ihen aftermath. Soldiers praying along the road hand over Soft Ring and Variable Steel; a priest further along gives Hi-Potions. The first chest contains two Phoenix Downs — cross directly to the other side of the path and search behind the spiky rock there to find Al Bhed Primer Vol. XI. Miss this and it is gone. Basilisks are the main hazard: they inflict Petrify with their gaze. Equip Yuna with the Soft Ring so she stays petrify-immune and can revive the rest of the party. Use Kimahri's Lancet on a Basilisk before leaving — Stone Breath cannot be learned anywhere else. Thunder magic and Tidus's physical attacks are effective against them.",
       "guideImages": ["image_0042_00.jpeg"],
       "items": [
         { "id": "djose-phoenix-down-x2", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false },
@@ -29,7 +29,7 @@
     },
     {
       "name": "Djose Temple",
-      "prose": "Inside the temple, meet Isaaru and his brothers, then loot both side chambers before ascending — the chest by the left chamber exterior has an Ether, inside the left chamber is a Remedy, and the right chamber holds a Mega Phoenix. The chest inside the inn is blocked by a priest until the Cloister is complete; return before leaving to collect the Switch Hitter. The Djose Cloister uses electrically charged Djose Spheres to power pedestals. Use the Destruction Sphere on the central pedestal on the upper level to destroy a section of the east wall and reveal the Magic Sphere chest.",
+      "prose": "Before entering, search the temple grounds: the 4,000 Gil chest is on the far west side, and Ability Spheres (×4) are behind the small inn to the east. The chest inside the inn is blocked by a priest until the Cloister is complete — make sure to return for the Switch Hitter before departing. Inside, Yuna meets summoner Isaaru and his guardian brothers. Loot both side chambers before the trial: the Ether chest is just outside the left chamber, a Remedy is inside it, and the right chamber holds a Mega Phoenix. The Djose Cloister uses electrically charged Djose Spheres to power pedestals and floor symbols. On the upper level, activate all five ceiling spokes by pressing Circle at each pedestal, then place the Destruction Sphere into the central pedestal — it destroys a section of the east wall to reveal the Magic Sphere chest.",
       "guideImages": [],
       "items": [
         { "id": "djose-ether-temple", "name": "Ether ×1 (Great Hall, left chamber exterior)", "icon": "ether", "missable": false },
@@ -41,7 +41,7 @@
     },
     {
       "name": "Djose Pilgrimage Road (post-Cloister)",
-      "prose": "After the Cloister and a night's rest, Tidus wakes at the inn. Head outside, then into the temple to wake Yuna. On the bridges heading north toward the Moonflow: a former Crusader gives a Halberd, a priest gives Hi-Potions, and a lone man on the next bridge section gives 10 Potions — keep talking to him until his dialogue loop ends.",
+      "prose": "After a night's rest, Tidus wakes at the inn — collect the Switch Hitter from the now-accessible chest before leaving. Head outside and into the temple to rouse Yuna. Check on the Chocobo Knights on the east side of the bridges, then follow the group south to the Highroad split and turn north toward the Moonflow. On the bridge sections heading away from the temple: a former Crusader stationed on the north side of the first bridge gives a Halberd, a priest pacing the bridges gives two Hi-Potions, and a lone man further along gives 10 Potions — keep talking to him until his full dialogue loop ends and he hands them over.",
       "guideImages": [],
       "items": [
         { "id": "djose-halberd", "name": "Halberd (former Crusader, north bridge)", "icon": "halberd", "missable": false },

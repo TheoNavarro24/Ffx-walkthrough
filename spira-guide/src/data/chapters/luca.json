@@ -1,13 +1,24 @@
 {
   "slug": "luca",
-  "missables": [],
+  "missables": [
+    {
+      "id": "luca-primer-vi-missable",
+      "name": "Al Bhed Primer Vol. VI",
+      "warning": "In the hallway off the Aurochs' locker room (go left, take the next stairway down). Must be collected before chasing the story — missed permanently once you progress past this window."
+    },
+    {
+      "id": "luca-primer-vii-missable",
+      "name": "Al Bhed Primer Vol. VII",
+      "warning": "On the ground at the Sphere Theater, south from the shop and north past the fountain. Easy to skip when following Auron directly to the docks — missed permanently once you leave Luca."
+    }
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
-  "oaka": null,
-  "sgTip": null,
+  "oaka": { "meeting": true, "cumulativeTarget": 1001 },
+  "sgTip": "Luca hands out generous AP — good time to push Tidus toward Haste and Kimahri toward Rikku's grid via the Lv. 1 Key Spheres you find here. Getting Kimahri to Steal early pays dividends throughout Act 2.",
   "subLocations": [
     {
       "name": "Dock Area",
-      "prose": "Sweep all the docks before the tournament kicks off. On Dock 1 (where the Winno is anchored): a chest has two Phoenix Down; further back, pick up 600 Gil and the Tidal Spear. At the back of Dock 5, squeeze behind the crates for a hidden path that yields a Magic Sphere and an HP Sphere. Luzzu and Gatta are across the balcony east of the town square — worth talking to. Don't leave Luca without checking the stadium corridors for the Primers.",
+      "prose": "Luca's docks reward thorough exploration before the tournament begins. On Dock 1 (where the Winno is moored), open the chest for Phoenix Down ×2. Two more chests on Dock 1 yield 600 Gil and the Tidal Spear for Kimahri. Head to Dock 5 and squeeze behind the crates at the back to find a hidden path with chests holding a Magic Sphere and an HP Sphere — both easy to walk past. O'aka XXIII has set up shop near Dock 1 and is selling a handful of weapons and armor; buy from him to keep donations climbing toward the 10,001 Gil discount threshold. The docks are locked down once the rescue mission kicks off, so loot everything now.",
       "guideImages": ["image_0034_00.jpeg", "image_0034_01.jpeg", "image_0035_00.jpeg"],
       "items": [
         { "id": "luca-600-gil", "name": "600 Gil", "icon": "gil", "missable": false },
@@ -19,20 +30,20 @@
     },
     {
       "name": "Town Square",
-      "prose": "Climb the stairs on the right side of the town square all the way to the top — past the balcony where Luzzu and Gatta are standing — to find a chest containing 1,000 Gil. Easy to miss if you head straight for the stadium.",
+      "prose": "Before heading to the stadium, take a detour through the city. On the right side of the town square, climb the stairs all the way to the top — past the balcony where Luzzu and Gatta are standing — and open the chest at the very top for 1,000 Gil. It is easy to miss if you head straight for the tournament. The Sphere Theater is south of the shop and north past the fountain; the Al Bhed Primer Vol. VII is lying on the ground there, and you will not be able to come back for it once Auron leads the group out of the city. Grab it on the way out.",
       "guideImages": [],
       "items": [
-        { "id": "luca-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false }
+        { "id": "luca-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false },
+        { "id": "luca-primer-vii", "name": "Al Bhed Primer Vol. VII", "icon": "primer", "missable": true }
       ]
     },
     {
       "name": "Luca Stadium",
-      "prose": "Al Bhed Primer Vol. VI is on the floor behind the closest player in the opposing team's locker room corridor; two Hi-Potions are in a chest at the back of the same hall. Al Bhed Primer Vol. VII is in the Sphere Theater at the south end of town. Mid-tournament, Lulu/Tidus/Kimahri board the Al Bhed ship to fight Oblitzerator: cast Thunder on the crane three times to charge it, then use Tidus's Trigger Command to activate it — the crane rips off the Oblitzerator's top half and drastically reduces its HP. After the blitzball final, fight your way out of the fiend-invaded stadium — Auron arrives and formally joins the party. Winning the match against the Luca Goers rewards a Strength Sphere.",
+      "prose": "Al Bhed Primer Vol. VI is on the floor of the hallway to the opposing team's locker rooms — go left from the Aurochs' locker room and down the next stairway; it is behind the closest opposing player. Collect it before chasing the story or it is gone permanently. Two Hi-Potions are in a chest at the back of the same hall. The blitzball match is winnable: spend the first half passing between players to level everyone up, then equip Tidus with Jecht Shot or Sphere Shot for the second half. Get the ball to Tidus early; after three minutes Wakka takes over and can try Venom Shot. Winning earns a Strength Sphere. Mid-tournament, Lulu, Tidus, and Kimahri board the Al Bhed ship to fight Oblitzerator — charge the crane by casting Thunder on it three times, then use Tidus's Trigger Command to fire it. After the final, fight out of the fiend-invaded stadium: Tidus and Wakka handle Sahagin Chiefs (use Cheer or Dark Attack if hits fall short), Auron kills the Vouivre in one stroke, then blind the Garuda with Dark Attack and use Power Break to reduce its damage.",
       "guideImages": ["image_0036_00.jpeg", "image_0036_01.jpeg"],
       "items": [
-        { "id": "luca-primer-vi", "name": "Al Bhed Primer Vol. VI", "icon": "primer", "missable": false },
+        { "id": "luca-primer-vi", "name": "Al Bhed Primer Vol. VI", "icon": "primer", "missable": true },
         { "id": "luca-2-hi-potions", "name": "Hi-Potion ×2", "icon": "hi-potion", "missable": false },
-        { "id": "luca-primer-vii", "name": "Al Bhed Primer Vol. VII", "icon": "primer", "missable": false },
         { "id": "luca-strength-sphere", "name": "Strength Sphere (blitzball win reward)", "icon": "strength-sphere", "missable": false }
       ]
     }

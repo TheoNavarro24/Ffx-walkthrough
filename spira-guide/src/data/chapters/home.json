@@ -1,20 +1,22 @@
 {
   "slug": "home",
   "missables": [
+    "HOME IS DESTROYED — every item in this chapter is permanently missable. Nothing here can be retrieved later.",
     "Al Bhed Primer Vol. XVIII — outside the main entrance. Missable if you rush past.",
     "Al Bhed Primer Vol. XIX — near the dead body, left of the entrance outside Home. PERMANENTLY MISSABLE — Home is destroyed after this chapter.",
     "Al Bhed Primer Vol. XX — south living quarters, on the bed. PERMANENTLY MISSABLE.",
     "Al Bhed Primer Vol. XXI — northeast corridor, on the floor. PERMANENTLY MISSABLE.",
+    "Friend Sphere — south living quarters, Al Bhed puzzle chest (vocabulary test). PERMANENTLY MISSABLE.",
     "Special Sphere — east living quarters, password chest. PERMANENTLY MISSABLE.",
     "Skill Sphere — east living quarters, quiz chest. PERMANENTLY MISSABLE."
   ],
   "party": ["Tidus", "Wakka", "Rikku"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "Home contains some of the best Sphere Grid consumables in the game at this point — Friend Sphere and Special Sphere. Use them to bridge character paths across the grid and unlock otherwise hard-to-reach nodes.",
   "subLocations": [
     {
       "name": "Home Exterior",
-      "prose": "After meeting Cid, search the area outside Home before going in. Primer XVIII is right outside the main entrance on the ground — grab it immediately. Fiends swarm the area in waves as you push forward, so you won't get a quiet moment to backtrack. Prioritize clearing the exterior enemies quickly so you can enter and sweep all three interior Primers before the destruction cutscene — this entire location is permanently gone afterward, and the interior Primers are among the easiest missables in the game.",
+      "prose": "Home is under siege by the Guado — and it will not survive this chapter. Everything here is permanently missable. The moment you regain control after meeting Cid, sweep the exterior before going anywhere near the entrance. The dead body just left of the main door holds two Hi-Potions; Al Bhed Primer Vol. XIX is on the ground nearby — grab both immediately. Primer XVIII is right at the main entrance itself. The Guado strike in waves, so there is no safe window to backtrack once you move forward. Clear the exterior, collect both Primers, then push inside before the situation deteriorates further.",
       "guideImages": ["image_0054_00.jpeg"],
       "items": [
         { "id": "home-primer-xviii", "name": "Al Bhed Primer Vol. XVIII", "icon": "primer", "missable": true },
@@ -24,7 +26,7 @@
     },
     {
       "name": "Home Interior",
-      "prose": "Three Primers are permanently missable once Home is destroyed — don't rush. Primer XIX is in the room where the forced fight occurs; check the bed at the back before engaging. At the three-way fork, go RIGHT down the northeast corridor for Primer XXI on the floor, then come back and take the left/straight path for Primer XX. The two Al Bhed puzzle chests in the inner rooms contain a Friend Sphere and a Skill Sphere — the correct answers are listed in the guide if you're short on Primers to translate them yourself.",
+      "prose": "Inside Home, resist the urge to sprint. Primer XX is on the bed in the first main room — collect it before the Guado Guardian fight. After the fight, descend the stairs and watch for the Al Bhed Potion chest hidden behind smoke at the bottom — it is easy to run straight past. The two puzzle chests in the living quarters yield a Friend Sphere (vocabulary-test chest) and further along a Special Sphere and Skill Sphere from two more Al Bhed locks — all permanently missable. For the northeast corridor, exit the living quarters, go straight up past the intersection, and look on the floor for Primer XXI. The Lv. 4 Key Sphere is under the stairs in the crumbling section; the Lv. 2 Key Sphere is on the far right just before the Summoner's Sanctum — both easy to overlook in the chaos. Collect everything before triggering the evacuation.",
       "guideImages": ["image_0054_01.jpeg"],
       "items": [
         { "id": "home-primer-xx", "name": "Al Bhed Primer Vol. XX (south living quarters, on the bed)", "icon": "primer", "missable": true },

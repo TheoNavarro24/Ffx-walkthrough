@@ -3,13 +3,13 @@
   "missables": [
     "Avenger and Rematch (Wakka's weapon) are permanently lost if you use the Trigger Command gate strategy to defeat Evrae Altana — the gates lock behind you and block both treasure chests."
   ],
-  "party": ["Yuna", "Kimahri", "Lulu", "Tidus", "Auron", "Wakka"],
+  "party": ["Yuna", "Kimahri", "Lulu", "Tidus", "Rikku", "Wakka"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "The Via Purifico is one of the best places to give Yuna substantial AP — she's been absent from your active party since Bevelle and is well behind on the grid. Avoid using Bahamut's Impulse to blitz through random encounters; let Yuna take hits and cast spells herself to build sphere levels before the Isaaru fight.",
   "subLocations": [
     {
       "name": "Via Purifico (Yuna's Path)",
-      "prose": "The party is split and sentenced to the Via Purifico. Yuna navigates the maze solo until she finds Kimahri and then Lulu via teleport pads. Work your way to the southern dead end to activate the glyph that unlocks the treasure room — that's where the Elixir, Black Magic Sphere, and other valuables are stashed. Maze Larva and Aqua Flan enemies populate the maze — fire and ice magic from Lulu cut through them quickly, and there's no time pressure here so clear everything for the AP.",
+      "prose": "The party is split and sentenced to the Via Purifico — Yuna, Kimahri, and Lulu in the labyrinth above; Tidus, Rikku, and Wakka in the underwater channels below. Yuna starts alone. Move east out of the starting chamber and follow the corridor north to find Kimahri (Mega-Potion nearby). Continue north then west to reach the Save Sphere near Auron's ghost-image — use it. Avoid teleport pads for now and head west, then south to find Lulu (White Magic Sphere). Press south to the dead end: collect the Elixir and activate the glyph in the rubble. This enables the floor glyph near the first Save Sphere. Return north and take the first right from that Save Sphere — collect the Black Magic Sphere. Step on the floor glyph to shift a teleport pad; ride it into the locked room for the Skill Sphere, Lucid Ring, and 10,000 Gil. Head north through the red-lit corridor when ready for Isaaru. Maze Larva and Aqua Flan are the primary enemies — fire and ice from Lulu handle them quickly. Wandering for AP here is valuable since Yuna has been sidelined since Bevelle.",
       "guideImages": ["image_0059_00.jpeg"],
       "items": [
         { "id": "via-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
@@ -23,7 +23,7 @@
     },
     {
       "name": "Via Purifico (Tidus's Sewers)",
-      "prose": "Tidus, Auron, and Wakka navigate the underwater channels. There's a shop chest near the start if you need supplies before Evrae Altana. Phlegyas and Exoray enemies roam the sewers — Exoray's Spore attack inflicts Darkness and Confusion on the party, so equip Confuseproof armor on Tidus and Auron if available. The boss is undead — throw Phoenix Downs at it for ~9,999 damage each. Two Phoenix Downs kill it outright; don't use cure magic or Al Bhed Potions on it.",
+      "prose": "Tidus, Rikku, and Wakka navigate the underwater channels below Bevelle. Immediately to the right of Tidus's starting position is a blue shop chest — stock up on Phoenix Downs and items before heading deeper. The channel is short with only two or three encounters. Enemies here are almost universally weak to lightning so Lightningstrike weapons cut through them quickly. Phlegyas and Exoray are the main threats — Exoray's Spore inflicts Darkness and Confusion, so equip Confuseproof armor if available. Save at the sphere before the round chamber. Evrae Altana is undead: two Phoenix Downs deal roughly 9,999 damage each and kill it outright. Do not use cure spells or Al Bhed Potions — both will heal it. The gate strategy (using Trigger Commands to lock gates and trap Evrae in the final chamber) also works, but doing so permanently seals off the Avenger and Rematch chests further back in the channels. If you want those items, kill Evrae in place with Phoenix Downs instead.",
       "guideImages": ["image_0060_00.jpeg", "image_0060_01.jpeg"],
       "items": [
         { "id": "via-evade-counter", "name": "Evade & Counter Armguard (Wakka)", "icon": "armguard", "missable": false },

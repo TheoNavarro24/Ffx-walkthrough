@@ -3,11 +3,11 @@
   "missables": [],
   "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "Highbridge is one of the last easy grind spots before the game accelerates. If Yuna hasn't learned Reflect yet, stay and farm the Save Sphere until she does — it's the single most valuable spell in the Seymour Natus fight.",
   "subLocations": [
     {
       "name": "Highbridge",
-      "prose": "After escaping the Via Purifico, the party reunites on the Highbridge for another confrontation with Seymour. There are two Save Spheres here — one at each end of the bridge — making this a good spot to level before the boss fight. Try to get your party into Overdrive before engaging; Seymour hits harder as his HP drops, so front-loading damage matters. After the fight, Yuna's aeons are fully restored — all of them are available again, including any you had previously and Bahamut if you completed the Bevelle Cloister.",
+      "prose": "After escaping the Via Purifico, the full party reunites on Highbridge for a final reckoning with Seymour. Two Save Spheres flank the bridge — one at each end — and this is an excellent place to grind AP before triggering the boss fight. The most important prep target: if Yuna hasn't learned Reflect yet, stay and farm until she does. Reflect is central to the Seymour Natus strategy, both for protecting your party and for turning the Mortibody's Cura spells back onto you. Beyond Reflect, get every character into Overdrive mode before you engage — front-loading burst damage is essential because Seymour's defenses escalate sharply as his HP falls. After the fight, all of Yuna's aeons are fully restored, including Bahamut if you completed the Bevelle Cloister.",
       "guideImages": ["image_0060_01.jpeg"],
       "items": []
     }

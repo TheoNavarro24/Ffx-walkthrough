@@ -4,11 +4,12 @@
     "Al Bhed Primer Vol. X — on the C-shaped western side path (Precipice). Point of no return: cannot return after proceeding to Djose Highroad.",
     "Serene Armlet — in the small area below the western Yevon platform. Same point of no return.",
     "Gate donations (Scout / Ice Lance / Moon Ring) — only available before Seymour grants entry to the road proper.",
+    "Gatta/Luzzu fate choice — the dialogue with Gatta inside the command center permanently determines who dies in Operation Mi'ihen. Speaking to Gatta twice and choosing the second option both times sends Luzzu to the front (Luzzu dies); any other choice results in Gatta dying. There is no way to change the outcome afterward.",
     "All Mushroom Rock Road items — no return after the final machina ascent triggers the Operation."
   ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
-  "sgTip": "Auron's Power Break is essential for Gui's arms — they deal heavy damage and heal Gui if left alive.",
+  "sgTip": "Operation Mi'ihen rewards 400 AP from Sinspawn Gui — take time in the aftermath to spend those spheres before heading to Djose. Kimahri can branch early toward Lancet nodes to start diversifying his path.",
   "subLocations": [
     {
       "name": "Lower Road",

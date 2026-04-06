@@ -7,7 +7,13 @@
   "subLocations": [
     {
       "name": "Airship En Route to Sin",
-      "prose": "Before engaging Sin, visit Maester Mika on the Highbridge for the key to defeating Yu Yevon — no fight needed. When ready, speak to Cid and head to the external deck. The fin fights are manageable; keep your Overdrives for the Head and beyond. You can return to the airship between each exterior battle to restock and heal.",
+      "prose": "Before the assault begins, Maester Mika is waiting on the Highbridge — no battle required. The meeting is brief but essential: the party learns the one truth that makes defeating Sin possible. Return to the Fahrenheit and speak to Cid when you are ready. This is your last opportunity to shop, manage the Sphere Grid, and charge Overdrives before the exterior gauntlet begins. Check every character's equipment: Celestial Weapons dramatically reduce the grind in the Sin fights, and Armor Break must be accessible on at least one fighter. Stock Megalixirs and Phoenix Downs — Gravija-style HP-reduction attacks hit the whole party and flat recovery items are essential. When you select Sin as the destination, the sequence begins and the final chapter of Spira's history opens.",
+      "guideImages": ["image_0072_00.jpeg"],
+      "items": []
+    },
+    {
+      "name": "Sin Exterior Gauntlet",
+      "prose": "The approach to Sin is a four-boss sequence fought on the deck of the Fahrenheit. The fights proceed in strict order: Left Fin, Right Fin, Sin Core with Sinspawn Genais simultaneously, and finally Overdrive Sin (the Head). After the third battle you can return to the airship interior to save, heal fully, and spend any remaining side-quest time before the final confrontation. The core tactical principle across all exterior fights is ship positioning: Tidus or Rikku can order Cid to move CLOSE for heavier damage at the risk of Sin's counterattacks, or pull BACK to a safe range where only Wakka, Lulu, and summoned aeons can reach Sin at all. Armor Break is mandatory whenever physical attackers engage — Sin's Negation ability will strip it along with any Haste buffs, so close-range windows are short. Save every Overdrive for Overdrive Sin: the Giga-Graviton timer makes that final fight a strict DPS race with no margin to spare.",
       "guideImages": ["image_0073_00.jpeg"],
       "items": []
     }

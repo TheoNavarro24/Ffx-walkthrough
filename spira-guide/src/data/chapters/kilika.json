@@ -1,26 +1,27 @@
 {
   "slug": "kilika",
   "missables": [
+    "Al Bhed Primer Vol. IV — on the bar counter in Kilika Port (find the crying girl in the rubble first; she moves to the bar and unlocks it). Cannot return to Kilika — permanently missable.",
     "Red Armlet — Destruction Sphere chest, Kilika Temple. Cannot return to Kilika Temple after leaving — this is permanently missable.",
     "NulBlaze Shield — given by the first Crusaders sentry in Kilika Woods only if Lord Ochu has already been defeated. Speak to the sentry before leaving the chapter."
   ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri"],
   "oaka": { "meeting": true, "cumulativeTarget": 1001 },
-  "sgTip": null,
+  "sgTip": "Any spare AP from the Kilika Woods encounters is worth putting toward Lulu's early Black Magic nodes — she is your primary damage dealer through the next two chapters. Wakka's Sphere Grid also branches into useful stat nodes near his starting position.",
   "subLocations": [
     {
       "name": "Kilika Port",
-      "prose": "The port is in ruins after Sin's attack. Follow the party west to find Yuna performing the Sending. The next morning, before leaving: rescue the crying girl from the rubble west of the docks to trigger a small scene, and find Al Bhed Primer Vol. IV just west of the inn. The merchant woman near the south chest sells arms and armor — worth checking if any of your party members need upgrades. Rest at the inn when ready.",
+      "prose": "The port is in ruins after Sin's attack. Follow the party west along the docks until Yuna is found with the survivors, performing the Sending. The next morning, before reporting to Wakka, complete two tasks in town: west of the docks, find the crying girl hiding in the rubble and speak to her — she moves to the local bar, where an Ether appears in a chest and Al Bhed Primer Vol. IV sits on the bar counter. The Potion chest is north of the inn. The merchant woman near the south chest sells arms and armor for all party members — check for upgrades, but do not buy Wakka's Scout weapon; a free one is found in the woods shortly. Visit Wakka at the east end of the pier when ready to board.",
       "guideImages": ["image_0031_00.jpeg"],
       "items": [
         { "id": "kilika-ether", "name": "Ether", "icon": "ether", "missable": false },
-        { "id": "kilika-primer-iv", "name": "Al Bhed Primer Vol. IV", "icon": "primer", "missable": false },
+        { "id": "kilika-primer-iv", "name": "Al Bhed Primer Vol. IV", "icon": "primer", "missable": true },
         { "id": "kilika-3-potions", "name": "Potion ×3", "icon": "potion", "missable": false }
       ]
     },
     {
       "name": "Kilika Woods",
-      "prose": "Take the west side path past Lord Ochu's position to find Wakka's Scout weapon in a chest — you can skip the boss entirely. Lord Ochu is optional and hits hard at this stage (weak to Fire — have Lulu go in with Cheer stacked), but Luzzu hands you an Elixir if you pull it off. Use Kimahri's Lancet on the Ragora here to learn Seed Cannon. The Luck Sphere is at the north end of the central path before you turn east toward the temple stairs.",
+      "prose": "A tutorial battle triggers immediately on entering the forest — use Kimahri's Lancet on the Ragora to learn Seed Cannon, and make a habit of Lanceting every new enemy type going forward. Luzzu and Gatta stand beyond the Al Bhed sign and introduce Lord Ochu, an optional boss in the clearing ahead. He is challenging but entirely skippable: the thin passage to the west loops north past his position and leads to a chest holding Wakka's free Scout weapon. If you do defeat Lord Ochu, talk to Luzzu immediately for an Elixir. The first Crusaders sentry on the main path gives a Remedy; if Lord Ochu is already dead when you speak to her, she also awards a NulBlaze Shield — make sure to claim it before leaving the chapter. The second sentry to the northeast gives a Hi-Potion. Collect the Mana Spheres from the east passage, pick up the Luck Sphere at the end of the central north-south path, then head east to the lakeshore and north to the temple stairs where Sinspawn Geneaux attacks.",
       "guideImages": ["image_0031_00.jpeg"],
       "items": [
         { "id": "kilika-2-mana-spheres", "name": "Mana Sphere ×2", "icon": "mana-sphere", "missable": false },

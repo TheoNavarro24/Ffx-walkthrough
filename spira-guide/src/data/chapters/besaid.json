@@ -1,36 +1,40 @@
 {
   "slug": "besaid",
-  "missables": ["Rod of Wisdom — Destruction Sphere, Besaid Temple. Dark Valefor blocks return in HD."],
+  "missables": [
+    "Rod of Wisdom — Destruction Sphere chest, Besaid Cloister. Must use the Destruction Sphere before pushing the pedestal into the final room. Dark Valefor blocks the temple entrance in HD once you have the airship.",
+    "Al Bhed Primer Vol. II — On the ground near the lodge's reception desk in Besaid Village. Must be picked up before boarding the S.S. Liki.",
+    "Valefor's Energy Blast (second Overdrive) — Speak to the item shop owner about her dog, then talk to the dog in the village. Only available before the party departs Besaid for the first time."
+  ],
   "party": ["Tidus", "Wakka", "Lulu", "Yuna"],
-  "oaka": { "meeting": true, "cumulativeTarget": 1001 },
-  "sgTip": "Yuna joins here. Prioritise NulBlaze and NulShock — they trivialise the next two Sinspawn fights.",
+  "oaka": { "meeting": false, "cumulativeTarget": 0 },
+  "sgTip": "Yuna joins here with a White Magic set and the Rod of Wisdom staff (equip it manually after the Cloister — it is not auto-equipped). Put one of Tidus's early Sphere Grid levels into Cheer before leaving the island; it reduces incoming damage from Kimahri and the first two Sinspawn fights on the ship.",
   "subLocations": [
     {
       "name": "Beach",
-      "prose": "After Wakka shoves Tidus into the lagoon, dive to the southeast wall for three sunken chests — two Antidotes and 200 Gil. Back on the beach, the Moon Crest is in a small cove just east of where you met the Aurochs. Don't leave the island without it — it's missable once you sail away.",
+      "prose": "You wash up on the Isle of Besaid and meet the Besaid Aurochs blitzball team. Before following Wakka inland, sweep the beach: the Moon Crest sits in a small cove just east of where you first encountered the team — you can return for it later, but the beach is easy to overlook once the game picks up pace. Talk to each Aurochs member repeatedly to collect Potions and a Hi-Potion. Two Antidotes are in a chest to the west. When Wakka leads you to the cliff above the lagoon he shoves Tidus in — dive immediately and work along the southeast wall to find three sunken chests. Piranhas patrol the water, so move quickly and follow the auto-map arrow to dry land. The 200 Gil and Antidotes from the chests are worth the swim.",
       "guideImages": ["image_0027_00.jpeg"],
       "items": [
-        { "id": "besaid-moon-crest", "name": "Moon Crest", "icon": "moon-crest", "missable": true },
+        { "id": "besaid-moon-crest", "name": "Moon Crest", "icon": "moon-crest", "missable": false },
         { "id": "besaid-antidote", "name": "Antidote", "icon": "antidote", "missable": false },
         { "id": "besaid-200gil", "name": "200 Gil", "icon": "gil", "missable": false }
       ]
     },
     {
       "name": "Besaid Village",
-      "prose": "Sweep the village before resting — chests near the first tent and outside the Crusaders Lodge hold Phoenix Down, two Potions, a Hi-Potion, and 400 Gil. Stop by the Crusaders Lodge to speak to Luzzu and Gatta. After the campfire scene, rest at the inn; the next morning Wakka gives you Brotherhood and Yuna joins. Al Bhed Primer Vol. II is on the ground near the lodge's reception desk — grab it before leaving.",
+      "prose": "Explore the village thoroughly before resting. Outside the first tent to the west is a Phoenix Down; the item shop inside that tent stocks Potions, Phoenix Downs, and Antidotes — stock up before leaving the island. North of that tent, tall grass hides a western passage with three chests: a Hi-Potion, 400 Gil, and two Potions. Stop by the Crusaders Lodge to speak with Luzzu and Gatta. After the evening campfire scene, rest at the inn and return to the temple the next morning — Wakka gives Tidus the Brotherhood sword and Yuna joins the party. Before leaving the village, grab Al Bhed Primer Vol. II from the ground near the lodge's reception desk (missable), and speak to the item shop owner about her dog, then talk to the dog itself to unlock Valefor's second Overdrive (missable — not available after departure).",
       "guideImages": [],
       "items": [
         { "id": "besaid-phoenix-down", "name": "Phoenix Down", "icon": "phoenix-down", "missable": false },
         { "id": "besaid-2potions", "name": "Potion ×2", "icon": "potion", "missable": false },
         { "id": "besaid-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
         { "id": "besaid-400gil", "name": "400 Gil", "icon": "gil", "missable": false },
-        { "id": "besaid-primer-ii", "name": "Al Bhed Primer Vol. II", "icon": "primer", "missable": false }
+        { "id": "besaid-primer-ii", "name": "Al Bhed Primer Vol. II", "icon": "primer", "missable": true }
       ]
     },
     {
       "name": "Besaid Port / Departure",
-      "prose": "Follow the mountain trail past the waterfalls and tutorial battles. Back on the beach, head to the pier. Before boarding, talk to the well-wishers to collect an Ether, three Phoenix Downs, a Seeker's Ring, and 400 Gil. Speak to the little boy on the boarding plank to receive a Remedy, then board the S.S. Liki.",
-      "guideImages": ["image_0029_00.jpeg"],
+      "prose": "After the Cloister, the party ascends the mountain path through a series of tutorial battles — each character demonstrates their signature mechanic (Lulu casting magic, Wakka using the Switch command, Yuna summoning Valefor). Equip Yuna with the Rod of Wisdom from the Cloister chest before you fight; it is not auto-equipped. Near the top, Kimahri ambushes Tidus for a mandatory 1-on-1 fight — see the boss card below. After the fight, follow the trail down to the beach and make for the pier. Talk to all the well-wishers before boarding to collect an Ether, three Phoenix Downs, a Seeker's Ring, and 400 Gil. Speak to the small boy on the boarding plank for a Remedy, then board the S.S. Liki.",
+      "guideImages": [],
       "items": [
         { "id": "besaid-seekers-ring", "name": "Seeker's Ring", "icon": "seekers-ring", "missable": false },
         { "id": "besaid-ether", "name": "Ether", "icon": "ether", "missable": false },
@@ -41,7 +45,7 @@
     },
     {
       "name": "Besaid Temple",
-      "prose": "Work through the Cloister and place the Besaid Sphere in the pedestal to expose the Destruction Sphere slot. Before you push the pedestal to the final room, detour: place the Destruction Sphere in the slot where you found the Besaid Sphere to reveal a hidden chamber with the Rod of Wisdom. If you skip this step there's no going back — Dark Valefor blocks the temple entrance in the HD version once you have the airship.",
+      "prose": "The Besaid Cloister is the first of seven in the game. Examine the glyph on the back wall to open the initial path, then examine glyphs on the right-side wall to reveal a hidden chamber — remove the Besaid Sphere, carry it to the pedestal, and insert it. This exposes a slot for the Destruction Sphere. Take the Destruction Sphere and place it in the slot where you found the Besaid Sphere — this opens a hidden chamber containing a chest with the Rod of Wisdom (missable). Only after claiming that chest should you push the pedestal into the final room to complete the Cloister. If you push the pedestal first the hidden chamber is sealed off, and Dark Valefor blocks the temple entrance permanently once you have the airship.",
       "guideImages": [],
       "items": [
         { "id": "besaid-rod-of-wisdom", "name": "Rod of Wisdom", "icon": "rod-of-wisdom", "missable": true }

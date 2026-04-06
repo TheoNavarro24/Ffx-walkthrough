@@ -3,11 +3,11 @@
   "missables": [],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri"],
   "oaka": { "meeting": true, "cumulativeTarget": 1001 },
-  "sgTip": null,
+  "sgTip": "Tidus and Wakka can push further along their starting paths here — grabbing Tidus's Cheer node and Wakka's Dark Attack node now pays off immediately in Luca.",
   "subLocations": [
     {
       "name": "S.S. Winno",
-      "prose": "Quick voyage with a few things to do before you dock. Grab a Hi-Potion from the chest in your cabin, then find Al Bhed Primer Vol. V on the deckhouse near the stairs. Donate to O'aka again if your Gil total is nearing the 1,001 threshold. When you're ready, save at the Save Sphere and examine the blitzball on deck to attempt the Jecht Shot — match the D-pad directions that flash on screen. You can reload and retry; it's one of Tidus's best blitzball moves.",
+      "prose": "Below deck, grab the Hi-Potion from the chest in your cabin, then speak to O'aka — with more Gil on hand than the S.S. Liki crossing, this is a good moment to push your cumulative loan toward 1,001 Gil for the best discount. On deck, pick up Al Bhed Primer Vol. V from the deckhouse near the stairs, then move to the rear of the boat to interrupt a conversation between Yuna and the Luca Goers. Head upstairs to overhear Lulu and Wakka talking — their backstory is revealed in small pieces, so go up and down multiple times to hear all of it. When ready, save at the Save Sphere below deck first, then examine the blitzball on the upper deck. Press the D-pad in the direction shown for each on-screen prompt to complete the Jecht Shot. Fail without a save and the move is gone permanently — so save first.",
       "guideImages": [],
       "items": [
         { "id": "winno-hi-potion-1", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },

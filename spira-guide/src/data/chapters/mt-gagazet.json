@@ -1,15 +1,16 @@
 {
   "slug": "mt-gagazet",
   "missables": [
-    "Wantz — speak to him on the Mountain Trail during this visit. If missed, he will NOT set up his shop later (exclusive 4-slot equipment)."
+    "Wantz — speak to him on the Mountain Trail during this visit. If missed, he will NOT set up his shop later (exclusive 4-slot equipment).",
+    "Saturn Crest — hidden chest near the eastern Save Sphere after defeating Seymour Flux. Required for Kimahri's Spirit Lance celestial weapon. Easy to run past while pushing toward the fayth cluster."
   ],
   "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
   "oaka": null,
-  "sgTip": "Steal Lv. 3 Key Spheres from Biran and Yenke (4–5 if possible) — they're rare. Kimahri should also learn Mighty Guard and Bad Breath from fiends on this mountain.",
+  "sgTip": "Three unmissable Blue Magic opportunities: Lancet Biran after he casts Mighty Guard (near death) to learn it; Lancet Yenke after he casts White Wind (near death) to learn it. For Bad Breath, use Lancet on Malboros encountered along the Mountain Trail. All three are easier to get here than anywhere else.",
   "subLocations": [
     {
       "name": "Mountain Trail",
-      "prose": "The Ronso gatekeepers stand down after Yuna impresses them. Talk to Wantz near the start of the mountain trail — if you skip him here, his shop at Macalania (with exclusive 4-slot equipment) never appears. Primer XXV is tucked behind a rock pillar on the right side of the trail as you ascend. Later sections of the trail are plagued by Grendels and Behemoths — both hit extremely hard, can inflict Confuse, and have large HP pools, making this the toughest random encounter gauntlet outside Sin. The Ronso fiends early on are worth a Lancet from Kimahri — Gagazet Mountain Trail enemies carry a variety of Blue Magic abilities including useful status skills.",
+      "prose": "Mt. Gagazet is Ronso homeland, and the tribe's hostility toward Yuna's pilgrimage runs deep — Biran and Yenke speak to Kimahri's exile and failure before demanding he prove himself in single combat. This is Kimahri's defining story moment: the fight is his alone, and winning it means reclaiming his place among his people. After the battle, the Ronso let the party pass and pay their respects. On the trail itself, talk to Wantz around the corner past the Defending Bracer — if you skip him here, he never sets up his shop and his exclusive 4-slot equipment disappears permanently. Navigation notes: continue north past the first ledge, find the snowy slope to get atop it, then head south for the 20,000 Gil chest; hug the west wall going north for the barely visible Mega-Potion chest; take the narrow side path around a large rock for Braska's Sphere. Later trail sections pit you against Grendels and Behemoths — both hit hard, inflict Confuse, and have large HP pools. Use Lancet on Malboros here to learn Bad Breath before leaving the mountain.",
       "guideImages": ["image_0064_00.jpeg", "image_0065_00.jpeg", "image_0065_01.jpeg"],
       "items": [
         { "id": "gagazet-primer-xxv", "name": "Al Bhed Primer Vol. XXV", "icon": "primer", "missable": false },
@@ -23,7 +24,7 @@
     },
     {
       "name": "Mountain Trial / Prominence",
-      "prose": "This is a tough stretch — large maps, frequent encounters, and sparse save points. After the Biran & Yenke fight, check behind the eastern Save Sphere for the Saturn Crest (Kimahri's Spirit Lance) before moving on. The half-submerged cavern section splits Tidus, Wakka, and Rikku from the others for the underwater trials — this sub-group faces several fiend groups solo, so make sure all three have decent equipment before entering the mountain. If you have access to Rikku's Hyper Mighty G mix (Gambler's Spirit + Healing Spring), using it before Seymour Flux grants Haste, Protect, and Shell to the whole party and significantly eases the fight. After completing both trials, loot the cavern chests before taking the stone stairway out.",
+      "prose": "After defeating Seymour Flux, search immediately for the Saturn Crest in the hidden chest near the eastern Save Sphere — it is easy to run past in the heat of the moment, and it is required for Kimahri's Spirit Lance celestial weapon. The next area contains the fayth cluster, where Tidus receives a vision from the assembled fayth of Spira. In the underwater cavern below, the party splits: Tidus, Wakka, and Rikku proceed alone through two timed trials while Yuna, Auron, and Lulu wait above. First trial: time Wakka's ball throw to hit the opening in the spinning shield — no penalty for failed attempts, so take your time. Second trial: the trio swims separately; guide each character into their matching colored light — Green for Rikku, Blue for Tidus, Orange for Wakka (matching Sphere Grid colors). Completing both trials drops a stone stairway out. Before ascending, loot the cavern: Pep Talk armguard is in an alcove northwest of the Save Sphere, and Return Sphere plus Recovery Ring are in the aquatic passage to the east. A warp panel near the Sanctuary Keeper allows backtracking to the Gagazet gates if needed.",
       "guideImages": ["image_0066_00.jpeg", "image_0067_00.jpeg"],
       "items": [
         { "id": "gagazet-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false, "notes": "2nd Trial reward — Submerged Passage" },
@@ -32,7 +33,7 @@
         { "id": "gagazet-return-sphere", "name": "Return Sphere", "icon": "return-sphere", "missable": false, "notes": "Aquatic passage east of Save Sphere" },
         { "id": "gagazet-recovery-ring", "name": "Recovery Ring", "icon": "recovery-ring", "missable": false, "notes": "Aquatic passage east of Save Sphere" },
         { "id": "gagazet-pep-talk-armor", "name": "Pep Talk Armor (Wakka)", "icon": "armor", "missable": false, "notes": "Alcove northwest of Save Sphere" },
-        { "id": "gagazet-saturn-crest", "name": "Saturn Crest (Kimahri's Spirit Lance)", "icon": "saturn-crest", "missable": true, "notes": "Hidden chest near eastern Save Sphere after defeating Seymour Flux — easy to miss while rushing; required for Caladbolg" }
+        { "id": "gagazet-saturn-crest", "name": "Saturn Crest (Kimahri's Spirit Lance)", "icon": "saturn-crest", "missable": true, "notes": "Hidden chest near eastern Save Sphere after defeating Seymour Flux — easy to miss while rushing; required for Kimahri's Spirit Lance" }
       ]
     }
   ],

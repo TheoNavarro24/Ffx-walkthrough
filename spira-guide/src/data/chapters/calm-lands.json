@@ -2,7 +2,9 @@
   "slug": "calm-lands",
   "missables": [
     "Magic Counter Shield — sold by the hover vendor on FIRST VISIT only. The only source of Magic Counter on armor in the game.",
-    "Duren (Blitzball player) — recruitable at the bottom of Calm Lands Gorge before reaching Zanarkand. Disappears after."
+    "Duren (Blitzball player) — recruitable at the bottom of Calm Lands Gorge before reaching Zanarkand. Disappears after.",
+    "Rusty Sword — gorge floor east of the bridge descent to the Cavern. Required first step for Auron's Celestial Weapon (Masamune). Can be skipped entirely if you cross the bridge without descending.",
+    "Al Bhed Primer Vol. XXV — inside the Cavern of the Stolen Fayth. Missable if you skip the optional descent into the gorge."
   ],
   "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
   "oaka": null,
@@ -10,7 +12,7 @@
   "subLocations": [
     {
       "name": "Calm Lands (Plateau)",
-      "prose": "The Calm Lands open into a vast plateau crisscrossed by fiends used in the Monster Arena capture quest. On arrival, visit Rin's Travel Agency for armaments, then head southeast to register at the Monster Arena before exploring — that way you can capture as you go. A hovering vendor near the plateau sells the Magic Counter Shield; buy it now if you want it, because once you trigger the story event at the gorge the vendor vanishes permanently. The Al Bhed Primer Vol. XXIII sits at the extreme northwest cliff edge — search carefully before leaving. The Caladbolg chest is also in the northwest corner but is sealed until you win the chocobo trainer rematch.",
+      "prose": "The Calm Lands open into a vast plateau, and there is a lot to do before you push northeast to Mt. Gagazet. On arrival, visit Rin's Travel Agency for armaments, then head southeast to register at the Monster Arena before exploring freely — that way you can capture fiends as you cover the area. A hovering vendor on the plateau sells the Magic Counter Shield; buy it now if you want it, because once you trigger the story event at the gorge the vendor vanishes permanently.\n\nIn the central circle of the Calm Lands (where the Al Bhed trading post and Save Sphere are located), you will encounter Belgemine for her fourth challenge — she uses Shiva. Summon Ifrit and have it heal itself with Fire spells to win easily. You receive 30 Power Spheres for winning, and the Aeon's Soul key item regardless of the outcome. The Aeon's Soul lets you use consumables to boost aeon attributes.\n\nIn the northwest corner, speak to the woman on a chocobo to begin the four training courses. Completing all four earns the right to borrow a chocobo freely, which you need to reach Remiem Temple. The Al Bhed Primer Vol. XXIII is at the extreme northwest cliff edge just west of the trainer — search carefully. The Caladbolg chest nearby is sealed until you win the Catcher Chocobo rematch.",
       "guideImages": ["image_0061_00.jpeg"],
       "items": [
         {
@@ -101,7 +103,7 @@
     },
     {
       "name": "The Gorge",
-      "prose": "After the Defender X fight, instead of crossing the bridge toward Mt. Gagazet, descend the steep path on the bridge's right side into the gorge below. The Rusty Sword (Auron's Celestial Weapon prerequisite) and Al Bhed Primer Vol. XXV are found inside the Cavern of the Stolen Fayth — see the Cavern of the Stolen Fayth optional area below for details on both. Recruit the blitzball player Duren at the gorge bottom — he is MISSABLE if you continue to Zanarkand without speaking to him.",
+      "prose": "After the Defender X fight, resist the urge to cross the bridge north to Mt. Gagazet immediately. On the right (east) side of the bridge, a steep path descends into the gorge below. Make the descent — there are two important pickups and a blitzball recruit down here.\n\nAt the gorge floor, head east to find the Rusty Sword embedded in the ground. This is the mandatory first step toward Auron's Celestial Weapon, the Masamune. You cannot collect the sword itself until after you have the Celestial Mirror, but the sword must be placed here for the quest chain to register — note its location and return post-Airship if needed.\n\nHead west along the gorge floor to reach the entrance to the Cavern of the Stolen Fayth (optional dungeon, covered below). Al Bhed Primer Vol. XXV is inside the Cavern — do not skip both the gorge and the Cavern or you will miss it permanently.\n\nBefore climbing back up, speak to Duren near the gorge bottom. He is a recruitable blitzball player who disappears once you continue to Zanarkand — missable if you do not speak to him now.",
       "guideImages": ["image_0062_00.jpeg"],
       "items": [
         {
@@ -208,13 +210,13 @@
           "id": "calm-lands-rusty-sword",
           "name": "Rusty Sword — gorge floor, east of bridge descent (Auron's Celestial Weapon prerequisite)",
           "icon": "rusty-sword",
-          "missable": false
+          "missable": true
         },
         {
           "id": "calm-lands-primer-xxv",
           "name": "Al Bhed Primer Vol. XXV — inside Cavern of the Stolen Fayth",
           "icon": "primer",
-          "missable": false
+          "missable": true
         },
         {
           "id": "calm-lands-yojimbo",

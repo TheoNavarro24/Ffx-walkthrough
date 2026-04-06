@@ -5,9 +5,9 @@
     "Al Bhed Primer Vol. XVII — inside a building in the northwest zone of Central Sanubia. Missable once you leave for Home.",
     "Al Bhed Primer Vol. XVIII — near the northeast exit sign in Central Sanubia. Collect before backtracking to the west fork."
   ],
-  "party": ["Tidus", "Wakka", "Rikku"],
+  "party": ["Tidus", "Auron", "Wakka", "Kimahri", "Lulu", "Rikku"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "With no access to Yuna's White Magic, Rikku's Al Bhed Potions are your primary source of party-wide healing — keep enough on hand at all times. This is a good stretch to push Tidus toward Haste and Delay Attack on the Standard grid, and to invest any Sphere Grid nodes that boost Rikku's Agility so she acts first in Sandragora encounters.",
   "subLocations": [
     {
       "name": "Oasis",
@@ -31,7 +31,7 @@
     },
     {
       "name": "Sanubia Desert — Central",
-      "prose": "The central sands are wider and easier to get turned around in — use the minimap and watch for large grey spots marking debris piles that hide treasure chests. The northwest zone has a cluster of buildings; check all of them. Primer XVII is inside the northeast structure of the northwest zone — do not leave the desert without it.",
+      "prose": "The central sands are wide and open — it's easy to get turned around here, so keep an eye on the minimap. Large grey blobs on the map mark desert debris that hides treasure chests; sweep the area methodically before pressing north. The northwest zone holds a cluster of Al Bhed structures: search every building, including the corners. Primer XVII is inside the northeast building of that northwest cluster — this is permanently missable once you leave the desert, so do not skip it. Primer XVIII is near the northeast exit sign in this same zone; grab it before backtracking to the west fork or heading north toward Home. Sandragoras are a constant hazard throughout Central — use fire magic, cure Confusion with Remedies immediately, and note that Rikku can steal two Remedies directly from each Sandragora if your supply is running low.",
       "guideImages": [],
       "items": [
         { "id": "bikanel-desert-central-hi-potion-se", "name": "Hi-Potion x4 (chest — structure southeast of Save Sphere)", "icon": "hi-potion", "missable": false },
@@ -47,7 +47,7 @@
     },
     {
       "name": "Sanubia Desert — West",
-      "prose": "The west fork leads to the northern sand pit region — travel along the western wall to find chests at the rim and bottom of sinkholes. A small alcove branches further west from the main sinkhole path; the Mercury Crest is inside a sinkhole in that alcove. Do not skip this branch. Sandragoras guard some of the best chests here — use fire magic and cure Confusion with Remedies.",
+      "prose": "Head north along the western wall to enter the sand pit region — the swirling sands mark active sinkholes, and treasure chests sit at both the rim and the bottom of each pit. Follow the path carefully: the Megalixirs and Teleport Spheres are in the main pit area, but the most important item is further along a branch that angles off to the west. That western alcove contains the Mercury Crest, a permanently missable component required for Tidus's Celestial Weapon (Caladbolg) — it sits inside a sinkhole at the end of the alcove. Do not leave this area without it. Sandragoras here guard the best chests; lead with fire magic and cure Confusion with Remedies the moment it lands. Rikku can steal two Remedies from each Sandragora, making her an efficient resupply source if stocks are low.",
       "guideImages": [],
       "items": [
         { "id": "bikanel-desert-west-lv2-key-sphere", "name": "Lv. 2 Key Sphere (chest — inside nearest building at fork)", "icon": "lv2-key-sphere", "missable": false },

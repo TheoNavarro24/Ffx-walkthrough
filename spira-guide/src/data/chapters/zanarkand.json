@@ -3,11 +3,11 @@
   "missables": [],
   "party": ["Tidus"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "The Sphere Grid is not accessible during this chapter — it opens after your first fight on the Salvage Ship in the next area. Save your thinking for then.",
   "subLocations": [
     {
       "name": "Dream Zanarkand",
-      "prose": "You're at a blitzball match — stop and talk to the two women and the kids near Tidus's residence; one of them gives you two Potions for promising a ticket. The match itself is scripted: enjoy it, then follow Auron when Sin hits. The Sinspawn Ammes fight at the stadium is your first real combat — Auron's Overdrive fires automatically, then you finish it off.",
+      "prose": "Tidus is heading to a blitzball match in a sprawling, neon-lit city that feels alive — and doomed. On the bridge outside the stadium, talk repeatedly to the wandering woman in yellow leggings until you can offer her a ticket; she hands over two Potions. Inside, the match is cut short when Sin strikes the city. Auron appears and hands Tidus a Longsword — use the Attack command to cut through the first two Sinscale waves. In wave two, strike only the enemies directly in front of you; the ones behind are instantly replaced by reinforcements, so don't waste turns on them. After the second wave, you're surrounded again — watch for Sinscales whose wings begin to flicker and eliminate those first or they unleash the Spines attack. Then shift all focus to the Tanker hanging from the bridge; ignore the flanking Sinscales and keep attacking the Tanker until it falls and explodes. The Sinspawn Ammes boss fight follows immediately. After the battle, touch the Save Sphere beyond the battlefield to restore both characters to full health. The chapter ends as Tidus is pulled into a strange vision — press Circle to float downward and swim toward the blurry figure waiting below.",
       "guideImages": ["image_0023_00.jpeg"],
       "items": [
         { "id": "zanarkand-potion-x2", "name": "Potion ×2", "icon": "potion", "missable": false }

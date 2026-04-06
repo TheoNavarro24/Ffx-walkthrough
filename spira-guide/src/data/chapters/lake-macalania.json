@@ -7,22 +7,21 @@
     "Avenger — hidden chest beside Auron in regroup area beneath the ice"
   ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
-  "oaka": null,
-  "sgTip": null,
+  "oaka": { "meeting": true, "cumulativeTarget": 10001 },
+  "sgTip": "Before facing the Crawler, make sure Wakka can reach Darkness Attacks and any Lightning-boosting nodes — Lightning spells hit Crawler for bonus damage once the Negator is down. For Seymour, prioritise Magic Break and Bio on Tidus or Lulu's grid so Auron and Lulu can shut down his late-battle multi-spell barrage.",
   "subLocations": [
     {
       "name": "Lake Macalania",
-      "prose": "The Travel Agency is your last save point and shop before two back-to-back boss fights — stock up. Clasko is outside and gives a useful hint about chocobo breeding; suggest he try it and he'll reward you later with a Friend Sphere. Primer XVI is on the ground near him. Save before heading into the temple — you won't be able to come back.",
+      "prose": "The Travel Agency at Lake Macalania is your final save point and shop before two consecutive boss fights with no rest between them. O'aka is here — spend up to your cumulative donation target now so his prices drop to their lowest tier. Clasko is standing outside in a crisis of confidence; tell him to take up chocobo breeding and he will reward you with a Friend Sphere much later in the game. Al Bhed Primer Vol. XVI is on the ground near Clasko at the agency entrance — pick it up before heading north (it is covered in the Macalania Woods section). Buy or stock whatever supplies you need (X-Potions, Al Bhed Potions, and Ethers are all worthwhile), save your game, then continue north toward the temple. The road beyond the Agency does not turn back.",
       "guideImages": [],
       "items": [
-        { "id": "lake-macalania-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "icon": "primer", "missable": false },
         { "id": "lake-macalania-4000-gil", "name": "4000 Gil", "icon": "gil", "missable": false, "notes": "Chest near the Travel Agency — blocked until after Clasko moves; collect once events progress." },
         { "id": "lake-macalania-mega-potion", "name": "Mega-Potion", "icon": "item", "missable": false, "notes": "Chest on the right side of the road near the temple entrance (crevasse, near north exit)." }
       ]
     },
     {
       "name": "Macalania Temple",
-      "prose": "Inside, Tromell gives a Shell Targe and Shelinda is here — collect both X-Potions and the 5,000 gil from the main hall before entering the Cloister. After the Seymour fight you're immediately on the run through the ice tunnel — Guado Guardians chase you out, and if one catches you it triggers a battle. You won't return to Macalania Temple. The Guado Guardians blocking the temple path fight in groups — have Rikku use Al Bhed Potions for party-wide healing and keep Auron or Tidus up front for physical damage; there's a brief cutscene confrontation with Seymour before you reach the Cloister.",
+      "prose": "Cross the ice bridge to reach the temple entrance. Tromell meets you inside and hands over a Shell Targe; speak to him before going further. Work through the lower and main chambers collecting everything before entering the Cloister — the temple is locked off the moment you leave. The Cloister of Trials here contains the Destruction Sphere chest; see the Cloister section below and do not exit without placing the Destruction Sphere or the Luck Sphere is gone permanently. After the Seymour fight the temple erupts into chaos — Guado Guardians pursue you through the ice tunnel and attack if they catch up. You cannot kill most of them in one hit, so have Rikku steal their Hi-Potions before engaging; without potions they cannot self-heal and fall quickly. Make your way to the frozen lake outside to trigger the Wendigo fight immediately after.",
       "guideImages": ["image_0051_00.jpeg", "image_0051_01.jpeg"],
       "items": [
         { "id": "lake-macalania-400-gil", "name": "400 Gil", "icon": "gil", "missable": false, "notes": "Speak to Linna (Al Bhed) at the bottom of the stairs on the road to the temple entrance." },
@@ -39,7 +38,7 @@
     },
     {
       "name": "Under the Ice",
-      "prose": "After Wendigo falls, the party sinks beneath the frozen lake. Use the Save Sphere to recover, then speak to each party member before Yuna leaves. Two chests are hidden in this area and easy to overlook — check behind Kimahri and to the left of Auron before moving on. A third chest is found earlier on the rocky trail during the escape from the temple.",
+      "prose": "After Wendigo, the party breaks through the ice and gathers on a platform beneath the frozen lake. Use the Save Sphere here immediately to bank your progress and restore HP. This area holds two easily missed chests — the Lv. 2 Key Sphere is tucked behind Kimahri and the Avenger (Tidus's weapon with Counterattack) is to the left of Auron; both are partially hidden and easy to walk past. Speak to every party member before Yuna departs for a story scene. The Lv. 1 Key Sphere was on the rocky trail during the escape from the ice cavern — check the right side of the chasm if you have not already. Once Yuna leaves, the chapter transitions and this area cannot be revisited.",
       "guideImages": [],
       "items": [
         { "id": "lake-macalania-lv1-key-sphere", "name": "Lv. 1 Key Sphere", "icon": "sphere", "missable": true, "notes": "On the rocky trail on the right side of the chasm during the escape from the ice cavern. Cross to the left only after grabbing this." },
@@ -59,7 +58,7 @@
     },
     {
       "slug": "wendigo",
-      "strategy": "Wendigo (18,000 HP) attacks immediately after Seymour with no save opportunity, so enter with full HP. It arrives flanked by two Guado Guardians who use Auto-Potion — steal their Hi-Potions before attacking or they will self-heal indefinitely. As a final act before dying, each Guardian casts protective spells and Berserk on the Wendigo; remove Berserk immediately with Auron's Threaten. With the Guardians gone, focus on Wendigo: use Lulu's spells for sustained damage — Wendigo has no confirmed elemental weakness, so any element works. Have Auron apply Power Break to reduce its heavy physical hits, Wakka can inflict Darkness or Sleep to limit its attacks, and Kimahri's Jinx lowers its luck. If your party is low on HP from the Seymour fight, use Rikku's Al Bhed Potions — they restore 1,000 HP to the whole party and bypass NulAll. Steal: Hi-Potion (common) / X-Potion (rare). Drop: Power Sphere."
+      "strategy": "Wendigo (18,000 HP) attacks immediately after Seymour with no save opportunity, so enter with full HP. It arrives flanked by two Guado Guardians who use Auto-Potion — steal their Hi-Potions before attacking or they will self-heal indefinitely. As a final act before dying, each Guardian casts protective spells and Berserk on the Wendigo; remove Berserk immediately with Auron's Threaten. With the Guardians gone, focus on Wendigo: it has no confirmed elemental weakness, so use your highest-damage physical attacks. Have Auron apply Power Break to reduce its heavy physical hits, Wakka can inflict Darkness or Sleep to limit its attacks, and Kimahri's Jinx lowers its luck. If your party is low on HP from the Seymour fight, use Rikku's Al Bhed Potions — they restore 1,000 HP to the whole party and bypass NulAll. Steal: Hi-Potion (common) / X-Potion (rare). Drop: Power Sphere."
     }
   ],
   "cloister": "macalania",

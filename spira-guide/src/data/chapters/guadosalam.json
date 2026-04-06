@@ -8,11 +8,11 @@
   ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
-  "sgTip": null,
+  "sgTip": "Rikku joins with an open Sphere Grid path — if you have spare Ability Spheres and unused nodes nearby, activate as many as you can before leaving Guadosalam. Her Mix Overdrive also scales with the number of items you carry, so stock up on common consumables at the shops here.",
   "subLocations": [
     {
       "name": "North Wharf",
-      "prose": "Rikku rejoins the party on the riverbank. Before following the path west, grab Primer XII from the platform above O'aka's stall — you cannot return once you leave the wharf. There is also an Ether in the chest near the bench.",
+      "prose": "Rikku rejoins the party at the North Wharf after being pulled from the shoopuf. Two quick tutorials trigger here: one teaching how Rikku can steal from treasure chests during combat, the second introducing her Mix Overdrive. Use the Save Sphere before heading out. O'aka is at his stall but only selling medicines — still worth stocking up given Customize becomes available shortly. Before you follow the path west, climb the platform above O'aka to grab Primer XII. You cannot return to the North Wharf once you leave. Grab the Ether from the chest on the trail heading west, then talk to the Guado you pass on the road to Guadosalam.",
       "guideImages": [],
       "items": [
         { "id": "guadosalam-primer-xii", "name": "Al Bhed Primer Vol. XII", "icon": "primer", "missable": true },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Road to Guadosalam",
-      "prose": "Two chests on the trail leading into town. The Antidotes are useful Customize fodder — don't sell them.",
+      "prose": "Two chests line the short trail into town: Antidote x4 in the first chest on the right and a Mega-Potion on the left. Don't sell the Antidotes — they are prime Customize fodder. At this point in the game, Antidotes, Eye Drops, and Echo Screens can all add useful abilities to empty weapon and armor slots once Rikku's Customize tutorial unlocks inside Guadosalam. You will also pass several Guado on the path; none are threats, but it is worth speaking to them for flavour before the story picks up at the town gates.",
       "guideImages": [],
       "items": [
         { "id": "guadosalam-road-antidote", "name": "Antidote ×4", "icon": "antidote", "missable": false },
@@ -41,7 +41,7 @@
     },
     {
       "name": "Seymour's Mansion",
-      "prose": "Ascend either staircase to the upper balcony and collect the Hi-Potions from the hidden chest before entering the purple double doors for Seymour's scene.",
+      "prose": "Enter through the large red double doors. Before heading to the feast, ascend either staircase to the upper balcony — there is a hidden chest there with two Hi-Potions that you cannot access after entering the purple doors. Speak to all party members scattered around the main hall, then push through the purple double doors to trigger Seymour's feast scene. After the feast and Seymour's proposal to Yuna, the scene ends and you return outside. Rikku receives a Customize tutorial from Tromell at this point — if you have excess Antidotes and other medicines from the road, this is the moment to start adding abilities to empty gear slots.",
       "guideImages": [],
       "items": [
         { "id": "guadosalam-mansion-hi-potion", "name": "Hi-Potion ×2", "icon": "hi-potion", "missable": true }
@@ -49,7 +49,7 @@
     },
     {
       "name": "Corridor to the Farplane",
-      "prose": "Move left immediately upon entering the corridor — before joining the party on the stairs — to find the hidden chest with Lightning Marbles. Easy to walk past if you follow the party straight up.",
+      "prose": "As soon as you enter the corridor leading to the Farplane, move left along the left-hand wall before following the party up the stairs. There is a hidden chest here with eight Lightning Marbles, and it is trivially easy to walk straight past if you follow the automatic camera angle up toward the stairs. Lightning Marbles are a valuable Customize ingredient for adding Lightning-elemental properties to weapons; pick them up even if you don't plan to Customize immediately. The Venus Crest (Lulu's Onion Knight celestial component) is also obtainable in this corridor during the second visit to Guadosalam — note it for later.",
       "guideImages": [],
       "items": [
         { "id": "guadosalam-farplane-lightning-marble", "name": "Lightning Marble ×8", "icon": "lightning-marble", "missable": true },

@@ -1,13 +1,13 @@
 {
   "slug": "baaj-temple",
   "missables": [],
-  "party": ["Tidus"],
+  "party": ["Tidus", "Rikku"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "After the Klikk fight, Tidus earns his first Sphere Level. Head straight for Cheer on his starting node — it stacks up to five times and reduces incoming physical damage for the rest of the early game.",
   "subLocations": [
     {
       "name": "Submerged Ruins",
-      "prose": "Tidus washes up alone in flooded ruins — collect all the chests before triggering any boss. On the far east platform there's a Hi-Potion; north across the bridge, another chest holds an X-Potion (go west at the fork for the Hi-Potion, or east for the Ether). Klikk ambushes when you reach the far chamber — trade blows and let Rikku unload Grenades. For Tros, watch the CTB: when Tros retreats to the other side of the pool, select the Trigger Command to Pincer Attack and prevent its Nautilus Charge rush.",
+      "prose": "Tidus surfaces alone in a flooded courtyard. Before triggering anything, sweep the area thoroughly. Head far west up the small stairs to find the Al Bhed Compilation Sphere (skip it on a first playthrough) and a chest with two Potions to the south. Cross to the far east platform for the partially hidden 200 Gil chest behind the Al Bhed sign. Follow the red arrow north to the bridge — grab the Hi-Potion by going west at the fork. After Geosgaeno forces you back, head through the southern doors and search the open drawer for the Flint. Then take the north doorway marked with a green square on the minimap, climb the stairs, and examine the dried flowers for the Withered Bouquet. Collect the Ether and second Hi-Potion from the upper passage on the way. The X-Potion chest is just right of the northwest locked door back in the central chamber. Save, then light the logs — Klikk ambushes shortly after. During the underwater salvage with Rikku, have her steal Grenades from every Piranha; these are your primary supply for both boss fights.",
       "guideImages": ["image_0024_00.jpeg", "image_0024_01.jpeg", "image_0025_00.jpeg"],
       "items": [
         { "id": "baaj-2-potions", "name": "Potion ×2", "icon": "potion", "missable": false },
@@ -25,7 +25,7 @@
     },
     {
       "name": "Salvage Ship",
-      "prose": "After the fight, Rikku's crew pulls you aboard. Talk to the soldier on the left for three Potions, then find Al Bhed Primer Vol. I in the northeast corner of the deck — it's easy to walk past. Chat with Rikku to unlock the Sphere Grid tutorial and earn a Sphere Level from the last fight. This is where Rikku teaches Tidus a few words of Al Bhed — worth talking to the other crew members before the voyage ends, as they each have brief lines that flesh out the salvage operation.",
+      "prose": "After the Klikk fight, Rikku's crew pulls you aboard. Talk to the soldier on the left for three Potions, then find Al Bhed Primer Vol. I in the northeast corner of the deck — easy to walk past. Chat with Rikku to unlock the Sphere Grid tutorial; open it now and spend Tidus's first Sphere Level on Cheer. When Rikku sends you on the underwater salvage, follow the chain down to the sunken ruins. Piranhas attack in the second chamber — have Rikku steal Grenades from each one before Tidus finishes them off, since these are your main ammo supply for the Tros fight that follows.",
       "guideImages": ["image_0026_00.jpeg"],
       "items": [
         { "id": "baaj-ship-200-gil", "name": "200 Gil", "icon": "gil", "missable": false },
