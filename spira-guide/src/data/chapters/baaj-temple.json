@@ -32,6 +32,10 @@
   ],
   "bosses": [
     {
+      "slug": "geosgaeno",
+      "strategy": "Scripted escape — this fight cannot be won or lost. Geosgaeno surfaces after consuming a Sahagin and immediately pursues Tidus underwater. Attack it three times; each of its counterattacks deals only fractional damage and cannot kill Tidus. After the third hit the sequence concludes automatically and Tidus escapes to dry land. No AP or loot is awarded. The HP figure in game data (32,767) belongs to the full rematch fought later from the Airship, where Geosgaeno is an optional boss with steals and drops — it does not apply here."
+    },
+    {
       "slug": "klikk",
       "strategy": "HP: 1,500. Tidus starts completely alone and cannot win solo — Klikk hits for roughly 180–200 damage per turn, which is lethal without help. Survive by guarding and using Potions until Rikku dives in mid-fight. Once she joins she uses Al Bhed Potions to heal the whole party and can use her Mix Overdrive if her gauge charged during the opening turns — let her act freely. After Rikku arrives it's a straightforward burn; just attack with Tidus while she keeps both characters alive."
     },

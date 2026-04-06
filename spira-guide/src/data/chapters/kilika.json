@@ -42,11 +42,11 @@
   "bosses": [
     {
       "slug": "lord-ochu",
-      "strategy": "Optional fight in Kilika Woods — skip if underleveled, reward is an Elixir from Luzzu. Lord Ochu's main threats are Ochu Dance (Sleep on all party members), Poison, and heavy physicals. Key warning: if it falls asleep at partial HP it wakes up fully healed, so never let it doze off mid-fight — keep attacking. Recommended setup: Wakka and Tidus for physicals, Lulu spamming Fire (its weakness), and Yuna on healing and status removal. Stack two Cheers before committing to a full assault so the party can absorb its hits."
+      "strategy": "Optional fight in Kilika Woods (4,649 HP / Overkill 800) — skip if underleveled; the reward is an Elixir from Luzzu and a NulBlaze Shield from the Crusaders sentry (only awarded if Ochu is already dead when you speak to him). Lord Ochu's main threats are Poison and heavy physicals — cure Poison immediately with Antidotes or Yuna's Esuna. Spam Lulu's Fire spells (its weakness); cast Haste on Lulu if Tidus has learned it to accelerate damage output. Below 2,000 HP, Lord Ochu switches to Earthquake — summon Valefor at this point, as Valefor is completely immune to Earthquake. Lord Ochu also falls asleep periodically to begin regenerating HP; wake him immediately with normal physical attacks (not spells) the moment Z's appear above his head, then finish the fight quickly."
     },
     {
       "slug": "sinspawn-geneaux",
-      "strategy": "Phase 1 (shell form, 3,000 HP): Only magic penetrates the shell body. Kill both tentacles first (450 HP each) — they heal Geneaux every turn. Lulu's Fury with Thunder is ideal. Phase 2 (exposed): Physical attacks work. Yuna heals, Wakka and Tidus attack. Stay above 300 HP to survive Venom."
+      "strategy": "Phase 1 (shell form, 3,000 HP / Overkill 900): The shell absorbs magic — do NOT cast spells on the body. The tentacles (450 HP / Overkill 500 each) also absorb magic. Destroy both tentacles first using physical attacks; once they are gone, use Kimahri's Lancet (piercing physical) to chip away at the shell body — only Kimahri's piercing weapon can damage it in this phase. Phase 2 (shell destroyed, body exposed): Geneaux is now vulnerable to everything — use Lulu's Fire spells (weakness) and physicals freely. Throughout the fight, watch for Geneaux's Venom attack which can poison the whole party; use Antidotes or Yuna's Esuna to clear it immediately. Keep Yuna in reserve for healing."
     }
   ],
   "cloister": "kilika",

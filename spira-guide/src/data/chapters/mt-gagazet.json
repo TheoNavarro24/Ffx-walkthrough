@@ -32,15 +32,15 @@
   "bosses": [
     {
       "slug": "biran-ronso",
-      "strategy": "Kimahri solo vs Biran and Yenke — their stats scale with Kimahri's level. Steal Lv. 3 Key Spheres from each (4–5 total if lucky). Use Lancet on both to learn their Blue Magic (Mighty Guard is endgame-useful). Focus Yenke first, then Biran. Use whatever Overdrives Kimahri has."
+      "strategy": "Kimahri solo vs Biran (HP: scales) and Yenke (HP: scales) — both copy any Ronso Rage abilities Kimahri has already learned, and their stats scale to match his, so you cannot outlevel this fight. Steal Lv. 3 Key Spheres from Biran. Focus fire on one at a time — guard/defend on one while attacking the other; when side by side they protect each other, so use Lancet, Overdrives, or wait for them to split. Use Lancet on Biran to learn Mighty Guard (he uses it near death) — this is the correct chapter for that, not Defender X in the Calm Lands. Use Lancet on Yenke to learn White Wind. Biran may cast Berserk on Kimahri — have a backup character ready with Esuna, or use Remedies. When one falls the survivor goes berserk and hits harder, so heal up before landing the killing blow."
     },
     {
       "slug": "seymour-flux",
-      "strategy": "Seymour Flux (70,000 HP) + Mortiorchis. Lance of Atrophy + Full Life combo from Mortiorchis can revive and re-kill a character in one turn — keep HP high and have Phoenix Downs ready. Seymour uses Flare on whoever acts next; Haste your party and hit hard. Auron's Shooting Star bypasses defense. Dispel any buffs Seymour gains."
+      "strategy": "Seymour Flux (70,000 HP) + Mortiorchis (4,000 HP). Keep the entire party above ~2,500 HP at all times — Mortiorchis charges Total Annihilation over two to three turns (telegraphed by the 'Auto-attack Mode' message), which hits the full party for massive damage. Kill Mortiorchis immediately to interrupt the charge before it fires. Silence Seymour to shut down his magic; if Silence misses he gains Protect and Reflect, bouncing Flare at random characters — Dispel both immediately. Lance of Atrophy inflicts Zombie on one character and is followed by Full-Life — swap that character out instantly, or cure with Holy Water (Esuna does NOT work). Arrive with full Overdrives. Steal Elixirs from Seymour."
     },
     {
       "slug": "sanctuary-keeper",
-      "strategy": "HP: 40,000. Mana Breath drains MP from whoever it hits — bring Ethers and swap in a character with a full MP pool if a caster runs dry. Photon Spray hits the whole party for moderate damage; summon an aeon right after to absorb follow-up hits in your place. Tail Sweep knocks out one row, so watch positioning. Critical warning: when near death Sanctuary Keeper uses Esuna to cure its own Poison, making poison an unreliable finisher — burst it down instead. Open with Protect and Haste, keep Yuna free to heal, and push hard before MP attrition becomes a problem."
+      "strategy": "HP: 40,000. Mana Breath drains MP from whoever it hits — bring Ethers and swap in a character with a full MP pool if a caster runs dry. Photon Spray hits the whole party for moderate damage; summon an aeon right after to absorb follow-up hits in your place. Tail Sweep knocks out one row, so watch positioning. Critical warning: below 50% HP, Sanctuary Keeper casts Curaga on itself — cast Reflect on it beforehand to bounce that Curaga back at the party as free healing. Attack name is Photon Wings (hits the whole party and inflicts random status ailments) — have Remedies ready. Open with Protect and Haste, keep Yuna free to heal, and push hard before MP attrition becomes a problem."
     }
   ],
   "cloister": null,

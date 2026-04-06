@@ -27,11 +27,11 @@
     },
     {
       "slug": "seymour",
-      "strategy": "Two phases. Phase 1: Kill the Guado Guardians first — they cast NulAll on Seymour, blocking magic. Seymour uses NulBlaze + NulFrost; wait them out or use Dispel. Phase 2: Anima appears (18,000 HP) — use your own Aeons or Thunder. Seymour's HP: 6,000 + 6,000. Have Yuna ready to heal throughout."
+      "strategy": "Two phases. Phase 1 (Seymour, 6,000 HP): Kill the Guado Guardians first — they carry Hi-Potions and use Auto-Potion to self-heal; steal their potions before attacking so they can't restore HP. Seymour opens with NulBlaze and NulFrost; use Dispel to strip them, then attack freely. Silence him to cut off magic. Phase 2: Anima appears (18,000 HP) after Seymour falls — switch to summoning your own Aeons or use Wakka/Lulu for ranged and magic damage. Have Yuna ready to heal throughout both phases."
     },
     {
       "slug": "wendigo",
-      "strategy": "PLACEHOLDER — full strategy added in Wave 3. HP: 18,000. Weak to Fire."
+      "strategy": "Wendigo (18,000 HP) attacks immediately after Seymour with no save opportunity, so enter with full HP. It arrives flanked by two Guado Guardians who use Auto-Potion — steal their Hi-Potions before attacking or they will self-heal indefinitely. As a final act before dying, each Guardian casts protective spells and Berserk on the Wendigo; remove Berserk immediately with Auron's Threaten. With the Guardians gone, focus on Wendigo: use Lulu's spells for sustained damage — Wendigo has no confirmed elemental weakness, so any element works. Have Auron apply Power Break to reduce its heavy physical hits, Wakka can inflict Darkness or Sleep to limit its attacks, and Kimahri's Jinx lowers its luck. If your party is low on HP from the Seymour fight, use Rikku's Al Bhed Potions — they restore 1,000 HP to the whole party and bypass NulAll. Steal: Hi-Potion (common) / X-Potion (rare). Drop: Power Sphere."
     }
   ],
   "cloister": "macalania",

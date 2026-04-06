@@ -15,19 +15,23 @@
   "bosses": [
     {
       "slug": "sin-left-fin",
-      "strategy": "HP: 65,000. Left Fin is the first of Sin's four exterior fights — the order is Left Fin, Right Fin, Head, then Core inside Sin. The Fin uses Gravija, which reduces all party HP by 75%, so follow it immediately with Mega-Potions (flat recovery beats percentage heals here). Save your Overdrives and big summons for the Head and Core; the fins don't require them and the gauntlet is long."
+      "strategy": "HP: 65,000. First of four exterior fights in the sequence. The ship positioning mechanic is key: order Cid to move CLOSE to Sin so his missiles can fire, then pull BACK after the volley to avoid counterattacks. From a distance only Wakka, Lulu, and summoned aeons can damage the Fin; move in to enable Auron and physical attackers, but note Sin's Negation ability strips Armor Break (and your Haste buffs) so the window can be brief. Swap Yuna in to summon aeons for maximum melee damage on the Fin itself — Auron cannot reliably hit it from ship position. Keep at least one Sinscale alive: if all Sinscales are killed Sin immediately respawns a full wave, so leaving one alive prevents the constant cycle. Follow Gravija (75% HP reduction) with Mega-Potions for flat recovery. Save Overdrives for Overdrive Sin."
     },
     {
       "slug": "sin-right-fin",
-      "strategy": "HP: 65,000. Second exterior fight — same kit as Left Fin, including Gravija (75% HP reduction on everyone). You can return to the airship between fights to restock; Cid can also fire missiles if you pull the ship back, dealing modest bonus damage. Keep Overdrives banked — they're better spent on the Head and Core that follow."
+      "strategy": "HP: 65,000. Second exterior fight — identical mechanics to Left Fin. Use the same ship positioning approach: move CLOSE for Cid's missile volleys, then pull BACK to avoid counterattacks. Yuna's summoned aeons provide the best sustained melee damage here. Keep one Sinscale alive to prevent constant wave respawning. Gravija hits for 75% HP — follow with Mega-Potions. Bank all Overdrives; you can return to the airship between fights to restock before the next battle."
     },
     {
-      "slug": "sin-head",
-      "strategy": "HP: 140,000. Watch for Gravija (reduces all HP by 75% — follow with Mega-Potions for flat recovery). Dispel any buffs. Standard damage doesn't work with Gravity-based spells but everything else does. Sustained Overdrives and Hastega."
+      "slug": "sinspawn-genais",
+      "strategy": "HP: 20,000. Fought simultaneously with Sin's Core (HP: 36,000) — this is the third fight in the exterior sequence. The critical rule: Sinspawn Genais absorbs any magic cast at Sin, so kill Genais first before targeting the Core. Apply Slow to Genais to buy time. When Genais nears death it curls into a defensive ball and begins looping Cura — Silence it immediately to shut off the healing (Genais is immune to Reflect). Finish Genais off, then turn all fire on Sin's Core. Apply Armor Break to the Core before physical attackers swing; Lulu's Doublecast with top-tier spells and Holy from Yuna deal strong damage. Bring Rikku to heal and cure Venom with Al Bhed Potions. Overdrives are fine to use here — you can return to the airship to recharge before Overdrive Sin."
     },
     {
       "slug": "sin-core",
-      "strategy": "HP: 36,000. After defeating the Head you enter Sin itself — the Core is the fourth and final fight in the exterior gauntlet. It has lower HP than the fins, so the Overdrives and summons saved through the earlier fights will end this quickly. Burn everything here; it's the last checkpoint before the endgame interior sequence."
+      "strategy": "HP: 36,000. Fought simultaneously with Sinspawn Genais — focus Genais first (see Sinspawn Genais entry above). Once Genais is down, the Core is straightforward: apply Armor Break, then unload spells and physical attacks. After this fight you can return to the airship to save, heal, and use remaining side-quest time before facing Overdrive Sin."
+    },
+    {
+      "slug": "sin-head",
+      "strategy": "HP: 140,000. This is the fourth and final exterior fight — Overdrive Sin. Sin draws progressively closer; at long range only Wakka, Lulu, and summons can hit it, so use those turns to apply Hastega and Luck on your attackers. The moment Sin enters melee range, have Auron use Armor Break and immediately spend all banked Overdrives. Critical warning: Sin's Giga-Graviton Overdrive is an instant game-over — Sin opens its mouth gradually and fires on approximately its 16th turn; this cannot be survived or avoided. The entire fight is a DPS race against that countdown. Triggering Yuna's aeons each turn buys extra time since aeons absorb Giga-Graviton hits and can tank a turn each, extending the window. Come in with every Overdrive charged from the Genais break and hit as hard and fast as possible."
     }
   ],
   "cloister": null,

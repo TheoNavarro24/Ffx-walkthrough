@@ -31,7 +31,8 @@
   "bosses": [
     {
       "slug": "spectral-keeper",
-      "strategy": "Uses Berserk + Glyph Mines. Remove Berserk with Esuna immediately — Berserk characters walk into mines. Don't move berserked characters onto glyphs. Wakka and Auron attack from range/power. Protect on the party. HP: 52,000."
+      "strategy": "HP: 52,000. No elemental weakness. Steal: Ether / Turbo Ether. The fight takes place on six platforms arranged in a circle around the boss. Spectral Keeper's Tera-Gravitation places a detonation marker on the platform of the targeted character — that platform explodes at the end of the turn. Move any marked character to an unoccupied platform immediately or they die. Spread the party across non-adjacent platforms from the start; counterattacks hit the three platforms centred on the attacker, so keeping characters one platform apart prevents a single counter from wiping multiple party members. Prioritise keeping Yuna on a safe platform at all times. Glyph Mines appear on random platforms and also explode after one turn — treat them the same way. Berserk (from the tail attack) is dangerous because berserked characters won't dodge mines automatically; Esuna or a Remedy clears it. Apply Mental Break to amplify Lulu's magic damage, then grind down HP with your strongest damage dealers.",
+      "steals": ["Ether", "Turbo Ether"]
     },
     {
       "slug": "yunalesca",

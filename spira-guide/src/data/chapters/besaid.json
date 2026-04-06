@@ -40,6 +40,10 @@
     {
       "slug": "valefor",
       "strategy": "Valefor is obtained here, not fought as an enemy. No strategy needed — this entry exists for tracking purposes."
+    },
+    {
+      "slug": "kimahri",
+      "strategy": "Tidus's first mandatory 1-on-1 fight (750 HP, Overkill at 300). Kimahri alternates between a standard physical attack and a Jump attack — neither hits especially hard at this stage. There are no elemental weaknesses to exploit and nothing to steal. Use Cheer at the start to reduce incoming damage from both attacks, then just keep swinging. Don't waste Potions — Tidus's HP and MP are fully restored after the fight regardless of how low they drop. If Tidus's Overdrive gauge is charged, use Spiral Cut to end things quickly. This fight is intentionally winnable even if you just attack every turn."
     }
   ],
   "cloister": "besaid",

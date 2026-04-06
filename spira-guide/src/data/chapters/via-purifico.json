@@ -32,7 +32,7 @@
   "bosses": [
     {
       "slug": "isaaru-aeons",
-      "strategy": "Yuna vs Isaaru's 3 Aeons: Grothia (Ifrit), Pterya (Valefor), Spathi (Bahamut). Summon your own version of each — your Aeons are stronger. Charge Overdrives before entering if possible. Yuna's Bahamut vs Spathi is the key fight."
+      "strategy": "Three sequential aeon fights — Yuna's aeons face Isaaru's. Your aeons will always have higher stats because they've been upgraded throughout the game. Charge Overdrives before entering, especially on Bahamut.\n\nFight 1 — Grothia (Isaaru's Ifrit, HP 8,000): Weak to Ice. Summon Shiva and open with Diamond Dust if Overdrive is ready — otherwise use Blizzara. This is the easiest of the three fights.\n\nFight 2 — Pterya (Isaaru's Valefor, HP 12,000): No elemental weakness. Summon whichever of your aeons is closest to Overdrive and attack with its strongest ability. Use Energy Ray if your Valefor is available. If Pterya nears its own Overdrive bar, use Shield to reduce incoming damage.\n\nFight 3 — Spathi (Isaaru's Bahamut, HP 20,000): The toughest fight. After taking damage, Spathi begins a countdown — use Shield when it hits zero to halve the incoming Mega Flare damage. Summon your Bahamut if possible and fire Mega Flare first; your Bahamut's superior stats should deal heavy damage. Alternatively, use Ixion or Shiva (they can self-heal by casting their own black magic on themselves if injured). Burn Overdrives immediately and keep attacking — Spathi has no elemental resistances so any strong physical or magical hit connects."
     },
     {
       "slug": "evrae-altana",

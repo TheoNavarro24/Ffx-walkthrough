@@ -25,7 +25,17 @@
       ]
     }
   ],
-  "bosses": [],
+  "bosses": [
+    {
+      "slug": "seymour-natus",
+      "name": "Seymour Natus",
+      "hp": 36000,
+      "overkill": 3500,
+      "steal": "Tetra Elemental",
+      "drop": "Lv. 2 Key Sphere",
+      "strategy": "Seymour Natus fights alongside Mortibody, which rotates through elemental discs — fire, lightning, ice, and water — changing which element Seymour absorbs and which he is weak to. Watch Mortibody's active disc before choosing magic; hitting the wrong element heals Seymour instead of damaging him. Non-elemental attacks (physical hits or Auron's power) are always safe if you can't track the rotation. Open with Protect and Shell on the party — Seymour hits hard with both physical and magical attacks. Kill Mortibody first whenever it revives, as it will keep cycling discs and healing Seymour if left alive. Rikku's Al Bhed Potions are useful for topping HP without worrying about element. Slow is resisted, so rely on Haste on your own party instead to press the attack and minimize the time Mortibody is active."
+    }
+  ],
   "cloister": "bevelle",
   "optionalAreas": []
 }

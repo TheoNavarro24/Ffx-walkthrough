@@ -19,7 +19,7 @@
   "bosses": [
     {
       "slug": "sin-fin",
-      "strategy": "HP: 2,000. The Sinscale fights earlier on deck are designed to fill Overdrive gauges — make sure Tidus, Wakka, and Lulu enter this fight with Overdrives ready. The Fin has high physical defense for this stage of the game so Overdrives cut through it far faster than regular attacks; use them here rather than hoarding them. After the Fin falls, Sin attacks the ship directly and leads straight into the Echuilles fight with no break, so don't waste healing items on the Fin itself."
+      "strategy": "Sin's Fin HP: 2,000 (Overkill: 1,000). Sinscale HP: 200. Due to ship positioning, Auron cannot reach the Fin — only Wakka's ranged blitzball, Lulu's spells, and Yuna's aeon can hit it. Summon Valefor for the best results: the aeon deals melee damage directly to the Fin and also absorbs hits for the party. Assign Tidus and Kimahri to handle Sinscales. Sinscales continuously respawn whenever the last one is killed — leave one Sinscale alive to break this loop and cap incoming damage, then focus everything on the Fin. Kill the surviving Sinscale only after the Fin falls. Depleting the Fin's HP forces Sin to change course and ends the battle."
     },
     {
       "slug": "sinspawn-echuilles",
