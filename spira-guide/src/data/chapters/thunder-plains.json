@@ -1,34 +1,64 @@
 {
   "slug": "thunder-plains",
   "missables": [
-    {
-      "id": "missable-thunder-primer-xiv",
-      "label": "Al Bhed Primer Vol. XIV — must say 'Okay' to Rin",
-      "detail": "Inside Rin's Travel Agency: speak to Rikku first to trigger Rin's appearance, then speak to Rin and choose the affirmative ('Okay') response when he asks about your Al Bhed studies. If you leave the Thunder Plains without doing this, you cannot return to collect it until much later.",
-      "type": "primer"
-    },
-    {
-      "id": "missable-jecht-sphere-8",
-      "label": "Jecht Sphere #8 — Thunder Plains South",
-      "detail": "Found on the ground in Thunder Plains South. Collecting all 10 Jecht Spheres unlocks Auron's Overdrives. Easy to walk past — check the south section before heading north.",
-      "type": "jecht-sphere"
-    }
+    "Al Bhed Primer Vol. XIV — must say 'Okay' to Rin — Inside Rin's Travel Agency: speak to Rikku first to trigger Rin's appearance, then speak to Rin and choose the affirmative ('Okay') response when he asks about your Al Bhed studies. If you leave the Thunder Plains without doing this, you cannot return to collect it until much later.",
+    "Jecht Sphere #8 — Thunder Plains South — Found on the ground in Thunder Plains South. Collecting all 10 Jecht Spheres unlocks Auron's Overdrives. Easy to walk past — check the south section before heading north."
   ],
-  "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
+  "party": [
+    "Tidus",
+    "Wakka",
+    "Yuna",
+    "Lulu",
+    "Kimahri",
+    "Auron",
+    "Rikku"
+  ],
   "oaka": null,
   "sgTip": "Equip the Yellow Shield on Tidus immediately — Lightningproof stops random strike damage. Kimahri's Spirit Lance requires praying at 3 Qactuar stones (press Square near each).",
   "subLocations": [
     {
       "name": "Thunder Plains South",
       "prose": "The Thunder Plains stretch between Guadosalam and Macalania Woods — a wide, open expanse of cracked earth under a perpetual electrical storm. Lightning flashes constantly but does not actually damage your party, so don't let the spectacle stop you from exploring. Most enemies here are lightning-based, so equip Waterstrike weapons and let Lulu's Water magic do heavy lifting. If you're getting overwhelmed, summon Ixion — it absorbs lightning damage and is effectively untouchable against most local foes. Jecht Sphere #8 is on the ground in this section; grab it before pressing north. Two of the three Qactuar stones needed for Kimahri's Spirit Lance quest are also in the south — approach any glowing stone engraved with a Qactuar and press the action button to activate it. Beware: activating stones spawns Qactuar enemies whose 1,000 Needles attack deals exactly 1,000 damage and can kill a weakened character outright. Use piercing weapons or have Rikku throw Lightning Marbles.",
-      "guideImages": ["image_0047_00.jpeg"],
+      "guideImages": [
+        "image_0047_00.jpeg"
+      ],
       "items": [
-        { "id": "thunder-phoenix-down-2", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false },
-        { "id": "thunder-hi-potion-2", "name": "Hi-Potion ×2", "icon": "hi-potion", "missable": false },
-        { "id": "thunder-5000-gil", "name": "5,000 Gil", "icon": "gil", "missable": false },
-        { "id": "thunder-water-ball", "name": "Water Ball", "icon": "water-ball", "missable": false },
-        { "id": "thunder-lightningproof-shield", "name": "Yellow Shield (Lightningproof, for Tidus)", "icon": "yellow-shield", "missable": false },
-        { "id": "thunder-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false }
+        {
+          "id": "thunder-phoenix-down-2",
+          "name": "Phoenix Down ×2",
+          "icon": "phoenix-down",
+          "missable": false
+        },
+        {
+          "id": "thunder-hi-potion-2",
+          "name": "Hi-Potion ×2",
+          "icon": "hi-potion",
+          "missable": false
+        },
+        {
+          "id": "thunder-5000-gil",
+          "name": "5,000 Gil",
+          "icon": "gil",
+          "missable": false
+        },
+        {
+          "id": "thunder-water-ball",
+          "name": "Water Ball",
+          "icon": "water-ball",
+          "missable": false
+        },
+        {
+          "id": "thunder-lightningproof-shield",
+          "name": "Yellow Shield (Lightningproof, for Tidus)",
+          "icon": "yellow-shield",
+          "missable": false
+        },
+        {
+          "id": "thunder-x-potion",
+          "name": "X-Potion",
+          "icon": "x-potion",
+          "missable": false
+        }
       ]
     },
     {
@@ -36,11 +66,36 @@
       "prose": "The north section holds the third and final Qactuar stone for the Spirit Lance quest. Once you activate all three stones a Qactuar ghost materialises and leads you to a damaged lightning tower — press the action button to reveal Kimahri's chest, though you'll need the Celestial Mirror (obtained much later) to actually open it. Stop at Rin's Travel Agency in the middle of the plains. Inside, speak to Rikku first to trigger Rin's appearance, then talk to Rin and choose the affirmative response when he asks how your Al Bhed studies are going — he hands over Primer Vol. XIV. This is missable if you leave without doing it. The lightning-dodge challenge for Lulu's Venus Sigil is also here: consecutive successful dodges without getting hit, saving, or leaving earn escalating prizes (5 dodges → X-Potion ×2; 10 → Mega-Potion ×2; 20 → MP Sphere ×2; 50 → Strength Sphere ×3; 100 → HP Sphere ×3; 150 → Megalixir ×4; 200 → Venus Sigil). Save this for after you obtain No Encounter armor — it eliminates random battle interruptions and makes the 200-dodge run far less painful.",
       "guideImages": [],
       "items": [
-        { "id": "thunder-ether", "name": "Ether", "icon": "ether", "missable": false },
-        { "id": "thunder-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
-        { "id": "thunder-2000-gil", "name": "2,000 Gil", "icon": "gil", "missable": false },
-        { "id": "thunder-plains-primer-xiv", "name": "Al Bhed Primer Vol. XIV (say 'Okay' to Rin after talking to Rikku)", "icon": "primer", "missable": true },
-        { "id": "thunder-spirit-lance", "name": "Spirit Lance (Kimahri's Celestial Weapon — pray at 3 stones)", "icon": "spirit-lance", "missable": false }
+        {
+          "id": "thunder-ether",
+          "name": "Ether",
+          "icon": "ether",
+          "missable": false
+        },
+        {
+          "id": "thunder-remedy",
+          "name": "Remedy",
+          "icon": "remedy",
+          "missable": false
+        },
+        {
+          "id": "thunder-2000-gil",
+          "name": "2,000 Gil",
+          "icon": "gil",
+          "missable": false
+        },
+        {
+          "id": "thunder-plains-primer-xiv",
+          "name": "Al Bhed Primer Vol. XIV (say 'Okay' to Rin after talking to Rikku)",
+          "icon": "primer",
+          "missable": true
+        },
+        {
+          "id": "thunder-spirit-lance",
+          "name": "Spirit Lance (Kimahri's Celestial Weapon — pray at 3 stones)",
+          "icon": "spirit-lance",
+          "missable": false
+        }
       ]
     }
   ],

@@ -55,7 +55,7 @@
   "bosses": [
     {
       "slug": "valefor",
-      "strategy": "Valefor is obtained here, not fought as an enemy. No strategy needed — this entry exists for tracking purposes."
+      "strategy": "Valefor is obtained here as a story event, not fought as an enemy. No battle strategy is needed — this entry exists for collectibles tracking purposes only."
     },
     {
       "slug": "kimahri",
