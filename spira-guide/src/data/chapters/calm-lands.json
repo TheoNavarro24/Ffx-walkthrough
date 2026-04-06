@@ -22,7 +22,7 @@
   "bosses": [
     {
       "slug": "defender-x",
-      "strategy": "Uses Taunt to force all attacks onto one character. Use Lancet with Kimahri to learn Mighty Guard (extremely useful). Provoke with Tidus to keep squishier characters safe. Armor Break + physical attacks. Very high HP but no threatening mechanics. HP: 64,000."
+      "strategy": "Uses Taunt to force all attacks onto one character. Armor Break followed by physical attacks works well. Provoke with Tidus to protect weaker characters. Very high HP but no threatening mechanics. HP: 64,000."
     }
   ],
   "cloister": null,

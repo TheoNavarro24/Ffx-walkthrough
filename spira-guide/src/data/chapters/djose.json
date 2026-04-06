@@ -22,7 +22,7 @@
     {
       "name": "Djose Temple",
       "prose": "Inside the temple, meet Isaaru and his brothers, then loot both side chambers before ascending — the chest by the left chamber has an Ether. The 4,000 gil chest is on the far west side of the exterior grounds. The Magistral Rod from the Destruction Sphere is not missable; you can return via the Highroad at any point before the endgame. Garm and Bite Bug enemies inside are straightforward, but Garm can inflict Darkness — Wakka and Lulu handle them cleanly; the Cloister puzzle is more layered than Kilika, requiring you to stack spheres and use the pedestal to carry them into the lightning current.",
-      "guideImages": ["image_0044_00.jpeg"],
+      "guideImages": [],
       "items": [
         { "id": "djose-magistral-rod", "name": "Magistral Rod (Destruction Sphere — not missable)", "icon": "magistral-rod", "missable": false }
       ]

@@ -34,12 +34,7 @@
       ]
     }
   ],
-  "bosses": [
-    {
-      "slug": "wendigo",
-      "strategy": "Wendigo (18,000 HP) + 2 Guado Guardians (1,200 HP each). Kill both Guardians first — if Wendigo falls while they're alive, they revive it. Rikku's Use with Al Bhed Potions heals the whole party. Wendigo is weak to Fire. HP: 18,000."
-    }
-  ],
+  "bosses": [],
   "cloister": null,
   "optionalAreas": []
 }

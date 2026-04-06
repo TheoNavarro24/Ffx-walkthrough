@@ -18,7 +18,7 @@
     {
       "name": "Besaid Village",
       "prose": "Sweep the village before resting — chests near the first tent and outside the Crusaders Lodge hold Phoenix Down, two Potions, a Hi-Potion, and 400 Gil. Stop by the Crusaders Lodge to speak to Luzzu and Gatta. After the campfire scene, rest at the inn; the next morning Wakka gives you Brotherhood and Yuna joins. Al Bhed Primer Vol. II is on the ground near the lodge's reception desk — grab it before leaving.",
-      "guideImages": ["image_0029_00.jpeg"],
+      "guideImages": [],
       "items": [
         { "id": "besaid-phoenix-down", "name": "Phoenix Down", "icon": "phoenix-down", "missable": false },
         { "id": "besaid-2potions", "name": "Potion ×2", "icon": "potion", "missable": false },
@@ -30,7 +30,7 @@
     {
       "name": "Besaid Temple",
       "prose": "Work through the Cloister and place the Besaid Sphere in the pedestal to expose the Destruction Sphere slot. Before you push the pedestal to the final room, detour: place the Destruction Sphere in the slot where you found the Besaid Sphere to reveal a hidden chamber with the Rod of Wisdom. If you skip this step there's no going back — Dark Valefor blocks the temple entrance in the HD version once you have the airship.",
-      "guideImages": ["image_0029_00.jpeg"],
+      "guideImages": [],
       "items": [
         { "id": "besaid-rod-of-wisdom", "name": "Rod of Wisdom", "icon": "rod-of-wisdom", "missable": true }
       ]

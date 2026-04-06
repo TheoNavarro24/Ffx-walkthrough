@@ -52,8 +52,7 @@
       "prose": "Airship coordinates: X:69-75, Y:33-38. The toughest optional dungeon in the game — no maps, extremely high encounter rate, and endgame-tier fiends throughout. Ultima Weapon and Omega Weapon are the two superbosses waiting inside. Primer XXVI is found within the ruins.",
       "guideImages": ["image_0073_00.jpeg"],
       "items": [
-        { "id": "airship-omega-primer-xxvi", "name": "Al Bhed Primer Vol. XXVI", "icon": "primer", "missable": false },
-        { "id": "airship-omega-master-sphere-2", "name": "Master Sphere ×2", "icon": "master-sphere", "missable": false }
+        { "id": "airship-omega-primer-xxvi", "name": "Al Bhed Primer Vol. XXVI", "icon": "primer", "missable": false }
       ]
     },
     {

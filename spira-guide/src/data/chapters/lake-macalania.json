@@ -8,9 +8,9 @@
     {
       "name": "Lake Macalania",
       "prose": "The Travel Agency is your last save point and shop before two back-to-back boss fights — stock up. Clasko is outside and gives a useful hint about chocobo breeding; suggest he try it and he'll reward you later with a Friend Sphere. Primer XVI is on the ground near him. Save before heading into the temple — you won't be able to come back.",
-      "guideImages": ["image_0053_00.jpeg"],
+      "guideImages": [],
       "items": [
-        { "id": "lake-mac-primer-xv", "name": "Al Bhed Primer Vol. XV", "icon": "primer", "missable": false }
+        { "id": "lake-macalania-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "icon": "primer", "missable": false }
       ]
     },
     {
@@ -28,6 +28,10 @@
     {
       "slug": "seymour",
       "strategy": "Two phases. Phase 1: Kill the Guado Guardians first — they cast NulAll on Seymour, blocking magic. Seymour uses NulBlaze + NulFrost; wait them out or use Dispel. Phase 2: Anima appears (18,000 HP) — use your own Aeons or Thunder. Seymour's HP: 6,000 + 6,000. Have Yuna ready to heal throughout."
+    },
+    {
+      "slug": "wendigo",
+      "strategy": "PLACEHOLDER — full strategy added in Wave 3. HP: 18,000. Weak to Fire."
     }
   ],
   "cloister": "macalania",

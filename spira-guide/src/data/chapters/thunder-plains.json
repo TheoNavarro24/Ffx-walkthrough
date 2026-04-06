@@ -21,11 +21,11 @@
     {
       "name": "Thunder Plains North",
       "prose": "Stop at the Travel Agency in the middle section — speak to Rikku first, then Rin. When he asks how your Al Bhed studies are going, choose the affirmative response and he hands over Primer XIV. The third Qactuar stone for the Spirit Lance is also in this north section. The lightning dodge challenge for the Venus Sigil is here too, but save that for later when you can equip No Encounter armor.",
-      "guideImages": ["image_0052_00.jpeg"],
+      "guideImages": [],
       "items": [
         { "id": "thunder-ether", "name": "Ether", "icon": "ether", "missable": false },
         { "id": "thunder-2000-gil", "name": "2,000 Gil", "icon": "gil", "missable": false },
-        { "id": "thunder-primer-xiii", "name": "Al Bhed Primer Vol. XIII (say 'Okay' to Rin after talking to Rikku)", "icon": "primer", "missable": false },
+        { "id": "thunder-plains-primer-xiv", "name": "Al Bhed Primer Vol. XIV (say 'Okay' to Rin after talking to Rikku)", "icon": "primer", "missable": false },
         { "id": "thunder-spirit-lance", "name": "Spirit Lance (Kimahri's Celestial Weapon — pray at 3 stones)", "icon": "spirit-lance", "missable": false }
       ]
     }
