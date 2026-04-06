@@ -1,9 +1,14 @@
 import { renderHook, act } from '@testing-library/react'
 import { useCheckbox } from './useCheckbox'
 import { SaveContextProvider, useSaveSlot } from '../context/SaveContext'
+import { CheckboxProvider } from '../context/CheckboxContext'
 
 function wrapper({ children }) {
-  return <SaveContextProvider>{children}</SaveContextProvider>
+  return (
+    <SaveContextProvider>
+      <CheckboxProvider>{children}</CheckboxProvider>
+    </SaveContextProvider>
+  )
 }
 
 beforeEach(() => localStorage.clear())

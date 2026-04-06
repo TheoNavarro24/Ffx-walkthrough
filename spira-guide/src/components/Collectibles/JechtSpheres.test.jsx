@@ -3,9 +3,17 @@ import { renderHook } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import JechtSpheres from './JechtSpheres'
 import { useCheckbox } from '../../hooks/useCheckbox'
+import { SaveContextProvider } from '../../context/SaveContext'
+import { CheckboxProvider } from '../../context/CheckboxContext'
 
 beforeEach(() => localStorage.clear())
-const wrap = (ui) => render(<MemoryRouter>{ui}</MemoryRouter>)
+const wrap = (ui) => render(
+  <MemoryRouter>
+    <SaveContextProvider>
+      <CheckboxProvider>{ui}</CheckboxProvider>
+    </SaveContextProvider>
+  </MemoryRouter>
+)
 
 it('renders 10 sphere checkboxes', () => {
   wrap(<JechtSpheres />)

@@ -1,13 +1,19 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
+import { SaveContextProvider } from '../../context/SaveContext'
+import { CheckboxProvider } from '../../context/CheckboxContext'
 import ChapterDrawer from './ChapterDrawer'
 
 function renderDrawer(isOpen = true) {
   return render(
-    <MemoryRouter>
-      <ChapterDrawer isOpen={isOpen} onClose={vi.fn()} />
-    </MemoryRouter>
+    <SaveContextProvider>
+      <CheckboxProvider>
+        <MemoryRouter>
+          <ChapterDrawer isOpen={isOpen} onClose={vi.fn()} />
+        </MemoryRouter>
+      </CheckboxProvider>
+    </SaveContextProvider>
   )
 }
 
@@ -40,9 +46,13 @@ describe('ChapterDrawer', () => {
   it('calls onClose when backdrop is clicked', () => {
     const onClose = vi.fn()
     render(
-      <MemoryRouter>
-        <ChapterDrawer isOpen={true} onClose={onClose} />
-      </MemoryRouter>
+      <SaveContextProvider>
+        <CheckboxProvider>
+          <MemoryRouter>
+            <ChapterDrawer isOpen={true} onClose={onClose} />
+          </MemoryRouter>
+        </CheckboxProvider>
+      </SaveContextProvider>
     )
     fireEvent.click(screen.getByTestId('drawer-backdrop'))
     expect(onClose).toHaveBeenCalledOnce()

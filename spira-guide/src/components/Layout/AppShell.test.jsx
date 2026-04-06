@@ -2,14 +2,20 @@ import { describe, it, expect } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { TocProvider } from '../../context/TocContext'
+import { SaveContextProvider } from '../../context/SaveContext'
+import { CheckboxProvider } from '../../context/CheckboxContext'
 import AppShell from './AppShell'
 
 function renderAppShell() {
   return render(
     <TocProvider>
-      <MemoryRouter>
-        <AppShell />
-      </MemoryRouter>
+      <SaveContextProvider>
+        <CheckboxProvider>
+          <MemoryRouter>
+            <AppShell />
+          </MemoryRouter>
+        </CheckboxProvider>
+      </SaveContextProvider>
     </TocProvider>
   )
 }
