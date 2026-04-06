@@ -1,0 +1,143 @@
+[
+  {
+    "id": "city-of-dying-dreams",
+    "name": "City of Dying Dreams",
+    "prose": "Past the Sea of Sorrow's Save Sphere, search the right-hand wall for a glowing glyph. Kill 10 fiends in random encounters to open the first door; a second door requires more kills; a third demands 15. Total: 35 kills for a single Lv. 4 Key Sphere. Watch for Demonolith enemies — their Breath attack can petrify the entire party for an instant game over. Keep at least one front-liner in Stoneproof armor, or fight Demonoliths exclusively with summoned aeons. Treasure is scattered across lift platforms and a spiral slide building: step on the Yevon-symbol platform to ride up to Four-on-One, then cross the lowered bridge for the Defending Bracer. Laevatein is at the bottom of the spiral in the small southern building — press the wall prompt after collecting it to climb back out.",
+    "items": [
+      {
+        "id": "inside-sin-lv4-key-sphere",
+        "name": "Lv. 4 Key Sphere",
+        "description": "Reward for killing 35 fiends (10 + 10 + 15) to open the three glyph doors. All kills must occur in this area.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-four-on-one",
+        "name": "Four-on-One (Wakka's weapon)",
+        "description": "Stand on the Yevon-symbol platform — it rises to the chest.",
+        "missable": false
+      },
+      {
+        "id": "inside-sin-defending-bracer",
+        "name": "Defending Bracer",
+        "description": "Cross from the Four-on-One chest and push the bridge down to reach this armor.",
+        "missable": false
+      },
+      {
+        "id": "inside-sin-20000-gil",
+        "name": "20,000 Gil",
+        "description": "Found at the ramp down near the bridge.",
+        "missable": false
+      },
+      {
+        "id": "inside-sin-hp-sphere",
+        "name": "HP Sphere",
+        "description": "Step on the platform beside the 20,000 Gil chest to ride up to this item.",
+        "missable": false
+      },
+      {
+        "id": "inside-sin-defense-sphere",
+        "name": "Defense Sphere",
+        "description": "Second item on the same platform ride — high above the city.",
+        "missable": false
+      },
+      {
+        "id": "inside-sin-laevatein",
+        "name": "Laevatein (Yuna's weapon)",
+        "description": "At the bottom of the long spiral slide in the small southern building. Press the wall prompt next to the chest to climb back out.",
+        "missable": false
+      }
+    ],
+    "missableWarning": "Kill all 35 fiends before the glyph doors — you cannot open them later. Laevatein requires entering the spiral slide building from the south side."
+  },
+  {
+    "id": "tower-of-death",
+    "name": "Tower of Death",
+    "prose": "The Tower crashes to the ground as you approach from the north. Inside, icicles shoot upward — a random battle triggers if one strikes you. Stand still when the camera pans to orient yourself; move away immediately if a white glow appears beneath your feet. Scattered around the tower are small colored crystals that appear and fade rapidly — sprint to touch each one before it vanishes to collect the item inside (mostly weapons and rare spheres: Prism Ball, Mage's Staff, Skill Sphere, Infinity, Hrunting, Knight Lance, and more). Collect 10 items to trigger the final encounter. The last Save Sphere in the game sits near the top of the City of Dying Dreams ramp, just before this tower. This is your absolute last chance to teleport back to the airship and complete any remaining side quests.",
+    "items": [
+      {
+        "id": "inside-sin-prism-ball",
+        "name": "Prism Ball",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-mages-staff",
+        "name": "Mage's Staff",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-wicked-cait-sith",
+        "name": "Wicked Cait Sith",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-special-sphere",
+        "name": "Special Sphere",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-skill-sphere",
+        "name": "Skill Sphere",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-infinity",
+        "name": "Infinity",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-hrunting",
+        "name": "Hrunting",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-elixir",
+        "name": "Elixir",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-knight-lance",
+        "name": "Knight Lance",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-wizard-lance",
+        "name": "Wizard Lance",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-attribute-sphere",
+        "name": "Attribute Sphere",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-stillblade",
+        "name": "Stillblade",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      },
+      {
+        "id": "inside-sin-wht-magic-sphere",
+        "name": "Wht Magic Sphere",
+        "description": "Crystal collectible — touch before it fades.",
+        "missable": true
+      }
+    ],
+    "missableWarning": "POINT OF NO RETURN — The Save Sphere at the top of the City of Dying Dreams ramp is the last chance to return to the airship for side quests. Once you enter the Tower and trigger the final sequence (10 crystal items collected), there is no going back. The crystal items themselves disappear quickly; there is no second pass.",
+    "saveSphere": {
+      "location": "Top of the ramp leading out of the City of Dying Dreams, immediately before the Tower entrance",
+      "isLastInGame": true,
+      "pointOfNoReturn": true
+    }
+  }
+]

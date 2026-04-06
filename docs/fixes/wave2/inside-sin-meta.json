@@ -1,0 +1,43 @@
+{
+  "bosses": [
+    {
+      "id": "seymour-omnis",
+      "name": "Seymour Omnis",
+      "hp": 80000,
+      "overkill": 15000,
+      "ap": [24000, 36000],
+      "steal": ["Shining Gem", "Supreme Gem"],
+      "drops": ["Lv. 3 Key Sphere"],
+      "weakness": "Varies by Mortiphasm rotation",
+      "strategy": "Four Mortiphasms orbit Seymour, each displaying an element — the one closest to him sets what he absorbs and casts. To change his elemental alignment, target a Mortiphasm with attacks or spells: this forces the ring to rotate, shifting which element is active. Your goal is to rotate until you expose a clear elemental weakness, then blast with Lulu's opposing magic. Avoid casting the element he currently absorbs or you will heal him. Have Auron apply Armor Break and Mental Break early. If you mix two element types the discs show, he loses a clear weakness but also loses the devastating Multi-Spell follow-up. Non-elemental damage (Holy, Bio, items) is always safe. Mid-fight, Seymour casts Dispel on the party — this signals his next action will be the non-elemental Ultima. Swap in characters with 5,000+ HP or summon an expendable aeon to absorb it. Kimahri's Mighty Guard adds Shell and elemental Nul-shields as a safety net throughout."
+    },
+    {
+      "id": "braska-final-aeon",
+      "name": "Braska's Final Aeon (Jecht)",
+      "hp": [60000, 120000],
+      "overkill": 20000,
+      "ap": [0, 0],
+      "steal": ["Turbo Ether", "Elixir"],
+      "drops": [],
+      "weakness": "None",
+      "strategy": "Two Yu Pagodas flank Jecht and attempt to heal him every turn — turn this against him by having Auron inflict Zombie Attack on Jecht early. The Pagodas will then damage him with each heal; reapply Zombie regularly as it wears off. During Tidus's turns, the Trigger Command 'Talk to Jecht' appears — use it when his Overdrive gauge is nearly full to drain a large portion of it. If you cannot prevent his Overdrive, summon an aeon to absorb the hit. Second Form activates after the first 60,000 HP are depleted (total 120,000 HP across both forms): use Mighty Guard, Rikku's Mighty G mix, or Auto-Life on key characters before the transition hits. Finish with everything you have — Overdrives, Mega-Potions thrown at the zombified boss (they damage undead), Spare Change (100,000 gil = 9,999 damage), and aeon Overdrives. You cannot carry items or gil to a new game, so spend freely."
+    },
+    {
+      "id": "yu-yevon",
+      "name": "Yu Yevon",
+      "hp": 99999,
+      "overkill": 99999,
+      "ap": [0, 0],
+      "steal": [],
+      "drops": [],
+      "weakness": "None (permanent Auto-Life)",
+      "strategy": "Yu Yevon has permanent Auto-Life — every time you kill it, it immediately revives. The game handles this automatically: continue attacking until the Auto-Life cycles are exhausted and the fight concludes. Before reaching Yu Yevon directly you fight each of your aeons in sequence (they can be Zombied per the EPUB hint). This sequence is functionally impossible to lose; it is scripted to end the game."
+    }
+  ],
+  "missables": [
+    "Point of no return — after the final Save Sphere in Tower of Death, you cannot return to the airship. Complete all side quests first.",
+    "City of Dying Dreams glyph doors — kill 10, then more, then 15 fiends in the immediate area to open three sequential doors. Reward: 1 Lv. 4 Key Sphere. If you bypass the glyph without killing the required fiends, the door stays shut permanently.",
+    "Tower of Death crystals — small colored crystals appear and fade quickly as you navigate the Tower. Run to touch them before they vanish; you cannot loop back for missed ones."
+  ],
+  "sgTip": "Ensure your key characters have Auto-Life or a full complement of Overdrives before entering. This is the final dungeon."
+}

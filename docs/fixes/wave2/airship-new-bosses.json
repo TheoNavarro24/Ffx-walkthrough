@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "geosgaeno",
+    "hp": 32767,
+    "strategy": "Party is locked to Rikku, Tidus, and Wakka — you cannot swap. Geosgaeno is weak to all five elements equally (1.5x: Fire, Lightning, Water, Ice, Holy), so any elemental attack works. Equip armor with Stoneproof and Deathproof to block its Stone Punch and KO Punch. Open with Hastega and Protect, then burn it down with Wakka's Attack Reels or elemental items from Rikku's Mix. If a party member gets swallowed, use the Struggle Trigger Command immediately to escape. Steal Water Gems for extra income. The equipment drop (weapon with No Encounters) is a coveted quality-of-life reward for endgame exploration."
+  },
+  {
+    "slug": "yojimbo",
+    "hp": 33000,
+    "strategy": "This is a two-phase encounter: fight, then negotiate. Yojimbo has massive physical defense (80) but near-zero magic defense (1) — spam Firaga, Thundaga, or other magic to end the fight quickly. After winning, you are offered his contract. Choose the middle option ('to defeat the most powerful enemies') for the lowest asking price. Haggle: offer roughly one-third of his initial demand, then raise in small increments. A final payment of around 190,000–250,000 Gil is typical. Overpay his daily wages and keep his Compatibility high; max Compatibility makes Zanmato — which one-shots any enemy in the game — far more likely."
+  },
+  {
+    "slug": "ultima-weapon",
+    "hp": 70000,
+    "strategy": "Ultima Weapon has no elemental weaknesses — hit with your highest-damage physical attacks. It can inflict Confuse, Silence, and Petrify, so equip armor with status protection or keep Remedies handy. Silence and Darkness can land (95% base resistance — worth trying), but don't rely on it. Steal 10 Doors to Tomorrow (common steal) before finishing the fight; these are used to customize Break Damage Limit on weapons. If you have surplus Gil, Bribe for 99 Pendulums (roughly 1.4 million Gil), which customize Break MP Limit. Drops Lv.3 Key Spheres and equipment with Double Overdrive."
+  },
+  {
+    "slug": "omega-weapon",
+    "hp": 999999,
+    "strategy": "The hardest standard boss in the game. Omega Weapon absorbs all elements — physical-only offense is mandatory, and Break Damage Limit gear is required to make a dent in its 999,999 HP. It is immune to every status ailment. Use Shell and Protect to survive Nova, Ultima, and its brutal physical hits. Steal 30 Gambler's Spirits before killing it. Critically: have Kimahri use Lancet on Omega Weapon to permanently learn Nova, his most powerful Ronso Rage — this is the only source in the game. Trio of 9999 (Rikku Mix) or max Strength are the practical damage solutions. No bribe available."
+  }
+]

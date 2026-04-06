@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Remiem Temple",
+    "prose": "Ride a Chocobo to the southern edge of the Calm Lands, head east along the cliff above the two treasure chests, then examine the Chocobo Feather on the ground while mounted — your Chocobo leaps to the hidden eastern path below. Run up to Remiem Temple. Al Bhed Primer Vol. XXIV is on the ground just west of the temple entrance alongside a sphere that explains the racing basics.\n\nBelgemine is inside for her full aeon gauntlet — each of her aeons is significantly stronger than the versions you fought earlier. Defeating Bahamut here is required to unlock the Magus Sisters later. Defeating all eight of Belgemine's aeons earns the Moon Sigil, the crest needed to fully power up Yuna's Nirvana.\n\nThe Chocobo Race is outside, to the right of the temple. First race: ignore chests and shortcuts — just outrun the champion Chocobo down the spiral ramp course. Winning earns the Cloudy Mirror, which you need to activate every Celestial Weapon in the game. Subsequent races: hit as many chests as possible (they also function as shortcuts) and avoid all poles — touching even one limits your prize to a single Potion regardless of how many chests you opened.",
+    "guideImages": ["image_0063_00.jpeg"],
+    "items": [
+      {
+        "id": "calm-lands-primer-xxiv",
+        "name": "Al Bhed Primer Vol. XXIV — west of Remiem Temple entrance",
+        "icon": "primer",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-cloudy-mirror",
+        "name": "Cloudy Mirror — win first Chocobo Race (required to activate all Celestial Weapons)",
+        "icon": "cloudy-mirror",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-remiem-elixir",
+        "name": "Elixir — race prize (1 chest, 0 poles)",
+        "icon": "elixir",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-remiem-megalixir",
+        "name": "Megalixir — race prize (2 chests, 0 poles)",
+        "icon": "megalixir",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-remiem-wings",
+        "name": "Wings to Discovery x30 — race prize (3 chests, 0 poles)",
+        "icon": "wings-to-discovery",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-remiem-pendulum",
+        "name": "Pendulum x30 — race prize (4 chests, 0 poles)",
+        "icon": "pendulum",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-remiem-three-stars",
+        "name": "Three Stars x60 — race prize (5 chests, 0 poles)",
+        "icon": "three-stars",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-moon-sigil",
+        "name": "Moon Sigil (Yuna — defeat all 8 of Belgemine's aeons)",
+        "icon": "moon-sigil",
+        "missable": false
+      }
+    ],
+    "notes": [
+      "Each chocobo race prize (except the base Potion for 0 chests) can only be claimed once — do not leave mid-run.",
+      "Defeat Belgemine's Bahamut here before the Airship to unlock the Magus Sisters recruitment.",
+      "Belgemine awards the Aeon's Soul even if you lose each individual duel — the Moon Sigil requires winning all eight."
+    ]
+  },
+  {
+    "name": "Celestial Mirror Activation (Macalania Woods)",
+    "prose": "After winning the Cloudy Mirror at Remiem Temple, you can upgrade it into the Celestial Mirror — required to open every Celestial Weapon chest in the game. The activation site is back in Macalania Woods, which requires leaving the Calm Lands.\n\nWarning: departing the Calm Lands now means losing your waiting Chocobo and facing a long walk back to Mt. Gagazet on return. Many players prefer to wait until after they receive the Airship and can fast-travel freely.\n\nIf doing it now: enter Macalania Woods and pass the Jecht's Sphere spot. Speak to the woman standing alone — she has lost her husband. Backtrack to the campsite at the north end of the woods to find the husband. Return to the wife; her child is also missing. Follow the trail of rainbow-coloured light upward (the path illuminates as you walk it) and continue to the top where a giant flower glows. Examine the flower with the Cloudy Mirror in your inventory to transform it into the Celestial Mirror.",
+    "guideImages": [],
+    "items": [
+      {
+        "id": "calm-lands-celestial-mirror",
+        "name": "Celestial Mirror — examine giant flower atop Macalania Woods rainbow path (requires Cloudy Mirror)",
+        "icon": "celestial-mirror",
+        "missable": false
+      }
+    ],
+    "notes": [
+      "The Celestial Mirror is required to open every Celestial Weapon chest in the game — do not skip this.",
+      "Can be done any time after obtaining the Cloudy Mirror, including post-Airship."
+    ]
+  },
+  {
+    "name": "Cavern of the Stolen Fayth",
+    "prose": "After the Defender X fight, instead of crossing the bridge north to Mt. Gagazet, descend the steep path on the right (east) side of the bridge into the gorge below. At the bottom, head east along the gorge floor to find the Rusty Sword embedded in the ground — this is the first step in obtaining Auron's Celestial Weapon, the Masamune. Note its location; you will return here after getting the Airship to retrieve the sword with a Celestial Mirror.\n\nThe Cavern entrance is to the west along the gorge floor. The dungeon is optional but houses Yojimbo, a powerful aeon who attacks for pay. Al Bhed Primer Vol. XXV is found inside the cavern. The enemies here are tough — come prepared if you plan to explore the full depth.\n\nYojimbo recruitment: when he asks your purpose, choose 'To defeat the most powerful enemies' — this is the correct answer that lowers his asking price. His first offer will be high; budget at least 200,000 Gil before entering. Counter with roughly half his initial price plus 1 Gil and negotiate from there. His Zanmato ability can one-shot any enemy or boss in the game regardless of HP, making him one of the most powerful tools available for difficult content.",
+    "guideImages": ["image_0064_00.jpeg"],
+    "items": [
+      {
+        "id": "calm-lands-rusty-sword",
+        "name": "Rusty Sword — gorge floor, east of bridge descent (Auron's Celestial Weapon prerequisite)",
+        "icon": "rusty-sword",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-primer-xxv",
+        "name": "Al Bhed Primer Vol. XXV — inside Cavern of the Stolen Fayth",
+        "icon": "primer",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-yojimbo",
+        "name": "Yojimbo (Aeon) — recruit by negotiating; need at least 200,000 Gil",
+        "icon": "yojimbo",
+        "missable": false
+      }
+    ],
+    "notes": [
+      "The Rusty Sword is in the gorge east of the bridge, before the Cavern entrance to the west — do not miss it while descending.",
+      "Budget at least 200,000 Gil for Yojimbo's asking price before attempting negotiation.",
+      "Full Cavern item list and Yojimbo negotiation strategy are covered in the Side Quests section."
+    ]
+  }
+]

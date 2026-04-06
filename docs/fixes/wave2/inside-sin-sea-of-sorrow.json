@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Sea of Sorrow",
+    "prose": "After breaking through Sin's exterior, the party enters the Sea of Sorrow. The area map only shows your immediate surroundings, so use the guide map to orient yourself. Treasure chests sit at the tops of waterfalls — you can ride waterfalls down but cannot climb them, so reaching each chest requires a circuitous route upward. Enemies here are extremely powerful and yield heavy AP. The most dangerous is the Behemoth King: when killed, it casts Meteor on the entire party for roughly 6,000 damage to all. Counter this by casting Protect before the killing blow, letting an aeon take the final hit, or simply fleeing. Energy Dragons are vulnerable to Bio — inflict it early for sustained poison damage.",
+    "guideImages": ["image_0074_00.jpeg"],
+    "items": [
+      {
+        "id": "inside-sin-20000-gil",
+        "name": "20,000 Gil",
+        "location": "Chest in the Sea of Sorrow"
+      },
+      {
+        "id": "inside-sin-lv4-key-sphere",
+        "name": "Lv. 4 Key Sphere",
+        "location": "Chest at the top of the western falls"
+      },
+      {
+        "id": "inside-sin-hp-sphere",
+        "name": "HP Sphere",
+        "location": "Chest in the northwestern alcove"
+      }
+    ]
+  }
+]

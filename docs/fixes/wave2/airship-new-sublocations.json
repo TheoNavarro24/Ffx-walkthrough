@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Hidden Locations (Secret Coordinates)",
+    "prose": "Four small coordinate-only areas on the world map hold some of the best equipment in the game — each contains nothing but a chest and a Save Sphere, but the equipment inside is exceptional. From the airship Search command, navigate the cursor to the approximate coordinates below and press the search button repeatedly while moving slowly until the area is found. Sanubia Desert (X:12–16, Y:41–45): Tidus's Ascalon with the Double AP ability. Besaid Falls (X:29–32, Y:73–76): Kimahri's Dragoon Lance. Mi'ihen Ruins (X:33–36, Y:55–60): Rikku's Sonar. Battle Site (X:39–43, Y:56–60): Lulu's Phantom Bangle, which absorbs three types of elemental damage.",
+    "guideImages": [],
+    "items": [
+      {
+        "id": "airship-ascalon",
+        "name": "Ascalon (Tidus — Double AP) — Sanubia Desert, X:12–16 Y:41–45",
+        "icon": "ascalon",
+        "missable": false
+      },
+      {
+        "id": "airship-dragoon-lance",
+        "name": "Dragoon Lance (Kimahri) — Besaid Falls, X:29–32 Y:73–76",
+        "icon": "dragoon-lance",
+        "missable": false
+      },
+      {
+        "id": "airship-sonar",
+        "name": "Sonar (Rikku) — Mi'ihen Ruins, X:33–36 Y:55–60",
+        "icon": "sonar",
+        "missable": false
+      },
+      {
+        "id": "airship-phantom-bangle",
+        "name": "Phantom Bangle (Lulu — absorbs 3 elemental types) — Battle Site, X:39–43 Y:56–60",
+        "icon": "phantom-bangle",
+        "missable": false
+      }
+    ],
+    "notes": [
+      "Coordinates are approximate — move the cursor slowly while pressing Search repeatedly until the destination triggers.",
+      "Baaj Temple (X:11–16, Y:57–63) and Omega Ruins (X:69–75, Y:33–38) are also coordinate locations but are covered in their own sublocations."
+    ]
+  },
+  {
+    "name": "Airship Passwords",
+    "prose": "The airship's Input command (accessible from the main command list) accepts three case-sensitive passwords, each unlocking a secret location with a unique weapon or piece of equipment. The passwords can be found by deciphering Al Bhed messages left around Spira. GODHAND: teleports you to a ravine below Mushroom Rock Road; Rikku's Celestial Weapon, the Godhand, is in a chest at the northern tip of the area. VICTORIOUS: opens a secret Besaid Ruins location; climb the tree branch to reach Rikku's Victorious armor, which nullifies three elemental attack types. MURASAME: opens a second Besaid Ruins secret location; cross the platform to claim Auron's Murasame, which grants the One MP Cost ability.",
+    "guideImages": [],
+    "items": [
+      {
+        "id": "airship-godhand",
+        "name": "Godhand (Rikku's Celestial Weapon) — password: GODHAND",
+        "icon": "godhand",
+        "missable": false
+      },
+      {
+        "id": "airship-victorious",
+        "name": "Victorious (Rikku — nullifies 3 elemental types) — password: VICTORIOUS",
+        "icon": "victorious",
+        "missable": false
+      },
+      {
+        "id": "airship-murasame",
+        "name": "Murasame (Auron — One MP Cost) — password: MURASAME",
+        "icon": "murasame",
+        "missable": false
+      }
+    ],
+    "notes": [
+      "All passwords are case-sensitive and must be entered in all caps exactly as shown.",
+      "Use the 'Input' option in the airship command list — not the Search/coordinates system.",
+      "Godhand is Rikku's Celestial Weapon; it must still be powered up with the Mercury Crest and Mercury Sigil to reach full potential."
+    ]
+  }
+]

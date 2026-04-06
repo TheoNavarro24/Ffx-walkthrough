@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Remiem Temple",
+    "prose": "Reach Remiem Temple by borrowing a Chocobo from the Calm Lands trainer and leaping across to the hidden eastern cliff path via a Chocobo Feather at the southern edge of the Calm Lands. The Chocobo Race here earns the Cloudy Mirror — required to unlock every Celestial Weapon in the game. Al Bhed Primer Vol. XXIV is on the ground just outside the entrance. Belgemine challenges Yuna to a series of Aeon duels; each fight yields a prize. Defeat Belgemine's Bahamut to receive the Flower Sceptre (needed to recruit the Magus Sisters, along with the Blossom Crown from the Monster Arena after capturing one of each Mt. Gagazet monster). After recruiting Yojimbo and Anima, you can fight all eight of Belgemine's aeons; defeating all eight and sending Belgemine to the Farplane earns the Moon Sigil for Nirvana.",
+    "guideImages": ["image_0072_00.jpeg"],
+    "items": [
+      { "id": "airship-remiem-cloudy-mirror", "name": "Cloudy Mirror (Chocobo Race — required for all Celestial Weapons)", "icon": "cloudy-mirror", "missable": false },
+      { "id": "airship-remiem-primer-xxiv", "name": "Al Bhed Primer Vol. XXIV", "icon": "primer", "missable": false },
+      { "id": "airship-remiem-lightning-gem", "name": "Lightning Gem x4 (beat Belgemine's Valefor)", "icon": "lightning-gem", "missable": false },
+      { "id": "airship-remiem-x-potion", "name": "X-Potion x30 (beat Belgemine's Ifrit)", "icon": "x-potion", "missable": false },
+      { "id": "airship-remiem-chocobo-feather", "name": "Chocobo Feather x10 (beat Belgemine's Ixion)", "icon": "chocobo-feather", "missable": false },
+      { "id": "airship-remiem-mega-potion", "name": "Mega-Potion x60 (beat Belgemine's Shiva)", "icon": "mega-potion", "missable": false },
+      { "id": "airship-remiem-flower-sceptre", "name": "Flower Sceptre (beat Belgemine's Bahamut — needed to recruit Magus Sisters)", "icon": "flower-sceptre", "missable": false },
+      { "id": "airship-remiem-shadow-gem", "name": "Shadow Gem x8 (beat Belgemine's Yojimbo)", "icon": "shadow-gem", "missable": false },
+      { "id": "airship-remiem-stamina-spring", "name": "Stamina Spring x60 (beat Belgemine's Anima)", "icon": "stamina-spring", "missable": false },
+      { "id": "airship-remiem-shining-gem", "name": "Shining Gem x40 (beat Belgemine's Magus Sisters)", "icon": "shining-gem", "missable": false },
+      { "id": "airship-remiem-magus-sisters", "name": "Magus Sisters (Aeon — Flower Sceptre + Blossom Crown required)", "icon": "magus-sisters", "missable": false },
+      { "id": "airship-remiem-moon-sigil", "name": "Moon Sigil (Yuna — send Belgemine after defeating all 8 of her Aeons)", "icon": "moon-sigil", "missable": false }
+    ]
+  },
+  {
+    "name": "Cavern of the Stolen Fayth",
+    "prose": "Exit the Calm Lands via the northeast passage, circle past the right side of the Mt. Gagazet bridge, and descend into the gorge — the Cavern entrance is to the left of the Save Sphere. A short distance to the right is the Rusty Sword, a key item needed for Auron's Masamune. Inside, beware Magic Urns: striking the wrong eye triggers a devastating counterattack — weaker parties should Flee. Great Malboros can ambush your party and inflict Bad Breath (Berserk, Confusion, Sleep, Silence) before you can act — equip status protection or lead with a First Strike weapon. To recruit Yojimbo, choose 'To defeat the most powerful of enemies' when asked your purpose, then offer half his asking price plus 1 gil and raise by 1 gil each round. A teleport pad beyond his chamber leads to hidden rooms with additional loot.",
+    "guideImages": ["image_0062_00.jpeg"],
+    "items": [
+      { "id": "airship-cavern-primer-xxv", "name": "Al Bhed Primer Vol. XXV", "icon": "primer", "missable": false },
+      { "id": "airship-cavern-megalixir", "name": "Megalixir", "icon": "megalixir", "missable": false },
+      { "id": "airship-cavern-mega-potion", "name": "Mega-Potion x2", "icon": "mega-potion", "missable": false },
+      { "id": "airship-cavern-flexible-arm", "name": "Flexible Arm (teleport pad chamber)", "icon": "flexible-arm", "missable": false },
+      { "id": "airship-cavern-mp-sphere", "name": "MP Sphere (teleport pad chamber)", "icon": "mp-sphere", "missable": false },
+      { "id": "airship-cavern-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },
+      { "id": "airship-cavern-lv2-key-sphere", "name": "Lv. 2 Key Sphere", "icon": "lv2-key-sphere", "missable": false },
+      { "id": "airship-cavern-x-potion", "name": "X-Potion x2 (teleport pad chamber)", "icon": "x-potion", "missable": false },
+      { "id": "airship-cavern-rusty-sword", "name": "Rusty Sword (eastern cliff outside cavern — needed for Auron's Masamune)", "icon": "rusty-sword", "missable": false },
+      { "id": "airship-yojimbo-aeon", "name": "Yojimbo (Aeon)", "icon": "yojimbo", "missable": false }
+    ]
+  },
+  {
+    "name": "Baaj Temple (Revisit)",
+    "prose": "Airship coordinates: X:11–16, Y:57–63. Only Rikku, Tidus, and Wakka can be used here (the only swimmers). Geosgaeno guards the temple entrance — equip all three with Petrify and Death protection if possible, then cast Hastega and Protect. If a party member is swallowed, use the Struggle Trigger Command. Note: Geosgaeno is weak to all elements equally, not just Ice. After the fight, swim south until the camera angle changes and search the seafloor crevices for Lulu's Onion Knight. Inside the Chamber of the Fayth, chests in the southwest and southeast corners contain Mega Phoenix x4 and a Megalixir. Approach the six statues: all six must light up to access Anima's fayth — each represents a Destruction Sphere treasure collected from a previous Cloister of Trials. Return to the Zanarkand Dome to complete its Destruction Sphere challenge (Magistral Rod) if any statue is dark.",
+    "guideImages": ["image_0025_00.jpeg"],
+    "items": [
+      { "id": "airship-baaj-mega-phoenix", "name": "Mega Phoenix x4 (Chamber of the Fayth — southwest chests)", "icon": "mega-phoenix", "missable": false },
+      { "id": "airship-baaj-megalixir", "name": "Megalixir (Chamber of the Fayth — southeast chest)", "icon": "megalixir", "missable": false },
+      { "id": "airship-baaj-onion-knight", "name": "Onion Knight (Lulu's Celestial Weapon — underwater south of Geosgaeno)", "icon": "onion-knight", "missable": false },
+      { "id": "airship-baaj-anima", "name": "Anima (Aeon — requires all 6 Destruction Sphere treasures collected)", "icon": "anima", "missable": false }
+    ]
+  },
+  {
+    "name": "Omega Ruins",
+    "prose": "Airship coordinates: X:69–75, Y:33–38. The toughest optional dungeon in the game — no map until explored, extreme encounter rate, and endgame-tier fiends throughout. Great Malboros can ambush your party and use Bad Breath to inflict Berserk, Confusion, and other ailments before you can act — wear armor protecting against these conditions or lead with a First Strike weapon to immediately switch to Yuna or use Flee. Phantom treasure chests appear in groups: some hold items, others trigger monster encounters that cause the remaining chests in the group to vanish. In the first area, activate two dormant glyphs (one west, one northwest) to raise a bridge to a chest containing a Teleport Sphere. Al Bhed Primer Vol. XXVI is on the floor just north of four phantom chests. Ultima Weapon waits at the north end of the first area via a teleport pad — steal 10 Doors to Tomorrow from it. Omega Weapon is at the far end of the second area: it absorbs ALL elements including Holy, so use Flare, Bahamut, Anima, or Yojimbo. Have Kimahri use Lancet on Omega Weapon to learn Nova, his most powerful Ronso Rage. A Magic Sphere chest sits behind where Omega Weapon stood — you must walk back after the battle, as the party is teleported to the entrance on victory.",
+    "guideImages": ["image_0073_00.jpeg"],
+    "items": [
+      { "id": "airship-omega-primer-xxvi", "name": "Al Bhed Primer Vol. XXVI", "icon": "primer", "missable": false },
+      { "id": "airship-omega-teleport-sphere", "name": "Teleport Sphere (bridge chest — activate both glyphs first)", "icon": "teleport-sphere", "missable": false },
+      { "id": "airship-omega-friend-sphere", "name": "Friend Sphere (second area — go left from entrance)", "icon": "friend-sphere", "missable": false },
+      { "id": "airship-omega-magic-sphere", "name": "Magic Sphere (behind Omega Weapon's arena — walk back after victory)", "icon": "magic-sphere", "missable": false },
+      { "id": "airship-omega-doors-to-tomorrow", "name": "Doors to Tomorrow x10 (stolen from Ultima Weapon)", "icon": "doors-to-tomorrow", "missable": false },
+      { "id": "airship-omega-gamblers-spirit", "name": "Gambler's Spirit x30 (stolen from Omega Weapon — steal twice)", "icon": "gamblers-spirit", "missable": false }
+    ]
+  },
+  {
+    "name": "Celestial Weapons",
+    "prose": "Each of the seven party members has one Celestial Weapon obtainable after gaining the airship. Each weapon starts with No AP (prevents AP gain) until upgraded with its character's Crest and Sigil. Fully upgraded, all weapons break the 9,999 damage cap and deal more damage as the wielder's HP approaches maximum. Upgrade all weapons at the spherical crystal in Macalania Woods using the Celestial Mirror (upgrade the Cloudy Mirror from Remiem at that same crystal). Tidus: Caladbolg (Calm Lands NW path after defeating trainer) + Sun Crest (Zanarkand staircase after Yunalesca) + Sun Sigil (sub-0:00 chocobo race). Yuna: Nirvana (capture all 9 Calm Lands fiends) + Moon Crest (Besaid cove) + Moon Sigil (Remiem Temple, all 8 aeons). Lulu: Onion Knight (Baaj Temple underwater) + Venus Crest (Farplane) + Venus Sigil (dodge 200 lightning bolts). Kimahri: Spirit Lance (three Thunder Plains Qactuar stones) + Saturn Crest (Mt. Gagazet chest) + Saturn Sigil (third Butterfly Chase in Macalania). Auron: Masamune (Rusty Sword to Mi'ihen statue glyph) + Mars Crest (Mi'ihen Oldroad South) + Mars Sigil (10 Area/Species Conquests). Wakka: World Champion (win 5 blitzball games + Celestial Mirror, Luca bartender) + Jupiter Crest (Luca Aurochs locker room) + Jupiter Sigil (blitzball prize after winning Attack/Status/Auroch Reels). Rikku: Godhand (airship password GODHAND, north ravine) + Mercury Crest (sandy whirlpool in Sanubia) + Mercury Sigil (clear Cactuar Village sandstorm).",
+    "guideImages": ["image_0081_00.jpeg"],
+    "items": [
+      { "id": "airship-celestial-caladbolg", "name": "Caladbolg (Tidus — Calm Lands NW path, defeat Chocobo trainer)", "icon": "caladbolg", "missable": false },
+      { "id": "airship-celestial-sun-crest", "name": "Sun Crest (Tidus — Zanarkand staircase after Yunalesca)", "icon": "sun-crest", "missable": false },
+      { "id": "airship-celestial-sun-sigil", "name": "Sun Sigil (Tidus — Calm Lands chocobo race, sub-0:00 finish)", "icon": "sun-sigil", "missable": false },
+      { "id": "airship-celestial-nirvana", "name": "Nirvana (Yuna — capture all 9 Calm Lands fiend types)", "icon": "nirvana", "missable": false },
+      { "id": "airship-celestial-moon-crest", "name": "Moon Crest (Yuna — Besaid Isle cove chest)", "icon": "moon-crest", "missable": false },
+      { "id": "airship-celestial-venus-crest", "name": "Venus Crest (Lulu — Farplane chest, return to Guadosalam)", "icon": "venus-crest", "missable": false },
+      { "id": "airship-celestial-venus-sigil", "name": "Venus Sigil (Lulu — dodge 200 consecutive lightning bolts, Thunder Plains)", "icon": "venus-sigil", "missable": false },
+      { "id": "airship-celestial-spirit-lance", "name": "Spirit Lance (Kimahri — three Qactuar stones + ghost, Thunder Plains)", "icon": "spirit-lance", "missable": false },
+      { "id": "airship-celestial-saturn-crest", "name": "Saturn Crest (Kimahri — chest past Seymour on Mt. Gagazet)", "icon": "saturn-crest", "missable": false },
+      { "id": "airship-celestial-saturn-sigil", "name": "Saturn Sigil (Kimahri — third Butterfly Chase, Macalania Woods)", "icon": "saturn-sigil", "missable": false },
+      { "id": "airship-celestial-masamune", "name": "Masamune (Auron — Rusty Sword to Mi'ihen statue glyph)", "icon": "masamune", "missable": false },
+      { "id": "airship-celestial-mars-crest", "name": "Mars Crest (Auron — Mi'ihen Oldroad South chest)", "icon": "mars-crest", "missable": false },
+      { "id": "airship-celestial-mars-sigil", "name": "Mars Sigil (Auron — complete 10 Area/Species Conquests at Monster Arena)", "icon": "mars-sigil", "missable": false },
+      { "id": "airship-celestial-world-champion", "name": "World Champion (Wakka — win 5 blitzball games, then Celestial Mirror at Luca bartender)", "icon": "world-champion", "missable": false },
+      { "id": "airship-celestial-jupiter-crest", "name": "Jupiter Crest (Wakka — Luca Aurochs locker room chest)", "icon": "jupiter-crest", "missable": false },
+      { "id": "airship-celestial-jupiter-sigil", "name": "Jupiter Sigil (Wakka — blitzball prize after winning Attack/Status/Auroch Reels)", "icon": "jupiter-sigil", "missable": false },
+      { "id": "airship-celestial-mercury-crest", "name": "Mercury Crest (Rikku — sandy whirlpool chest in Sanubia Sands)", "icon": "mercury-crest", "missable": false }
+    ]
+  },
+  {
+    "name": "Cactuar Village (Bikanel Desert Revisit)",
+    "prose": "At a large Cactuar-painted rock in the southern part of Sanubia Sands — West, examine the stone to begin the hunt. A clue points to one of 10 hidden Cactuars scattered across the desert. Sneak up while each Cactuar faces away and touch it before it spots you three times — success triggers a fight; win or lose you receive a named Cactuar Sphere. If it catches you three times, you receive a Sphere del Perdedor instead. The number of named spheres you insert determines your prize tier: 1–2 = Potion, 3–6 = Elixir, 7–8 = Megalixir, 9–10 = Friend Sphere. Clearing all ten Cactuars lifts the sandstorm over the village, granting access to the Mercury Sigil for Rikku's Godhand and a Megalixir.",
+    "guideImages": ["image_0077_00.jpeg"],
+    "items": [
+      { "id": "airship-cactuar-mercury-sigil", "name": "Mercury Sigil (Rikku — find and clear all 10 Cactuars)", "icon": "mercury-sigil", "missable": false },
+      { "id": "airship-cactuar-megalixir", "name": "Megalixir (cleared sandstorm village)", "icon": "megalixir", "missable": false }
+    ]
+  },
+  {
+    "name": "Monster Arena (Calm Lands)",
+    "prose": "Buy Capture weapons from the arena owner and use them to defeat (not just KO) monsters throughout all areas of Spira — some species only appear in specific sub-zones, so explore widely. Capturing all fiends in an area unlocks an Area Conquest boss; capturing enough of each species type unlocks Species Conquest bosses. These creations drop rare upgrade materials unavailable elsewhere. The highest tier — Original Creations — unlocks progressively as you complete more conquests, culminating in Nemesis (capture 10 of every fiend in every area). Capturing four of every Dragon-type enemy yields 99 Purifying Salts — the material needed to customize No Encounters onto armor, which is invaluable for farming during side quests. Yuna's Nirvana is received from the arena owner after capturing all nine Calm Lands fiend types. The Mars Sigil for Auron's Masamune requires completing at least 10 Area Conquest and/or Species Conquest missions.",
+    "guideImages": ["image_0062_01.jpeg"],
+    "items": [
+      { "id": "airship-arena-nirvana", "name": "Nirvana (Yuna — capture all 9 Calm Lands fiend types)", "icon": "nirvana", "missable": false },
+      { "id": "airship-arena-mars-sigil", "name": "Mars Sigil (Auron — complete 10 Area and/or Species Conquests)", "icon": "mars-sigil", "missable": false }
+    ]
+  },
+  {
+    "name": "Dark Aeons & Penance",
+    "prose": "After acquiring the Airship, Yevonite zealots station dark aeon summoners at locations throughout Spira. These super-powered aeons and the superboss they unlock are the game's ultimate challenge — expect to invest 50–100 hours of preparation. For Dark Aeon locations, strategies, and Penance, see the Superbosses page.",
+    "guideImages": ["image_0089_00.jpeg"],
+    "items": []
+  }
+]

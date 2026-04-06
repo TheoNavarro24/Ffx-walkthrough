@@ -1,35 +1,190 @@
 {
   "slug": "inside-sin",
-  "missables": [],
+  "missables": [
+    "Point of no return — after the final Save Sphere in Tower of Death, you cannot return to the airship. Complete all side quests first.",
+    "City of Dying Dreams glyph doors — kill 10, then more, then 15 fiends in the immediate area to open three sequential doors. Reward: 1 Lv. 4 Key Sphere. If you bypass the glyph without killing the required fiends, the door stays shut permanently.",
+    "Tower of Death crystals — small colored crystals appear and fade quickly as you navigate the Tower. Run to touch them before they vanish; you cannot loop back for missed ones."
+  ],
   "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
   "oaka": null,
-  "sgTip": null,
+  "sgTip": "Ensure your key characters have Auto-Life or a full complement of Overdrives before entering. This is the final dungeon.",
   "subLocations": [
     {
-      "name": "Inside Sin",
-      "prose": "Inside Sin is a labyrinth of waterfalls and platforms — the mini-map only shows what's immediately nearby. Fiends here are extremely powerful, especially Behemoth Kings (Meteor for ~6,000 to the party), so save often and lean on aeons. Critically, Behemoth Kings use Meteor as a death rattle when killed — avoid triggering that final blow while party HP is low, and don't use White Magic to finish them off. The teleport-pad sections also contain Energy Dragons, which are weak to Bio — Lulu's Bio spell or Poisontouch weapons do solid work here. Chests throughout contain strong endgame equipment including Wakka's Four-on-One and Yuna's Laevatein. The final Save Sphere before the climb to the Tower of Death is your last chance to return to the airship for side quests.",
+      "name": "Sea of Sorrow",
+      "prose": "After breaking through Sin's exterior, the party enters the Sea of Sorrow. The area map only shows your immediate surroundings, so use the guide map to orient yourself. Treasure chests sit at the tops of waterfalls — you can ride waterfalls down but cannot climb them, so reaching each chest requires a circuitous route upward. Enemies here are extremely powerful and yield heavy AP. The most dangerous is the Behemoth King: when killed, it casts Meteor on the entire party for roughly 6,000 damage to all. Counter this by casting Protect before the killing blow, letting an aeon take the final hit, or simply fleeing. Energy Dragons are vulnerable to Bio — inflict it early for sustained poison damage.",
       "guideImages": ["image_0074_00.jpeg"],
       "items": [
-        { "id": "inside-sin-jecht-sphere-10", "name": "Jecht Sphere #10 (Auron's Tornado Overdrive)", "icon": "jecht-sphere", "missable": false }
+        {
+          "id": "inside-sin-sos-20000-gil",
+          "name": "20,000 Gil",
+          "location": "Chest in the Sea of Sorrow"
+        },
+        {
+          "id": "inside-sin-sos-lv4-key-sphere",
+          "name": "Lv. 4 Key Sphere",
+          "location": "Chest at the top of the western falls"
+        },
+        {
+          "id": "inside-sin-sos-hp-sphere",
+          "name": "HP Sphere",
+          "location": "Chest in the northwestern alcove"
+        }
       ]
+    },
+    {
+      "id": "city-of-dying-dreams",
+      "name": "City of Dying Dreams",
+      "prose": "Past the Sea of Sorrow's Save Sphere, search the right-hand wall for a glowing glyph. Kill 10 fiends in random encounters to open the first door; a second door requires more kills; a third demands 15. Total: 35 kills for a single Lv. 4 Key Sphere. Watch for Demonolith enemies — their Breath attack can petrify the entire party for an instant game over. Keep at least one front-liner in Stoneproof armor, or fight Demonoliths exclusively with summoned aeons. Treasure is scattered across lift platforms and a spiral slide building: step on the Yevon-symbol platform to ride up to Four-on-One, then cross the lowered bridge for the Defending Bracer. Laevatein is at the bottom of the spiral in the small southern building — press the wall prompt after collecting it to climb back out.",
+      "items": [
+        {
+          "id": "inside-sin-lv4-key-sphere",
+          "name": "Lv. 4 Key Sphere",
+          "description": "Reward for killing 35 fiends (10 + 10 + 15) to open the three glyph doors. All kills must occur in this area.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-four-on-one",
+          "name": "Four-on-One (Wakka's weapon)",
+          "description": "Stand on the Yevon-symbol platform — it rises to the chest.",
+          "missable": false
+        },
+        {
+          "id": "inside-sin-defending-bracer",
+          "name": "Defending Bracer",
+          "description": "Cross from the Four-on-One chest and push the bridge down to reach this armor.",
+          "missable": false
+        },
+        {
+          "id": "inside-sin-20000-gil",
+          "name": "20,000 Gil",
+          "description": "Found at the ramp down near the bridge.",
+          "missable": false
+        },
+        {
+          "id": "inside-sin-hp-sphere",
+          "name": "HP Sphere",
+          "description": "Step on the platform beside the 20,000 Gil chest to ride up to this item.",
+          "missable": false
+        },
+        {
+          "id": "inside-sin-defense-sphere",
+          "name": "Defense Sphere",
+          "description": "Second item on the same platform ride — high above the city.",
+          "missable": false
+        },
+        {
+          "id": "inside-sin-laevatein",
+          "name": "Laevatein (Yuna's weapon)",
+          "description": "At the bottom of the long spiral slide in the small southern building. Press the wall prompt next to the chest to climb back out.",
+          "missable": false
+        }
+      ],
+      "missableWarning": "Kill all 35 fiends before the glyph doors — you cannot open them later. Laevatein requires entering the spiral slide building from the south side."
+    },
+    {
+      "id": "tower-of-death",
+      "name": "Tower of Death",
+      "prose": "The Tower crashes to the ground as you approach from the north. Inside, icicles shoot upward — a random battle triggers if one strikes you. Stand still when the camera pans to orient yourself; move away immediately if a white glow appears beneath your feet. Scattered around the tower are small colored crystals that appear and fade rapidly — sprint to touch each one before it vanishes to collect the item inside (mostly weapons and rare spheres: Prism Ball, Mage's Staff, Skill Sphere, Infinity, Hrunting, Knight Lance, and more). Collect 10 items to trigger the final encounter. The last Save Sphere in the game sits near the top of the City of Dying Dreams ramp, just before this tower. This is your absolute last chance to teleport back to the airship and complete any remaining side quests.",
+      "items": [
+        {
+          "id": "inside-sin-prism-ball",
+          "name": "Prism Ball",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-mages-staff",
+          "name": "Mage's Staff",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-wicked-cait-sith",
+          "name": "Wicked Cait Sith",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-special-sphere",
+          "name": "Special Sphere",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-skill-sphere",
+          "name": "Skill Sphere",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-infinity",
+          "name": "Infinity",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-hrunting",
+          "name": "Hrunting",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-elixir",
+          "name": "Elixir",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-knight-lance",
+          "name": "Knight Lance",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-wizard-lance",
+          "name": "Wizard Lance",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-attribute-sphere",
+          "name": "Attribute Sphere",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-stillblade",
+          "name": "Stillblade",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        },
+        {
+          "id": "inside-sin-wht-magic-sphere",
+          "name": "Wht Magic Sphere",
+          "description": "Crystal collectible — touch before it fades.",
+          "missable": true
+        }
+      ],
+      "missableWarning": "POINT OF NO RETURN — The Save Sphere at the top of the City of Dying Dreams ramp is the last chance to return to the airship for side quests. Once you enter the Tower and trigger the final sequence (10 crystal items collected), there is no going back. The crystal items themselves disappear quickly; there is no second pass.",
+      "saveSphere": {
+        "location": "Top of the ramp leading out of the City of Dying Dreams, immediately before the Tower entrance",
+        "isLastInGame": true,
+        "pointOfNoReturn": true
+      }
     }
   ],
   "bosses": [
     {
-      "slug": "sinspawn-genais",
-      "strategy": "HP: 20,000. Two components: the Sinspawn body and a Sin cell attached to it. Attack the body exclusively — the cell will revive the body once if you kill the body first without first destroying the cell, so kill the cell after the body goes down. Genais uses Sin's Venom (moderate party damage + Poison) and Demi — keep HP up and cure Poison promptly. Aeons and multi-target Overdrives make short work of both components."
-    },
-    {
       "slug": "seymour-omnis",
-      "strategy": "HP: 80,000. Four Mortiphasms (1 HP each) orbit Seymour and grant him elemental absorption — but they reform at the start of every one of Seymour's turns. Destroy all four before casting any spell each round, every round, or your magic will heal him. Non-elemental attacks (Tidus, Auron, Wakka physicals; Rikku's throws) are always safe. Seymour's Multi-Spell fires off a random number of hits targeting random characters — keep everyone above 2,000 HP and run Protect + Shell. Use Dispel when he casts Protect or Shell on himself. Save Overdrives for bursts between Mortiphasms clears."
+      "strategy": "Four Mortiphasms orbit Seymour, each displaying an element — the one closest to him sets what he absorbs and casts. To change his elemental alignment, target a Mortiphasm with attacks or spells: this forces the ring to rotate, shifting which element is active. Your goal is to rotate until you expose a clear elemental weakness, then blast with Lulu's opposing magic. Avoid casting the element he currently absorbs or you will heal him. Have Auron apply Armor Break and Mental Break early. If you mix two element types the discs show, he loses a clear weakness but also loses the devastating Multi-Spell follow-up. Non-elemental damage (Holy, Bio, items) is always safe. Mid-fight, Seymour casts Dispel on the party — this signals his next action will be the non-elemental Ultima. Swap in characters with 5,000+ HP or summon an expendable aeon to absorb it. Kimahri's Mighty Guard adds Shell and elemental Nul-shields as a safety net throughout."
     },
     {
       "slug": "braska-final-aeon",
-      "strategy": "The two Yu Pagodas continuously attempt to heal Jecht — don't waste time trying to destroy them. Instead, use Auron's Zombie Attack on Jecht at the start so the Pagodas' cure spells damage him instead of healing him. Reapply Zombie Attack regularly as the status wears off. During Tidus's turns, use the Trigger Command to talk to Jecht; this drains the Overdrive gauge significantly — save it until the gauge is nearly full, and don't bother more than a couple of times. If the Overdrive can't be talked down, summon an aeon to absorb the hit. After Jecht loses 60,000 HP he transforms into his second form — use Rikku's Mighty G mix or similar to stack Haste, Protect, and Shell in one turn, and apply Auto-Life to key characters if available. Throw Mega-Potions at Zombie-afflicted Jecht and empty Overdrives; this is the last real fight of the game."
+      "strategy": "Two Yu Pagodas flank Jecht and attempt to heal him every turn — turn this against him by having Auron inflict Zombie Attack on Jecht early. The Pagodas will then damage him with each heal; reapply Zombie regularly as it wears off. During Tidus's turns, the Trigger Command 'Talk to Jecht' appears — use it when his Overdrive gauge is nearly full to drain a large portion of it. If you cannot prevent his Overdrive, summon an aeon to absorb the hit. Second Form activates after the first 60,000 HP are depleted (total 120,000 HP across both forms): use Mighty Guard, Rikku's Mighty G mix, or Auto-Life on key characters before the transition hits. Finish with everything you have — Overdrives, Mega-Potions thrown at the zombified boss (they damage undead), Spare Change (100,000 gil = 9,999 damage), and aeon Overdrives. You cannot carry items or gil to a new game, so spend freely."
     },
     {
       "slug": "yu-yevon",
-      "strategy": "Unkillable conventionally — Yu Yevon has permanent Auto-Life. The game ends the fight automatically after Braska's Final Aeon. Watch the ending."
+      "strategy": "Yu Yevon has permanent Auto-Life — every time you kill it, it immediately revives. The game handles this automatically: continue attacking until the Auto-Life cycles are exhausted and the fight concludes. Before reaching Yu Yevon directly you fight each of your aeons in sequence (they can be Zombied per the EPUB hint). This sequence is functionally impossible to lose; it is scripted to end the game."
     }
   ],
   "cloister": null,

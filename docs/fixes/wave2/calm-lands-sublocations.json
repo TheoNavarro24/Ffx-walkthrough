@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Calm Lands (Plateau)",
+    "prose": "The Calm Lands open into a vast plateau crisscrossed by fiends used in the Monster Arena capture quest. On arrival, visit Rin's Travel Agency for armaments, then head southeast to register at the Monster Arena before exploring — that way you can capture as you go. A hovering vendor near the plateau sells the Magic Counter Shield; buy it now if you want it, because once you trigger the story event at the gorge the vendor vanishes permanently. The Al Bhed Primer Vol. XXIII sits at the extreme northwest cliff edge — search carefully before leaving. The Caladbolg chest is also in the northwest corner but is sealed until you win the chocobo trainer rematch.",
+    "guideImages": ["image_0061_00.jpeg"],
+    "items": [
+      {
+        "id": "calm-lands-5000-gil",
+        "name": "5,000 Gil",
+        "icon": "gil",
+        "location": "Southeast corner of the central plain, treasure chest",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-10000-gil-se",
+        "name": "10,000 Gil",
+        "icon": "gil",
+        "location": "Southeast corner of the central plain, second treasure chest",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-lv2-key-sphere-post",
+        "name": "Lv. 2 Key Sphere",
+        "icon": "lv2-key-sphere",
+        "location": "Treasure chest behind the Al Bhed trading outpost",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-fortune-sphere",
+        "name": "Fortune Sphere",
+        "icon": "fortune-sphere",
+        "location": "Calm Lands plateau",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-flexible-arm",
+        "name": "Flexible Arm",
+        "icon": "flexible-arm",
+        "location": "Calm Lands plateau",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-mp-sphere",
+        "name": "MP Sphere",
+        "icon": "mp-sphere",
+        "location": "Calm Lands plateau",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-magic-counter-shield",
+        "name": "Magic Counter Shield",
+        "icon": "shield",
+        "location": "Hovering vendor on the plateau — MISSABLE: vendor disappears after gorge story event",
+        "missable": true
+      },
+      {
+        "id": "calm-lands-primer-xxiii",
+        "name": "Al Bhed Primer Vol. XXIII",
+        "icon": "al-bhed-primer",
+        "location": "Northwest cliff edge — search carefully before leaving",
+        "missable": true
+      },
+      {
+        "id": "calm-lands-caladbolg",
+        "name": "Caladbolg (Tidus's Celestial Weapon)",
+        "icon": "caladbolg",
+        "location": "Northwest corner chest — requires winning the Catcher Chocobo rematch to unlock",
+        "missable": false
+      }
+    ]
+  },
+  {
+    "name": "Monster Arena",
+    "prose": "The Monster Arena is tucked into a crack in the eastern cliff wall. Agree to help the owner and he sells weapons with the Capture ability — you need one equipped to land the killing blow on a fiend to capture it. Skip Capture gear for Yuna and Lulu (non-physical attackers). Auron and Wakka are the best pair; customise Auron's with Piercing and Wakka's with a status-inflicting ability. Your first quest is to capture all nine Calm Lands species: Nebiros, Ogre, Skoll, Defender, Coeurl, Magic Urn, Thorn, Valaha, and Mech Hunter — some only appear near the Al Bhed post, others only in the northwest. Completing this unlocks the Nirvana chest (requires Celestial Mirror) and awards 60 Farplane Winds. Capturing fiends from every region of Spira feeds the Arena Creations ladder.",
+    "guideImages": ["image_0062_00.jpeg", "image_0062_01.jpeg"],
+    "items": [
+      {
+        "id": "calm-lands-nirvana",
+        "name": "Nirvana (Yuna's Celestial Weapon)",
+        "icon": "nirvana",
+        "location": "Monster Arena chest — unlocked by capturing all nine Calm Lands species; requires Celestial Mirror to open",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-farplane-wind-x60",
+        "name": "Farplane Wind x60",
+        "icon": "farplane-wind",
+        "location": "Monster Arena owner reward for capturing all nine Calm Lands species",
+        "missable": false
+      }
+    ]
+  },
+  {
+    "name": "The Gorge",
+    "prose": "After the Defender X fight, instead of crossing the bridge toward Mt. Gagazet, descend the steep path on the bridge's right side into the gorge below. At the bottom, head east along the gorge floor to find the Rusty Sword — the first step in obtaining Auron's Celestial Weapon, Masamune. Head west from the gorge bottom to reach the entrance to the Cavern of the Stolen Fayth, an optional dungeon containing the aeon Yojimbo and Al Bhed Primer Vol. XXV. Bring at least 200,000 gil if you plan to negotiate for Yojimbo. Recruit the blitzball player Duren here — he is MISSABLE if you continue to Zanarkand without speaking to him.",
+    "guideImages": ["image_0062_00.jpeg"],
+    "items": [
+      {
+        "id": "calm-lands-rusty-sword",
+        "name": "Rusty Sword",
+        "icon": "rusty-sword",
+        "location": "Gorge floor, east side — first step toward Auron's Celestial Weapon (Masamune)",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-primer-xxv",
+        "name": "Al Bhed Primer Vol. XXV",
+        "icon": "al-bhed-primer",
+        "location": "Inside the Cavern of the Stolen Fayth (optional area, gorge west entrance)",
+        "missable": false
+      },
+      {
+        "id": "calm-lands-duren",
+        "name": "Duren (Blitzball Recruit)",
+        "icon": "blitzball",
+        "location": "The Gorge — MISSABLE: must recruit before proceeding to Zanarkand",
+        "missable": true
+      }
+    ]
+  }
+]

@@ -9,22 +9,225 @@
   "sgTip": "Buy the Caladbolg (Tidus's Celestial Weapon) after beating the Chocobo Trainer — the NW area chest becomes accessible. Start capturing fiends with Capture weapons from the Monster Arena owner.",
   "subLocations": [
     {
-      "name": "Calm Lands",
-      "prose": "Buy the Magic Counter Shield from the Hover Vendor the moment you arrive — it's only available on your first visit and is the only reliable source of the Magic Counter ability on armor. Head east along the base of the cliff to find the Monster Arena; the owner sells Capture weapons and kicks off the capture quest. Primer XXIII is in the extreme northwest corner near the cliff edge, close to the Chocobo Trainer.",
-      "guideImages": ["image_0061_00.jpeg", "image_0062_00.jpeg", "image_0062_01.jpeg"],
+      "name": "Calm Lands (Plateau)",
+      "prose": "The Calm Lands open into a vast plateau crisscrossed by fiends used in the Monster Arena capture quest. On arrival, visit Rin's Travel Agency for armaments, then head southeast to register at the Monster Arena before exploring — that way you can capture as you go. A hovering vendor near the plateau sells the Magic Counter Shield; buy it now if you want it, because once you trigger the story event at the gorge the vendor vanishes permanently. The Al Bhed Primer Vol. XXIII sits at the extreme northwest cliff edge — search carefully before leaving. The Caladbolg chest is also in the northwest corner but is sealed until you win the chocobo trainer rematch.",
+      "guideImages": ["image_0061_00.jpeg"],
       "items": [
-        { "id": "calmlands-primer-xxiii", "name": "Al Bhed Primer Vol. XXIII", "icon": "primer", "missable": false },
-        { "id": "calmlands-magic-counter-shield", "name": "Magic Counter Shield (Hover Vendor — FIRST VISIT ONLY)", "icon": "shield", "missable": true },
-        { "id": "calmlands-caladbolg", "name": "Caladbolg (Tidus's Celestial Weapon)", "icon": "caladbolg", "missable": false }
+        {
+          "id": "calm-lands-5000-gil",
+          "name": "5,000 Gil",
+          "icon": "gil",
+          "location": "Southeast corner of the central plain, treasure chest",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-10000-gil-se",
+          "name": "10,000 Gil",
+          "icon": "gil",
+          "location": "Southeast corner of the central plain, second treasure chest",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-lv2-key-sphere-post",
+          "name": "Lv. 2 Key Sphere",
+          "icon": "lv2-key-sphere",
+          "location": "Treasure chest behind the Al Bhed trading outpost",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-fortune-sphere",
+          "name": "Fortune Sphere",
+          "icon": "fortune-sphere",
+          "location": "Calm Lands plateau",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-flexible-arm",
+          "name": "Flexible Arm",
+          "icon": "flexible-arm",
+          "location": "Calm Lands plateau",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-mp-sphere",
+          "name": "MP Sphere",
+          "icon": "mp-sphere",
+          "location": "Calm Lands plateau",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-magic-counter-shield",
+          "name": "Magic Counter Shield",
+          "icon": "shield",
+          "location": "Hovering vendor on the plateau — MISSABLE: vendor disappears after gorge story event",
+          "missable": true
+        },
+        {
+          "id": "calm-lands-primer-xxiii",
+          "name": "Al Bhed Primer Vol. XXIII",
+          "icon": "al-bhed-primer",
+          "location": "Northwest cliff edge — search carefully before leaving",
+          "missable": true
+        },
+        {
+          "id": "calm-lands-caladbolg",
+          "name": "Caladbolg (Tidus's Celestial Weapon)",
+          "icon": "caladbolg",
+          "location": "Northwest corner chest — requires winning the Catcher Chocobo rematch to unlock",
+          "missable": false
+        }
+      ]
+    },
+    {
+      "name": "Monster Arena",
+      "prose": "The Monster Arena is tucked into a crack in the eastern cliff wall. Agree to help the owner and he sells weapons with the Capture ability — you need one equipped to land the killing blow on a fiend to capture it. Skip Capture gear for Yuna and Lulu (non-physical attackers). Auron and Wakka are the best pair; customise Auron's with Piercing and Wakka's with a status-inflicting ability. Your first quest is to capture all nine Calm Lands species: Nebiros, Ogre, Skoll, Defender, Coeurl, Magic Urn, Thorn, Valaha, and Mech Hunter — some only appear near the Al Bhed post, others only in the northwest. Completing this unlocks the Nirvana chest (requires Celestial Mirror) and awards 60 Farplane Winds. Capturing fiends from every region of Spira feeds the Arena Creations ladder.",
+      "guideImages": ["image_0062_00.jpeg", "image_0062_01.jpeg"],
+      "items": [
+        {
+          "id": "calm-lands-nirvana",
+          "name": "Nirvana (Yuna's Celestial Weapon)",
+          "icon": "nirvana",
+          "location": "Monster Arena chest — unlocked by capturing all nine Calm Lands species; requires Celestial Mirror to open",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-farplane-wind-x60",
+          "name": "Farplane Wind x60",
+          "icon": "farplane-wind",
+          "location": "Monster Arena owner reward for capturing all nine Calm Lands species",
+          "missable": false
+        }
+      ]
+    },
+    {
+      "name": "The Gorge",
+      "prose": "After the Defender X fight, instead of crossing the bridge toward Mt. Gagazet, descend the steep path on the bridge's right side into the gorge below. The Rusty Sword (Auron's Celestial Weapon prerequisite) and Al Bhed Primer Vol. XXV are found inside the Cavern of the Stolen Fayth — see the Cavern of the Stolen Fayth optional area below for details on both. Recruit the blitzball player Duren at the gorge bottom — he is MISSABLE if you continue to Zanarkand without speaking to him.",
+      "guideImages": ["image_0062_00.jpeg"],
+      "items": [
+        {
+          "id": "calm-lands-duren",
+          "name": "Duren (Blitzball Recruit)",
+          "icon": "blitzball",
+          "location": "The Gorge — MISSABLE: must recruit before proceeding to Zanarkand",
+          "missable": true
+        }
       ]
     }
   ],
   "bosses": [
     {
       "slug": "defender-x",
-      "strategy": "Uses Taunt to force all attacks onto one character. Armor Break followed by physical attacks works well. Provoke with Tidus to protect weaker characters. Very high HP but no threatening mechanics. HP: 64,000."
+      "strategy": "Defender X (64,000 HP) blocks the northeast exit to Mt. Gagazet. It has no elemental weakness and is immune to Demi and most status ailments — raw damage only. Open with Haste/Hastega on the party, then Auron's Armor Break (not immune) to strip its high Defence. Use Provoke on Auron or Kimahri to redirect Defender X's attacks away from weaker party members. Heal with Yuna as needed. Steal Lunar Curtains (useful for armoring). Note: Mighty Guard is NOT learned via Lancet here — pick it up from Biran Ronso at Mt. Gagazet instead."
     }
   ],
   "cloister": null,
-  "optionalAreas": []
+  "optionalAreas": [
+    {
+      "name": "Remiem Temple",
+      "prose": "Ride a Chocobo to the southern edge of the Calm Lands, head east along the cliff above the two treasure chests, then examine the Chocobo Feather on the ground while mounted — your Chocobo leaps to the hidden eastern path below. Run up to Remiem Temple. Al Bhed Primer Vol. XXIV is on the ground just west of the temple entrance alongside a sphere that explains the racing basics.\n\nBelgemine is inside for her full aeon gauntlet — each of her aeons is significantly stronger than the versions you fought earlier. Defeating Bahamut here is required to unlock the Magus Sisters later. Defeating all eight of Belgemine's aeons earns the Moon Sigil, the crest needed to fully power up Yuna's Nirvana.\n\nThe Chocobo Race is outside, to the right of the temple. First race: ignore chests and shortcuts — just outrun the champion Chocobo down the spiral ramp course. Winning earns the Cloudy Mirror, which you need to activate every Celestial Weapon in the game. Subsequent races: hit as many chests as possible (they also function as shortcuts) and avoid all poles — touching even one limits your prize to a single Potion regardless of how many chests you opened.",
+      "guideImages": ["image_0063_00.jpeg"],
+      "items": [
+        {
+          "id": "calm-lands-primer-xxiv",
+          "name": "Al Bhed Primer Vol. XXIV — west of Remiem Temple entrance",
+          "icon": "primer",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-cloudy-mirror",
+          "name": "Cloudy Mirror — win first Chocobo Race (required to activate all Celestial Weapons)",
+          "icon": "cloudy-mirror",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-remiem-elixir",
+          "name": "Elixir — race prize (1 chest, 0 poles)",
+          "icon": "elixir",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-remiem-megalixir",
+          "name": "Megalixir — race prize (2 chests, 0 poles)",
+          "icon": "megalixir",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-remiem-wings",
+          "name": "Wings to Discovery x30 — race prize (3 chests, 0 poles)",
+          "icon": "wings-to-discovery",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-remiem-pendulum",
+          "name": "Pendulum x30 — race prize (4 chests, 0 poles)",
+          "icon": "pendulum",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-remiem-three-stars",
+          "name": "Three Stars x60 — race prize (5 chests, 0 poles)",
+          "icon": "three-stars",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-moon-sigil",
+          "name": "Moon Sigil (Yuna — defeat all 8 of Belgemine's aeons)",
+          "icon": "moon-sigil",
+          "missable": false
+        }
+      ],
+      "notes": [
+        "Each chocobo race prize (except the base Potion for 0 chests) can only be claimed once — do not leave mid-run.",
+        "Defeat Belgemine's Bahamut here before the Airship to unlock the Magus Sisters recruitment.",
+        "Belgemine awards the Aeon's Soul even if you lose each individual duel — the Moon Sigil requires winning all eight."
+      ]
+    },
+    {
+      "name": "Celestial Mirror Activation (Macalania Woods)",
+      "prose": "After winning the Cloudy Mirror at Remiem Temple, you can upgrade it into the Celestial Mirror — required to open every Celestial Weapon chest in the game. The activation site is back in Macalania Woods, which requires leaving the Calm Lands.\n\nWarning: departing the Calm Lands now means losing your waiting Chocobo and facing a long walk back to Mt. Gagazet on return. Many players prefer to wait until after they receive the Airship and can fast-travel freely.\n\nIf doing it now: enter Macalania Woods and pass the Jecht's Sphere spot. Speak to the woman standing alone — she has lost her husband. Backtrack to the campsite at the north end of the woods to find the husband. Return to the wife; her child is also missing. Follow the trail of rainbow-coloured light upward (the path illuminates as you walk it) and continue to the top where a giant flower glows. Examine the flower with the Cloudy Mirror in your inventory to transform it into the Celestial Mirror.",
+      "guideImages": [],
+      "items": [
+        {
+          "id": "calm-lands-celestial-mirror",
+          "name": "Celestial Mirror — examine giant flower atop Macalania Woods rainbow path (requires Cloudy Mirror)",
+          "icon": "celestial-mirror",
+          "missable": false
+        }
+      ],
+      "notes": [
+        "The Celestial Mirror is required to open every Celestial Weapon chest in the game — do not skip this.",
+        "Can be done any time after obtaining the Cloudy Mirror, including post-Airship."
+      ]
+    },
+    {
+      "name": "Cavern of the Stolen Fayth",
+      "prose": "After the Defender X fight, instead of crossing the bridge north to Mt. Gagazet, descend the steep path on the right (east) side of the bridge into the gorge below. At the bottom, head east along the gorge floor to find the Rusty Sword embedded in the ground — this is the first step in obtaining Auron's Celestial Weapon, the Masamune. Note its location; you will return here after getting the Airship to retrieve the sword with a Celestial Mirror.\n\nThe Cavern entrance is to the west along the gorge floor. The dungeon is optional but houses Yojimbo, a powerful aeon who attacks for pay. Al Bhed Primer Vol. XXV is found inside the cavern. The enemies here are tough — come prepared if you plan to explore the full depth.\n\nYojimbo recruitment: when he asks your purpose, choose 'To defeat the most powerful enemies' — this is the correct answer that lowers his asking price. His first offer will be high; budget at least 200,000 Gil before entering. Counter with roughly half his initial price plus 1 Gil and negotiate from there. His Zanmato ability can one-shot any enemy or boss in the game regardless of HP, making him one of the most powerful tools available for difficult content.",
+      "guideImages": ["image_0064_00.jpeg"],
+      "items": [
+        {
+          "id": "calm-lands-rusty-sword",
+          "name": "Rusty Sword — gorge floor, east of bridge descent (Auron's Celestial Weapon prerequisite)",
+          "icon": "rusty-sword",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-primer-xxv",
+          "name": "Al Bhed Primer Vol. XXV — inside Cavern of the Stolen Fayth",
+          "icon": "primer",
+          "missable": false
+        },
+        {
+          "id": "calm-lands-yojimbo",
+          "name": "Yojimbo (Aeon) — recruit by negotiating; need at least 200,000 Gil",
+          "icon": "yojimbo",
+          "missable": false
+        }
+      ],
+      "notes": [
+        "The Rusty Sword is in the gorge east of the bridge, before the Cavern entrance to the west — do not miss it while descending.",
+        "Budget at least 200,000 Gil for Yojimbo's asking price before attempting negotiation.",
+        "Full Cavern item list and Yojimbo negotiation strategy are covered in the Side Quests section."
+      ]
+    }
+  ]
 }
