@@ -18,20 +18,29 @@
       ]
     },
     {
+      "name": "Town Square",
+      "prose": "Climb the stairs on the right side of the town square all the way to the top — past the balcony where Luzzu and Gatta are standing — to find a chest containing 1,000 Gil. Easy to miss if you head straight for the stadium.",
+      "guideImages": [],
+      "items": [
+        { "id": "luca-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false }
+      ]
+    },
+    {
       "name": "Luca Stadium",
-      "prose": "Al Bhed Primer Vol. VI is on the floor behind the closest player in the opposing team's locker room corridor; two Hi-Potions are in a chest at the back of the same hall. Al Bhed Primer Vol. VII is in the Sphere Theater at the south end of town. Mid-tournament, Lulu/Tidus/Kimahri board the Al Bhed ship to fight Oblitzerator: use the crane Trigger Command three times (Lulu casts Thunder after each hit to exploit its weakness), then finish it off. After the blitzball final, fight your way out of the fiend-invaded stadium — Auron arrives and formally joins the party.",
+      "prose": "Al Bhed Primer Vol. VI is on the floor behind the closest player in the opposing team's locker room corridor; two Hi-Potions are in a chest at the back of the same hall. Al Bhed Primer Vol. VII is in the Sphere Theater at the south end of town. Mid-tournament, Lulu/Tidus/Kimahri board the Al Bhed ship to fight Oblitzerator: cast Thunder on the crane three times to charge it, then use Tidus's Trigger Command to activate it — the crane rips off the Oblitzerator's top half and drastically reduces its HP. After the blitzball final, fight your way out of the fiend-invaded stadium — Auron arrives and formally joins the party. Winning the match against the Luca Goers rewards a Strength Sphere.",
       "guideImages": ["image_0036_00.jpeg", "image_0036_01.jpeg"],
       "items": [
         { "id": "luca-primer-vi", "name": "Al Bhed Primer Vol. VI", "icon": "primer", "missable": false },
         { "id": "luca-2-hi-potions", "name": "Hi-Potion ×2", "icon": "hi-potion", "missable": false },
-        { "id": "luca-primer-vii", "name": "Al Bhed Primer Vol. VII", "icon": "primer", "missable": false }
+        { "id": "luca-primer-vii", "name": "Al Bhed Primer Vol. VII", "icon": "primer", "missable": false },
+        { "id": "luca-strength-sphere", "name": "Strength Sphere (blitzball win reward)", "icon": "strength-sphere", "missable": false }
       ]
     }
   ],
   "bosses": [
     {
       "slug": "oblitzerator",
-      "strategy": "At this point Tidus and Kimahri rely on physical attacks while Lulu is still casting low-level spells — this is a difficult fight without the crane. Cast Haste on Lulu first if Tidus has learned it, then have Lulu cast Thunder to trigger the crane Trigger Command (it appears after Thunder hits). The crane deals roughly 5,000 damage — close to killing Oblitzerator in one hit. After the crane fires, finish it off with Thunder spells and physical attacks. Don't waste Overdrives before the crane; the fight is much easier once the crane hits."
+      "strategy": "At this point Tidus and Kimahri rely on physical attacks while Lulu is still casting low-level spells — this is a difficult fight without the crane. Cast Haste on Lulu first if Tidus has learned it, then have Lulu cast Thunder on the crane (not the boss) three times to charge it. After the third Thunder hit, Tidus's Trigger Command becomes available — use it to activate the crane. The crane deals roughly 5,000 damage, ripping off the Oblitzerator's top half. After the crane fires, finish it off with Thunder spells and physical attacks. Don't waste Overdrives before the crane; the fight is much easier once the crane hits."
     }
   ],
   "cloister": null,

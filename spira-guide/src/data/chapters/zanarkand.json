@@ -9,7 +9,9 @@
       "name": "Dream Zanarkand",
       "prose": "You're at a blitzball match — stop and talk to the two women and the kids near Tidus's residence; one of them gives you two Potions for promising a ticket. The match itself is scripted: enjoy it, then follow Auron when Sin hits. The Sinspawn Ammes fight at the stadium is your first real combat — Auron's Overdrive fires automatically, then you finish it off.",
       "guideImages": ["image_0023_00.jpeg"],
-      "items": []
+      "items": [
+        { "id": "zanarkand-potion-x2", "name": "Potion ×2", "icon": "potion", "missable": false }
+      ]
     }
   ],
   "bosses": [

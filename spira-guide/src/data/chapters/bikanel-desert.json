@@ -1,25 +1,64 @@
 {
   "slug": "bikanel-desert",
-  "missables": [],
+  "missables": [
+    "Mercury Crest — in a small western alcove off the sand pit region (Desert West). Required for Tidus's Caladbolg. Easy to walk past.",
+    "Al Bhed Primer Vol. XVII — inside a building in the northwest zone of Central Sanubia. Missable once you leave for Home.",
+    "Al Bhed Primer Vol. XVIII — near the northeast exit sign in Central Sanubia. Collect before backtracking to the west fork."
+  ],
   "party": ["Tidus", "Wakka", "Rikku"],
   "oaka": null,
   "sgTip": null,
   "subLocations": [
     {
-      "name": "Sanubia Desert West",
+      "name": "Oasis",
       "prose": "Tidus wakes up alone in a desert oasis — swim the lower left side of the pool before climbing out to grab four Remedies from a submerged chest. The Zu you'll encounter heading north is a serious threat: cast Slow on it and Haste on Tidus, then use Delay Attacks. Follow the path northeast to reunite with Wakka, then continue to find the other party members scattered across the dunes. As you piece the party back together it becomes clear this is the approach to Al Bhed Home — Rikku's people and the connection to Cid are both about to pay off.",
       "guideImages": ["image_0052_00.jpeg"],
       "items": [
-        { "id": "bikanel-desert-primer-xvii", "name": "Al Bhed Primer Vol. XVII", "icon": "primer", "missable": false },
-        { "id": "bikanel-mercury-crest", "name": "Mercury Crest (Rikku's Godhand)", "icon": "mercury-crest", "missable": false }
+        { "id": "bikanel-desert-oasis-remedy", "name": "Remedy x4 (submerged chest — swim to lower-left corner before climbing out)", "icon": "remedy", "missable": false },
+        { "id": "bikanel-desert-oasis-al-bhed-potion", "name": "Al Bhed Potion x8 (first aid kit near Wakka's tent)", "icon": "al-bhed-potion", "missable": false }
       ]
     },
     {
-      "name": "Sanubia Desert East",
+      "name": "Sanubia Desert — East",
       "prose": "The desert splits into two forks here — left has stronger fiends, right has weaker ones, but both have items. Al Bhed signs point the way; the northern area has chests with Megalixirs and Teleport Spheres, but some are rigged Sandragora pits. Kill Sandragoras with fire and cure Confusion immediately with Remedies. Rikku's Al Bhed Potions are invaluable here since Yuna isn't in the party — use them freely. Zu enemies are a persistent hazard throughout this section — they're flying-type so only Wakka's attacks are reliable, and they inflict Stop and Slow, so equip Stopproof armor if you have it.",
       "guideImages": ["image_0053_00.jpeg"],
       "items": [
-        { "id": "bikanel-desert-primer-xviii", "name": "Al Bhed Primer Vol. XVIII", "icon": "primer", "missable": false }
+        { "id": "bikanel-desert-east-tent-right", "name": "Hi-Potion x4 (chest — right of first tent)", "icon": "hi-potion", "missable": false },
+        { "id": "bikanel-desert-east-tent-left", "name": "Hi-Potion x4 (chest — left of first tent)", "icon": "hi-potion", "missable": false },
+        { "id": "bikanel-desert-east-hi-potion-alcove", "name": "Hi-Potion x4 (western alcove, near structure)", "icon": "hi-potion", "missable": false },
+        { "id": "bikanel-desert-east-ether", "name": "Ether ×2", "icon": "ether", "missable": false, "notes": "Chest at shanty structure — East Sanubia" }
+      ]
+    },
+    {
+      "name": "Sanubia Desert — Central",
+      "prose": "The central sands are wider and easier to get turned around in — use the minimap and watch for large grey spots marking debris piles that hide treasure chests. The northwest zone has a cluster of buildings; check all of them. Primer XVII is inside the northeast structure of the northwest zone — do not leave the desert without it.",
+      "guideImages": [],
+      "items": [
+        { "id": "bikanel-desert-central-hi-potion-se", "name": "Hi-Potion x4 (chest — structure southeast of Save Sphere)", "icon": "hi-potion", "missable": false },
+        { "id": "bikanel-desert-central-x-potion-ridge", "name": "X-Potion x2 (chest — rock ridge southwest of Save Sphere)", "icon": "x-potion", "missable": false },
+        { "id": "bikanel-desert-central-mega-potion-west", "name": "Mega-Potion x2 (chest — far west corner)", "icon": "mega-potion", "missable": false },
+        { "id": "bikanel-desert-central-al-bhed-potion", "name": "Al Bhed Potion x8 (chest — right of Save Sphere)", "icon": "al-bhed-potion", "missable": false },
+        { "id": "bikanel-desert-central-elixir", "name": "Elixir (chest — southwest corner of northwest zone)", "icon": "elixir", "missable": false },
+        { "id": "bikanel-desert-central-nwzone-top", "name": "Hi-Potion x4 (chest — central structure of NW zone, top)", "icon": "hi-potion", "missable": false },
+        { "id": "bikanel-desert-central-nwzone-bottom", "name": "Mega-Potion x3 (chest — central structure of NW zone, bottom)", "icon": "mega-potion", "missable": false },
+        { "id": "bikanel-desert-primer-xviii", "name": "Al Bhed Primer Vol. XVIII (near northeast exit sign — collect before heading west)", "icon": "primer", "missable": true },
+        { "id": "bikanel-desert-primer-xvii", "name": "Al Bhed Primer Vol. XVII (inside northeast structure of NW zone building)", "icon": "primer", "missable": true }
+      ]
+    },
+    {
+      "name": "Sanubia Desert — West",
+      "prose": "The west fork leads to the northern sand pit region — travel along the western wall to find chests at the rim and bottom of sinkholes. A small alcove branches further west from the main sinkhole path; the Mercury Crest is inside a sinkhole in that alcove. Do not skip this branch. Sandragoras guard some of the best chests here — use fire magic and cure Confusion with Remedies.",
+      "guideImages": [],
+      "items": [
+        { "id": "bikanel-desert-west-lv2-key-sphere", "name": "Lv. 2 Key Sphere (chest — inside nearest building at fork)", "icon": "lv2-key-sphere", "missable": false },
+        { "id": "bikanel-desert-west-gil", "name": "10,000 Gil (chest — inside nearest building at fork)", "icon": "gil", "missable": false },
+        { "id": "bikanel-desert-west-megalixir", "name": "Megalixir x3 (chest — left sinkhole on main path)", "icon": "megalixir", "missable": false },
+        { "id": "bikanel-desert-west-teleport-sphere", "name": "Teleport Sphere x2 (chest — right sinkhole on main path)", "icon": "teleport-sphere", "missable": false },
+        { "id": "bikanel-desert-west-alcove1-rocks", "name": "X-Potion x2 (chest — first western alcove, between rocks)", "icon": "x-potion", "missable": false },
+        { "id": "bikanel-mercury-crest", "name": "Mercury Crest — MISSABLE (first western alcove sinkhole; required for Tidus's Caladbolg)", "icon": "mercury-crest", "missable": true },
+        { "id": "bikanel-desert-west-alcove2-hidden", "name": "Mega-Potion x3 (chest — second western alcove, hidden behind rock)", "icon": "mega-potion", "missable": false },
+        { "id": "bikanel-desert-west-alcove2-north", "name": "X-Potion x2 (chest — second western alcove, north side)", "icon": "x-potion", "missable": false },
+        { "id": "bikanel-desert-west-elixir", "name": "Elixir (chest — western corner of the map, end of fork)", "icon": "elixir", "missable": false }
       ]
     }
   ],

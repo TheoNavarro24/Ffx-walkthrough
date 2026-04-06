@@ -1,7 +1,8 @@
 {
   "slug": "kilika",
   "missables": [
-    "Red Armlet — Destruction Sphere chest, Kilika Temple. Cannot return to Kilika Temple after leaving — this is permanently missable."
+    "Red Armlet — Destruction Sphere chest, Kilika Temple. Cannot return to Kilika Temple after leaving — this is permanently missable.",
+    "NulBlaze Shield — given by the first Crusaders sentry in Kilika Woods only if Lord Ochu has already been defeated. Speak to the sentry before leaving the chapter."
   ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri"],
   "oaka": { "meeting": true, "cumulativeTarget": 1001 },
@@ -25,6 +26,7 @@
         { "id": "kilika-2-mana-spheres", "name": "Mana Sphere ×2", "icon": "mana-sphere", "missable": false },
         { "id": "kilika-scout", "name": "Scout (Wakka's blitzball)", "icon": "scout", "missable": false },
         { "id": "kilika-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
+        { "id": "kilika-nulblaze-shield", "name": "NulBlaze Shield (Crusaders sentry — only if Lord Ochu already defeated)", "icon": "nulblaze-shield", "missable": true },
         { "id": "kilika-luck-sphere", "name": "Luck Sphere", "icon": "luck-sphere", "missable": false },
         { "id": "kilika-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
         { "id": "kilika-elixir", "name": "Elixir (from Luzzu after Lord Ochu — optional)", "icon": "elixir", "missable": false }

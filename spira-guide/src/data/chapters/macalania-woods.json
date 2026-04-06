@@ -1,6 +1,10 @@
 {
   "slug": "macalania-woods",
-  "missables": [],
+  "missables": [
+    "Al Bhed Primer Vol. XV — ground item near O'aka mid-woods; easy to walk past.",
+    "Kimahri Lancet — use Lancet on a Chimera here to learn Aqua Breath (primary opportunity).",
+    "Clasko / Friend Sphere — suggest chocobo breeding on this visit to unlock a later reward."
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
   "sgTip": "Get Haste on Tidus before the Crawler fight in Lake Macalania — it transforms the fight. Use Lv. 1 Key Spheres to unlock the node if needed.",
@@ -10,7 +14,34 @@
       "prose": "The woods maze branches frequently — there's a hidden Sleepy Cait Sith behind a tree trunk early on the left. O'aka is set up on the main Lake Road path; the butterfly chase mini-games in the clearing sections are optional but reward a useful item for completing both. Primer XVI is found later with Clasko near the Lake Macalania Travel Agency — the woods themselves just have chests and field encounters. Ice Flan and Snow Flan enemies throughout these woods absorb Ice — use Fire spells (Lulu's Fira) or Tidus's physical attacks instead; Wasp enemies can inflict Poison, so keep Antidotes stocked.",
       "guideImages": ["image_0048_00.jpeg", "image_0048_01.jpeg", "image_0049_00.jpeg"],
       "items": [
-        { "id": "macalania-woods-primer-xv", "name": "Al Bhed Primer Vol. XV", "icon": "primer", "missable": false }
+        { "id": "macalania-woods-primer-xv", "name": "Al Bhed Primer Vol. XV", "icon": "primer", "missable": false },
+        { "id": "macalania-woods-sleepy-cait-sith", "name": "Sleepy Cait Sith", "qty": 1, "icon": "item", "note": "Hidden behind tree trunk in middle of south S-bend", "missable": false },
+        { "id": "macalania-woods-2000-gil", "name": "2,000 Gil", "qty": 1, "icon": "gil", "note": "Chest near north exit of south area", "missable": false },
+        { "id": "macalania-woods-phoenix-down-3", "name": "Phoenix Down", "qty": 3, "icon": "item", "note": "Chest hidden behind tree before spiral down (central area)", "missable": false },
+        { "id": "macalania-woods-remedy-1", "name": "Remedy", "qty": 1, "icon": "item", "note": "Chest hidden behind tree on west side (north area)", "missable": false }
+      ]
+    },
+    {
+      "name": "Butterfly Mini-Game",
+      "prose": "Approach the color-shifting butterfly to begin the chase. Touch all 7 blue butterflies before time runs out — avoid red butterflies as they trigger enemy battles. Leave and return to reset if you fail. A second area unlocks after clearing the first. Return after Spherimorph for harder variants with better prizes; the Saturn Sigil reward requires coming back post-airship.",
+      "items": [
+        { "id": "macalania-woods-mp-sphere", "name": "MP Sphere", "qty": 1, "icon": "sphere", "note": "Butterfly chase Area 1 reward (7 blue butterflies)", "missable": false },
+        { "id": "macalania-woods-ether", "name": "Ether", "qty": 1, "icon": "item", "note": "Butterfly chase Area 2 reward", "missable": false }
+      ]
+    },
+    {
+      "name": "Lake Macalania Agency Front",
+      "prose": "After Spherimorph, the party reaches the Travel Agency outside Lake Macalania. Clasko is here — suggest chocobo breeding to him now to unlock a Friend Sphere reward later. A chest with 4,000 Gil sits nearby but Clasko blocks it until events progress. Al Bhed Primer Vol. XVI is on the ground by the agency entrance. Save before heading inside — the road ahead leads straight to another boss fight with no turning back.",
+      "items": [
+        { "id": "macalania-woods-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "qty": 1, "icon": "primer", "note": "Outside Travel Agency near Clasko", "missable": false },
+        { "id": "macalania-woods-4000-gil", "name": "4,000 Gil", "qty": 1, "icon": "gil", "note": "Chest at Agency front — Clasko blocks it initially; obtainable after he moves", "missable": false }
+      ]
+    },
+    {
+      "name": "Spherimorph (Boss Drop)",
+      "prose": "After defeating Spherimorph, it drops Jecht's Sphere — a story item that triggers Auron's first Overdrive: Shooting Star. Equip non-elemental weapons before the fight to avoid accidentally healing it.",
+      "items": [
+        { "id": "jecht-sphere-9", "name": "Jecht's Sphere (Macalania Woods)", "qty": 1, "icon": "jecht-sphere", "note": "Dropped by Spherimorph — unlocks Auron's Overdrive: Shooting Star", "missable": false }
       ]
     }
   ],

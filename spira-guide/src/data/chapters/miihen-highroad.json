@@ -1,6 +1,9 @@
 {
   "slug": "miihen-highroad",
-  "missables": [],
+  "missables": [
+    "Al Bhed Primer Vol. IX — chocobo-only ledge near Heat Lance; requires defeating Chocobo Eater and riding north. Point of no return when leaving for Djose.",
+    "Mars Crest — bottom of Oldroad South gorge; required for Auron's Celestial Weapon. Point of no return when leaving Mi'ihen."
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
   "sgTip": "Auron is now permanent. Prioritize Power Break and Armor Break on his grid — they're invaluable from here through the endgame.",
@@ -10,6 +13,7 @@
       "prose": "Most people on the Highroad are happy to hand things over — talk to everyone. Maechen on the left side gives the historian's spiel if you want the lore. Aerial enemies like the Zu are best handled by Wakka; use Lulu to blind the Dual Horns. After meeting the Chocobo Knights, drop into the right-side alcove to fight Belgemine for the first time — win with Valefor's Energy Ray and she hands over an Echo Ring. Dual Horns can inflict Darkness and have high physical defence, so magic is more efficient — Lulu's Thunder cuts through most highroad fiends quickly; also use Kimahri's Lancet on a Funguar here to learn Bad Breath.",
       "guideImages": ["image_0037_00.jpeg", "image_0037_01.jpeg"],
       "items": [
+        { "id": "miihen-hi-potion-south", "name": "Hi-Potion ×1 (NPC, south end)", "icon": "hi-potion", "missable": false },
         { "id": "miihen-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
         { "id": "miihen-red-ring", "name": "Red Ring (Yuna)", "icon": "red-ring", "missable": false },
         { "id": "miihen-3-softs", "name": "Soft ×3", "icon": "soft", "missable": false },
@@ -19,18 +23,33 @@
         { "id": "miihen-lv1-key-sphere", "name": "Lv. 1 Key Sphere", "icon": "lv1-key-sphere", "missable": false },
         { "id": "miihen-2000-gil", "name": "2,000 Gil", "icon": "gil", "missable": false },
         { "id": "miihen-4-antidotes", "name": "Antidote ×4", "icon": "antidote", "missable": false },
-        { "id": "miihen-600-gil", "name": "600 Gil", "icon": "gil", "missable": false }
+        { "id": "miihen-600-gil", "name": "600 Gil", "icon": "gil", "missable": false },
+        { "id": "miihen-ether", "name": "Ether ×1 (NPC near Crusaders' wagon)", "icon": "ether", "missable": false },
+        { "id": "miihen-eye-drops", "name": "Eye Drops ×3 (chest before Rin's Agency)", "icon": "eye-drops", "missable": false }
       ]
     },
     {
       "name": "Rin's Agency / Newroad",
-      "prose": "Rin introduces himself on the way out and hands over Primer VIII automatically. After defeating the Chocobo Eater, borrow Rin's chocobo — it lets you skip encounters and reach a feather-marked ledge north of the bridges for the Heat Lance, plus Primer IX is on the ground nearby. The Mars Crest is a detour back to Oldroad South, but it's not missable — you can grab it via airship later if you skip it now. Raldo and Ipiria in this stretch are physically tanky, so Water and Thunder magic cuts through them faster than physical attacks; steal Remedies from Floating Death (the flying eye enemies) for a cheap cure to the status effects this stretch inflicts.",
+      "prose": "Rin introduces himself on the way out and hands over Primer VIII automatically. A shopper inside the agency gives a Lv. 1 Key Sphere — speak to them before leaving. After defeating the Chocobo Eater, Rin hands over Mega-Potions and a free chocobo. Ride it north through the bridges: a yellow chocobo feather at the peak of the bend lets you leap to the Heat Lance chest; Primer IX is on the ground in the same area. A second chest at the north end near the child soldiers holds Hi-Potions. Raldo and Ipiria in this stretch are physically tanky, so Water and Thunder magic cuts through them faster than physical attacks; steal Remedies from Floating Death (the flying eye enemies) for a cheap cure to the status effects this stretch inflicts.",
       "guideImages": ["image_0039_00.jpeg"],
       "items": [
+        { "id": "miihen-lv1-key-sphere-agency", "name": "Lv. 1 Key Sphere ×1 (NPC inside Rin's Agency)", "icon": "lv1-key-sphere", "missable": false },
         { "id": "miihen-primer-viii", "name": "Al Bhed Primer Vol. VIII (free from Rin)", "icon": "primer", "missable": false },
-        { "id": "miihen-2-mega-potions", "name": "Mega-Potion ×2", "icon": "mega-potion", "missable": false },
-        { "id": "miihen-primer-ix", "name": "Al Bhed Primer Vol. IX", "icon": "primer", "missable": false },
-        { "id": "miihen-mars-crest", "name": "Mars Crest (Auron's Masamune)", "icon": "mars-crest", "missable": false }
+        { "id": "miihen-2-mega-potions", "name": "Mega-Potion ×2 (Rin, after Chocobo Eater)", "icon": "mega-potion", "missable": false },
+        { "id": "miihen-lv1-key-sphere-victory", "name": "Lv. 1 Key Sphere ×2 (Chocobo Eater — push off cliff)", "icon": "lv1-key-sphere", "missable": false },
+        { "id": "miihen-heat-lance", "name": "Heat Lance (chocobo jump, north of bridges)", "icon": "heat-lance", "missable": false },
+        { "id": "miihen-primer-ix", "name": "Al Bhed Primer Vol. IX (chocobo area, same ledge as Heat Lance)", "icon": "primer", "missable": true },
+        { "id": "miihen-hi-potion-north", "name": "Hi-Potion ×2 (chest, north end near child soldiers)", "icon": "hi-potion", "missable": false }
+      ]
+    },
+    {
+      "name": "Mi'ihen Oldroad",
+      "prose": "Accessible only by chocobo after defeating the Chocobo Eater. Yellow feathers mark two separate chocobo-jump spots: one on the left side of the north Oldroad gorge leads to a double chest (Thunder Blade and Scout), and a second on the east side of the south gorge leads to the Fortune Sphere alcove. The Mars Crest is on foot at the very bottom of the south gorge — do not leave Mi'ihen without it. O'aka is near the Save Sphere here and accepts donations. Ipiria, Vouivre, and Thunder Flan roam the Oldroad.",
+      "items": [
+        { "id": "miihen-thunder-blade", "name": "Thunder Blade (chocobo jump, Oldroad North — left side)", "icon": "thunder-blade", "missable": false },
+        { "id": "miihen-scout", "name": "Scout (chocobo jump, Oldroad North — left side, same ledge)", "icon": "scout", "missable": false },
+        { "id": "miihen-fortune-sphere", "name": "Fortune Sphere (chocobo jump, Oldroad South — east alcove)", "icon": "fortune-sphere", "missable": false },
+        { "id": "miihen-mars-crest", "name": "Mars Crest (Auron's Masamune — Oldroad South, bottom of gorge)", "icon": "mars-crest", "missable": true }
       ]
     }
   ],

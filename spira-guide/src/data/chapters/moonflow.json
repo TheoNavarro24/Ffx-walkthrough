@@ -1,6 +1,6 @@
 {
   "slug": "moonflow",
-  "missables": [],
+  "missables": ["Al Bhed Primer Vol. XII — North Wharf platform above O'aka; cannot return after leaving for Guadosalam"],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
   "sgTip": null,
@@ -10,13 +10,38 @@
       "prose": "Head north and tangle with Kimahri's old rivals to get the X-Potion, then meet Belgemine for your second Aeon duel — she summons Ixion, so lead with Ifrit's Hellfire and heal with Fire spells if needed. Win or lose, she gives you the Summoner's Soul, which lets you teach aeons new abilities. Ochu are the worst regular enemy here — finish them quickly before they drop below half HP and start using Ochu Dance to inflict blindness, silence, and confusion on the whole party.\n\nAt the south wharf, grab the 5,000 gil chest behind Lulu before boarding the shoopuf. The crossing triggers the Extractor fight — you can only use Tidus and Wakka, so Wakka's Thunder attacks are your main damage source.",
       "guideImages": ["image_0044_00.jpeg"],
       "items": [
-        { "id": "moonflow-soft-ring", "name": "Soft Ring", "icon": "soft-ring", "missable": false },
-        { "id": "moonflow-ether", "name": "Ether", "icon": "ether", "missable": false },
-        { "id": "moonflow-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
-        { "id": "moonflow-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
-        { "id": "moonflow-variable-steel", "name": "Variable Steel", "icon": "variable-steel", "missable": false },
-        { "id": "moonflow-bright-bangle", "name": "Bright Bangle", "icon": "bright-bangle", "missable": false },
-        { "id": "moonflow-primer-xii", "name": "Al Bhed Primer Vol. XII", "icon": "primer", "missable": false }
+        { "id": "moonflow-lv1-key-sphere-a", "name": "Lv. 1 Key Sphere ×3", "icon": "lv1-key-sphere", "missable": false, "note": "Thin trail east of Shelinda (first group)" },
+        { "id": "moonflow-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false, "note": "After the Kimahri rival encounter" },
+        { "id": "moonflow-lv1-key-sphere-b", "name": "Lv. 1 Key Sphere ×3", "icon": "lv1-key-sphere", "missable": false, "note": "Alcove on the northeast path (second group)" },
+        { "id": "moonflow-magic-def-sphere", "name": "Magic Def Sphere", "icon": "magic-def-sphere", "missable": false, "note": "Narrow west detour off the northern trail before the wharf" },
+        { "id": "moonflow-dragon-scales", "name": "Dragon Scales ×2", "icon": "dragon-scales", "missable": false, "note": "Belgemine reward (win only) — teaches aeon Watera" }
+      ]
+    },
+    {
+      "name": "South Wharf",
+      "prose": "Collect both chests before speaking to the shoopuf handler — the shoopuf departs as soon as you confirm, triggering the Extractor fight automatically during the crossing.",
+      "guideImages": [],
+      "items": [
+        { "id": "moonflow-phoenix-down", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false, "note": "Chest near O'aka at the shoopuf wharf" },
+        { "id": "moonflow-5000-gil", "name": "5,000 Gil", "icon": "gil", "missable": false, "note": "Treasure chest behind Lulu at the loading zone" }
+      ]
+    },
+    {
+      "name": "North Wharf",
+      "prose": "After Rikku is rescued, head up the slope to the right of the Hypello to grab the Al Bhed Primer before leaving the area — you cannot return once you continue to Guadosalam. O'aka is here selling medicines; stock up before moving on.",
+      "guideImages": [],
+      "items": [
+        { "id": "moonflow-primer-xii", "name": "Al Bhed Primer Vol. XII", "icon": "primer", "missable": true, "note": "Platform above O'aka — MISSABLE, cannot return" },
+        { "id": "moonflow-ether", "name": "Ether", "icon": "ether", "missable": false, "note": "Treasure chest on the trail west of the North Wharf" }
+      ]
+    },
+    {
+      "name": "North Bank Road",
+      "prose": "The road north toward Guadosalam has two chests on opposite sides of the path. Rikku joins the party here permanently after the Extractor fight.",
+      "guideImages": [],
+      "items": [
+        { "id": "moonflow-antidote", "name": "Antidote ×4", "icon": "antidote", "missable": false, "note": "First chest on the right side of the road" },
+        { "id": "moonflow-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false, "note": "Chest on the left side of the path" }
       ]
     }
   ],

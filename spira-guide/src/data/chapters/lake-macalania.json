@@ -1,6 +1,11 @@
 {
   "slug": "lake-macalania",
-  "missables": [],
+  "missables": [
+    "Luck Sphere (Cloister Destruction Sphere) — must place Destruction Sphere before exiting the Cloister",
+    "Lv. 1 Key Sphere — rocky trail right side of chasm during temple escape",
+    "Lv. 2 Key Sphere — hidden behind Kimahri in regroup area beneath the ice",
+    "Avenger — hidden chest beside Auron in regroup area beneath the ice"
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
   "oaka": null,
   "sgTip": null,
@@ -10,14 +15,37 @@
       "prose": "The Travel Agency is your last save point and shop before two back-to-back boss fights — stock up. Clasko is outside and gives a useful hint about chocobo breeding; suggest he try it and he'll reward you later with a Friend Sphere. Primer XVI is on the ground near him. Save before heading into the temple — you won't be able to come back.",
       "guideImages": [],
       "items": [
-        { "id": "lake-macalania-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "icon": "primer", "missable": false }
+        { "id": "lake-macalania-primer-xvi", "name": "Al Bhed Primer Vol. XVI", "icon": "primer", "missable": false },
+        { "id": "lake-macalania-4000-gil", "name": "4000 Gil", "icon": "gil", "missable": false, "notes": "Chest near the Travel Agency — blocked until after Clasko moves; collect once events progress." },
+        { "id": "lake-macalania-mega-potion", "name": "Mega-Potion", "icon": "item", "missable": false, "notes": "Chest on the right side of the road near the temple entrance (crevasse, near north exit)." }
       ]
     },
     {
       "name": "Macalania Temple",
       "prose": "Inside, Tromell gives a Shell Targe and Shelinda is here — collect both X-Potions and the 5,000 gil from the main hall before entering the Cloister. After the Seymour fight you're immediately on the run through the ice tunnel — Guado Guardians chase you out, and if one catches you it triggers a battle. You won't return to Macalania Temple. The Guado Guardians blocking the temple path fight in groups — have Rikku use Al Bhed Potions for party-wide healing and keep Auron or Tidus up front for physical damage; there's a brief cutscene confrontation with Seymour before you reach the Cloister.",
       "guideImages": ["image_0051_00.jpeg", "image_0051_01.jpeg"],
-      "items": []
+      "items": [
+        { "id": "lake-macalania-400-gil", "name": "400 Gil", "icon": "gil", "missable": false, "notes": "Speak to Linna (Al Bhed) at the bottom of the stairs on the road to the temple entrance." },
+        { "id": "lake-macalania-shell-targe", "name": "Shell Targe", "icon": "armor", "missable": false, "notes": "Given by Tromell inside the temple entrance." },
+        { "id": "lake-macalania-remedy", "name": "Remedy ×2", "icon": "item", "missable": false, "notes": "Chest at the back of the lower chamber (Nuns' Chamber) after the story message." },
+        { "id": "lake-macalania-hi-potion", "name": "Hi-Potion ×2", "icon": "item", "missable": false, "notes": "Speak to the shaken witnesses (Yellow Nun) on the right in the lower chamber." },
+        { "id": "lake-macalania-x-potion", "name": "X-Potion ×2", "icon": "item", "missable": false, "notes": "Chest on the south side of the main hall." },
+        { "id": "lake-macalania-5000-gil", "name": "5000 Gil", "icon": "gil", "missable": false, "notes": "Chest on the north side of the main hall." },
+        { "id": "lake-macalania-elixir", "name": "Elixir", "icon": "item", "missable": false, "notes": "Speak to the Purple Monk in the northwest chamber (Monks' Chamber)." },
+        { "id": "lake-macalania-ether", "name": "Ether", "icon": "item", "missable": false, "notes": "Speak to the Brown Monk in the northwest chamber (Monks' Chamber)." },
+        { "id": "lake-macalania-phoenix-down", "name": "Phoenix Down ×3", "icon": "item", "missable": false, "notes": "Chest at the back of the northwest chamber (Monks' Chamber)." },
+        { "id": "lake-macalania-luck-sphere", "name": "Luck Sphere", "icon": "sphere", "missable": true, "notes": "Cloister of Trials — place the Destruction Sphere in the slot at the lowest level (step 17). Permanently missed if you exit the Cloister without doing this." }
+      ]
+    },
+    {
+      "name": "Under the Ice",
+      "prose": "After Wendigo falls, the party sinks beneath the frozen lake. Use the Save Sphere to recover, then speak to each party member before Yuna leaves. Two chests are hidden in this area and easy to overlook — check behind Kimahri and to the left of Auron before moving on. A third chest is found earlier on the rocky trail during the escape from the temple.",
+      "guideImages": [],
+      "items": [
+        { "id": "lake-macalania-lv1-key-sphere", "name": "Lv. 1 Key Sphere", "icon": "sphere", "missable": true, "notes": "On the rocky trail on the right side of the chasm during the escape from the ice cavern. Cross to the left only after grabbing this." },
+        { "id": "lake-macalania-lv2-key-sphere", "name": "Lv. 2 Key Sphere", "icon": "sphere", "missable": true, "notes": "Partially hidden chest behind Kimahri in the regroup area beneath the ice." },
+        { "id": "lake-macalania-avenger", "name": "Avenger", "icon": "weapon", "missable": true, "notes": "Tidus's weapon with Counterattack — chest to the left of Auron in the regroup area beneath the ice." }
+      ]
     }
   ],
   "bosses": [

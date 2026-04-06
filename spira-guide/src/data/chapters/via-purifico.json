@@ -1,6 +1,8 @@
 {
   "slug": "via-purifico",
-  "missables": [],
+  "missables": [
+    "Avenger and Rematch (Wakka's weapon) are permanently lost if you use the Trigger Command gate strategy to defeat Evrae Altana — the gates lock behind you and block both treasure chests."
+  ],
   "party": ["Yuna", "Kimahri", "Lulu", "Tidus", "Auron", "Wakka"],
   "oaka": null,
   "sgTip": null,
@@ -25,7 +27,8 @@
       "guideImages": ["image_0060_00.jpeg", "image_0060_01.jpeg"],
       "items": [
         { "id": "via-evade-counter", "name": "Evade & Counter Armguard (Wakka)", "icon": "armguard", "missable": false },
-        { "id": "via-avenger", "name": "Avenger", "icon": "avenger", "missable": false }
+        { "id": "via-avenger", "name": "Avenger", "icon": "avenger", "missable": true },
+        { "id": "via-purifico-rematch", "name": "Rematch (Wakka's weapon)", "icon": "armguard", "missable": true }
       ]
     }
   ],

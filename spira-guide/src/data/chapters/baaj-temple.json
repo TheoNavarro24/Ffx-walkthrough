@@ -15,7 +15,12 @@
         { "id": "baaj-hi-potion-1", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
         { "id": "baaj-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false },
         { "id": "baaj-ether", "name": "Ether", "icon": "ether", "missable": false },
-        { "id": "baaj-hi-potion-2", "name": "Hi-Potion", "icon": "hi-potion", "missable": false }
+        { "id": "baaj-hi-potion-2", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
+        { "id": "baaj-temple-flint", "name": "Flint", "icon": "flint", "missable": false, "notes": "Search the open drawer through the doors near the Save Sphere to the south (large campfire room)." },
+        { "id": "baaj-temple-withered-bouquet", "name": "Withered Bouquet", "icon": "item", "missable": false, "notes": "Examine the dried flowers up the stairs through the north doorway (marked with a green square on the on-screen map)." },
+        { "id": "baaj-temple-grenades-steal", "name": "Grenades (steal)", "icon": "grenade", "missable": false, "notes": "Steal from Piranhas in the underwater ruins and directly from Klikk via Rikku's steal command. Stock up for the Klikk phase-change and Tros fights." },
+        { "id": "baaj-temple-grenades-piranha-dive", "name": "Grenades (steal — salvage dive Piranhas)", "icon": "grenade", "missable": false, "notes": "During the salvage dive with Rikku, Piranhas attack in the second underwater chamber. Have Rikku steal as many Grenades as possible before Tidus kills them — these are your main supply for Tros." },
+        { "id": "baaj-temple-grenades-klikk", "name": "Grenades (steal — Klikk)", "icon": "grenade", "missable": false, "notes": "When Rikku exhausts her Grenade stock mid-fight, use Steal on Klikk directly to replenish. The guide specifically calls this out as a backup supply source." }
       ]
     },
     {

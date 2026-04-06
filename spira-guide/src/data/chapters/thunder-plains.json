@@ -24,6 +24,7 @@
       "guideImages": [],
       "items": [
         { "id": "thunder-ether", "name": "Ether", "icon": "ether", "missable": false },
+        { "id": "thunder-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
         { "id": "thunder-2000-gil", "name": "2,000 Gil", "icon": "gil", "missable": false },
         { "id": "thunder-plains-primer-xiv", "name": "Al Bhed Primer Vol. XIV (say 'Okay' to Rin after talking to Rikku)", "icon": "primer", "missable": false },
         { "id": "thunder-spirit-lance", "name": "Spirit Lance (Kimahri's Celestial Weapon — pray at 3 stones)", "icon": "spirit-lance", "missable": false }

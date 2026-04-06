@@ -13,8 +13,12 @@
       "guideImages": ["image_0064_00.jpeg", "image_0065_00.jpeg", "image_0065_01.jpeg"],
       "items": [
         { "id": "gagazet-primer-xxv", "name": "Al Bhed Primer Vol. XXV", "icon": "primer", "missable": false },
-        { "id": "gagazet-lv1-key-sphere", "name": "Lv. 1 Key Sphere", "icon": "lv1-key-sphere", "missable": false },
-        { "id": "gagazet-pep-talk-armor", "name": "Pep Talk Armor (Wakka)", "icon": "pep-talk-armor", "missable": false }
+        { "id": "mt-gagazet-20000-gil", "name": "20,000 Gil", "icon": "gil", "missable": false, "notes": "Chest north of first ledge — climb snowy slope, travel south to reach it" },
+        { "id": "mt-gagazet-mega-potion", "name": "Mega-Potion x2", "icon": "mega-potion", "missable": false, "notes": "Barely visible chest on west side of trail heading north" },
+        { "id": "mt-gagazet-braskas-sphere", "name": "Braska's Sphere", "icon": "sphere", "missable": false, "notes": "Short narrow path north around a large rock — counts as Jecht/Braska sphere #9 for Auron's Overdrive unlock" },
+        { "id": "mt-gagazet-defending-bracer", "name": "Defending Bracer", "icon": "armor", "missable": false, "notes": "T-intersection — go straight (east) before heading north" },
+        { "id": "mt-gagazet-hp-sphere", "name": "HP Sphere", "icon": "hp-sphere", "missable": false, "notes": "Descend slope after Wantz, look under path — first of two chests" },
+        { "id": "mt-gagazet-lv4-key-sphere", "name": "Lv. 4 Key Sphere", "icon": "lv4-key-sphere", "missable": false, "notes": "Descend slope after Wantz, look under path — second of two chests" }
       ]
     },
     {
@@ -22,10 +26,13 @@
       "prose": "This is a tough stretch — large maps, frequent encounters, and sparse save points. After the Biran & Yenke fight, check behind the eastern Save Sphere for the Saturn Crest (Kimahri's Spirit Lance) before moving on. The half-submerged cavern section splits Tidus, Wakka, and Rikku from the others for the underwater trials — this sub-group faces several fiend groups solo, so make sure all three have decent equipment before entering the mountain. If you have access to Rikku's Hyper Mighty G mix (Gambler's Spirit + Healing Spring), using it before Seymour Flux grants Haste, Protect, and Shell to the whole party and significantly eases the fight. After completing both trials, loot the cavern chests before taking the stone stairway out.",
       "guideImages": ["image_0066_00.jpeg", "image_0067_00.jpeg"],
       "items": [
-        { "id": "gagazet-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false },
-        { "id": "gagazet-return-sphere", "name": "Return Sphere", "icon": "return-sphere", "missable": false },
-        { "id": "gagazet-recovery-ring", "name": "Recovery Ring", "icon": "recovery-ring", "missable": false },
-        { "id": "gagazet-saturn-crest", "name": "Saturn Crest (Kimahri's Spirit Lance)", "icon": "saturn-crest", "missable": false }
+        { "id": "gagazet-fortune-sphere", "name": "Fortune Sphere", "icon": "fortune-sphere", "missable": false, "notes": "2nd Trial reward — Submerged Passage" },
+        { "id": "gagazet-lv1-key-sphere", "name": "Lv. 1 Key Sphere", "icon": "lv1-key-sphere", "missable": false, "notes": "1st Trial reward — time Wakka's throw to hit spinning shield opening" },
+        { "id": "mt-gagazet-star-armguard", "name": "Star Armguard", "icon": "armor", "missable": false, "notes": "Underwater Caverns" },
+        { "id": "gagazet-return-sphere", "name": "Return Sphere", "icon": "return-sphere", "missable": false, "notes": "Aquatic passage east of Save Sphere" },
+        { "id": "gagazet-recovery-ring", "name": "Recovery Ring", "icon": "recovery-ring", "missable": false, "notes": "Aquatic passage east of Save Sphere" },
+        { "id": "gagazet-pep-talk-armor", "name": "Pep Talk Armor (Wakka)", "icon": "armor", "missable": false, "notes": "Alcove northwest of Save Sphere" },
+        { "id": "gagazet-saturn-crest", "name": "Saturn Crest (Kimahri's Spirit Lance)", "icon": "saturn-crest", "missable": true, "notes": "Hidden chest near eastern Save Sphere after defeating Seymour Flux — easy to miss while rushing; required for Caladbolg" }
       ]
     }
   ],

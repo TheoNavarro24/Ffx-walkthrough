@@ -1,21 +1,46 @@
 {
   "slug": "mushroom-rock-road",
-  "missables": [],
+  "missables": [
+    "Al Bhed Primer Vol. X — on the C-shaped western side path (Precipice). Point of no return: cannot return after proceeding to Djose Highroad.",
+    "Serene Armlet — in the small area below the western Yevon platform. Same point of no return.",
+    "Gate donations (Scout / Ice Lance / Moon Ring) — only available before Seymour grants entry to the road proper.",
+    "All Mushroom Rock Road items — no return after the final machina ascent triggers the Operation."
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
   "sgTip": "Auron's Power Break is essential for Gui's arms — they deal heavy damage and heal Gui if left alive.",
   "subLocations": [
     {
-      "name": "Mushroom Rock Road",
-      "prose": "The road to Operation Mi'ihen — Crusaders hand out items as you climb the switchbacks. Ride the Yevon platforms up each tier; there's a hidden path west of the second platform leading down to the Serene Armlet. Primer X is at the gate area near the Precipice. Operation Mi'ihen fails — this is a narrative beat with no good outcome, but you'll get the aftermath scene either way depending on what you said to Gatta earlier. Garuda enemies here are flyers that only Wakka and magic can reliably hit; Dingo enemies on the lower paths are weak to Ice, so Lulu's Blizzard gets extra mileage in this area.",
-      "guideImages": ["image_0040_00.jpeg", "image_0041_00.jpeg"],
+      "name": "Lower Road",
+      "prose": "The lower switchbacks of Mushroom Rock Road are lined with Crusaders handing out supplies — speak to every soldier you pass. At the gate before Seymour arrives, a guard on the left accepts donations: 100 gil yields a Scout, 1,000 gil an Ice Lance, and 10,000 gil Yuna's Moon Ring — make the donations before entering the road proper. Funguars, Garudas, and Basilisks are the enemies here; Garudas are flyers that only Wakka and magic can reliably hit. Shelinda is somewhere on the road and will heal the party for free if you're low. After the first elevator ride, check the alcove to the north (a chest plus an NPC). The path west off the main route holds the Serene Armlet: ride the Yevon platform down to the small area below and claim it. Further along the Precipice section, the C-shaped western detour path leads to Primer X at its far tip — this is a separate detour from the Serene Armlet. Save at the Save Sphere near Luzzu and Gatta before riding the machina to the top.",
+      "guideImages": ["image_0040_00.jpeg"],
       "items": [
-        { "id": "mmr-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
-        { "id": "mmr-hi-potion", "name": "Hi-Potion", "icon": "hi-potion", "missable": false },
-        { "id": "mmr-serene-armlet", "name": "Serene Armlet", "icon": "serene-armlet", "missable": false },
-        { "id": "mmr-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
-        { "id": "mmr-serene-bracer", "name": "Serene Bracer", "icon": "serene-bracer", "missable": false },
-        { "id": "mmr-primer-x", "name": "Al Bhed Primer Vol. X", "icon": "primer", "missable": false }
+        { "id": "mushroom-rock-road-scout", "name": "Scout (gate donation — 100 gil)", "icon": "scout", "missable": true },
+        { "id": "mushroom-rock-road-ice-lance", "name": "Ice Lance (gate donation — 1,000 gil)", "icon": "ice-lance", "missable": true },
+        { "id": "mushroom-rock-road-moon-ring", "name": "Yuna's Moon Ring (gate donation — 10,000 gil)", "icon": "moon-ring", "missable": true },
+        { "id": "mushroom-rock-road-tough-bangle", "name": "Tough Bangle", "icon": "tough-bangle", "missable": false },
+        { "id": "mushroom-rock-road-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
+        { "id": "mushroom-rock-road-ether", "name": "Ether", "icon": "ether", "missable": false },
+        { "id": "mushroom-rock-road-phoenix-down-2", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false },
+        { "id": "mushroom-rock-road-hi-potion-crusader", "name": "Hi-Potion (Crusader NPC)", "icon": "hi-potion", "missable": false },
+        { "id": "mushroom-rock-road-hi-potion-guard", "name": "Hi-Potion (guard past Save Sphere)", "icon": "hi-potion", "missable": false },
+        { "id": "mushroom-rock-road-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false },
+        { "id": "mushroom-rock-road-potion-10", "name": "Potion ×10", "icon": "potion", "missable": false },
+        { "id": "mushroom-rock-road-serene-armlet", "name": "Serene Armlet", "icon": "serene-armlet", "missable": true },
+        { "id": "mushroom-rock-road-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false },
+        { "id": "mushroom-rock-road-400-gil", "name": "400 Gil", "icon": "gil", "missable": false },
+        { "id": "mushroom-rock-road-primer-x", "name": "Al Bhed Primer Vol. X", "icon": "primer", "missable": true }
+      ]
+    },
+    {
+      "name": "Ridge / Command Center",
+      "prose": "At the top, a guard by the machina platform gives a Mega-Potion. Inside the command center, loot both chests flanking Lulu and Yuna before speaking to Maester Kinoc. After meeting Kinoc, speak to Gatta — this dialogue is irreversible and determines who dies in the battle: speak to Gatta twice and choose the second option both times to send Luzzu to the front (Luzzu dies); any other choice sends Gatta (Gatta dies). Ride the machina up and witness Operation Mi'ihen. After the battle, collect the Hi-Potion among the scattered bodies before speaking to any party members.",
+      "guideImages": ["image_0041_00.jpeg"],
+      "items": [
+        { "id": "mushroom-rock-road-mega-potion-npc", "name": "Mega-Potion (guard by machina platform)", "icon": "mega-potion", "missable": false },
+        { "id": "mushroom-rock-road-mega-potion-chest", "name": "Mega-Potion (command center chest)", "icon": "mega-potion", "missable": false },
+        { "id": "mushroom-rock-road-serene-bracer", "name": "Serene Bracer", "icon": "serene-bracer", "missable": false },
+        { "id": "mushroom-rock-road-hi-potion-aftermath", "name": "Hi-Potion (post-battle aftermath)", "icon": "hi-potion", "missable": false }
       ]
     }
   ],

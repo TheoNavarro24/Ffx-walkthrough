@@ -1,6 +1,10 @@
 {
   "slug": "djose",
-  "missables": [],
+  "missables": [
+    "Al Bhed Primer Vol. XI — Djose Highroad, behind a spiky rock across from the first Phoenix Down chest. Must collect before leaving.",
+    "Stone Breath (Kimahri Overdrive) — use Lancet on a Basilisk on the Djose Highroad. Basilisks do not appear in later areas.",
+    "Switch Hitter — inn chest, accessible only after completing the Cloister. Collect before departing the temple area."
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
   "sgTip": "Rikku joins here — put her in the active party for her Steal and Use commands. Al Bhed Potions (which she can Use) are very effective for group healing.",
@@ -10,21 +14,39 @@
       "prose": "Rikku officially joins here after the post-battle regrouping on the beach. Soldiers praying along the road will hand over items, and a chest on the right hides Phoenix Down near the start. Primer XI is across from that chest — look behind a spiky rock. Basilisks here can stone your party, so equip a Soft Ring on Yuna, or use Kimahri's Lancet to learn Stone Breath from them for later. Pick up Stoneproof armor from Rin's Agency (available just before this area) for Tidus and Yuna at minimum — Basilisks can inflict Petrify instantly; Thunder magic and Tidus's physical attacks are effective against them.",
       "guideImages": ["image_0042_00.jpeg"],
       "items": [
-        { "id": "djose-1000-gil", "name": "1,000 Gil", "icon": "gil", "missable": false },
-        { "id": "djose-10-potions", "name": "Potion ×10", "icon": "potion", "missable": false },
-        { "id": "djose-remedy", "name": "Remedy", "icon": "remedy", "missable": false },
-        { "id": "djose-x-potion", "name": "X-Potion", "icon": "x-potion", "missable": false },
-        { "id": "djose-serene-armlet", "name": "Serene Armlet", "icon": "serene-armlet", "missable": false },
-        { "id": "djose-4-ability-spheres", "name": "Ability Sphere ×4", "icon": "ability-sphere", "missable": false },
-        { "id": "djose-4000-gil", "name": "4,000 Gil", "icon": "gil", "missable": false }
+        { "id": "djose-phoenix-down-x2", "name": "Phoenix Down ×2", "icon": "phoenix-down", "missable": false },
+        { "id": "djose-al-bhed-primer-xi", "name": "Al Bhed Primer Vol. XI", "icon": "al-bhed-primer", "missable": true },
+        { "id": "djose-soft-ring", "name": "Soft Ring", "icon": "soft-ring", "missable": false },
+        { "id": "djose-variable-steel", "name": "Variable Steel", "icon": "variable-steel", "missable": false },
+        { "id": "djose-hi-potion-x1", "name": "Hi-Potion ×1", "icon": "hi-potion", "missable": false },
+        { "id": "djose-ether-highroad", "name": "Ether ×1", "icon": "ether", "missable": false },
+        { "id": "djose-mega-potion", "name": "Mega-Potion ×1", "icon": "mega-potion", "missable": false },
+        { "id": "djose-bright-bangle", "name": "Bright Bangle", "icon": "bright-bangle", "missable": false },
+        { "id": "djose-remedy", "name": "Remedy ×1", "icon": "remedy", "missable": false },
+        { "id": "djose-4000-gil", "name": "4,000 Gil", "icon": "gil", "missable": false },
+        { "id": "djose-ability-sphere-x4", "name": "Ability Sphere ×4", "icon": "ability-sphere", "missable": false }
       ]
     },
     {
       "name": "Djose Temple",
-      "prose": "Inside the temple, meet Isaaru and his brothers, then loot both side chambers before ascending — the chest by the left chamber has an Ether. The 4,000 gil chest is on the far west side of the exterior grounds. The Magistral Rod from the Destruction Sphere is not missable; you can return via the Highroad at any point before the endgame. Garm and Bite Bug enemies inside are straightforward, but Garm can inflict Darkness — Wakka and Lulu handle them cleanly; the Cloister puzzle is more layered than Kilika, requiring you to stack spheres and use the pedestal to carry them into the lightning current.",
+      "prose": "Inside the temple, meet Isaaru and his brothers, then loot both side chambers before ascending — the chest by the left chamber exterior has an Ether, inside the left chamber is a Remedy, and the right chamber holds a Mega Phoenix. The chest inside the inn is blocked by a priest until the Cloister is complete; return before leaving to collect the Switch Hitter. The Djose Cloister uses electrically charged Djose Spheres to power pedestals. Use the Destruction Sphere on the central pedestal on the upper level to destroy a section of the east wall and reveal the Magic Sphere chest.",
       "guideImages": [],
       "items": [
-        { "id": "djose-magistral-rod", "name": "Magistral Rod (Destruction Sphere — not missable)", "icon": "magistral-rod", "missable": false }
+        { "id": "djose-ether-temple", "name": "Ether ×1 (Great Hall, left chamber exterior)", "icon": "ether", "missable": false },
+        { "id": "djose-remedy-temple", "name": "Remedy ×1 (Nuns' Chamber)", "icon": "remedy", "missable": false },
+        { "id": "djose-mega-phoenix", "name": "Mega Phoenix ×1 (Monks' Chamber)", "icon": "mega-phoenix", "missable": false },
+        { "id": "djose-switch-hitter", "name": "Switch Hitter (Inn — after Cloister)", "icon": "switch-hitter", "missable": true },
+        { "id": "djose-magic-sphere", "name": "Magic Sphere (Destruction Sphere reward)", "icon": "magic-sphere", "missable": false }
+      ]
+    },
+    {
+      "name": "Djose Pilgrimage Road (post-Cloister)",
+      "prose": "After the Cloister and a night's rest, Tidus wakes at the inn. Head outside, then into the temple to wake Yuna. On the bridges heading north toward the Moonflow: a former Crusader gives a Halberd, a priest gives Hi-Potions, and a lone man on the next bridge section gives 10 Potions — keep talking to him until his dialogue loop ends.",
+      "guideImages": [],
+      "items": [
+        { "id": "djose-halberd", "name": "Halberd (former Crusader, north bridge)", "icon": "halberd", "missable": false },
+        { "id": "djose-hi-potion-x2", "name": "Hi-Potion ×2 (priest on bridge)", "icon": "hi-potion", "missable": false },
+        { "id": "djose-potion-x10", "name": "Potion ×10 (lone man on bridge — talk repeatedly)", "icon": "potion", "missable": false }
       ]
     }
   ],

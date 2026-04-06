@@ -1,7 +1,9 @@
 {
   "slug": "bevelle",
   "missables": [
-    "Al Bhed Primer Vol. XXII — Priests' Passage, on the floor before the Cloister save sphere. PERMANENTLY MISSABLE — walk past this and it's gone forever."
+    "Al Bhed Primer Vol. XXII — Priests' Passage, on the floor before the Cloister save sphere. PERMANENTLY MISSABLE — walk past this and it's gone forever.",
+    "HP Sphere — Cloister of Trials, chest at the top of the stairs. MISSABLE if you step on the floor switch beneath it first — the switch teleports the pedestal and the chest disappears. Always open the chest before stepping on the switch.",
+    "Knight Lance — Cloister of Trials, end of left path. Requires holding TWO Bevelle Spheres simultaneously at the critical step. Losing track of sphere management permanently locks you out of this chest. Needed for Anima unlock later."
   ],
   "party": ["Tidus", "Yuna", "Wakka", "Lulu", "Auron", "Rikku", "Kimahri"],
   "oaka": null,
@@ -20,8 +22,24 @@
       "prose": "The most mechanically complex Cloister — you ride a moving platform across glowing path glyphs, steering by pressing the button as arrows light up. The Destruction Sphere is needed to access the Knight Lance chest, which is one of the seven Cloister treasures required to unlock Anima later. Don't skip it.",
       "guideImages": ["image_0058_00.jpeg", "image_0059_00.jpeg"],
       "items": [
-        { "id": "bevelle-hp-sphere", "name": "HP Sphere", "icon": "hp-sphere", "missable": false },
-        { "id": "bevelle-knight-lance", "name": "Knight Lance (Kimahri, Destruction Sphere — needed for Anima)", "icon": "knight-lance", "missable": false }
+        { "id": "bevelle-bevelle-sphere", "name": "Bevelle Sphere (puzzle key — pedestal key used to ride platform; need 2 simultaneously at step 18)", "icon": "sphere", "missable": false },
+        { "id": "bevelle-glyph-sphere", "name": "Glyph Sphere (puzzle key — picked up from path end, inserted into purple-glyph slot)", "icon": "sphere", "missable": false },
+        { "id": "bevelle-destruction-sphere", "name": "Destruction Sphere (puzzle key — reveals new path; found after inserting Glyph Sphere)", "icon": "sphere", "missable": false },
+        { "id": "bevelle-hp-sphere", "name": "HP Sphere (chest at top of stairs — collect BEFORE stepping on floor switch beneath it)", "icon": "hp-sphere", "missable": true },
+        { "id": "bevelle-knight-lance", "name": "Knight Lance (Kimahri, end of left path — requires 2 Bevelle Spheres at step 18; needed for Anima)", "icon": "knight-lance", "missable": true }
+      ]
+    },
+    {
+      "name": "Via Purifico (Yuna's Path)",
+      "prose": "After the Cloister, Yuna's group is sentenced to the Via Purifico maze. Find Kimahri east then north; after he rejoins, a chest to the left holds a Mega-Potion. Continue to find Lulu; the chest beside her contains a White Magic Sphere. The southwest room near the glyph has an Elixir, and the room northeast of the central teleporter holds a Black Magic Sphere. A Skill Sphere and 10,000 Gil are in the puzzle treasure rooms accessible by activating the glyph.",
+      "guideImages": ["image_0059_00.jpeg"],
+      "items": [
+        { "id": "bevelle-mega-potion", "name": "Mega-Potion (east room after Kimahri rejoins)", "icon": "mega-potion", "missable": false },
+        { "id": "bevelle-wht-magic-sphere", "name": "White Magic Sphere (chest beside Lulu)", "icon": "wht-magic-sphere", "missable": false },
+        { "id": "bevelle-elixir", "name": "Elixir (southwest room near glyph)", "icon": "elixir", "missable": false },
+        { "id": "bevelle-blk-magic-sphere", "name": "Black Magic Sphere (room northeast of central teleporter)", "icon": "blk-magic-sphere", "missable": false },
+        { "id": "bevelle-skill-sphere", "name": "Skill Sphere (puzzle treasure room)", "icon": "skill-sphere", "missable": false },
+        { "id": "bevelle-10000-gil", "name": "10,000 Gil (puzzle treasure room)", "icon": "gil", "missable": false }
       ]
     }
   ],

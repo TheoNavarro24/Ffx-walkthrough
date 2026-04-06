@@ -1,18 +1,59 @@
 {
   "slug": "guadosalam",
-  "missables": [],
+  "missables": [
+    "Al Bhed Primer Vol. XII — platform above O'aka at the North Wharf; collect before leaving the wharf",
+    "Al Bhed Primer Vol. XIII — room west of the red doors in Guadosalam; collect before story advances",
+    "Hi-Potion ×2 — upper balcony of Seymour's mansion; collect before entering the purple doors",
+    "Lightning Marble ×8 — corridor to the Farplane; check left wall immediately upon entering"
+  ],
   "party": ["Tidus", "Wakka", "Yuna", "Lulu", "Kimahri", "Auron", "Rikku"],
   "oaka": { "meeting": true, "cumulativeTarget": 10001 },
   "sgTip": null,
   "subLocations": [
     {
+      "name": "North Wharf",
+      "prose": "Rikku rejoins the party on the riverbank. Before following the path west, grab Primer XII from the platform above O'aka's stall — you cannot return once you leave the wharf. There is also an Ether in the chest near the bench.",
+      "guideImages": [],
+      "items": [
+        { "id": "guadosalam-primer-xii", "name": "Al Bhed Primer Vol. XII", "icon": "primer", "missable": true },
+        { "id": "guadosalam-north-wharf-ether", "name": "Ether", "icon": "ether", "missable": false }
+      ]
+    },
+    {
+      "name": "Road to Guadosalam",
+      "prose": "Two chests on the trail leading into town. The Antidotes are useful Customize fodder — don't sell them.",
+      "guideImages": [],
+      "items": [
+        { "id": "guadosalam-road-antidote", "name": "Antidote ×4", "icon": "antidote", "missable": false },
+        { "id": "guadosalam-road-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false }
+      ]
+    },
+    {
       "name": "Guadosalam",
       "prose": "Mostly story — Seymour's feast, the Farplane, and the proposal. Explore the winding backstreets before entering the red double doors; there are chests with a Mega-Potion, Elixir, and 3,000 gil tucked around the western room, plus Primer XIII on the floor. In the corridor leading to the Farplane, check the left wall for a hidden chest with Lightning Marbles. On the Farplane itself, speak to Wakka and Lulu to trigger their scenes — this upgrades the Brotherhood with Strength +10%, Sensor, and Waterstrike. Notice that everyone except Tidus sees a loved one — his father's spirit appears to him instead, visually changed in a way that quietly confirms what Jecht has become. You already know, but it's the game's first explicit on-screen acknowledgement.",
       "guideImages": [],
       "items": [
-        { "id": "guadosalam-primer-xiii", "name": "Al Bhed Primer Vol. XIII", "icon": "primer", "missable": false },
+        { "id": "guadosalam-town-mega-potion", "name": "Mega-Potion", "icon": "mega-potion", "missable": false },
+        { "id": "guadosalam-town-elixir", "name": "Elixir", "icon": "elixir", "missable": false },
         { "id": "guadosalam-3000-gil", "name": "3,000 Gil", "icon": "gil", "missable": false },
-        { "id": "guadosalam-venus-crest", "name": "Venus Crest (Lulu's Onion Knight)", "icon": "venus-crest", "missable": false }
+        { "id": "guadosalam-primer-xiii", "name": "Al Bhed Primer Vol. XIII", "icon": "primer", "missable": true }
+      ]
+    },
+    {
+      "name": "Seymour's Mansion",
+      "prose": "Ascend either staircase to the upper balcony and collect the Hi-Potions from the hidden chest before entering the purple double doors for Seymour's scene.",
+      "guideImages": [],
+      "items": [
+        { "id": "guadosalam-mansion-hi-potion", "name": "Hi-Potion ×2", "icon": "hi-potion", "missable": true }
+      ]
+    },
+    {
+      "name": "Corridor to the Farplane",
+      "prose": "Move left immediately upon entering the corridor — before joining the party on the stairs — to find the hidden chest with Lightning Marbles. Easy to walk past if you follow the party straight up.",
+      "guideImages": [],
+      "items": [
+        { "id": "guadosalam-farplane-lightning-marble", "name": "Lightning Marble ×8", "icon": "lightning-marble", "missable": true },
+        { "id": "guadosalam-venus-crest", "name": "Venus Crest (Lulu's Onion Knight — 2nd visit)", "icon": "venus-crest", "missable": false }
       ]
     }
   ],

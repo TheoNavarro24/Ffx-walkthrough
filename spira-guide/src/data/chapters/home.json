@@ -2,9 +2,11 @@
   "slug": "home",
   "missables": [
     "Al Bhed Primer Vol. XVIII — outside the main entrance. Missable if you rush past.",
-    "Al Bhed Primer Vol. XIX — inside, room with forced fight, on a bed at the back. PERMANENTLY MISSABLE — Home is destroyed after this chapter.",
-    "Al Bhed Primer Vol. XX — three-way fork, RIGHT hallway, at the end. PERMANENTLY MISSABLE.",
-    "Al Bhed Primer Vol. XXI — three-way fork, straight/left path. PERMANENTLY MISSABLE."
+    "Al Bhed Primer Vol. XIX — near the dead body, left of the entrance outside Home. PERMANENTLY MISSABLE — Home is destroyed after this chapter.",
+    "Al Bhed Primer Vol. XX — south living quarters, on the bed. PERMANENTLY MISSABLE.",
+    "Al Bhed Primer Vol. XXI — northeast corridor, on the floor. PERMANENTLY MISSABLE.",
+    "Special Sphere — east living quarters, password chest. PERMANENTLY MISSABLE.",
+    "Skill Sphere — east living quarters, quiz chest. PERMANENTLY MISSABLE."
   ],
   "party": ["Tidus", "Wakka", "Rikku"],
   "oaka": null,
@@ -15,7 +17,9 @@
       "prose": "After meeting Cid, search the area outside Home before going in. Primer XVIII is right outside the main entrance on the ground — grab it immediately. Fiends swarm the area in waves as you push forward, so you won't get a quiet moment to backtrack. Prioritize clearing the exterior enemies quickly so you can enter and sweep all three interior Primers before the destruction cutscene — this entire location is permanently gone afterward, and the interior Primers are among the easiest missables in the game.",
       "guideImages": ["image_0054_00.jpeg"],
       "items": [
-        { "id": "home-primer-xviii", "name": "Al Bhed Primer Vol. XVIII", "icon": "primer", "missable": true }
+        { "id": "home-primer-xviii", "name": "Al Bhed Primer Vol. XVIII", "icon": "primer", "missable": true },
+        { "id": "home-hi-potion-x2", "name": "Hi-Potion ×2 (search the dead body near the entrance)", "icon": "hi-potion", "missable": false },
+        { "id": "home-primer-xix", "name": "Al Bhed Primer Vol. XIX (near the dead body, left of entrance)", "icon": "primer", "missable": true }
       ]
     },
     {
@@ -23,14 +27,16 @@
       "prose": "Three Primers are permanently missable once Home is destroyed — don't rush. Primer XIX is in the room where the forced fight occurs; check the bed at the back before engaging. At the three-way fork, go RIGHT down the northeast corridor for Primer XXI on the floor, then come back and take the left/straight path for Primer XX. The two Al Bhed puzzle chests in the inner rooms contain a Friend Sphere and a Skill Sphere — the correct answers are listed in the guide if you're short on Primers to translate them yourself.",
       "guideImages": ["image_0054_01.jpeg"],
       "items": [
-        { "id": "home-primer-xix", "name": "Al Bhed Primer Vol. XIX (room with forced fight, on a bed)", "icon": "primer", "missable": true },
-        { "id": "home-primer-xx", "name": "Al Bhed Primer Vol. XX (three-way fork, right hallway)", "icon": "primer", "missable": true },
-        { "id": "home-primer-xxi", "name": "Al Bhed Primer Vol. XXI (three-way fork, straight/left path)", "icon": "primer", "missable": true },
-        { "id": "home-6-al-bhed-potions", "name": "Al Bhed Potion ×6", "icon": "al-bhed-potion", "missable": false },
-        { "id": "home-lv4-key-sphere", "name": "Lv. 4 Key Sphere", "icon": "lv4-key-sphere", "missable": false },
-        { "id": "home-lv2-key-sphere", "name": "Lv. 2 Key Sphere", "icon": "lv2-key-sphere", "missable": false },
-        { "id": "home-10000-gil", "name": "10,000 Gil", "icon": "gil", "missable": false },
-        { "id": "home-friend-sphere", "name": "Friend Sphere", "icon": "friend-sphere", "missable": false }
+        { "id": "home-primer-xx", "name": "Al Bhed Primer Vol. XX (south living quarters, on the bed)", "icon": "primer", "missable": true },
+        { "id": "home-primer-xxi", "name": "Al Bhed Primer Vol. XXI (northeast corridor, on the floor)", "icon": "primer", "missable": true },
+        { "id": "home-al-bhed-potion-smoke", "name": "Al Bhed Potion ×4 (hidden behind smoke, bottom of south stairs)", "icon": "al-bhed-potion", "missable": false },
+        { "id": "home-friend-sphere", "name": "Friend Sphere (south living quarters — vocabulary-test chest)", "icon": "friend-sphere", "missable": true },
+        { "id": "home-special-sphere", "name": "Special Sphere (east living quarters — password chest)", "icon": "special-sphere", "missable": true },
+        { "id": "home-skill-sphere", "name": "Skill Sphere (east living quarters — quiz chest)", "icon": "skill-sphere", "missable": true },
+        { "id": "home-6-al-bhed-potions", "name": "Al Bhed Potion ×6 (north hall chest)", "icon": "al-bhed-potion", "missable": false },
+        { "id": "home-lv4-key-sphere", "name": "Lv. 4 Key Sphere (under the stairs, crumbling city)", "icon": "lv4-key-sphere", "missable": false },
+        { "id": "home-lv2-key-sphere", "name": "Lv. 2 Key Sphere (far right, before Summoner's Sanctum)", "icon": "lv2-key-sphere", "missable": false },
+        { "id": "home-10000-gil", "name": "10,000 Gil (chest inside the Summoner's Sanctum)", "icon": "gil", "missable": false }
       ]
     }
   ],
